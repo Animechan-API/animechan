@@ -4,8 +4,7 @@
   "description": "a tiny api that returns quality anime quotes",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "start:dev": "nodemon server.js"
+    "start": "nodemon server.js"
   },
   "repository": {
     "type": "git",
