@@ -1,0 +1,33 @@
+{
+  "name": "quality-anime-quotes",
+  "version": "0.0.1",
+  "description": "a tiny api that returns quality anime quotes",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "start:dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RocktimSaikia/quality-anime-quotes.git"
+  },
+  "keywords": [
+    "anime",
+    "quotes",
+    "api"
+  ],
+  "author": "Rocktim Saikia",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RocktimSaikia/quality-anime-quotes/issues"
+  },
+  "homepage": "https://github.com/RocktimSaikia/quality-anime-quotes#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "isomorphic-unfetch": "^3.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
