@@ -1,22 +1,57 @@
 [
     {
         "quote": "Hard work is worthless for those that don’t believe in themselves.",
-        "character": "Naruto Uzumaki"
+        "character": "Naruto Uzumaki",
+        "anime": "Naruto"
     },
     {
         "quote": "Once you question your own belief, it’s over.",
-        "character": "Naruto Uzumaki"
+        "character": "Naruto Uzumaki",
+        "anime": "Naruto"
     },
     {
         "quote": "If you don’t share someone’s pain, you can never understand them.",
-        "character": "Nagato"
+        "character": "Nagato",
+        "anime": "Naruto"
     },
     {
         "quote": "When a man learns to love, he must bear the risk of hatred.",
-        "character": "Madara Uchiha"
+        "character": "Madara Uchiha",
+        "anime": "Naruto"
     },
     {
         "quote": "Power is not will, it is the phenomenon of physically making things happen.",
-        "character": "Madara Uchiha"
+        "character": "Madara Uchiha",
+        "anime": "Naruto"
+    },
+    {
+        "quote": "I'm still a man too, I wanted to look calm and composed in front of everyone. Especially in front of the one I'm in love with",
+        "character": "Kaizaki Arata",
+        "anime": "reLIFE"
+    },
+    {
+        "quote": "Because of the existence of love - sacrifice is born. As well as hate. Then one comprehends... one knows PAIN.",
+        "character": "Pain",
+        "anime": "Naruto"
+    },
+    {
+        "quote": "Everyone Makes Mistakes. But people's feelings can manifest through the most subtle of expressions.",
+        "character": "Nona",
+        "anime": "Death Parade"
+    },
+    {
+        "quote": "The truth is everyone is going to hurt you, you just got to find the ones worth suffering for.",
+        "character": "Hei",
+        "anime": "Darker than Black"
+    },
+    {
+        "quote": "Slowly, by spending time together with that person, your love for him will grow bigger.",
+        "character": "Kaizaki Arata",
+        "anime": "reLIFE"
+    },
+    {
+        "quote": "It's best to go up against strong guys, if you want to get stronger.",
+        "character": "Shōyō Hinata",
+        "anime": "Haikyu!!"
     }
 ]

@@ -1,0 +1,4268 @@
+[
+    {
+        "id": 1,
+        "anime": "Bleach",
+        "chara": "Ishida",
+        "quote": "Seseorang yang menindas yang lemah karena tidak bisa menang melawan yang kuat, lebih pantas disebut pengecut."
+    },
+    {
+        "id": 2,
+        "anime": "Crayon Shinchan",
+        "chara": "Shinchan",
+        "quote": "Aku bukan tipe orang yang menengok ke belakang."
+    },
+    {
+        "id": 3,
+        "anime": "One Piece",
+        "chara": "Mr. 3",
+        "quote": "Saat dimana kau merasa aman di dekat seseorang, artinya mereka sudah seperti teman."
+    },
+    {
+        "id": 4,
+        "anime": "Naruto",
+        "chara": "Gaara",
+        "quote": "Cintai diri sendiri dan percayai diri sendiri, itulah definisi orang terkuat."
+    },
+    {
+        "id": 5,
+        "anime": "Nyan Koi",
+        "chara": "Chizuru Mochizuki",
+        "quote": "Aku mencintai perkerjaanku dan senang rasanya membuat orang bahagia."
+    },
+    {
+        "id": 6,
+        "anime": "D. Conan",
+        "chara": "Heiji",
+        "quote": "Kalau kalian ingin mendapatkan sesuatu, kalian harus mengusahakannya dengan kemampuan kalian sendiri."
+    },
+    {
+        "id": 7,
+        "anime": "Nyan Koi",
+        "chara": "Junpei Kosaka",
+        "quote": "Semua orang takut akan sesuatu atau yang lain, tidak ada yang perlu dipermalukan."
+    },
+    {
+        "id": 8,
+        "anime": "Bleach",
+        "chara": "Ichigo",
+        "quote": "Hanya karena lukaku banyak, bukan berarti aku tidak bisa mengalahkanmu."
+    },
+    {
+        "id": 9,
+        "anime": "One Piece",
+        "chara": "Rayleigh",
+        "quote": "Hidup itu dipenuhi dengan hal - hal yang tak terduga."
+    },
+    {
+        "id": 10,
+        "anime": "Maken Ki !",
+        "chara": "Himegami Kodama",
+        "quote": "Berharap tetap disamping orang yang disayangi adalah sesuatu yang biasa dimiliki oleh manusia."
+    },
+    {
+        "id": 11,
+        "anime": "Sengoku Basara",
+        "chara": "Matsunaga Hisahide",
+        "quote": "Tidak ada satu hartapun yang dapat dibawa ke surga."
+    },
+    {
+        "id": 12,
+        "anime": "One Piece",
+        "chara": "Sanji",
+        "quote": "Sejarah tercipta setiap hari tapi manusia tidak akan bisa kembali ke masa lalu."
+    },
+    {
+        "id": 13,
+        "anime": "Gundam Seed",
+        "chara": "Shin Asuka",
+        "quote": "Tidak peduli betapa indahnya bunga, orang-orang pasti akan menghancurkan nya lagi."
+    },
+    {
+        "id": 14,
+        "anime": "Tsubasa Reservoir of Chronicle",
+        "chara": "Kurogane",
+        "quote": "Kalau ada yang harus kau lakukan teruslah melihat kedepan."
+    },
+    {
+        "id": 15,
+        "anime": "Naruto",
+        "chara": "Tobi",
+        "quote": "Aku bukan siapapun dan aku tidak ingin menjadi siapapun."
+    },
+    {
+        "id": 16,
+        "anime": "Naruto",
+        "chara": "Kakashi",
+        "quote": "Kematian serta air mata kalian adalah ikatan kalian."
+    },
+    {
+        "id": 17,
+        "anime": "Fairy Tail",
+        "chara": "Gildartz",
+        "quote": "Ketakutan bukanlah kejahatan, ketakutan itu ada agar kau dapat mengetahui dimana kelemahanmu."
+    },
+    {
+        "id": 18,
+        "anime": "Fairy Tail",
+        "chara": "Erza Scarlet",
+        "quote": "Selama aku tidak lupa hari ini, Kita akan bisa bertemu lagi."
+    },
+    {
+        "id": 19,
+        "anime": "Vagabond",
+        "chara": "Oko",
+        "quote": "Cinta dimulai dengan senyuman, tumbuh dengan dekapan, dan seringkali berakhir dengan air mata."
+    },
+    {
+        "id": 20,
+        "anime": "Fairy Tail",
+        "chara": "Mirajane",
+        "quote": "Kesalah pahaman adalah bagian dari cinta, itulah bagaimana proses seorang gadis menjadi seorang wanita."
+    },
+    {
+        "id": 21,
+        "anime": "Gintama",
+        "chara": "Gintoki",
+        "quote": "Meski kau tidak punya apa-apa lagi dihidupmu, ada satu hal yang bisa kau lindungi, yaitu harga dirimu !!!"
+    },
+    {
+        "id": 22,
+        "anime": "Nube",
+        "chara": "Ritsuko",
+        "quote": "Meski cinta tak terbalas tetaplah mencintainya."
+    },
+    {
+        "id": 23,
+        "anime": "D. Conan",
+        "chara": "Sanjuro Tsurugi",
+        "quote": "Jalan yang kau tempuh,harus indah seperti bunga dan kuat seperti pohon."
+    },
+    {
+        "id": 24,
+        "anime": "D. Conan",
+        "chara": "Heiji",
+        "quote": "Hidup itu pendek, tidak ada yang tahu kapan manusia akan mati."
+    },
+    {
+        "id": 25,
+        "anime": "Ragnarok The Animation",
+        "chara": "Misao Daidouji",
+        "quote": "Yang paling menakutkan adalah hati manusia."
+    },
+    {
+        "id": 26,
+        "anime": "D. Conan",
+        "chara": "Ayumi",
+        "quote": "Kalau lari terus,aku tak akan menang."
+    },
+    {
+        "id": 27,
+        "anime": "Eyeshield 21",
+        "chara": "Sena",
+        "quote": "Akan kulindungi dengan cara apapun hal yang berharga bagiku."
+    },
+    {
+        "id": 28,
+        "anime": "Eyeshield 21",
+        "chara": "Sena",
+        "quote": "Akan kutangkap hal yang kuinginkan sesulit apapun melakukannya."
+    },
+    {
+        "id": 29,
+        "anime": "Naruto",
+        "chara": "Hanzo",
+        "quote": "Cukup sulit untuk melihat pendirian seseorang."
+    },
+    {
+        "id": 30,
+        "anime": "D. Conan",
+        "chara": "Shinichi Kudo",
+        "quote": "Hati perempuan sulit di tebak."
+    },
+    {
+        "id": 31,
+        "anime": "Naruto",
+        "chara": "Naruto",
+        "quote": "Kuharap suatu hari nanti aku bisa melakukan sesuatu terhadap segala kebencian yang ada di dalam dirimu."
+    },
+    {
+        "id": 32,
+        "anime": "Naruto",
+        "chara": "Kabuto",
+        "quote": "Kekalahan bukan pilihan, tapi harus lakukan apapun yang kau bisa."
+    },
+    {
+        "id": 33,
+        "anime": "One Piece",
+        "chara": "Ace",
+        "quote": "Aku tidak berniat untuk hidup 1000 tahun, asalkan bisa hidup hari ini itu sudah cukup !!"
+    },
+    {
+        "id": 34,
+        "anime": "Kokoro Connect",
+        "chara": "Himeko Inaba",
+        "quote": "Terkadang kebaikanmu pada orang lain bisa menyakiti perasaan orang lain juga."
+    },
+    {
+        "id": 35,
+        "anime": "Naruto",
+        "chara": "Gai Maito",
+        "quote": "Tidak ada gunanya kalau Kau berkerja keras tanapa mempercayai dirimu !!"
+    },
+    {
+        "id": 36,
+        "anime": "Slam Dunk",
+        "chara": "Pak Anzai",
+        "quote": "Kamu ada untuk tim, bukan tim ada untuk kamu."
+    },
+    {
+        "id": 37,
+        "anime": "The Law of Ueki",
+        "chara": "Haiji",
+        "quote": "Sekali membuat keputusan harus di pertahankan sampai mati itulah prinsip !!"
+    },
+    {
+        "id": 38,
+        "anime": "D. Conan",
+        "chara": "Kazuha",
+        "quote": "Cinta adalah medan perang."
+    },
+    {
+        "id": 39,
+        "anime": "Naruto",
+        "chara": "Genma Shiranui",
+        "quote": "The power to believe in your self.. That becomes the power that changes destiny."
+    },
+    {
+        "id": 40,
+        "anime": "One Piece",
+        "chara": "Tom",
+        "quote": "Ubahlah yang tidak mungkin menjadi mungkin, kalau kau pria sejati berpegang teguhlah pada hal itu."
+    },
+    {
+        "id": 41,
+        "anime": "Naruto",
+        "chara": "Shikamaru",
+        "quote": "Tenang, kuasai diri dan analisa situasi secara rasional. Pasti ada jalan keluar !!"
+    },
+    {
+        "id": 42,
+        "anime": "Guilty Crown",
+        "chara": "Ouma Shu",
+        "quote": "Ini mungkin kesempatan terakhirku untuk tidak membenci diriku sendiri."
+    },
+    {
+        "id": 43,
+        "anime": "Naruto",
+        "chara": "Madara",
+        "quote": "When you get to know love, you risk getting to know hate."
+    },
+    {
+        "id": 44,
+        "anime": "Naruto",
+        "chara": "Yamato",
+        "quote": "Memanjakan dan mengasihani itu berbeda."
+    },
+    {
+        "id": 45,
+        "anime": "To Love Ru",
+        "chara": "Haruna Sairenji",
+        "quote": "Kalau kita bekerjasama kita bisa melakukan apa saja, inilah gunanya teman."
+    },
+    {
+        "id": 46,
+        "anime": "Naruto",
+        "chara": "konan",
+        "quote": "Sebuah dunia tanpa cahaya hanya akan membuat bunga layu dan mati."
+    },
+    {
+        "id": 47,
+        "anime": "The Law of Ueki",
+        "chara": "Mori",
+        "quote": "Jangan memaksakan pemikiran egois mu kepada orang lain."
+    },
+    {
+        "id": 48,
+        "anime": "One Piece",
+        "chara": "Bellemere",
+        "quote": "Jangan lupakan kekuatan senyum, selama kau bertahan, banyak hal menyenangkan yang akan terjadi."
+    },
+    {
+        "id": 49,
+        "anime": "Naruto",
+        "chara": "Minato",
+        "quote": "Seorang ayah pasti punya banyak hal untuk dikatakan pada putranya."
+    },
+    {
+        "id": 50,
+        "anime": "One Piece",
+        "chara": "Bellemere",
+        "quote": "Apa pun yang terjadi, jangan pernah membenci saat kau dilahirkan."
+    },
+    {
+        "id": 51,
+        "anime": "Bleach",
+        "chara": "Ichigo",
+        "quote": "Apa kau tahu kenapa kakak lahir paling dulu? Itu untuk melindungi adik yang lahir setelahnya."
+    },
+    {
+        "id": 52,
+        "anime": "One Piece",
+        "chara": "Zoro",
+        "quote": "Jika kau terlalu takut untuk membuat kesalahan, kau tidak akan dapat melakukan apapun."
+    },
+    {
+        "id": 53,
+        "anime": "Bleach",
+        "chara": "Oomaeda",
+        "quote": "Kuberi tau sesuatu, jangan pernah menilai orang dari penampilannya."
+    },
+    {
+        "id": 54,
+        "anime": "Beelzebub",
+        "chara": "Oga Tatsumi",
+        "quote": "Ada kalanya seorang pria butuh berdiri untuk dirinya sendiri."
+    },
+    {
+        "id": 55,
+        "anime": "Naruto",
+        "chara": "Pain",
+        "quote": "Mempelajari masa lalu untuk memperkirakan masa depan. Itulah arti penting mengetahui sejarah."
+    },
+    {
+        "id": 56,
+        "anime": "Naruto",
+        "chara": "Sasori",
+        "quote": "Seni itu abadi dan akan selalu dikenang."
+    },
+    {
+        "id": 57,
+        "anime": "FMA",
+        "chara": "Edward",
+        "quote": "Hal yang sudah hilang tidak akan bisa dikembalikan lagi."
+    },
+    {
+        "id": 58,
+        "anime": "Kungfu Boy",
+        "chara": "Chinmi",
+        "quote": "Kepercayaan bukan dibuat tapi dilahirkan."
+    },
+    {
+        "id": 59,
+        "anime": "Bleach",
+        "chara": "Yumichika",
+        "quote": "Orang yang mengumpamakan kecantikan dengan cinta adalah orang yang tidak memahami sosok cinta."
+    },
+    {
+        "id": 60,
+        "anime": "Yu-Gi-Oh",
+        "chara": "Yugi",
+        "quote": "Sakit di tubuh lebih bisa kutahan daripada harus merasakan sakitnya mengkhianati teman."
+    },
+    {
+        "id": 61,
+        "anime": "One Piece",
+        "chara": "Brook",
+        "quote": "Tak ada Tuhan ataupun iblis yang akan menolong seseorang yang tak ingin berjuang untuk bertarung."
+    },
+    {
+        "id": 62,
+        "anime": "Rave Master",
+        "chara": "Let",
+        "quote": "Tidak ada perpisahan untuk teman sejati."
+    },
+    {
+        "id": 63,
+        "anime": "Death Note",
+        "chara": "Ryuk",
+        "quote": "Apa yang dilakukan manusia ketika dia hidup, itu pula yang dialaminya ketika mati."
+    },
+    {
+        "id": 64,
+        "anime": "One Piece",
+        "chara": "Shanks",
+        "quote": "Aku tidak akan pernah memaafkan seseorang yang telah menyakiti sahabatku."
+    },
+    {
+        "id": 65,
+        "anime": "Inuyasha",
+        "chara": "Kagome",
+        "quote": "Aku menyukaimu dengan rasa bukan dengan kata."
+    },
+    {
+        "id": 66,
+        "anime": "Naruto",
+        "chara": "Sakura",
+        "quote": "Aku akan selalu membantumu jadi tetaplah bersamaku."
+    },
+    {
+        "id": 67,
+        "anime": "Naruto",
+        "chara": "Chiyo",
+        "quote": "Laki-laki harus diam dan mendengarkan saat perempuan berbicara."
+    },
+    {
+        "id": 68,
+        "anime": "D. Conan",
+        "chara": "Ran to Shinichi",
+        "quote": "Tak perduli betapa sulitnya, aku tak akan melepaskanmu."
+    },
+    {
+        "id": 69,
+        "anime": "D. Conan",
+        "chara": "Ai Haibara",
+        "quote": "Uang tidak bisa membeli hati manusia."
+    },
+    {
+        "id": 70,
+        "anime": "D. Conan",
+        "chara": "Kaito Kid",
+        "quote": "Di dunia ini tidak ada penyihir yang ada hanyalah orang dengan tipu muslihat."
+    },
+    {
+        "id": 71,
+        "anime": "Ouran High School",
+        "chara": "Honey",
+        "quote": "Orang yang tidak bisa melindungi diri sendiri tidak akan bisa melindungi orang lain."
+    },
+    {
+        "id": 72,
+        "anime": "Black Butler",
+        "chara": "Sebastian",
+        "quote": "Yang namanya manusia itu kapan pun dan dimana pun sama saja."
+    },
+    {
+        "id": 73,
+        "anime": "Pandora Heart",
+        "chara": "Lotti",
+        "quote": "Manusia tidak akan bisa hidup tanpa melukai orang lain."
+    },
+    {
+        "id": 74,
+        "anime": "Mr. Fullswing",
+        "chara": "Okami",
+        "quote": "Seandainya temanmu jatuh ke jalan yang salah, beranikan dirimu dan tarik ia kembali ke duniamu."
+    },
+    {
+        "id": 75,
+        "anime": "Yu-Gi-Oh",
+        "chara": "Yugi",
+        "quote": "Benda berharga yang bisa dilihat tapi tidak kelihatan adalah sebuah persahabatan."
+    },
+    {
+        "id": 76,
+        "anime": "Gokusen",
+        "chara": "Naomi",
+        "quote": "Dunia ini tidak semudah yang kamu bayangkan, sekilas tampak indah, tapi akan penuh dengan rasa iri dan dengki."
+    },
+    {
+        "id": 77,
+        "anime": "Bleach",
+        "chara": "Kaien Shiba",
+        "quote": "Saat kamu bertarung,ada satu hal yang tidak boleh kamu lakukan,yaitu mati sendirian."
+    },
+    {
+        "id": 78,
+        "anime": "Naruto",
+        "chara": "Yashamaru",
+        "quote": "Hanya ada 1 yang bisa menyembukan luka hati dan hanya bisa di dapatkan dari orang lain yaitu rasa cinta."
+    },
+    {
+        "id": 79,
+        "anime": "Naruto",
+        "chara": "Yashamaru",
+        "quote": "Rasa cinta itu hati yang penuh rasa sayang dan pengabdian pada orang yang berharga yang ada di dekatmu."
+    },
+    {
+        "id": 80,
+        "anime": "Bleach",
+        "chara": "Isshin Kurosaki",
+        "quote": "Kau tidak bisa melindungi, lalu duduk dan menangis di sana?"
+    },
+    {
+        "id": 81,
+        "anime": "One Piece",
+        "chara": "Luffy",
+        "quote": "Sendirian itu rasanya lebih menderita daripada merasakan sakit !"
+    },
+    {
+        "id": 82,
+        "anime": "One Piece",
+        "chara": "Sengoku",
+        "quote": "Kalau hanya benteng masih bisa diperbaiki,tapi takkan kubiarkan keadilan yang bernama moral ini hancur."
+    },
+    {
+        "id": 83,
+        "anime": "One Piece",
+        "chara": "Mihawk",
+        "quote": "Ketika orang-orang membuang harga dirinya,itu pasti demi seseorang."
+    },
+    {
+        "id": 84,
+        "anime": "One Piece",
+        "chara": "Monkey D. Dragon",
+        "quote": "Tidak akan ada kebahagiaan dalam dunia yang membuang semua hal yang mereka anggap tidak perlu."
+    },
+    {
+        "id": 85,
+        "anime": "Code Geass",
+        "chara": "Leluoch",
+        "quote": "Hidup tanpa melakukan apapun, sama saja dengan kematian yang datang perlahan."
+    },
+    {
+        "id": 86,
+        "anime": "Code Geass",
+        "chara": "Lelouch",
+        "quote": "Aku tidak takut pada yang kuat, aku juga tidak iba pada yang lemah."
+    },
+    {
+        "id": 87,
+        "anime": "Air Gear",
+        "chara": "Onigiri",
+        "quote": "Jika kau seorang pria kau harus menjadi buas."
+    },
+    {
+        "id": 88,
+        "anime": "Naruto",
+        "chara": "Hinata",
+        "quote": "Aku selalu ingin berjalan disampingmu sepanjang waktu dan aku hanya ingin bersamamu."
+    },
+    {
+        "id": 89,
+        "anime": "Pandora Hearts",
+        "chara": "Oz Vessalius",
+        "quote": "Aku ingin tahu apa dosaku."
+    },
+    {
+        "id": 90,
+        "anime": "Rave Master",
+        "chara": "Musica",
+        "quote": "Aku merasa bangga jika harus mati demi menyelamatkan teman-temanku."
+    },
+    {
+        "id": 91,
+        "anime": "Kuroko No Basuke",
+        "chara": "Aomine Daiki",
+        "quote": "Satu-satunya yang bisa mengalahkanku adalah diriku sendiri."
+    },
+    {
+        "id": 92,
+        "anime": "Ano Natsu de Matteru",
+        "chara": "Kaito Kirishima",
+        "quote": "Even it's outer space. There must be a way. I'll come to you, I swear I will !"
+    },
+    {
+        "id": 93,
+        "anime": "Wedding Peach",
+        "chara": "Momoko",
+        "quote": "Mendoakan orang yang kita cintai agar selalu bahagia, itulah arti cinta sejati."
+    },
+    {
+        "id": 94,
+        "anime": "Bokura Ga Ita",
+        "chara": "Motoharu Yano",
+        "quote": "Sejak aku bertemu denganmu, aku merasa seperti, aku hidup untuk bertemu dengan dirimu."
+    },
+    {
+        "id": 95,
+        "anime": "Hunter X Hunter",
+        "chara": "Tompa",
+        "quote": "Memaksa orang lain bukanlah hal baik. Setiap orang memiliki prinsip hidup."
+    },
+    {
+        "id": 96,
+        "anime": "Naruto",
+        "chara": "Nagato",
+        "quote": "Bahkan hanya dengan hidup, manusia sudah melukai orang lain. Kebencian tetap ada selama ada manusia."
+    },
+    {
+        "id": 97,
+        "anime": "Naruto",
+        "chara": "Tayuya",
+        "quote": "Untuk mendapatkan sesuatu, kau harus rela mengorbankan sesuatu yang lain."
+    },
+    {
+        "id": 98,
+        "anime": "One Piece",
+        "chara": "Sanji",
+        "quote": "Seorang pria yang tidak bisa menghapus air mata dari seorang wanita bukanlah pria sejati."
+    },
+    {
+        "id": 99,
+        "anime": "Doraemon",
+        "chara": "Doraemon",
+        "quote": "Jangan menengok ke masa lalu terus, lebih baik belajar dari sekarang untuk masa depanmu."
+    },
+    {
+        "id": 100,
+        "anime": "The Law of Ueki",
+        "chara": "Ueki",
+        "quote": "Itu disebut mimpi jika kau memiliki orang-orang untuk merayakan mimpi itu bersama."
+    },
+    {
+        "id": 101,
+        "anime": "Naruto",
+        "chara": "Kakashi",
+        "quote": "Kalau rasa keadilanmu menurun berarti kau melemah, dibawah rasa keadilan tidak ada kelemahan apapun !"
+    },
+    {
+        "id": 102,
+        "anime": "Naruto",
+        "chara": "Fugaku Uchiha",
+        "quote": "Meski pola pikir kita berbeda, aku bangga pada mu. Kau adalah anak ku yang pemberani."
+    },
+    {
+        "id": 103,
+        "anime": "Eyeshield 21",
+        "chara": "Akaba Hayato",
+        "quote": "Seorang yang dikatakan kuat adalah orang yang tidak pernah menyerah dalam keadaan apapun."
+    },
+    {
+        "id": 104,
+        "anime": "D. Conan",
+        "chara": "Miwako Sato",
+        "quote": "Sekarang pun, kita sedang proses pembuatan kenangan. Untuk diingat hari esok, lusa, maupun masa depan."
+    },
+    {
+        "id": 105,
+        "anime": "Inuyasha",
+        "chara": "Kagome",
+        "quote": "Bila kegagalan itu bagai hujan dan keberhasilan bagaikan matahari, maka butuh keduanya untuk melihat pelangi."
+    },
+    {
+        "id": 106,
+        "anime": "D. Conan",
+        "chara": "Ran",
+        "quote": "Hatiku memang tak sejernih yang kau harapkan. Tapi aku bersedia mengorbankan segalanya."
+    },
+    {
+        "id": 107,
+        "anime": "Naruto",
+        "chara": "Itachi",
+        "quote": "Ketika kematian akan datang kepadamu, kau akan sadar siapa dirimu."
+    },
+    {
+        "id": 108,
+        "anime": "Beelzebub",
+        "chara": "Oga Tatsumi",
+        "quote": "Arti menjadi laki-laki adalah sekali kau menetapkan hatimu, kau tidak boleh mengingkarinya."
+    },
+    {
+        "id": 109,
+        "anime": "D. Conan",
+        "chara": "Sanjuro Tsurugi",
+        "quote": "Jalan yang kau tempuh, harus indah seperti bunga dan kuat seperti pohon."
+    },
+    {
+        "id": 110,
+        "anime": "One Piece",
+        "chara": "Sanji",
+        "quote": "Aku lebih baik mati dalam mencapai impian dari pada hidup sebagai pecundang yang gagal mewujudkan impian."
+    },
+    {
+        "id": 111,
+        "anime": "D. Conan",
+        "chara": "Ai Haibara",
+        "quote": "Semakin lama kau memberikan harapan padanya, kau akan semakin melukainya."
+    },
+    {
+        "id": 112,
+        "anime": "Naruto",
+        "chara": "Hyuuga Hinata",
+        "quote": "Kau gagal tetapi masih bisa mampu bangkit kembali, karena itu menurutku arti dari kuat yang sebenarnya."
+    },
+    {
+        "id": 113,
+        "anime": "D. Conan",
+        "chara": "Shinichi Kudo",
+        "quote": "Aku tidak ingin menjadi kenanganmu, tapi aku ingin menjadi masa depanmu."
+    },
+    {
+        "id": 114,
+        "anime": "Doraemon",
+        "chara": "Dekisugi",
+        "quote": "Setiap 1 detik berganti masa depan bisa berubah."
+    },
+    {
+        "id": 115,
+        "anime": "Naruto",
+        "chara": "Itachi",
+        "quote": "Orang yang tidak mengakui dirinya sendiri akan berakhir dengan kegagalan."
+    },
+    {
+        "id": 116,
+        "anime": "Naruto",
+        "chara": "Sasuke",
+        "quote": "I'm not a kid anymore, i can not afford to be a kid anymore."
+    },
+    {
+        "id": 117,
+        "anime": "Naruto",
+        "chara": "Shikaku Nara",
+        "quote": "Segalak apapun perempuan, dia akan memperlihatkan sisi lembutnya pada laki-laki yg di sukainya."
+    },
+    {
+        "id": 118,
+        "anime": "D. Conan",
+        "chara": "Ai Haibara",
+        "quote": "Selamat tinggal adalah kata-kata menyedihkan yang akan menusuk perasaan bersama."
+    },
+    {
+        "id": 119,
+        "anime": "The World God Only Knows",
+        "chara": "Katsuragi Keima",
+        "quote": "Idola sesungguhnya hanya idola di dunia game."
+    },
+    {
+        "id": 120,
+        "anime": "D. Conan",
+        "chara": "Genta Kojima",
+        "quote": "Ibuku sering bilang, kalau kita menyisakan 1 butir nasi saja, Tuhan akan menghukum kita."
+    },
+    {
+        "id": 121,
+        "anime": "Kungfu Boy",
+        "chara": "Chinmi",
+        "quote": "Jadilah seperti bambu, karna semakin kencang angin yang menerjang maka akan semakin lentur pula ia."
+    },
+    {
+        "id": 122,
+        "anime": "Samurai-X",
+        "chara": "Sanosuke Sagara",
+        "quote": "Rasa \"Cinta\" dan \"Keras kepala\" itu sulit dipisahkan."
+    },
+    {
+        "id": 123,
+        "anime": "Crayon Shinchan",
+        "chara": "Misae",
+        "quote": "Jangan melempar kesalahan pada orang lain, itu bukan laki-laki namanya."
+    },
+    {
+        "id": 124,
+        "anime": "Death Note",
+        "chara": "L",
+        "quote": "Mempertaruhkan nyawa dan membuang nyawa adalah 2 hal yang sangat berbeda !!"
+    },
+    {
+        "id": 125,
+        "anime": "Eyeshield 21",
+        "chara": "Mr. Don",
+        "quote": "Orang yang terus mengulang kesalahan yang sama tidak bisa disebut manusia. Kau hanya binatang buas."
+    },
+    {
+        "id": 126,
+        "anime": "Tsubasa Reservoir Chronicle",
+        "chara": "Syaoran",
+        "quote": "Aku pasti akan melakukan apa yang telah aku tetapkan !"
+    },
+    {
+        "id": 127,
+        "anime": "Gundam Seed",
+        "chara": "Lacus Clyne",
+        "quote": "Tidak apa-apa menangis.. Kita boleh menangis, disaat memang harus menangis."
+    },
+    {
+        "id": 128,
+        "anime": "Bleach",
+        "chara": "Jushiro Ukitake",
+        "quote": "Saat seseorang tumbuh dewasa, mereka akan bersinar hingga yang tua teralih pandangannya."
+    },
+    {
+        "id": 129,
+        "anime": "Shaman King",
+        "chara": "Yoh Asakura",
+        "quote": "Perjuangkanlah sesuatu yang menurutmu berharga."
+    },
+    {
+        "id": 130,
+        "anime": "Death Note",
+        "chara": "Kira",
+        "quote": "Aku tak percaya pada semuanya, karena aku percaya aku mampu."
+    },
+    {
+        "id": 131,
+        "anime": "Naruto",
+        "chara": "Jiraiya",
+        "quote": "Aku bukan sekedar orang mesum biasa ! Mengintip memberiku inspirasi untuk membuat karya baru."
+    },
+    {
+        "id": 132,
+        "anime": "Eyeshield 21",
+        "chara": "Akaba Hayato",
+        "quote": "Jika cara pertama tidak berhasil, cobalah cara lainnya dan jangan pernah berkata tidak bisa."
+    },
+    {
+        "id": 133,
+        "anime": "Kara no Kyoukai",
+        "chara": "Kokutou",
+        "quote": "Sakit bukanlah sesuatu tanggungan, sakit adalah sesuatu yang harus di bicarakan !"
+    },
+    {
+        "id": 134,
+        "anime": "Bleach",
+        "chara": "Ukitake",
+        "quote": "Friends are a good thing, even if they tread a different path."
+    },
+    {
+        "id": 135,
+        "anime": "Q.E.D",
+        "chara": "Sou Touma",
+        "quote": "Zaman bisa terus berubah, tekhnologi bisa bertambah canggih, tapi manusia akan tetap menjadi manusia !"
+    },
+    {
+        "id": 136,
+        "anime": "Clannad After Story",
+        "chara": "Okazaki",
+        "quote": "From the day we met, we've hung out ever since. And even now.. We're still smiling."
+    },
+    {
+        "id": 137,
+        "anime": "One Piece",
+        "chara": "Kizaru",
+        "quote": "Menang atau kalah ditentukan oleh kelengahan sesaat."
+    },
+    {
+        "id": 138,
+        "anime": "The Great D. Kiyoshiro Yumemizu",
+        "chara": "Kiyoshiro Yumemizu",
+        "quote": "Semua jadi kacau karena sikap manusia yang semaunya sendiri."
+    },
+    {
+        "id": 139,
+        "anime": "Black Butler",
+        "chara": "Ciel Phantomhive",
+        "quote": "Berputus asa, mengeluh, berdiam diri apa gunanya? Kalau berdiam diri, mayat juga bisa."
+    },
+    {
+        "id": 140,
+        "anime": "Steins;Gate",
+        "chara": "Okabe",
+        "quote": "Teori hanya kumpulan kata-kata yang mmpengaruhi pikiran."
+    },
+    {
+        "id": 141,
+        "anime": "Fairy Tail",
+        "chara": "Erza Scarlet",
+        "quote": "Jika kau memiliki rasa cinta maka tetaplah hidup."
+    },
+    {
+        "id": 142,
+        "anime": "D. Conan",
+        "chara": "Kaito Kid",
+        "quote": "Dari pada tidak percaya dan mati, lebih baik mati dan percaya."
+    },
+    {
+        "id": 143,
+        "anime": "AKB0048",
+        "chara": "Hikaru Kimishima",
+        "quote": "Mimpi yang sempurna hanya cocok dengan cerita dongeng."
+    },
+    {
+        "id": 144,
+        "anime": "D. Conan",
+        "chara": "Taichi Tanizawa",
+        "quote": "Kenyataan lebih menakjubkan dari pada sebuah cerita."
+    },
+    {
+        "id": 145,
+        "anime": "One Piece",
+        "chara": "Luffy",
+        "quote": "Tidak perlu berterimakasih, karna terima kasih tidak dapat dimakan."
+    },
+    {
+        "id": 146,
+        "anime": "Dakara Boku Wa",
+        "chara": "Ryosuke Kaga",
+        "quote": "Gadis-gadis adalah harta karun, jadi aku harus melindungi mereka."
+    },
+    {
+        "id": 147,
+        "anime": "Accel world",
+        "chara": "Seiji Noumi",
+        "quote": "Bertarung untuk sesuatu adalah aturan dasar dari dunia ini."
+    },
+    {
+        "id": 148,
+        "anime": "Accel World",
+        "chara": "Haruyuki",
+        "quote": "Imajinasi berasal dari kecepatan dan bukan kekuatan."
+    },
+    {
+        "id": 149,
+        "anime": "ToTo",
+        "chara": "Lion",
+        "quote": "Membuat satu wanita yang kita cintai tersenyum sudah cukup bagiku."
+    },
+    {
+        "id": 150,
+        "anime": "Beelzebub",
+        "chara": "Oga",
+        "quote": "Dahulu kala di suatu tempat, ada pria tampan, keren, populer, sangat dihormati, seorang anak muda, itulah aku."
+    },
+    {
+        "id": 151,
+        "anime": "Pandora Heart",
+        "chara": "Xerxes Break",
+        "quote": "selalu seperti apa yang kau harapkan."
+    },
+    {
+        "id": 152,
+        "anime": "Tsubasa Reservoir Chronicle",
+        "chara": "Syaoran",
+        "quote": "Aku akan menjadi kuat untuk orang yang aku cintai."
+    },
+    {
+        "id": 153,
+        "anime": "Beelzebub",
+        "chara": "Furuichi",
+        "quote": "Semoga aku mendapatkan seberkas cinta ketika nyawaku terancam."
+    },
+    {
+        "id": 154,
+        "anime": "Black Butler",
+        "chara": "Ciel Phantomhive",
+        "quote": "Jika kau mulai bersikap jujur, aku yakin kau akan mendapatkan kembali kepercayaan semuanya."
+    },
+    {
+        "id": 155,
+        "anime": "Kuroko No Basuke",
+        "chara": "Aomine Daiki",
+        "quote": "Jika kau belum berubah, artinya kau belum berkembang."
+    },
+    {
+        "id": 156,
+        "anime": "Fairy Tail",
+        "chara": "Gray",
+        "quote": "Tidak perlu mengubah masa lalu, sebab masa lalu adalah bagian dari kita yang sekarang."
+    },
+    {
+        "id": 157,
+        "anime": "Rave Master",
+        "chara": "Haru Glory",
+        "quote": "Kebenaran tidak berada diantara cahaya atau kegalapan tapi ada didalam dada."
+    },
+    {
+        "id": 158,
+        "anime": "TWGOK",
+        "chara": "Keima Katsuragi",
+        "quote": "Hiduplah dengan yakin dan bahagia karna ada beberapa orang tidak bisa melakukannya."
+    },
+    {
+        "id": 159,
+        "anime": "Air Gear",
+        "chara": "Rika Noyamano",
+        "quote": "Semakin tinggi kau terbang maka semakin sakit pula jika kau terjatuh."
+    },
+    {
+        "id": 160,
+        "anime": "Ona Piece",
+        "chara": "Luffy",
+        "quote": "Jangan takut untuk bermimpi, karna mimpi adalah tempat menanam benih harapan dan memetakan cita- cita."
+    },
+    {
+        "id": 161,
+        "anime": "Inuyasha",
+        "chara": "Kagome",
+        "quote": "Aku tidak tahu sampai kapan usiaku, tapi aku tahu cintaku selamanya untukmu."
+    },
+    {
+        "id": 162,
+        "anime": "Naruto",
+        "chara": "Asuma Sarutobi",
+        "quote": "Saatnya mengubah kebaikanmu menjadi kekuatan"
+    },
+    {
+        "id": 163,
+        "anime": "D. Conan",
+        "chara": "Shinichi Kudo",
+        "quote": "Aku bukan ingin menjadi kenanganmu. Tapi aku ingin menjadi masa depanmu."
+    },
+    {
+        "id": 164,
+        "anime": "Kekkaishi",
+        "chara": "Yoshimori",
+        "quote": "Aku akan melakukan apapun yang aku bisa, selama aku masih hidup."
+    },
+    {
+        "id": 165,
+        "anime": "City Hunter",
+        "chara": "Ryo Saeba",
+        "quote": "Hanya orang bodoh yang mati demi cinta, aku akan bertahan hidup untuk cinta."
+    },
+    {
+        "id": 166,
+        "anime": "Bakemonogatari",
+        "chara": "Senjougahara",
+        "quote": "Saat ini yang aku takuti adalah kehilangan dirimu."
+    },
+    {
+        "id": 167,
+        "anime": "Sailor Moon",
+        "chara": "Tsukino Usagi",
+        "quote": "Bertempur bukan satu-satunya cara untuk menyelesaikan sesuatu."
+    },
+    {
+        "id": 168,
+        "anime": "Bleach",
+        "chara": "Sajin Komamura",
+        "quote": "Tampaknya aku telah salah membaca hatimu, jika barusan itu perasaan aslimu berarti kita tdk cocok."
+    },
+    {
+        "id": 169,
+        "anime": "Steins;Gate",
+        "chara": "Itaru",
+        "quote": "Ada dua jenis kebohongan : Kebohongan yang menyakitkan dan kebohongan yang tidak menyakiti."
+    },
+    {
+        "id": 170,
+        "anime": "Kyo Kara Maoh!",
+        "chara": "Murata Ken",
+        "quote": "Masa lalu adalah masa lalu kita tdk bs memanjakan diri kita dlm kenangan &amp; menghancurkan masa kini."
+    },
+    {
+        "id": 171,
+        "anime": "D. Conan",
+        "chara": "Conan",
+        "quote": "Jika kau tetap sembunyi seperti ini kau bisa lolos dr polisi, namun kau tdk akan pernah lepas dr kejahatanmu."
+    },
+    {
+        "id": 172,
+        "anime": "Vampire Knight",
+        "chara": "Kuran Kaname",
+        "quote": "Apa yang indah bukanlah dunia, tetapi matamu yang mempunyai keindahan itu."
+    },
+    {
+        "id": 173,
+        "anime": "Yu Yu Hakusho",
+        "chara": "Genkai",
+        "quote": "Aku bukan seorang petarung yang baik, aku hanya benci orang-orang yang jahat."
+    },
+    {
+        "id": 174,
+        "anime": "Sailor Moon",
+        "chara": "Mamoru Chiba",
+        "quote": "Kamu harus percaya pada dirimu sendiri, ikuti jalanmu tanpa rasa takut."
+    },
+    {
+        "id": 175,
+        "anime": "Fruits Basket",
+        "chara": "Sohma Hatsuharu",
+        "quote": "Kebaikan sejati bukan muncul dengan sendirinya, ini sesuatu yang harus kita kerjakan sendiri."
+    },
+    {
+        "id": 176,
+        "anime": "Soul Eater",
+        "chara": "Death The Kid",
+        "quote": "Aku akan terus berjuang sampai dunia ini mengikuti jalan yang seharusnya, sampai dunia ini seimbang."
+    },
+    {
+        "id": 177,
+        "anime": "Sailor Moon",
+        "chara": "Mizuno Ami",
+        "quote": "Masa depan adalah sesuatu yang kau buat sendiri."
+    },
+    {
+        "id": 178,
+        "anime": "Saiyuki",
+        "chara": "Cho Hakkai",
+        "quote": "Menyesal adalah cara orang bodoh menghabiskan waktu."
+    },
+    {
+        "id": 179,
+        "anime": "Fairy Tail",
+        "chara": "Elfman",
+        "quote": "Pria sejati tidak pernah takut untuk meneteskan air mata."
+    },
+    {
+        "id": 180,
+        "anime": "Bleach",
+        "chara": "Koga Gou",
+        "quote": "Tekad kuat dibutuhkan untuk kekuatan besar."
+    },
+    {
+        "id": 181,
+        "anime": "Bleach",
+        "chara": "Ishida",
+        "quote": "Aku senang melihat kau akhirnya menyadari pentingnya sebuah akhir."
+    },
+    {
+        "id": 182,
+        "anime": "Gintama",
+        "chara": "Gintoki",
+        "quote": "Kau tidak bisa melarikan diri, terutama dari hal yang ingin kau lupakan."
+    },
+    {
+        "id": 183,
+        "anime": "Bleach",
+        "chara": "Kaien Shiba",
+        "quote": "Dimana hatimu berada di sanalah tempatmu seharusnya berada."
+    },
+    {
+        "id": 184,
+        "anime": "Fairy Tail",
+        "chara": "Natsu",
+        "quote": "Pada akhirnya waktu hanya menyediakan 2 jawaban, kebahagiaan dan kesedihan."
+    },
+    {
+        "id": 185,
+        "anime": "Naruto",
+        "chara": "Tobi",
+        "quote": "Selama ada kata pemenang disitu juga ada kata pecundang, dimanapun ada cahaya maka disitu juga ada bayangan."
+    },
+    {
+        "id": 186,
+        "anime": "Toradora",
+        "chara": "Aisaka Taiga",
+        "quote": "Hal yang paling kau inginkan adalah sesuatu yang tak akan kau dapatkan."
+    },
+    {
+        "id": 187,
+        "anime": "Naruto",
+        "chara": "Madara",
+        "quote": "Anak kecil adalah mereka yang terburu-buru dan tak bisa menunggu."
+    },
+    {
+        "id": 188,
+        "anime": "Code Breaker",
+        "chara": "Sakurakouji Sakura",
+        "quote": "Siapapun kau, sesulit apapun itu, tetaplah berjuang untuk hidup."
+    },
+    {
+        "id": 189,
+        "anime": "Gintama",
+        "chara": "Gintoki",
+        "quote": "Tidak seperti yang kalian pikirkan, cinta itu tidak akan lekang di makan zaman dan aku akan menunjukkannya."
+    },
+    {
+        "id": 190,
+        "anime": "Namida Usagi",
+        "chara": "Moa",
+        "quote": "Bagaimanapun orang lebih melihat orang disampingnya dari pada yang jauh."
+    },
+    {
+        "id": 191,
+        "anime": "Fruits Basket",
+        "chara": "Tohru Honda",
+        "quote": "Hal yang paling menyakitkan adalah dibenci oleh seseorang yang benar-benar anda cintai."
+    },
+    {
+        "id": 192,
+        "anime": "GTO",
+        "chara": "Onizuka",
+        "quote": "Terkadang kekerasan adalah satu satunya cara untuk mendapatkan pesan yang tidak tersampaikan."
+    },
+    {
+        "id": 193,
+        "anime": "Death Note",
+        "chara": "L",
+        "quote": "Belajar untuk menghargai hidupmu, karena suatu hari nanti itu bisa direnggut darimu kapan saja."
+    },
+    {
+        "id": 194,
+        "anime": "The Law of Ueki",
+        "chara": "Ueki",
+        "quote": "Apa artinya kebahagiaan kalau kau tidak bisa membaginya dengan orang lain."
+    },
+    {
+        "id": 195,
+        "anime": "Naruto",
+        "chara": "Shikamaru",
+        "quote": "Lebih baik aku mengalah dan kalah, dari pada aku harus melukai seorang wanita."
+    },
+    {
+        "id": 196,
+        "anime": "Fairy Tail",
+        "chara": "Lucy",
+        "quote": "Jangan gunakan waktumu untuk mengeluh."
+    },
+    {
+        "id": 197,
+        "anime": "Death Note",
+        "chara": "L",
+        "quote": "Terkadang kita tidak tau bahwa orang dekat kita adalah musuh walau kita sudah menduga nya."
+    },
+    {
+        "id": 198,
+        "anime": "Get Backers",
+        "chara": "Midou Ban",
+        "quote": "Larut dalam masa lalu tidak akan menyelesaikan apa2, malah membuang masa depan sendiri dengan sia2."
+    },
+    {
+        "id": 199,
+        "anime": "Naruto",
+        "chara": "Yamanaka Ino",
+        "quote": "Kalau kau tetap cengeng, kau tidak akan bisa jadi dewasa."
+    },
+    {
+        "id": 200,
+        "anime": "Sword Art Online",
+        "chara": "Suguha",
+        "quote": "Aku tak bisa membohongi diriku sendiri lagi."
+    },
+    {
+        "id": 201,
+        "anime": "Sword Art Online",
+        "chara": "Suguha",
+        "quote": "Kau tak boleh menyerah seperti itu untuk menggapai kembali orang yang kau cintai."
+    },
+    {
+        "id": 202,
+        "anime": "CCS",
+        "chara": "Syaoran Li",
+        "quote": "Bahkan jika aku kehilangan perasaan ini, aku yakin aku hanya akan jatuh cinta denganmu lagi."
+    },
+    {
+        "id": 203,
+        "anime": "Bleach",
+        "chara": "Ichigo",
+        "quote": "We have to acknowledge each other's existence and accept one another."
+    },
+    {
+        "id": 204,
+        "anime": "Bleach",
+        "chara": "Komamura",
+        "quote": "Aku akan jadi tempatmu bergantung saat kau dalam kesulitan."
+    },
+    {
+        "id": 205,
+        "anime": "Doraemon",
+        "chara": "Nobita",
+        "quote": "Kitalah yang menentukan akan jadi seperti apa dunia ini."
+    },
+    {
+        "id": 206,
+        "anime": "Naruto",
+        "chara": "Madara",
+        "quote": "Kekalahan bukanlah pilihan tapi kau harus terus mencobanya !!"
+    },
+    {
+        "id": 207,
+        "anime": "Eyeshield 21",
+        "chara": "Hiruma",
+        "quote": "Selama masih belum 0%, segalanya masih mungkin."
+    },
+    {
+        "id": 208,
+        "anime": "Naruto",
+        "chara": "Guy",
+        "quote": "All your hard work will prove worthless. Unless you believe in yourself."
+    },
+    {
+        "id": 209,
+        "anime": "Code Geass",
+        "chara": "Lelouch",
+        "quote": "Dunia tidak dapat diubah hanya dengan kata kata indah saja."
+    },
+    {
+        "id": 210,
+        "anime": "Naruto",
+        "chara": "Itachi",
+        "quote": "Orang yang mengkhianati temannya, akan mati mengenaskan."
+    },
+    {
+        "id": 211,
+        "anime": "Naruto",
+        "chara": "Itachi",
+        "quote": "Kau tidak perlu memaafkanku, apapun yang kau lakukan aku akan tetap menyayangimu."
+    },
+    {
+        "id": 212,
+        "anime": "Arcana Famiglia",
+        "chara": "Debito",
+        "quote": "Aku tidak suka mengecewakan seorang wanita."
+    },
+    {
+        "id": 213,
+        "anime": "Bleach",
+        "chara": "Rose",
+        "quote": "Seni dan sulap memang mirip, tapi mereka berbeda."
+    },
+    {
+        "id": 214,
+        "anime": "Bleach",
+        "chara": "Hitsugaya",
+        "quote": "Di balik tawa, kematian mengancam."
+    },
+    {
+        "id": 215,
+        "anime": "Persona 4",
+        "chara": "Naoto Shirogane",
+        "quote": "Walaupun jarak memisahkan kita, setidaknya kau tahu aku disini menunggumu."
+    },
+    {
+        "id": 216,
+        "anime": "Fruits Basket",
+        "chara": "Tohru Honda",
+        "quote": "Selama kau masih punya harapan untuk hidup. Selama itu pula impianmu akan terus dibuat."
+    },
+    {
+        "id": 217,
+        "anime": "One Piece",
+        "chara": "Kurohige",
+        "quote": "Impian manusia takkan pernah berakhir !!"
+    },
+    {
+        "id": 218,
+        "anime": "Eyeshield 21",
+        "chara": "Riku",
+        "quote": "Di dalam sebuah pertandingan hanya ada 2 kemungkinan yaitu menjadi pemenang atau menjadi pecundang."
+    },
+    {
+        "id": 219,
+        "anime": "Bleach",
+        "chara": "Ulquiorra",
+        "quote": "Karena \"hati\" lah manusia merasakan sakit."
+    },
+    {
+        "id": 220,
+        "anime": "Samurai-X",
+        "chara": "Kenshin Himura",
+        "quote": "Jika hidup ini tidak menarik, maka buatlah hidup ini semenarik mungkin.."
+    },
+    {
+        "id": 221,
+        "anime": "Naruto",
+        "chara": "Gaara",
+        "quote": "Obat untuk hati yang terluka adalah kasih sayang."
+    },
+    {
+        "id": 222,
+        "anime": "D. Conan",
+        "chara": "Ran",
+        "quote": "Jadilah perempuan yang kuat dan tegar, yang tak mudah disakiti laki-laki."
+    },
+    {
+        "id": 223,
+        "anime": "Bleach",
+        "chara": "Ichigo",
+        "quote": "Yang mati atau ditinggal mati, dua-duanya sama-sama kesepian."
+    },
+    {
+        "id": 224,
+        "anime": "One Piece",
+        "chara": "Brook",
+        "quote": "Bolehkah aku melihat pakaian dalam mu nona."
+    },
+    {
+        "id": 225,
+        "anime": "Fairy Tail",
+        "chara": "Gildarts",
+        "quote": "Ketakutan bukanlah sesuatu yang jahat, itu untuk membuatmu mengetahui kelemahanmu sendiri."
+    },
+    {
+        "id": 226,
+        "anime": "D. Conan",
+        "chara": "Ai Haibara",
+        "quote": "Waktu dan hati manusia akan sejalan. Semakin lama berlalu semakin pergi jauh."
+    },
+    {
+        "id": 227,
+        "anime": "Naruto",
+        "chara": "Jiraya",
+        "quote": "Terkadang kita disudutkan diantara dua pilihan."
+    },
+    {
+        "id": 228,
+        "anime": "Naruto",
+        "chara": "Kakashi",
+        "quote": "Mimpi adalah hal yang nantinya akan jadi kenyataan."
+    },
+    {
+        "id": 229,
+        "anime": "Trouble Chocolate",
+        "chara": "Cacao",
+        "quote": "Kecil itu melengkapi yang besar."
+    },
+    {
+        "id": 230,
+        "anime": "The Law of Ueki",
+        "chara": "Ueki",
+        "quote": "Jika tidak mempunyai bakat, tinggal tambah usaha untuk menutupinya. Tidak masalah sama sekali kan."
+    },
+    {
+        "id": 231,
+        "anime": "Naruto",
+        "chara": "Kakashi",
+        "quote": "Aku tersesat di jalan yang bernama kehidupan."
+    },
+    {
+        "id": 232,
+        "anime": "One Piece",
+        "chara": "Zoro",
+        "quote": "Jika keajaiban itu tidak berpihak kepada kita, maka kita sendiri yang akan membuat keajaiban itu."
+    },
+    {
+        "id": 233,
+        "anime": "Flame of Recca",
+        "chara": "Recca",
+        "quote": "Selalu ada kemungkinan untuk memperoleh apa yang kau inginkan."
+    },
+    {
+        "id": 234,
+        "anime": "One Piece",
+        "chara": "Nico Robin",
+        "quote": "Banyak orang ingin melupakan masa lalu, tapi sedikit orang yang belajar dari masa lalu."
+    },
+    {
+        "id": 235,
+        "anime": "Bakuman",
+        "chara": "Mashiro Moritaka",
+        "quote": "Cinta adalah peristiwa terbesar yang pernah dialami oleh makhluk hidup."
+    },
+    {
+        "id": 236,
+        "anime": "Fairy Tail",
+        "chara": "Jellal",
+        "quote": "Kebencian mampu merenggut kebebasan diri sendiri dan kebencian tersebut akan menggerogoti dirimu."
+    },
+    {
+        "id": 237,
+        "anime": "Soul Eater",
+        "chara": "Maka",
+        "quote": "Kita mungkin merasa takut, tapi itulah yang membuat kita lebih kuat."
+    },
+    {
+        "id": 238,
+        "anime": "One Piece",
+        "chara": "Luffy",
+        "quote": "Aku tak pernah berkata selamat tinggal, karena kita pasti akan berjumpa lagi."
+    },
+    {
+        "id": 239,
+        "anime": "D. Conan",
+        "chara": "Sinichi Kudo",
+        "quote": "Dalam analisis tidak ada kata menang kalah atau atas dan bawah karena kenyataan senantiasa hanya satu."
+    },
+    {
+        "id": 240,
+        "anime": "D. Conan",
+        "chara": "Heiji",
+        "quote": "Meskipun kau bisa sulap, bersiaplah dosamu tak akan bisa hilang semudah sulap."
+    },
+    {
+        "id": 241,
+        "anime": "Hai Miiko",
+        "chara": "Miiko",
+        "quote": "Aku ingin.. Kita selalu bersama, tapi tidak mungkin kan?"
+    },
+    {
+        "id": 242,
+        "anime": "One Piece",
+        "chara": "Ace",
+        "quote": "Aku hanya ingin jawaban \"APA BOLEH AKU TERLAHIR KE DUNIA INI\"??"
+    },
+    {
+        "id": 243,
+        "anime": "Crayon Shinchan",
+        "chara": "Shinchan",
+        "quote": "Sesuatu yang tidak kelihatan itu menakutkan."
+    },
+    {
+        "id": 244,
+        "anime": "Code Geass",
+        "chara": "C.C",
+        "quote": "Air mata palsu bisa menyakiti orang lain. Tapi senyuman palsu hanya akan menyakiti dirimu sendiri."
+    },
+    {
+        "id": 245,
+        "anime": "Hunter X Hunter",
+        "chara": "Kuroro Lucifer",
+        "quote": "Laba-laba tidak akan mati walau kepalanya terputus."
+    },
+    {
+        "id": 246,
+        "anime": "The Law of Ueki",
+        "chara": "Ueki",
+        "quote": "Lakukanlah apa yang seharusnya kau lakukan."
+    },
+    {
+        "id": 247,
+        "anime": "Eyeshield 21",
+        "chara": "Hiruma",
+        "quote": "Tidak ada orang yang tidak bisa dikalahkan."
+    },
+    {
+        "id": 248,
+        "anime": "Digimon",
+        "chara": "Tentomon",
+        "quote": "It's sad to think that someone could be so depressed it takes over their entire life."
+    },
+    {
+        "id": 249,
+        "anime": "Fighting Spirit",
+        "chara": "Kamogawa Genji",
+        "quote": "Hard work may not always pay off, but people who succeed worked hard."
+    },
+    {
+        "id": 250,
+        "anime": "Bleach",
+        "chara": "Senbonzakura",
+        "quote": "No one should be able to spy on people's private lives."
+    },
+    {
+        "id": 251,
+        "anime": "Bleach",
+        "chara": "Hitsugaya",
+        "quote": "Don't play dumb with me, you're ditching work again."
+    },
+    {
+        "id": 252,
+        "anime": "Bleach",
+        "chara": "Ichigo",
+        "quote": "We all make mistakes. You just have to accept what happened and fix what you can."
+    },
+    {
+        "id": 253,
+        "anime": "Kimi ni Todoke",
+        "chara": "Sawako Kuronuma",
+        "quote": "Kupikir ini adalah hal yang normal jika ingin terus bersamamu."
+    },
+    {
+        "id": 254,
+        "anime": "Kyoukai Senjou no Horizon",
+        "chara": "Honda Futayo",
+        "quote": "Kesetiaan hanya diberikan makna melalui tindakan seseorang."
+    },
+    {
+        "id": 255,
+        "anime": "Samurai-X",
+        "chara": "Kenshin Himura",
+        "quote": "The true answer comes not by fighting but by living your life, as you atone for your sins."
+    },
+    {
+        "id": 256,
+        "anime": "Bleach",
+        "chara": "Hitsugaya",
+        "quote": "Oh for the love of i never told you to follow me."
+    },
+    {
+        "id": 257,
+        "anime": "Naruto",
+        "chara": "Gaara",
+        "quote": "Kedamaian dalam ilusi hanyalah tipuan. Perjuangan di dunia nyatalah yang membuatnya berarti."
+    },
+    {
+        "id": 258,
+        "anime": "Gintama",
+        "chara": "Okita Sougo",
+        "quote": "Di dunia ini, ada hal-hal yang harus dilindungi walaupun tangan kita sampai berlumuran darah."
+    },
+    {
+        "id": 259,
+        "anime": "Gintama",
+        "chara": "Kondou Isao",
+        "quote": "Aku mungkin seorang pencuri, tetapi aku hanya mencuri cinta."
+    },
+    {
+        "id": 260,
+        "anime": "D. Gray-man",
+        "chara": "Allen Walker",
+        "quote": "Tidak peduli apa yg terjadi, aku akan tetap bergerak. Sampai hidup ini pergi dariku, aku akan tetap berjalan."
+    },
+    {
+        "id": 261,
+        "anime": "Eyeshield 21",
+        "chara": "Kongo Agon",
+        "quote": "Berjuang mati-matian sampai menjadi yang terhebat itu menyenangkan."
+    },
+    {
+        "id": 262,
+        "anime": "Pure Love Junky",
+        "chara": "Mana",
+        "quote": "Untuk bisa akrab harus dimulai dari senyuman."
+    },
+    {
+        "id": 263,
+        "anime": "Angel Voice",
+        "chara": "Yuya",
+        "quote": "Di mana pun aku berada, aku selalu mendoa kan kebahagiaanmu."
+    },
+    {
+        "id": 264,
+        "anime": "Angel Beats",
+        "chara": "Otonashi",
+        "quote": "Hidup itu berharga, seberapa buruk itu dan orang akan sadar sesuatu itu berharga setelah kehilangannya."
+    },
+    {
+        "id": 265,
+        "anime": "Gundam 00",
+        "chara": "Lockon Stratos",
+        "quote": "Satu-satunya yang dapat mengubah masa lalu adalah bagaimana Anda merasakan hal itu di masa kini."
+    },
+    {
+        "id": 266,
+        "anime": "Eyeshield 21",
+        "chara": "Hiruma",
+        "quote": "Penghargaan terbaik bukan hadiah tapi kejayaan dari kemenangan itu sendiri."
+    },
+    {
+        "id": 267,
+        "anime": "Samurai Deeper Kyo",
+        "chara": "Yukimura",
+        "quote": "Jarak antara hidup dan mati itu setipis kertas. Artinya 'kehidupan' adalah kenyataan."
+    },
+    {
+        "id": 268,
+        "anime": "Ouran High School",
+        "chara": "Kyoya Ottory",
+        "quote": "Pemenang adalah orang yang dapat memanfaatkan teman atau lawan disaat kondisi yang tepat."
+    },
+    {
+        "id": 269,
+        "anime": "Eureka7",
+        "chara": "Euruka",
+        "quote": "Seberapa jauh pun kau melangkah, Seberapa kuat pun kau berusaha, Masa Lalu, akan tetap mengejar mu."
+    },
+    {
+        "id": 270,
+        "anime": "Kuro Shitsuji",
+        "chara": "Ciel Phantomhive",
+        "quote": "Pengalaman yang memiliki luka akan menjadi suatu pelajaran yang baik."
+    },
+    {
+        "id": 271,
+        "anime": "K-ON !",
+        "chara": "Mio Akiyama",
+        "quote": "Jangan banyak mengeluh jika kamu ingin bisa."
+    },
+    {
+        "id": 272,
+        "anime": "K-ON !",
+        "chara": "Nodoka",
+        "quote": "Tak perlu ragu jika kamu bisa."
+    },
+    {
+        "id": 273,
+        "anime": "One Piece",
+        "chara": "Sanji",
+        "quote": "Seorang koki sejati itu tidak akan membuang-buang bahan makanan yang tersisa."
+    },
+    {
+        "id": 274,
+        "anime": "D. Conan",
+        "chara": "Kaito Kid",
+        "quote": "Biarlah rahasia tetap menjadi rahasia."
+    },
+    {
+        "id": 275,
+        "anime": "Bakuman",
+        "chara": "Nobuhiro Mashiro",
+        "quote": "Dia adalah alasan kenapa aku bekerja keras dan aku merasa dia sedang melihatku."
+    },
+    {
+        "id": 276,
+        "anime": "One Piece",
+        "chara": "Buggy",
+        "quote": "Musuh kemarin adalah adalah teman hari ini."
+    },
+    {
+        "id": 277,
+        "anime": "Katekyo Hitman Reborn",
+        "chara": "Mammon",
+        "quote": "Siapapun yang ragu akan kemenangan mereka dirinya akan hancur !"
+    },
+    {
+        "id": 278,
+        "anime": "Fairy Tail",
+        "chara": "Perihito",
+        "quote": "Orang-orang berkata kesalahan akan menjadi pengalaman, tanpa kesalahan tidak ada pengalaman yang di peroleh."
+    },
+    {
+        "id": 279,
+        "anime": "Rio: Rainbow Gate",
+        "chara": "Rosa Canyon",
+        "quote": "Menang hanyalah masalah waktu dan kekalahan adalah bagian dari pengalaman."
+    },
+    {
+        "id": 280,
+        "anime": "Break Blade",
+        "chara": "Baldr",
+        "quote": "Kesedihan merupakan bagian dari kehidupan."
+    },
+    {
+        "id": 281,
+        "anime": "Death Note",
+        "chara": "Light",
+        "quote": "Kadang segalanya butuh pengorbanan."
+    },
+    {
+        "id": 282,
+        "anime": "One Piece",
+        "chara": "Dorry",
+        "quote": "Melarikan diri dari pertempuran yang sudah dimulai,sama dengan lari dari kesempatan menjadi pahlawan."
+    },
+    {
+        "id": 283,
+        "anime": "Bleach",
+        "chara": "Hitsugaya",
+        "quote": "Jangan takut tertipu, Dunia telah berada diatas Tipuan."
+    },
+    {
+        "id": 284,
+        "anime": "Kagetora",
+        "chara": "Hotaru",
+        "quote": "Laki-laki yang baik itu terbentuk karna ada perempuan yang baik di sebelahnya."
+    },
+    {
+        "id": 285,
+        "anime": "Captain Tsubasa",
+        "chara": "Tsubasa",
+        "quote": "Bola adalah teman."
+    },
+    {
+        "id": 286,
+        "anime": "Fate Zero",
+        "chara": "Saber",
+        "quote": "Kemarahan dan kesedihan hanya di temukan pada mereka yang mencari keadilan."
+    },
+    {
+        "id": 287,
+        "anime": "Naruto",
+        "chara": "Sakura",
+        "quote": "Aku mencintaimu.."
+    },
+    {
+        "id": 288,
+        "anime": "Ano Hana",
+        "chara": "Menma",
+        "quote": "Jintan aku mencintaimu, cinta ku pada mu adalah cinta yang singkat dimana aku ingin menikah dengan mu."
+    },
+    {
+        "id": 289,
+        "anime": "Fate Zero",
+        "chara": "Gilgamesh",
+        "quote": "Semua yang ada di dunia ini adalah milik ku !"
+    },
+    {
+        "id": 290,
+        "anime": "Eyeshield 21",
+        "chara": "Leonard Apollo",
+        "quote": "Manusia terlahir tidak sama.. Itu dinidng yang tidak pernah bisa dihadapi siapapun."
+    },
+    {
+        "id": 291,
+        "anime": "FSN",
+        "chara": "Archer",
+        "quote": "Jika kau tidak bisa mengalahkan musuh mu di dunia ini maka kalahkan lah ia di dunia imajinasi mu."
+    },
+    {
+        "id": 292,
+        "anime": "Death Note",
+        "chara": "L",
+        "quote": "Aku adalah keadilan !!"
+    },
+    {
+        "id": 293,
+        "anime": "Samurai-X",
+        "chara": "Kaoru",
+        "quote": "Semua orang pasti punya masa lalu yang tidak ingin di ketahui."
+    },
+    {
+        "id": 294,
+        "anime": "Fairy Tail",
+        "chara": "Erza",
+        "quote": "Aku tak dapat hidup tanpa sahabat baik ku, aku bahkan tak dapat membayangkan dunia tanpa sahabat Baik ku."
+    },
+    {
+        "id": 295,
+        "anime": "Bleach",
+        "chara": "Starrk",
+        "quote": "Aku tidak suka kata 'mengahabisi',tapi biar kuhabisi kalian !"
+    },
+    {
+        "id": 296,
+        "anime": "Soul Eater",
+        "chara": "Kishin",
+        "quote": "Imajinasi adalah awal dari semua emosi."
+    },
+    {
+        "id": 297,
+        "anime": "The Law of Ueki",
+        "chara": "Ueki",
+        "quote": "Meskipun kau bertengkar dengannya hari ini, kau masih punya hari esok untuk minta maaf."
+    },
+    {
+        "id": 298,
+        "anime": "Yu-Gi-Oh",
+        "chara": "Yugi",
+        "quote": "Kemarahan, kesedihan, kebencian dan ambisi yang ada didalam hati, itu juga adalah musuh dalam diri kita."
+    },
+    {
+        "id": 299,
+        "anime": "Eyeshield 21",
+        "chara": "Shin Seijuro",
+        "quote": "Selisih 1 atau 100 angka, kalah tetaplah kalah."
+    },
+    {
+        "id": 300,
+        "anime": "One Piece",
+        "chara": "Rayleigh",
+        "quote": "Mungkin di dunia ini tidak ada yang terjadi secara kebetulan, sebab semuanya terjadi karena suatu alasan."
+    },
+    {
+        "id": 301,
+        "anime": "Bakuman",
+        "chara": "Takagi",
+        "quote": "Cinta sejati adalah cinta yang bisa menerima kelebihan dan kekurangan pasangannya."
+    },
+    {
+        "id": 302,
+        "anime": "Deadman Wonderland",
+        "chara": "Kiyomasa Senji",
+        "quote": "Aku tidak merokok, bodoh! karena bagiku rokok adalah pintu peti mati."
+    },
+    {
+        "id": 303,
+        "anime": "Gundam Seed",
+        "chara": "Lacus Clyne",
+        "quote": "Dunia ini bukanlah sesuatu yang manusia dapat ciptakan."
+    },
+    {
+        "id": 304,
+        "anime": "Sword Art Online",
+        "chara": "Kirito",
+        "quote": "Di dunia ini, kekuatan hanyalah ilusi."
+    },
+    {
+        "id": 305,
+        "anime": "GTO",
+        "chara": "Eikichi Onizuka",
+        "quote": "Seorang anak kecil yang takut untuk terluka tidak memenuhi syarat untuk mengenal cinta."
+    },
+    {
+        "id": 306,
+        "anime": "Soul Eater",
+        "chara": "Black star",
+        "quote": "Aku tidak akan menyelesaikan apapun jika aku takut dengan 'sakit', akulah black star si hebat."
+    },
+    {
+        "id": 307,
+        "anime": "Angel Voice",
+        "chara": "Mayu",
+        "quote": "Maafkan aku, tapi setiap orang pasti ada saatnya tidak mampu."
+    },
+    {
+        "id": 308,
+        "anime": "Gundam Seed",
+        "chara": "Kira Yamato",
+        "quote": "Semua orang, tak peduli itu siapa, mereka hanya punya satu nyawa."
+    },
+    {
+        "id": 309,
+        "anime": "AKB0048",
+        "chara": "Mamoru",
+        "quote": "Aku yakin bagiku kau akan selalu.. Perasaan ini... Akan selalu... Tetap dihatiku."
+    },
+    {
+        "id": 310,
+        "anime": "Fairy Tail",
+        "chara": "Erza",
+        "quote": "Aku tidak melindungi semuanya. Akulah yang selalu dilindungi oleh semuanya."
+    },
+    {
+        "id": 311,
+        "anime": "Fairy Tail",
+        "chara": "Makarov",
+        "quote": "Ada orang yang lebih suka sndiri, tapi dia pasti takan mampu bertahan dari kesepian."
+    },
+    {
+        "id": 312,
+        "anime": "Fairy Tail",
+        "chara": "Natsu",
+        "quote": "Takkan ku biarkan siapa pun mati, kita akan pulang bersama karna kita keluarga fairy tail."
+    },
+    {
+        "id": 313,
+        "anime": "Samurai-X",
+        "chara": "Kenshin",
+        "quote": "Bukan perpisahan, tapi pertemuan dengan hal yang baru. Bukan berakhir, tapi mengawali sesuatu yang baru."
+    },
+    {
+        "id": 314,
+        "anime": "Samurai Deeper Kyo",
+        "chara": "Benitora's Master",
+        "quote": "Kau hanya perlu percaya pada dirimu sendiri."
+    },
+    {
+        "id": 315,
+        "anime": "Gundam Seed",
+        "chara": "Kira Yamato",
+        "quote": "Semua orang hanya punya satu nyawa."
+    },
+    {
+        "id": 316,
+        "anime": "Death Note",
+        "chara": "Light",
+        "quote": "Aku ingin mengubah dunia yang telah membusuk ini."
+    },
+    {
+        "id": 317,
+        "anime": "Death Note",
+        "chara": "Mello",
+        "quote": "Sudah waktunya aku mulai menjalani hidupku sendiri."
+    },
+    {
+        "id": 318,
+        "anime": "One Piece",
+        "chara": "Sauro",
+        "quote": "Tidak ada orang di dunia ini yang benar-benar terlahir sendirian."
+    },
+    {
+        "id": 319,
+        "anime": "Naruto",
+        "chara": "Guy Maito",
+        "quote": "Keberuntungan juga merupakan kekuatan."
+    },
+    {
+        "id": 320,
+        "anime": "Death Note",
+        "chara": "Light",
+        "quote": "Manusia suatu saat pasti akan meninggal dan setelah ia meninggal semua impiannya akan hilang."
+    },
+    {
+        "id": 321,
+        "anime": "Naruto",
+        "chara": "Itachi",
+        "quote": "Tugas seorang kakak adalah menjadi dinding pembatas yang harus dilampaui seorang adik."
+    },
+    {
+        "id": 322,
+        "anime": "Naruto",
+        "chara": "Haku",
+        "quote": "Aku akan mewujudkan impiannya. itulah impianku."
+    },
+    {
+        "id": 323,
+        "anime": "D. Conan",
+        "chara": "Ai Haibara",
+        "quote": "Yang penting bukanlah dari mana kamu dapat pengetahuan itu. Tapi di mana kamu bisa menerapkannya."
+    },
+    {
+        "id": 324,
+        "anime": "One Piece",
+        "chara": "Zorro",
+        "quote": "Seorang manusia akan menjadi lebih kuat seiring halangan dan ombak yang menerpa."
+    },
+    {
+        "id": 325,
+        "anime": "Death Note",
+        "chara": "L",
+        "quote": "Untuk mengubah dunia, hal pertama yang harus dilakukan adalah merubah dirimu sendiri dulu."
+    },
+    {
+        "id": 326,
+        "anime": "Neon Genesis Evangelion",
+        "chara": "Kensuke Aida",
+        "quote": "Hanya orang bodoh yang bertarung untuk kalah."
+    },
+    {
+        "id": 327,
+        "anime": "Fairy Tail",
+        "chara": "Natsu",
+        "quote": "Kita tidak mati untuk teman kita. Kita hidup untuk mereka."
+    },
+    {
+        "id": 328,
+        "anime": "Fairy Tail",
+        "chara": "Loki",
+        "quote": "Bagaimana perasaan bintang yang tidak bisa kembali ke langit tempat asalnya?"
+    },
+    {
+        "id": 329,
+        "anime": "KHR",
+        "chara": "Reborn",
+        "quote": "Kerja bagus karena telah melindungi keluargamu, karena begitulah seharusnya seorang bos."
+    },
+    {
+        "id": 330,
+        "anime": "Yu Yu Hakusho",
+        "chara": "Genkai",
+        "quote": "Aku bukan seorang petarung yang baik. Aku hanya benci orang-orang yang jahat."
+    },
+    {
+        "id": 331,
+        "anime": "Naruto",
+        "chara": "Nara Shikaku",
+        "quote": "Legenda selalu saja dilebih-lebihkan dan saat legenda itu terlampaui maka muncullah legenda yg baru."
+    },
+    {
+        "id": 332,
+        "anime": "Soul Eater",
+        "chara": "Death The Kid",
+        "quote": "Aku akan terus berjuang sampai dunia ini mengikuti jalan yang seharusnya. sampai dunia ini seimbang."
+    },
+    {
+        "id": 333,
+        "anime": "Naruto",
+        "chara": "Kakashi",
+        "quote": "Ninja itu harus mampu melihat yang terdalam dari yang terdalam."
+    },
+    {
+        "id": 334,
+        "anime": "Digimon Adventure",
+        "chara": "Taichi",
+        "quote": "Biarkan mereka berdua berkelahi dengan berkelahi mereka akan tau arti persahabtan."
+    },
+    {
+        "id": 335,
+        "anime": "Naruto",
+        "chara": "Sasori",
+        "quote": "Menunggu dan membuat orang lain menunggu adalah hal yg kubenci."
+    },
+    {
+        "id": 336,
+        "anime": "Naruto",
+        "chara": "Orochimaru",
+        "quote": "Tidak semua mimpi dan harapan akan terwujud sesuai dengan keinginan kita."
+    },
+    {
+        "id": 337,
+        "anime": "Doraemon",
+        "chara": "Nobita",
+        "quote": "Hidup itu ternyata penuh perjuangan."
+    },
+    {
+        "id": 338,
+        "anime": "Fairy Tail",
+        "chara": "Erza",
+        "quote": "Jangan pernah kau lupakan teman-temanmu ! Sayangilah mereka selama kau masih hidup."
+    },
+    {
+        "id": 339,
+        "anime": "One Piece",
+        "chara": "Nico Robin",
+        "quote": "Menyimpan semangat itu di dalam hati tanpa banyak bicara."
+    },
+    {
+        "id": 340,
+        "anime": "Neon Genesis Evangalion",
+        "chara": "Ryoji Kaji",
+        "quote": "Tanpa mengalami kesedihan, orang tidak akan mengerti makna kebahagiaan yang sesungguhnya."
+    },
+    {
+        "id": 341,
+        "anime": "Soul Eater",
+        "chara": "Maka",
+        "quote": "Tidak perlu memaksa untuk dapat mengerti satu sama lain kami cukup menghargai satu sama lain dan selalu percaya."
+    },
+    {
+        "id": 342,
+        "anime": "Eyeshield 21",
+        "chara": "Monta",
+        "quote": "Selain di saat menderita, laki-laki tidak boleh menangis."
+    },
+    {
+        "id": 343,
+        "anime": "Bleach",
+        "chara": "Ulquiorra",
+        "quote": "Apa yang tidak tampak di mataku berarti tidak ada."
+    },
+    {
+        "id": 344,
+        "anime": "D. Conan",
+        "chara": "Kaito Kid",
+        "quote": "Entah kenapa aku selalu bersikap dingin terhadapmu. Tapi itu karena aku mencintaimu."
+    },
+    {
+        "id": 345,
+        "anime": "Shaman King",
+        "chara": "Ryu",
+        "quote": "Imajinasi terkuat dan hati yang tegar, sumbernya adalah kepercayaan dan rasa percaya diri yang didukung masa lalu."
+    },
+    {
+        "id": 346,
+        "anime": "Hunter X Hunter",
+        "chara": "Hisoka",
+        "quote": "Cinta dan benci adalah dua sisi dalam sekeping koin."
+    },
+    {
+        "id": 347,
+        "anime": "Naruto",
+        "chara": "Sakura",
+        "quote": "Sesuatu yang berharga itu tidak bisa ditulis dibuku, tapi hanya bisa dikenang dan disimpan dalam hati."
+    },
+    {
+        "id": 348,
+        "anime": "Death Note",
+        "chara": "L",
+        "quote": "Tidak peduli seberapa berbakatnya dirimu, jika kau hanya sendirian, kau tidak akan bisa mengubah dunia."
+    },
+    {
+        "id": 349,
+        "anime": "Kimi ni Todoke",
+        "chara": "Sawako Kuronuma",
+        "quote": "Cuma dengan perkataan dan senyumnya saja dia memberikan dorongan untukku maju."
+    },
+    {
+        "id": 350,
+        "anime": "The Law of Ueki",
+        "chara": "Ueki",
+        "quote": "Hanya dengan bersama merekalah semuanya terasa mudah. Itulah yang di sebut teman sejati."
+    },
+    {
+        "id": 351,
+        "anime": "Good Ending",
+        "chara": "Sasuga Kei",
+        "quote": "Hal yang paling terpenting bagi seorang gadis adalah tersenyum."
+    },
+    {
+        "id": 352,
+        "anime": "Fairy Tail",
+        "chara": "Makarov",
+        "quote": "Cinta membuat orang menjadi kuat dan cinta itu juga yang dapat membuat orang menjadi lemah."
+    },
+    {
+        "id": 353,
+        "anime": "Yu-Gi-Oh",
+        "chara": "Yami Yugi",
+        "quote": "Masa depan tak akan datang pada orang yang tak punya masa lalu."
+    },
+    {
+        "id": 354,
+        "anime": "One Piece",
+        "chara": "Sanji",
+        "quote": "Setiap orang punya sesuatu yang bisa dilakukan dan tidak bisa dilakukan."
+    },
+    {
+        "id": 355,
+        "anime": "Vagabond",
+        "chara": "Koetsu",
+        "quote": "Kalau membuka hati dan menerimanya, semua hal di dunia ini pada dasarnya indah."
+    },
+    {
+        "id": 356,
+        "anime": "Fairy Tail",
+        "chara": "Gajeel",
+        "quote": "Pemenang sejati tidak akan pernah sombong bahkan sebelum dia mencapainya."
+    },
+    {
+        "id": 357,
+        "anime": "One Piece",
+        "chara": "Rob Lucci",
+        "quote": "Ketamakan akan menghancurkan diri sendiri."
+    },
+    {
+        "id": 358,
+        "anime": "Hunter X Hunter",
+        "chara": "Killua",
+        "quote": "Orang yang melakukan cara kotor akan kalah dengan cara kotor pula."
+    },
+    {
+        "id": 359,
+        "anime": "Suikoden 2",
+        "chara": "Shu",
+        "quote": "Setiap kebohongan mengandung kebenaran dan setiap kebenaran berisi kebohongan."
+    },
+    {
+        "id": 360,
+        "anime": "Suikoden 2",
+        "chara": "Jowy Blight",
+        "quote": "Kesetiaan sejati bisa berbicara apa yang anda anggap benar dan apa yang anda anggap salah."
+    },
+    {
+        "id": 361,
+        "anime": "Fairy Tail",
+        "chara": "Erza",
+        "quote": "Suatu saat akan datang hari dimana semua akan menjadi kenangan."
+    },
+    {
+        "id": 362,
+        "anime": "Bakuman",
+        "chara": "Mashiro",
+        "quote": "Ketika impian kita berdua telah menjadi kenyataan menikahlah denganku."
+    },
+    {
+        "id": 363,
+        "anime": "Ultra Maniac",
+        "chara": "Kaji",
+        "quote": "Don't say any words. I knew everything."
+    },
+    {
+        "id": 364,
+        "anime": "Death Note",
+        "chara": "Soichiro Yagami",
+        "quote": "Lebih baik menerima kejujuran yang pahit, dari pada kebohongan yang manis."
+    },
+    {
+        "id": 365,
+        "anime": "Durarara !",
+        "chara": "Seiji Yagiri",
+        "quote": "No one can destroy the power of Love."
+    },
+    {
+        "id": 366,
+        "anime": "Hunter X Hunter",
+        "chara": "Kurapika",
+        "quote": "Tetap sayangi sahabatmu meski dia meninggalkanmu."
+    },
+    {
+        "id": 367,
+        "anime": "Tsubasa Reservoir Chronicle",
+        "chara": "Syaoran",
+        "quote": "Habis kalau tidak tahu sekarang jam berapa, aku jadi bisa sedikit lebih lama bersamamu."
+    },
+    {
+        "id": 368,
+        "anime": "Hitohira",
+        "chara": "Nono",
+        "quote": "Aku tidak perduli jika melakukan kesalahan. Karena ini adalah hidupku dan hanya aku yang boleh memilih."
+    },
+    {
+        "id": 369,
+        "anime": "Blood +",
+        "chara": "Nankurunaisa",
+        "quote": "Hidup hari ini, tertawa di hari esok. Kalau kita hidup dengan berjuang sepenuh hati, semua akan beres."
+    },
+    {
+        "id": 370,
+        "anime": "One Piece",
+        "chara": "Edward Newgate",
+        "quote": "Harta karun paling berharga adalah keluarga."
+    },
+    {
+        "id": 371,
+        "anime": "D. Conan",
+        "chara": "Conan",
+        "quote": "Ada banyak alasan manusia untuk saling membunuh, tapi untuk saling menolong tidak diperlukan alasan bukan?"
+    },
+    {
+        "id": 372,
+        "anime": "Durarara",
+        "chara": "Seiji Yagiri",
+        "quote": "Menyukai seseorang tidak ada hubungannya dengan nama."
+    },
+    {
+        "id": 373,
+        "anime": "Death Note",
+        "chara": "Near",
+        "quote": "Kita harus mencobanya, walau sesulit apapun itu."
+    },
+    {
+        "id": 374,
+        "anime": "Kamichama Karin",
+        "chara": "Kirio",
+        "quote": "Aku rela berbuat apa saja, demi melihat kegembiraanmu."
+    },
+    {
+        "id": 375,
+        "anime": "Prince of Tennis",
+        "chara": "Momoshiro Takeshi",
+        "quote": "Aku senang bila disukai banyak orang."
+    },
+    {
+        "id": 376,
+        "anime": "Tegami Bachi",
+        "chara": "Niche",
+        "quote": "Jika berkata \"selamat tinggal\" membuatmu sedih, maka aku akan tinggal di sisimu."
+    },
+    {
+        "id": 377,
+        "anime": "Shiki",
+        "chara": "Kirishiki Sunako",
+        "quote": "Perbuatanmu, usiamu, kepribadian, kekayaan dan kecantikan mereka semua tidak berarti dalam menghadapi kematian."
+    },
+    {
+        "id": 378,
+        "anime": "D. School Q",
+        "chara": "Saitou Renjo",
+        "quote": "Kata ayahku, ini adalah hidupmu jadi lakukan apapun yang kau sukai."
+    },
+    {
+        "id": 379,
+        "anime": "D. School Q",
+        "chara": "Ryu Amakusa",
+        "quote": "Aku percaya kalau kau pasti akan menepati janjimu padaku."
+    },
+    {
+        "id": 380,
+        "anime": "Sekai Ichi Hatsukoi",
+        "chara": "Masamune Takano",
+        "quote": "Seberapa banyak lagi cinta yang kau butuhkan untuk menerima aku?"
+    },
+    {
+        "id": 381,
+        "anime": "Fairy Tail",
+        "chara": "Natsu",
+        "quote": "Selama aku masih bernafas, selama aku masih bisa berdiri. Aku takkan pernah menyerah !"
+    },
+    {
+        "id": 382,
+        "anime": "Black Cat",
+        "chara": "Sephiria Arks",
+        "quote": "Hal terpenting supaya kita tidak lupa diri adalah berpikir."
+    },
+    {
+        "id": 383,
+        "anime": "Digimon",
+        "chara": "Joe",
+        "quote": "Ada kebohongan untuk hal buruk, tetapi ada juga kebohongan untuk kebaikan."
+    },
+    {
+        "id": 384,
+        "anime": "One Piece",
+        "chara": "Chopper",
+        "quote": "Di dunia ini tidak ada penyakit yang tidak bisa disembuhkan."
+    },
+    {
+        "id": 385,
+        "anime": "Naruto",
+        "chara": "Chouji",
+        "quote": "Tapi yang lebih tidak kusukai kau mengejekku gendut atau makan adalah kau mengejek sahabat ku."
+    },
+    {
+        "id": 386,
+        "anime": "Naruto",
+        "chara": "Rock Lee",
+        "quote": "Kita harus lebih kuat dari hari kemarin, lebih kuat dari sejam yang lalu bahkan harus lebih kuat dari sedetik yang lalu."
+    },
+    {
+        "id": 387,
+        "anime": "Crayon Shinchan",
+        "chara": "Kazao",
+        "quote": "Dengan disembunyikan, cinta akan semakin membara."
+    },
+    {
+        "id": 388,
+        "anime": "One Piece",
+        "chara": "Smoker",
+        "quote": "Lalu apa bedanya? Keadilan dan kejahatan itu sama saja. Meski semua sudah berakhir, mereka tetap tidak puas."
+    },
+    {
+        "id": 389,
+        "anime": "Naruto",
+        "chara": "Kushina",
+        "quote": "Tak perlu teman banyak, tapi pilihlah teman yang benar-benar dapat kamu percaya."
+    },
+    {
+        "id": 390,
+        "anime": "Air Gear",
+        "chara": "Sora",
+        "quote": "Jika langit terdiri dari kumpulan angin. Berarti manusia itu terdiri dari kumpulan kenangan dan impian."
+    },
+    {
+        "id": 391,
+        "anime": "Shaman King",
+        "chara": "Yoh Asakura",
+        "quote": "Tidak ada yang tahu apa yang akan terjadi di masa depan."
+    },
+    {
+        "id": 392,
+        "anime": "Air Gear",
+        "chara": "Ringo",
+        "quote": "I think there's nothing in this world that doesn't change."
+    },
+    {
+        "id": 393,
+        "anime": "Digimon Adventure",
+        "chara": "Takeru",
+        "quote": "Tak terkalahkan adalah julukanku juga."
+    },
+    {
+        "id": 394,
+        "anime": "D. Conan",
+        "chara": "Kaito Kid",
+        "quote": "Bukannya aku harus menang, tapi aku ingin menang, itulah impian."
+    },
+    {
+        "id": 395,
+        "anime": "Eye Shield 21",
+        "chara": "Taka Honjo",
+        "quote": "Manusia jadi banyak bicara ketika apa yang dikatakannya berbeda dengan apa yang ada di pikirannya."
+    },
+    {
+        "id": 396,
+        "anime": "Eyeshield 21",
+        "chara": "Monta",
+        "quote": "Selama pertandingan seorang pria harus fokus pada kemenangan."
+    },
+    {
+        "id": 397,
+        "anime": "Inyuasha",
+        "chara": "Kagome",
+        "quote": "Aku ingin bertemu denganmu."
+    },
+    {
+        "id": 398,
+        "anime": "Inuyasha",
+        "chara": "Seshomaru",
+        "quote": "Kau sudah terpojok yah, aku akan mengirimkan lagu kematian untuk mu."
+    },
+    {
+        "id": 399,
+        "anime": "Inuyasha",
+        "chara": "Inuyasha",
+        "quote": "Aku tak kan membiarkan orang seperti itu terus melukai teman-teman ku yang berharga."
+    },
+    {
+        "id": 400,
+        "anime": "Inuyasha",
+        "chara": "Miroku",
+        "quote": "Hanya kau yang harus tetap hidup."
+    },
+    {
+        "id": 401,
+        "anime": "Inuyasha",
+        "chara": "Kagome",
+        "quote": "Justru karena kau mengetahui betapa berhaganya sebuah hubungan, kau mengerti kepedihan ketika hubungan itu hilang."
+    },
+    {
+        "id": 402,
+        "anime": "Inuyasha",
+        "chara": "Sango",
+        "quote": "Aku ingin bertemu dengan mu sekali lagi.."
+    },
+    {
+        "id": 403,
+        "anime": "One Piece",
+        "chara": "Sanji",
+        "quote": "Pikirkanlah apa yang akan kau katakan sekarang, karna itu akan menentukan apakah kau akan kumaafkan atau tidak."
+    },
+    {
+        "id": 404,
+        "anime": "Dragon Ball Z",
+        "chara": "Vegeta",
+        "quote": "Dia hanya penonton, cukup aku sendiri yang menghancurkan mu."
+    },
+    {
+        "id": 405,
+        "anime": "Eyeshield 21",
+        "chara": "Hiruma",
+        "quote": "Kemampuan ada batasnya tapi usaha yang tidak ada batasnya."
+    },
+    {
+        "id": 406,
+        "anime": "Naruto",
+        "chara": "Shikamaru",
+        "quote": "Sepintar dan sejenius apapun dirimu, bila perasaan egois itu telah muncul, maka pemikiran pun tidak akan dapat berjalan."
+    },
+    {
+        "id": 407,
+        "anime": "Lovely Complex",
+        "chara": "Otani Atsushi",
+        "quote": "Jika kau tidak pernah bersungguh-sungguh dalam mengerjakan sesuatu, maka kau tidak akan pernah bisa menyelesaikan apapun."
+    },
+    {
+        "id": 408,
+        "anime": "One Piece",
+        "chara": "Ace",
+        "quote": "Aku tidak akan lari dari pertempuran, karna jika aku ikut berlari maka bahaya yang mengancam ku akan mengancam orang yang aku sayang juga."
+    },
+    {
+        "id": 409,
+        "anime": "Giant Killing",
+        "chara": "Takeshi Tatsumi",
+        "quote": "Kalah atau menang, tergantung apakah kalian mampu melewati batas diri sendiri atau tidak."
+    },
+    {
+        "id": 410,
+        "anime": "Inuyasha",
+        "chara": "Kagome",
+        "quote": "Tersenyumlah selalu walaupun sebenarnya hatimu terluka."
+    },
+    {
+        "id": 411,
+        "anime": "Clannad",
+        "chara": "Yusuke Yoshino",
+        "quote": "Tidak bisa mempercayai siapapun sama saja dengan tidak bisa merasakan cinta orang lain."
+    },
+    {
+        "id": 412,
+        "anime": "One Piece",
+        "chara": "Jinbei",
+        "quote": "Jangan pikirkan apa yang telah hilang tapi pikirkan apa yang masih kau punya."
+    },
+    {
+        "id": 413,
+        "anime": "Dragon Ball Z",
+        "chara": "Vegeta",
+        "quote": "Meski tubuh dan hatiku kau kuasai. kau tak mungkin menguasai harga diriku."
+    },
+    {
+        "id": 414,
+        "anime": "Hayate The Combat Butler",
+        "chara": "Hayate Ayasaki",
+        "quote": "Pada akhirnya orang yang tertawa paling akhir adalah orang yang bekerja keras."
+    },
+    {
+        "id": 415,
+        "anime": "Shaman King",
+        "chara": "Yoh Asakura",
+        "quote": "Kalau sekarang aku menyerah, pasti aku menyesal seumur hidup."
+    },
+    {
+        "id": 416,
+        "anime": "Shaman King",
+        "chara": "Yoh Asakura",
+        "quote": "Bagiku lebih baik mati dari pada menyerah."
+    },
+    {
+        "id": 417,
+        "anime": "Naruto",
+        "chara": "Naruto",
+        "quote": "Aku hidup karena ayah dan ibu memberikan hidupnya padaku. Kalian mengisi diriku dengan cinta, jadi disinilah aku bahagia dan sehat."
+    },
+    {
+        "id": 418,
+        "anime": "Naruto",
+        "chara": "Sai",
+        "quote": "Perempuan akan marah jika kita mengatakan tentang karakteristiknya begitu saja. Dengan kata lain, takkan jadi masalah jika kita bilang kebalikannya."
+    },
+    {
+        "id": 419,
+        "anime": "D. Conan",
+        "chara": "Shinichi Kudo",
+        "quote": "Kebenaran itu hanya ada satu."
+    },
+    {
+        "id": 420,
+        "anime": "Doraemon",
+        "chara": "Dekisugi",
+        "quote": "Berbuat kesalahan adalah kekurangan manusia, namun belajar dari kesalahan adalah kelebihan manusia."
+    },
+    {
+        "id": 421,
+        "anime": "Death Note",
+        "chara": "Light",
+        "quote": "Aku berbohong karena aku tak ingin ada yang tersakiti."
+    },
+    {
+        "id": 422,
+        "anime": "Black Butler",
+        "chara": "Ciel Phantomhive",
+        "quote": "Pengalaman tanpa masalah seperti buku tanpa tulisan."
+    },
+    {
+        "id": 423,
+        "anime": "Kaichou wa Maid-sama",
+        "chara": "Ayuzawa Minako",
+        "quote": "Apapun alasannya.. Bisa bersama keluarga adalah kebahagiaan terbesar."
+    },
+    {
+        "id": 424,
+        "anime": "Kaichou wa Maid-sama",
+        "chara": "Ayuzawa Misaki",
+        "quote": "Tidak semua perempuan itu lemah."
+    },
+    {
+        "id": 425,
+        "anime": "Kaichou wa Maid-sama",
+        "chara": "Ayuzawa Misaki",
+        "quote": "Menyerah sebelum memulai apa-apa.. Bukan sifatmu bos."
+    },
+    {
+        "id": 426,
+        "anime": "Kaichou wa Maid-sama",
+        "chara": "Ayuzawa Misaki",
+        "quote": "Aku benci laki-laki yang selalu membuat wanita menangis."
+    },
+    {
+        "id": 427,
+        "anime": "Doraemon",
+        "chara": "Doraemon",
+        "quote": "Itu pertanyaan bagus, tapi karena penjelasannya panjang jadi lupakan saja."
+    },
+    {
+        "id": 428,
+        "anime": "Hunter X Hunter",
+        "chara": "Gon",
+        "quote": "Kita adalah teman, meski kita jauh, jika kau butuh pertolongan, aku akan datang."
+    },
+    {
+        "id": 429,
+        "anime": "Capt. Tsubasa",
+        "chara": "Aoi Shingo",
+        "quote": "Walau harus mengorbankan kaki ini, bola itu harus masuk ke gawang."
+    },
+    {
+        "id": 430,
+        "anime": "Capt. Tsubasa",
+        "chara": "Hyuga",
+        "quote": "Aku ingin menjadi lebih kuat, aku tidak ingin lagi kalah oleh mu."
+    },
+    {
+        "id": 431,
+        "anime": "Bleach",
+        "chara": "Ichigo",
+        "quote": "Kau boleh melukaiku, tapi jangan kau coba-coba melukai teman-temanku. Atau kubunuh kau."
+    },
+    {
+        "id": 432,
+        "anime": "Bleach",
+        "chara": "Ichigo",
+        "quote": "Seandainya aku harus mengulang kehidupanku lagi, akan kujalani sama seperti ini."
+    },
+    {
+        "id": 433,
+        "anime": "Death Note",
+        "chara": "L",
+        "quote": "Aku ingin hidup sedikit lebih lama lagi watari.."
+    },
+    {
+        "id": 434,
+        "anime": "Death Note",
+        "chara": "L",
+        "quote": "Mari kita tunjukkan padanya.. Bahwa orang baik selalu menang."
+    },
+    {
+        "id": 435,
+        "anime": "Doraemon",
+        "chara": "Dorami",
+        "quote": "Uang sepantasnya di dapat dari hasil kerja keras sendiri."
+    },
+    {
+        "id": 436,
+        "anime": "Yu-Gi-Oh",
+        "chara": "Yami Yugi",
+        "quote": "Kau akan selalu kalah selama kau bertanding dengan kebencian dalam hatimu."
+    },
+    {
+        "id": 437,
+        "anime": "Bakemonogatari",
+        "chara": "Araragi Koyomi",
+        "quote": "Membenci orang adalah bagian dari kehidupan."
+    },
+    {
+        "id": 438,
+        "anime": "Bakemonogatari",
+        "chara": "Araragi Koyomi",
+        "quote": "Perkelahian akan berakhir saat satu sisi meminta maaf."
+    },
+    {
+        "id": 439,
+        "anime": "Bakuman",
+        "chara": "Mashiro",
+        "quote": "Seorang \"Mangaka\" tidak membutuhkan nilai yang bagus."
+    },
+    {
+        "id": 440,
+        "anime": "Full Metal Alchemist",
+        "chara": "Edward Elric",
+        "quote": "Bangkitlah dan tetaplah maju karena kau masih mempunyai kaki yang utuh."
+    },
+    {
+        "id": 441,
+        "anime": "Air Gear",
+        "chara": "Ikki",
+        "quote": "Kalau sudah menerima tantangan, aku tak peduli setan atau bukan, semua harus di bunuh."
+    },
+    {
+        "id": 442,
+        "anime": "Naruto",
+        "chara": "Shikamaru",
+        "quote": "Kadang aku berharap kalau aku adalah awan, berada di langit dan pergi ke mana saja angin membawaku."
+    },
+    {
+        "id": 443,
+        "anime": "Eyeshield 21",
+        "chara": "Hiruma",
+        "quote": "Akan Kuberi tahu Sesuatu ! Sampah mengalahkan para jenius adalah sesuatu yang biasa terjadi."
+    },
+    {
+        "id": 444,
+        "anime": "One Piece",
+        "chara": "Zoro",
+        "quote": "Masalah memang datang bertubi-tubi. Memangnya kalau mengeluh akan ada yang datang menolong mu?"
+    },
+    {
+        "id": 445,
+        "anime": "Air Gear",
+        "chara": "Ikki",
+        "quote": "Orang-orang yang kuat adalah orang yang isi kepalanya sederhana."
+    },
+    {
+        "id": 446,
+        "anime": "One Piece",
+        "chara": "Ivankov",
+        "quote": "Keajaiban hanya terjadi pada mereka yg tak pernah menyerah, jangan remehkan keajaiban."
+    },
+    {
+        "id": 447,
+        "anime": "Naruto",
+        "chara": "Orochimaru",
+        "quote": "Suatu saat kau akan menemukan masalah yang menynangkan."
+    },
+    {
+        "id": 448,
+        "anime": "Fairy Tail",
+        "chara": "Jellal",
+        "quote": "Aku hanya berharap semoga dia hidup bahagia selamanya."
+    },
+    {
+        "id": 449,
+        "anime": "Fairy Tail",
+        "chara": "Erza",
+        "quote": "Kubur rasa sakit dari kehilangan orang yang kau cintai, dalam genggaman teman-temanmu."
+    },
+    {
+        "id": 450,
+        "anime": "One Piece",
+        "chara": "Usopp",
+        "quote": "Ada saatnya seseorang harus berdiri melawan yaitu ketika impian sahabatnya di tertawakan."
+    },
+    {
+        "id": 451,
+        "anime": "Naruto",
+        "chara": "Azuma",
+        "quote": "Terimakasih teman-teman aku tak kan menyiakan kepercayaan kalian."
+    },
+    {
+        "id": 452,
+        "anime": "One Piece",
+        "chara": "Tashigi",
+        "quote": "Jangan mudah tertipu dengan penampilan seseorang."
+    },
+    {
+        "id": 453,
+        "anime": "One Piece",
+        "chara": "Brook",
+        "quote": "Aku tidak mau kehilangan teman ku lagi."
+    },
+    {
+        "id": 454,
+        "anime": "Naruto",
+        "chara": "Itachi",
+        "quote": "Apapun keputusanmu apapun yang akan terjadi padamu mulai saat ini aku akan selalu menyayangimu."
+    },
+    {
+        "id": 455,
+        "anime": "One Piece",
+        "chara": "Luffy",
+        "quote": "Teman atau musuh? Hal seperti itu silahkan kalian putuskan sendiri."
+    },
+    {
+        "id": 456,
+        "anime": "Eyeshield 21",
+        "chara": "Hiruma",
+        "quote": "Jika maaf bisa menyelesaikan apapun kita tidak akan membutuhkan polisi."
+    },
+    {
+        "id": 457,
+        "anime": "Gurren Lagan",
+        "chara": "Kamina",
+        "quote": "Jangan percaya pada orang lain yang mempercayai kemampuan kita, tapi percayalah pada diri sendiri yang yakin terhadap kemampuan sndiri."
+    },
+    {
+        "id": 458,
+        "anime": "TWGOK",
+        "chara": "Keima Katsuragi",
+        "quote": "Dunia manusia itu tidak lebih indah dari pada dunia game."
+    },
+    {
+        "id": 459,
+        "anime": "Full Metal Alchemist",
+        "chara": "Edward Elric",
+        "quote": "Manusia tak akan mendapatkan apapun tanpa melakukan pengorbanan."
+    },
+    {
+        "id": 460,
+        "anime": "Naruto",
+        "chara": "Kankuro",
+        "quote": "Biasanya laki-laki yang dikejar-kejar wanita cantik adalah laki-laki yang lemah."
+    },
+    {
+        "id": 461,
+        "anime": "Naruto",
+        "chara": "Hidan",
+        "quote": "Before doing something, it helps us to pray."
+    },
+    {
+        "id": 462,
+        "anime": "Naruto",
+        "chara": "Sai",
+        "quote": "Membantu teman yang kesulitan, di buku tertulis itulah teman sejati."
+    },
+    {
+        "id": 463,
+        "anime": "D. Conan",
+        "chara": "Ai Haibara",
+        "quote": "Logat adalah aksesoris yang menghiasi kata-kata. Kalau mau dilepas boleh, tapi jangan dibuang."
+    },
+    {
+        "id": 464,
+        "anime": "Tsubasa Reservoir Chronicle",
+        "chara": "Fai D. Flourite",
+        "quote": "Ada juga kekuatan untuk menangis di saat memang harus menangis."
+    },
+    {
+        "id": 465,
+        "anime": "Naruto",
+        "chara": "Uzumaki Naruto",
+        "quote": "Aku adalah orang yang paling bodoh dalam hal menyerah."
+    },
+    {
+        "id": 466,
+        "anime": "One Piece",
+        "chara": "Zoro",
+        "quote": "Satu-satunya yang boleh memanggilku bodoh adalah diriku sendiri."
+    },
+    {
+        "id": 467,
+        "anime": "Death Note",
+        "chara": "L",
+        "quote": "Aku mempunyai dua aturan : Pertama, aku tidak pernah salah. Kedua, jika aku salah kembali ke peraturan pertama."
+    },
+    {
+        "id": 468,
+        "anime": "Death Note",
+        "chara": "L",
+        "quote": "Meskipun tidak punya izin, ikuti saja insting, lakukan apa yang harus dilakukan."
+    },
+    {
+        "id": 469,
+        "anime": "D. Conan",
+        "chara": "Kaito Kid",
+        "quote": "Sampai bertemu lagi nona. Mungkin lain waktu, kita akan bertemu kembali di bawah sinar bulan yang indah."
+    },
+    {
+        "id": 470,
+        "anime": "D. Conan",
+        "chara": "Ai Haibara",
+        "quote": "Waktu dan hati manusia akan sejalan, jika dia ingat ada Tuhan bersamanya."
+    },
+    {
+        "id": 471,
+        "anime": "Samurai-X",
+        "chara": "Kenshin",
+        "quote": "Saat kau menemukan keberanian untuk menyerahkan hidupmu untuk seseorang, saat itulah kau memahami cinta."
+    },
+    {
+        "id": 472,
+        "anime": "Air Gear",
+        "chara": "Benkei",
+        "quote": "Dasar bodoh, jadi laki-laki jangan cengeng !"
+    },
+    {
+        "id": 473,
+        "anime": "Death Note",
+        "chara": "Ryuk",
+        "quote": "Sudah kubilang dari awal, aku akan menulis namamu di buku ku saat kematianmu."
+    },
+    {
+        "id": 474,
+        "anime": "2",
+        "chara": "Akane/Ranma 1",
+        "quote": "Aku minta padamu, tolong berhentilah untuk begitu baik terhadapku."
+    },
+    {
+        "id": 475,
+        "anime": "Naruto",
+        "chara": "Konohamaru",
+        "quote": "Jika kita semua bersatu, pasti semuanya akan baik-baik saja."
+    },
+    {
+        "id": 476,
+        "anime": "Salad Days",
+        "chara": "Sasaki Shiho",
+        "quote": "Menyukai diri sendiri juga tidak ada salahnya kan?"
+    },
+    {
+        "id": 477,
+        "anime": "Salad Days",
+        "chara": "Sasaki Shiho",
+        "quote": "Kalau memang kita mencintai orang itu dengan tulus cinta itu tak akan luntur, meskipun tak terbalas."
+    },
+    {
+        "id": 478,
+        "anime": "Nana",
+        "chara": "Yasushi Takagi",
+        "quote": "Menertawakan cinta dan cinta akan membuatmu menangis."
+    },
+    {
+        "id": 479,
+        "anime": "D. Conan",
+        "chara": "Heiji",
+        "quote": "Aku diam saat kau pergi, aku diam saat kau lukai aku, tapi aku tidak akan pernah tinggal diam apabila kau disakiti !"
+    },
+    {
+        "id": 480,
+        "anime": "Tari Tari",
+        "chara": "Mahiru",
+        "quote": "Aku ingin menulis lagu selama aku sehat maupun sakit. selama saat senang dan saat sedih."
+    },
+    {
+        "id": 481,
+        "anime": "Naruto",
+        "chara": "Hidan",
+        "quote": "Aku tahu itu menjengkelkan, tapi ini keyakinanku."
+    },
+    {
+        "id": 482,
+        "anime": "Samurai-X",
+        "chara": "Kenshin",
+        "quote": "Jika kau ingin mati, mendekatlah."
+    },
+    {
+        "id": 483,
+        "anime": "Bleach",
+        "chara": "Kurosaki Isshin",
+        "quote": "Lakukan seperti keinginan hatimu ! Lompatlah ke pangkuan ayah !"
+    },
+    {
+        "id": 484,
+        "anime": "Naruto",
+        "chara": "Kankuro",
+        "quote": "Aku tidak bisa mundur setelah ia meremehkan ku !"
+    },
+    {
+        "id": 485,
+        "anime": "Naruto",
+        "chara": "Orochimaru",
+        "quote": "Ini sifat alami manusia bahwa mereka tidak akan menyadari nilai sebenarnya dari sesuatu kecuali mereka kehilangan."
+    },
+    {
+        "id": 486,
+        "anime": "Naruto",
+        "chara": "Temari",
+        "quote": "Apakah kau takut disakiti?"
+    },
+    {
+        "id": 487,
+        "anime": "D. Conan",
+        "chara": "Ai Haibara",
+        "quote": "Jika menangis setan akan kehilangan kekuatannya."
+    },
+    {
+        "id": 488,
+        "anime": "Inuyasha",
+        "chara": "Kagome",
+        "quote": "Bila kegagalan itu bagai hujan, dan keberhasilan bagaikan matahari, maka butuh keduanya untuk melihat pelangi."
+    },
+    {
+        "id": 489,
+        "anime": "Gundam Seed",
+        "chara": "Murrue Ramius",
+        "quote": "Aku percaya bahwa akan datang hari dimana kau dapat bersamanya lag, jadi lakukanlah yang terbaik untuk saat ini."
+    },
+    {
+        "id": 490,
+        "anime": "Gundam Seed",
+        "chara": "Kira Yamato",
+        "quote": "Kita tidak dapat membiarkan takdir menentukan masa depan kita semua."
+    },
+    {
+        "id": 491,
+        "anime": "Fairy Tail",
+        "chara": "Purehito",
+        "quote": "Masa muda adalah omong kosong."
+    },
+    {
+        "id": 492,
+        "anime": "Naruto",
+        "chara": "Neji Hyuuga",
+        "quote": "A loser is a loser."
+    },
+    {
+        "id": 493,
+        "anime": "Gintama",
+        "chara": "Kagura",
+        "quote": "Jangan terlalu terpaku pada masa lalu."
+    },
+    {
+        "id": 494,
+        "anime": "Naruto",
+        "chara": "Shino",
+        "quote": "Menutupi kenyataan hanya membuang-buang waktu."
+    },
+    {
+        "id": 495,
+        "anime": "Bakemonogatari",
+        "chara": "Araragi Koyomi",
+        "quote": "Bagaimanapun juga, aku hanyalah aku !"
+    },
+    {
+        "id": 496,
+        "anime": "Naruto",
+        "chara": "Minato",
+        "quote": "Tapi apapun jalan yg kalian pilih,  jangan lupa untuk melindungi orang yg berharga dalam hidup kalian."
+    },
+    {
+        "id": 497,
+        "anime": "The Law of Ueki",
+        "chara": "Ueki",
+        "quote": "Keadilan tanpa kekuatan itu hanya omong kosong, karena itu aku akan menjadi kuat agar bisa memperlihatkan keadilanku."
+    },
+    {
+        "id": 498,
+        "anime": "The Law of Ueki",
+        "chara": "Ueki",
+        "quote": "Aku takkan bisa menegakkan keadilan jika tak bisa menyelamatkan nyawa yang ada didepanku."
+    },
+    {
+        "id": 499,
+        "anime": "D. Conan",
+        "chara": "Conan Edogawa",
+        "quote": "Titik kecil yang mudah luput dari mata justru lebih esensial dari apapun."
+    },
+    {
+        "id": 500,
+        "anime": "Naruto",
+        "chara": "Tsunade",
+        "quote": "Orang bertambah kuat karena mereka punya kenangan yg tidak bisa mereka lupakan."
+    },
+    {
+        "id": 501,
+        "anime": "One Piece",
+        "chara": "Dr. Hiluluk",
+        "quote": "Tidak ada yang tidak mungkin. Itulah simbol keyakinan."
+    },
+    {
+        "id": 502,
+        "anime": "Naruto",
+        "chara": "Kakashi",
+        "quote": "Kemampuan individu memang penting. Tapi yang lebih penting adalah kemampuan kerjasama."
+    },
+    {
+        "id": 503,
+        "anime": "Capt. Tsubasa",
+        "chara": "Hyuga",
+        "quote": "Menangislah sampai kmu puas kalau kmu merasakan kekesalan itu. Di pertandingan berikutnya kmu pasti menang."
+    },
+    {
+        "id": 504,
+        "anime": "Fairy Tail",
+        "chara": "Jellal",
+        "quote": "Aku tak bisa jatuh cinta dengan orang yang berjalan di cahaya, aku hanya berharap semoga dia hidup bahagia selamanya."
+    },
+    {
+        "id": 505,
+        "anime": "One Piece",
+        "chara": "Ace",
+        "quote": "Hanya ada 1 yang belum terwujud, yaitu aku tak bisa melihat akhir dari mimpi mu. Tapi aku yakin kau bisa mencapainya !"
+    },
+    {
+        "id": 506,
+        "anime": "Angel Beats",
+        "chara": "Otonashi",
+        "quote": "Saat senyuman yang kalian tunjukan padaku itu adalah hal yang lebih indah dari pada kembang api dan aku kan selalu mengingatnya."
+    },
+    {
+        "id": 507,
+        "anime": "Naruto",
+        "chara": "Tsunade",
+        "quote": "Menjadi terbuang selalu membuat seseorang bertambah kuat.Tapi kemudian mereka tdk bermaksud untuk mengejar kebahagiaan."
+    },
+    {
+        "id": 508,
+        "anime": "Naruto",
+        "chara": "Itachi",
+        "quote": "Selama ini aku hidup dengan menyembunyikan pisau di belakangku.Tapi sekarang sudah saatnya bagiku untuk menunjukan semuannya."
+    },
+    {
+        "id": 509,
+        "anime": "Naruto",
+        "chara": "Itachi",
+        "quote": "Menerima aib sebagai ganti kehormatan dan di benci sebagai ganti cinta meskipun begitu itulah arti dari seorang kakak."
+    },
+    {
+        "id": 510,
+        "anime": "bakuman",
+        "chara": "Takagi",
+        "quote": "Melakukan apapun agar berhasil jika tidak bisa berjalan dengan baik, itu masih lebih baik ketimbang tidak melakukan apapun."
+    },
+    {
+        "id": 511,
+        "anime": "D. Conan",
+        "chara": "Jodie Starling",
+        "quote": "Ketika kau menyingkirkan hal yang mustahil, walaupun yang tersisa jauh lebih mustahil, itulah kebenarannya."
+    },
+    {
+        "id": 512,
+        "anime": "Fairy tail",
+        "chara": "Erza",
+        "quote": "Arti masa lalu yang tidak dapat terulang kembali.. Dari kepala sampai ujung kaki !"
+    },
+    {
+        "id": 513,
+        "anime": "One Piece",
+        "chara": "Zoro",
+        "quote": "Biarpun kita kalah dalam jumlah bukan berarti mereka lah yang terkuat."
+    },
+    {
+        "id": 514,
+        "anime": "Arcana Famiglia",
+        "chara": "Sumire",
+        "quote": "Kebaikan bukan lah hal yang memalukan."
+    },
+    {
+        "id": 515,
+        "anime": "Naruto",
+        "chara": "Gaara",
+        "quote": "Kehormatan serta harga diri, itu adalah pemikiran kuno yang membosankan."
+    },
+    {
+        "id": 516,
+        "anime": "Crayon Shincan",
+        "chara": "Misae",
+        "quote": "Terkadang manusia harus berani melangkah maju meski hal yang mustahil terjadi."
+    },
+    {
+        "id": 517,
+        "anime": "Hunter X Hunter",
+        "chara": "Gon",
+        "quote": "Untuk menjadi teman itu tidak memerlukan syarat."
+    },
+    {
+        "id": 518,
+        "anime": "Bakuman",
+        "chara": "Takagi Akito",
+        "quote": "Kita akan menyesal bila mimpi yang kita kejar akhirnya gagal, tapi kita akan lebih menyesal bila kita tidak mencoba untuk mengejarnya."
+    },
+    {
+        "id": 519,
+        "anime": "D. Conan",
+        "chara": "Shinichi Kudo",
+        "quote": "Bahkan jika aku seorang Holmes, takkan mungkin bagiku untuk memecahkan isi hati dari perempuan yg disukainya."
+    },
+    {
+        "id": 520,
+        "anime": "Eyeshield 21",
+        "chara": "Hiruma",
+        "quote": "Kami selalu belajar, dari segala tumpukan kesalahan kami."
+    },
+    {
+        "id": 521,
+        "anime": "Naruto",
+        "chara": "Itachi",
+        "quote": "Bisa memaafkan diri dan mampu menerima kenyataan akan dirinya, itulah yang dinamakan kuat."
+    },
+    {
+        "id": 522,
+        "anime": "Digimon",
+        "chara": "Daimon Masaru",
+        "quote": "Tak mungkin aku menyerah pada musuh yang ada didepanku dan berlari seperti seorang pengecut."
+    },
+    {
+        "id": 523,
+        "anime": "Digimon",
+        "chara": "Daimon Masaru",
+        "quote": "Tidak peduli betapa sulitnya mengalahkannya, aku akan tetap berdiri tanpa ada kata menyerah."
+    },
+    {
+        "id": 524,
+        "anime": "One Piece",
+        "chara": "Trafalgar Law",
+        "quote": "Aku tidak suka orang yang tidak tau diri."
+    },
+    {
+        "id": 525,
+        "anime": "Naruto",
+        "chara": "Shisui",
+        "quote": "Kau teman baik ku, jadi aku hanya percaya padamu."
+    },
+    {
+        "id": 526,
+        "anime": "Fairy Tail",
+        "chara": "Gray",
+        "quote": "Kalian semua gabungkan kekuatan menjadi satu dan mari kita tunjukkan kekuatan ikatan dari guild kita."
+    },
+    {
+        "id": 527,
+        "anime": "Inazuma Eleven",
+        "chara": "Mark",
+        "quote": "Jangan remehkan kekuatan persahabatan !!"
+    },
+    {
+        "id": 528,
+        "anime": "D. Conan",
+        "chara": "Conan Edogawa",
+        "quote": "Sesuatu yang telah ada dalam genggaman, belum tentu bisa kita dapatkan."
+    },
+    {
+        "id": 529,
+        "anime": "Naruto",
+        "chara": "Uciha Fugaku",
+        "quote": "Meskipun jalan pikiran kita berbeda, aku tetap bangga padamu. Janji satu hal yang terakhir, jagalah sasuke."
+    },
+    {
+        "id": 530,
+        "anime": "Naruto",
+        "chara": "Yondaime",
+        "quote": "Jika aku akan mati untukmu aku akan melakukanya tanpa rasa penyesalan sedikitpun."
+    },
+    {
+        "id": 531,
+        "anime": "Samurai-X",
+        "chara": "Kenshin",
+        "quote": "Lebih baik menjadi beruntung karena pintar, dari pada menjadi pintar karena beruntung !"
+    },
+    {
+        "id": 532,
+        "anime": "D. Conan",
+        "chara": "Ayumi Yoshida",
+        "quote": "Mencemaskan seseorang ada hubungannya dengan menyukai orang itu."
+    },
+    {
+        "id": 533,
+        "anime": "Eyeshield 21",
+        "chara": "Hiruma",
+        "quote": "Pecundang bukan berarti yang kalah. Pecundang yang sebenarnya ialah yang tidak mengakui kekalahannya dan tidak mau merubah kesalahannya."
+    },
+    {
+        "id": 534,
+        "anime": "Fairy Tail",
+        "chara": "Lucy",
+        "quote": "Kalau dia temanmu, lalu bukankah seharusnya kau melindunginya? Aku bersumpah tak kan kalah pada siapapun yang tak memahaminya."
+    },
+    {
+        "id": 535,
+        "anime": "Hunter X Hunter",
+        "chara": "Gon",
+        "quote": "Walaupun keberuntunganku kurang bagus, itu tetap tidak akan menghalangiku."
+    },
+    {
+        "id": 536,
+        "anime": "D. Conan",
+        "chara": "Ai Haibara",
+        "quote": "Kamu tidak mengerti sama sekali, tapi aku tidak minta kamu mengerti."
+    },
+    {
+        "id": 537,
+        "anime": "D. Conan",
+        "chara": "Kaito Kid",
+        "quote": "Sulap memang membohongi orang, tapi orang yang di bohongi akan senang di bohongi."
+    },
+    {
+        "id": 538,
+        "anime": "Naruto",
+        "chara": "Minato Namikaze",
+        "quote": "Selama masih ada cinta, kebencian akan selalu menyertainya."
+    },
+    {
+        "id": 539,
+        "anime": "D. Conan",
+        "chara": "Ai Haibara",
+        "quote": "Kau tidak bisa merasakan yang orang lain rasakan, karna itu berubah setiap waktu."
+    },
+    {
+        "id": 540,
+        "anime": "D. Conan",
+        "chara": "Conan",
+        "quote": "Satu kata saja yang keluar dari mulut, kalian tidak akan bisa menariknya."
+    },
+    {
+        "id": 541,
+        "anime": "Slam Dunk",
+        "chara": "Pak Anzai",
+        "quote": "Sebelum kita memikirkan lawan kita, kita harus pikirkan kemajuan diri kita lebih dulu."
+    },
+    {
+        "id": 542,
+        "anime": "Love and Collage",
+        "chara": "Hachibe",
+        "quote": "Mati bisa kapan saja tapi, mendapat hal-hal baru cuma bisa di rasakan waktu masih hidup."
+    },
+    {
+        "id": 543,
+        "anime": "Hunter X Hunter",
+        "chara": "Bibi Mito",
+        "quote": "Saat kau berbohong pada seseorang, kau tidak dapat melihat langsung ke arah wajah orang tersebut."
+    },
+    {
+        "id": 544,
+        "anime": "Hunter X Hunter",
+        "chara": "Killua",
+        "quote": "Melupakan semua kenangan kelam untuk hari esok yang lebih baik lagi."
+    },
+    {
+        "id": 545,
+        "anime": "Hunter X Hunter",
+        "chara": "Tompa",
+        "quote": "Memaksa orang lain bukanlah hal baik, setiap orang memiliki prinsip hidup."
+    },
+    {
+        "id": 546,
+        "anime": "Doraemon",
+        "chara": "Doraemon",
+        "quote": "Menikmati makanan adalah momen berharga."
+    },
+    {
+        "id": 547,
+        "anime": "Naruto",
+        "chara": "Naruto",
+        "quote": "Apa yang aku lakukan sekarang akan membentukku di masa depan nanti."
+    },
+    {
+        "id": 548,
+        "anime": "Inuyasha",
+        "chara": "Kagome",
+        "quote": "Tanpa kau sadari ada seseorang yang bahagia melihat kau tersenyum."
+    },
+    {
+        "id": 549,
+        "anime": "Naruto",
+        "chara": "Kabuto",
+        "quote": "Sebagai orang yang pemalu, aku tidak terbiasa di lihat oleh orang lain."
+    },
+    {
+        "id": 550,
+        "anime": "One Piece",
+        "chara": "Usopp",
+        "quote": "Menemani dalam suka dan duka, itu adalah arti teman yang sebenarnya."
+    },
+    {
+        "id": 551,
+        "anime": "Beelzebub",
+        "chara": "Kanzaki",
+        "quote": "Jangan pikirkan orang lain, berdoalah untuk dirimu sendiri."
+    },
+    {
+        "id": 552,
+        "anime": "Bleach",
+        "chara": "Byakuya",
+        "quote": "Dalam peraturan tidak boleh ada perasaan, selama masih ada perasaan maka peraturan tidak bisa di tegakan."
+    },
+    {
+        "id": 553,
+        "anime": "Bleach",
+        "chara": "Komamura",
+        "quote": "Bergerak tanpa keraguan untuk menolong, itu sendiri lebih dari cukup untuk menilaimu sebagai \"teman\"."
+    },
+    {
+        "id": 554,
+        "anime": "Naruto",
+        "chara": "Naruto",
+        "quote": "Tidak peduli bagaimana aku selalu mencari perhatian orang-orang, itu lebih baik dari pada mengasingkan diri dan menghilang dari dunia ini."
+    },
+    {
+        "id": 555,
+        "anime": "Hunter X Hunter",
+        "chara": "Gon",
+        "quote": "Dimana pun kita berada kita akan selalu menjadi teman selamanya !!"
+    },
+    {
+        "id": 556,
+        "anime": "Baka to Test",
+        "chara": "Yuuji",
+        "quote": "Banggalah pada impianmu dan jangan biarkan orang lain mengatakannya tidak berguna."
+    },
+    {
+        "id": 557,
+        "anime": "Baka to Test",
+        "chara": "Yuuji",
+        "quote": "Aku tidak perduli akan meja-meja itu, aku akan buktikan kepada dunia kalau peringkat bukanlah segalanya."
+    },
+    {
+        "id": 558,
+        "anime": "Fate Zero",
+        "chara": "Gilgamesh",
+        "quote": "Ada beberapa hal yang menjadi indah karena tak dapat dimiliki."
+    },
+    {
+        "id": 559,
+        "anime": "Gintama",
+        "chara": "Kondou Isao",
+        "quote": "Wanita lebih senang dicintai daripada mencintai, itu yang dibilang ibuku."
+    },
+    {
+        "id": 560,
+        "anime": "Samurai-X",
+        "chara": "Kenshin",
+        "quote": "Dimana kita bertemu seseorang/sesuatu, pasti suatu saat nanti akan berpisah."
+    },
+    {
+        "id": 561,
+        "anime": "One Piece",
+        "chara": "Sanji",
+        "quote": "Tidak menggunakan otak, akan kalah dalam pertarungan."
+    },
+    {
+        "id": 562,
+        "anime": "Hellsing",
+        "chara": "Alucard",
+        "quote": "Hidup perlu mati, untuk membuatnya menjadi berharga."
+    },
+    {
+        "id": 563,
+        "anime": "One Piece",
+        "chara": "Luffy",
+        "quote": "Kita tidak akan tahu jika kita tidak mencobanya."
+    },
+    {
+        "id": 564,
+        "anime": "Gundam Seed",
+        "chara": "Mwu La Flaga",
+        "quote": "Did you forget? I am the man who can make the impossible possible."
+    },
+    {
+        "id": 565,
+        "anime": "Yu-Gi-Oh",
+        "chara": "Yuma Tsukomo",
+        "quote": "Kadang kala menjadi seorang bintang sangat menjengkelkan, karena kita akan merasa sakit karena berada sendirian."
+    },
+    {
+        "id": 566,
+        "anime": "Beezebub",
+        "chara": "Hilda",
+        "quote": "Tidak ada mahluk hidup yang lebih sempurna dari manusia !!"
+    },
+    {
+        "id": 567,
+        "anime": "One Piece",
+        "chara": "Marco",
+        "quote": "Dari pada menangis, lebih baik tebus kesalahanmu."
+    },
+    {
+        "id": 568,
+        "anime": "Bakuman",
+        "chara": "Mashiro",
+        "quote": "Kebisuan anda menjelaskannya lebih keras dari suara anda !"
+    },
+    {
+        "id": 569,
+        "anime": "Bleach",
+        "chara": "Aizen",
+        "quote": "Seorang pemenang tidak selalu harus berfikir tentang bagaimana dunia ini, namun bagaimana jadinya dunia ini."
+    },
+    {
+        "id": 570,
+        "anime": "Eyeshield 21",
+        "chara": "Hiruma",
+        "quote": "Ada saatnya hal yang tidak masuk akal bisa jadi masuk akal."
+    },
+    {
+        "id": 571,
+        "anime": "Naruto",
+        "chara": "Jiraiya",
+        "quote": "Ketika orang-orang merasa dilukai, mereka akan belajar untuk membenci."
+    },
+    {
+        "id": 572,
+        "anime": "Naruto",
+        "chara": "Tsuchikage",
+        "quote": "Jika tidak ada rasa peduli sesama, saling mempercayai dan manusianya pun seperti itu Maka disana tidak akn ada masa depan."
+    },
+    {
+        "id": 573,
+        "anime": "Shaman King",
+        "chara": "Yoh Asakura",
+        "quote": "Sekuat apapun kau mengontrol spirit, kau tak akan mungkin bisa mengendalikan hatinya."
+    },
+    {
+        "id": 574,
+        "anime": "Hunter X Hunter",
+        "chara": "Killua",
+        "quote": "Kalau kau terus berfikir dan tak melakukan apa-apa, kau akan tertinggal jauh."
+    },
+    {
+        "id": 575,
+        "anime": "Naruto",
+        "chara": "Sasuke to Sakura",
+        "quote": "Aku akan menempuh jalan yang tidak akan bisa kau ikuti !!"
+    },
+    {
+        "id": 576,
+        "anime": "One Piece",
+        "chara": "Edward Newgate",
+        "quote": "Jangan terus melihat ke belakang, karena era baru akan dimulai !!"
+    },
+    {
+        "id": 577,
+        "anime": "Death Note",
+        "chara": "Near",
+        "quote": "Jika kamu berbuat salah cukup katakan maaf saja !"
+    },
+    {
+        "id": 578,
+        "anime": "Doraemon",
+        "chara": "Nobita",
+        "quote": "Mungkin memang kedudukanKu berbeda dengan pangeran.. Tapi, kalau teman, sudah sewajarnya harus saling membantu kan?"
+    },
+    {
+        "id": 579,
+        "anime": "Yu-Gi-Oh",
+        "chara": "Yugi",
+        "quote": "Kekuatan teman lah yang memberiku kemenangan !"
+    },
+    {
+        "id": 580,
+        "anime": "Naruto",
+        "chara": "Naruto",
+        "quote": "Terkadang kita tak tau betapa berharganya yang ada di dekat kita sebelum dia benar-benar pergi."
+    },
+    {
+        "id": 581,
+        "anime": "Naruto",
+        "chara": "Naruto",
+        "quote": "Teman adalah orang yang menyelamatkan ku dari neraka yang bernama kesepian."
+    },
+    {
+        "id": 582,
+        "anime": "Naruto",
+        "chara": "Gaara",
+        "quote": "Kekuatan kebencian adalah kekuatan nafsu membunuh. Kekuatan nafsu membunuh adalah kekuatan balas dendam."
+    },
+    {
+        "id": 583,
+        "anime": "Naruto",
+        "chara": "Gaara",
+        "quote": "Hanya yang menang yang bisa merasakan nilai hidup."
+    },
+    {
+        "id": 584,
+        "anime": "Death Note",
+        "chara": "L",
+        "quote": "Tidak peduli seberapa bakatnya dirimu, jika kau hanya sendirian, kau tdk akan bisa mengubah dunia."
+    },
+    {
+        "id": 585,
+        "anime": "Death Note",
+        "chara": "L",
+        "quote": "Mempertaruhkan hidup dan melakukan sesuatu itu berbeda."
+    },
+    {
+        "id": 586,
+        "anime": "Inu x Boku SS",
+        "chara": "Ririchiyo Shirakin",
+        "quote": "Ketika aku merasa ragu, masa lalu datang menghantuiku."
+    },
+    {
+        "id": 587,
+        "anime": "Bleach",
+        "chara": "Aizen",
+        "quote": "Menakar tenaga untuk menginjak semut agar dia tidah hancur sangatlah sulit."
+    },
+    {
+        "id": 588,
+        "anime": "Bleach",
+        "chara": "Aizen",
+        "quote": "Jangan terlalu sering mengucapkan kata-kata kasar, itu akan membuatmu terlihat lemah."
+    },
+    {
+        "id": 589,
+        "anime": "Bleach",
+        "chara": "Aizen",
+        "quote": "Rasa kagum itu adalah emosi yang paling jauh dari pemahaman."
+    },
+    {
+        "id": 590,
+        "anime": "Bleach",
+        "chara": "Aizen",
+        "quote": "Aku tak bermaksud menipu, hanya saja tak ada seorang pun yang memahami sosok asli dari diriku."
+    },
+    {
+        "id": 591,
+        "anime": "Bleach",
+        "chara": "Aizen",
+        "quote": "Mempercayai sama dengan bergantung. Itu tindakan orang lemah !"
+    },
+    {
+        "id": 592,
+        "anime": "D. Conan",
+        "chara": "Heiji",
+        "quote": "Aku diam saat kau pergi, aku diam saat kau lukai aku. Tapi aku tidak akan pernah tinggal diam apabila kau disakiti."
+    },
+    {
+        "id": 593,
+        "anime": "kuroshitsuji",
+        "chara": "Ciel Phantomhive",
+        "quote": "never leave my side. No matter what !"
+    },
+    {
+        "id": 594,
+        "anime": "Fushigi Yugi",
+        "chara": "Taka Sukunami",
+        "quote": "Aku akan selalu berada disisimu, bahkan ketika itu berarti melarang aturan di surga."
+    },
+    {
+        "id": 595,
+        "anime": "Fairy Tail",
+        "chara": "Ultear",
+        "quote": "Aku memutuskan untuk menebus dosa-dosa yang sudah aku lakukan seumur hidupku, walau aku tau itu tak akan cukup."
+    },
+    {
+        "id": 596,
+        "anime": "Hunter X Hunter",
+        "chara": "Kurapika",
+        "quote": "Jangan berpikir bahwa uang bisa membeli segalanya."
+    },
+    {
+        "id": 597,
+        "anime": "Beelzebub",
+        "chara": "Oga Tatsumi",
+        "quote": "Laki-laki jangan menangis. Kau akan terlihat konyol."
+    },
+    {
+        "id": 598,
+        "anime": "Naruto",
+        "chara": "Hanzo",
+        "quote": "Hidup seseorang tidak berakhir saat dia mati, tapi akan berakhir saat dia kehilangan keyakinannya."
+    },
+    {
+        "id": 599,
+        "anime": "Naruto",
+        "chara": "Chojuro",
+        "quote": "Aku akan melindungi senyum manis itu semampuku !!"
+    },
+    {
+        "id": 600,
+        "anime": "Naruto",
+        "chara": "Hidan",
+        "quote": "Rasa sakit itu menyenangkan."
+    },
+    {
+        "id": 601,
+        "anime": "One Piece",
+        "chara": "Brook",
+        "quote": "Angin dari sebuah kebencian akan lebih dingin dari sebuah musim salju di musim dingin."
+    },
+    {
+        "id": 602,
+        "anime": "Yureka",
+        "chara": "Lotto",
+        "quote": "Apa yang kamu beri, itulah yang akan kau dapatkan."
+    },
+    {
+        "id": 603,
+        "anime": "Bleach",
+        "chara": "Hitsugaya",
+        "quote": "Terjebak di masa lalu hanya akan merusak konsentrasimu."
+    },
+    {
+        "id": 604,
+        "anime": "Princess Lover",
+        "chara": "Nezu Haruhiko",
+        "quote": "Orang yg bisa membantu untuk meringankan masalah orang lain itu yang disebut teman."
+    },
+    {
+        "id": 605,
+        "anime": "Durara",
+        "chara": "Shinra Kishitani",
+        "quote": "Manusia tidak bisa dinilai dari wajahnya."
+    },
+    {
+        "id": 606,
+        "anime": "Kuroko no Basket",
+        "chara": "Aomine Daiki",
+        "quote": "Hanya diriku sendirilah yang bisa mengalahkan diriku."
+    },
+    {
+        "id": 607,
+        "anime": "Kuroko no Basuke",
+        "chara": "Taiga Kagami",
+        "quote": "Hidup itu tantangan, tak ada artinya hidup jika tak ada lawan yang kuat. Lebih baik jika aku tak bisa menang."
+    },
+    {
+        "id": 608,
+        "anime": "To Love Ru",
+        "chara": "Ringo Yuki",
+        "quote": "Jangan pernah membuat anak perempuan menangis, itu perbuatan terendah dari seorang pria."
+    },
+    {
+        "id": 609,
+        "anime": "Nyan Koi",
+        "chara": "Nyamsus",
+        "quote": "Seorang lelaki seharusnya melindungi wanita yang dicintainya."
+    },
+    {
+        "id": 610,
+        "anime": "Nyan Koi",
+        "chara": "Kouta kawamura",
+        "quote": "Wanita ada untuk dicintai, bukan hanya alat pembuat anak."
+    },
+    {
+        "id": 611,
+        "anime": "Takkoku",
+        "chara": "Gaku",
+        "quote": "Hukum seperti apa pun tidak akan bisa menandingi cinta kita."
+    },
+    {
+        "id": 612,
+        "anime": "Takkoku",
+        "chara": "Gaku",
+        "quote": "Didunia ini ada cinta yang tak akan kalah dari apapun."
+    },
+    {
+        "id": 613,
+        "anime": "Fairy Tail",
+        "chara": "Rusty Rose",
+        "quote": "Aku perlu kekuatan untuk melindungi teman-temanku. Kalau aku memiliki itu, aku tidak peduli walau jadi yang terlemah."
+    },
+    {
+        "id": 614,
+        "anime": "Magic Kaito",
+        "chara": "Kaito Kid",
+        "quote": "Pemandangan malam ini adalah hadiah dariku !!"
+    },
+    {
+        "id": 615,
+        "anime": "Ai Kora",
+        "chara": "Maeda Hachibei",
+        "quote": "Walau aku tidak pernah merasakan cinta, tapi memaksa orang untuk saling mencintai itu bukan cinta."
+    },
+    {
+        "id": 616,
+        "anime": "One Piece",
+        "chara": "Luffy",
+        "quote": "Jangan takut untuk bermimpi, karena mimpi adalah tempat menanam benih harapan dan memetakan cita- cita."
+    },
+    {
+        "id": 617,
+        "anime": "One Piece",
+        "chara": "Ussop",
+        "quote": "Jika aku tak dapat bersamanya saat ia bersedih, maka aku tak pantas lagi menjadi temannya."
+    },
+    {
+        "id": 618,
+        "anime": "Naruto",
+        "chara": "Shikamaru",
+        "quote": "Lakukan apa yang ingin kita lakukan, tak usah peduli perkataan orang lain terhadap kita."
+    },
+    {
+        "id": 619,
+        "anime": "Bleach",
+        "chara": "Ichigo",
+        "quote": "Kami takkan berhenti melangkah, walau nanti akan kehilangan arah dijalan itu."
+    },
+    {
+        "id": 620,
+        "anime": "Fairy Tail",
+        "chara": "Natsu",
+        "quote": "Never look at your life as something insignificant. Never forget those friends of yours that you loved."
+    },
+    {
+        "id": 621,
+        "anime": "Bleach",
+        "chara": "Ichigo",
+        "quote": "Bila tidak memegang pedang aku tidak dapat melindungimu, namun disaat memegang pedang, aku tidak dapat memelukmu."
+    },
+    {
+        "id": 622,
+        "anime": "Hunter X Hunter",
+        "chara": "Hisoka",
+        "quote": "Lengah adalah musuh terbesar."
+    },
+    {
+        "id": 623,
+        "anime": "FLCL",
+        "chara": "Haruko",
+        "quote": "Sejenius apapun seseorang pasti pernah melakukan kesalahan."
+    },
+    {
+        "id": 624,
+        "anime": "Fairy Tail",
+        "chara": "Erza",
+        "quote": "Selama kau tertawa di atas penderitaan orang lain, impianmu akan semakin jauh untuk dicapai."
+    },
+    {
+        "id": 625,
+        "anime": "Naruto",
+        "chara": "Kushina",
+        "quote": "Ingatlah dirimu, raihlah tujuanmu dan mimpimu ! jangan pernah berhenti mencoba sampai kau berhasil meraihnya."
+    },
+    {
+        "id": 626,
+        "anime": "Doraemon",
+        "chara": "Doraemon",
+        "quote": "Kamu tak akan selalu jadi anak kecil jadi kamu harus berusaha."
+    },
+    {
+        "id": 627,
+        "anime": "Crows",
+        "chara": "Harumichi Boya",
+        "quote": "Kebahagiaan tidak akan datang menghampiri kita, karena itu kita yang harus berlari menghampirinya."
+    },
+    {
+        "id": 628,
+        "anime": "Inuyasha",
+        "chara": "Inuyasha",
+        "quote": "Aku akan melindungimu dengan seluruh hidupku."
+    },
+    {
+        "id": 629,
+        "anime": "Princess Lover",
+        "chara": "Nezu Haruhiko",
+        "quote": "Orang yang bisa membantu untuk meringankan masalah orang lain itu yang disebut teman."
+    },
+    {
+        "id": 630,
+        "anime": "One Piece",
+        "chara": "Van Auger",
+        "quote": "Takdir tidak kenal yang namanya \"Kebetulan\"."
+    },
+    {
+        "id": 631,
+        "anime": "Fairy Tail",
+        "chara": "Natsu",
+        "quote": "Jika kau tidak memiliki semangat untuk merubah sesuatu itu sama saja artinya dengan mati."
+    },
+    {
+        "id": 632,
+        "anime": "Naruto",
+        "chara": "Yondaime",
+        "quote": "Parents always believe in their children."
+    },
+    {
+        "id": 633,
+        "anime": "Acchi Kocchi",
+        "chara": "Io Otonashi",
+        "quote": "Saat senyuman yang kalian tunjukan pada ku, itu adalah hal yang lebih indah dari pada kembang api dan aku akan selalu mengingatnya."
+    },
+    {
+        "id": 634,
+        "anime": "Naruto",
+        "chara": "Rock Lee",
+        "quote": "Jika kamu percaya dengan impianmu aku akan membuktikan padamu bahwa kamu bisa meraih impianmu hanya dengan bekerja keras."
+    },
+    {
+        "id": 635,
+        "anime": "Capt. Tsubasa",
+        "chara": "Tsubasa Ozora",
+        "quote": "Di dunia ini banyak sekali dinding yang sangat kuat. Maka aku harus banyak berlatih untuk bisa melewati itu semua."
+    },
+    {
+        "id": 636,
+        "anime": "Beelzebub",
+        "chara": "Oga Tatsumi",
+        "quote": "Seorang pria sejati tak akan terus mengeluh."
+    },
+    {
+        "id": 637,
+        "anime": "Naruto",
+        "chara": "Uzumaki Naruto",
+        "quote": "Aku lebih menyayangi sasuke sebagai temannya, melebihi kau yang saudaranya sendiri."
+    },
+    {
+        "id": 638,
+        "anime": "Clannad After Story",
+        "chara": "Shima",
+        "quote": "Love is like a firework from the past. It’s more beautiful for it to go to pieces and scatter far off."
+    },
+    {
+        "id": 639,
+        "anime": "D. Conan",
+        "chara": "Shinichi Kudo",
+        "quote": "Because i love you so much, i love you more than anyone else."
+    },
+    {
+        "id": 640,
+        "anime": "Bleach",
+        "chara": "Muramasa",
+        "quote": "Kita harus membuka mata lebar-lebar. Bersiap menghadapi roda kehidupan yang seringkali mengubah sesuatu yang menyenangkan menjadi berakhir."
+    },
+    {
+        "id": 641,
+        "anime": "D. Conan",
+        "chara": "Ai Haibara",
+        "quote": "Terkadang kenangan indah pun dapat membuatmu bersedih, yaitu saat kamu tau kenangan itu takkan mungkin terulang lagi."
+    },
+    {
+        "id": 642,
+        "anime": "The Law of Ueki",
+        "chara": "Ueki",
+        "quote": "Tidak ada manusia yang sempurna karna itu kita butuh teman yang saling menolong untuk menutupi kekurangan masing-masing."
+    },
+    {
+        "id": 643,
+        "anime": "Shaman King",
+        "chara": "Yoh Asakura",
+        "quote": "Punya banyak hal berharga itu sulit, kadang kita harus mengorbankan salah 1 untuk mempertahankan yang lainnya."
+    },
+    {
+        "id": 644,
+        "anime": "Crows",
+        "chara": "Harumichi Bouya",
+        "quote": "Rasa persahabatan pasti akan tumbuh dengan sendirinya diantara 2 laki-laki yang punya niat dan tujuan yang sama."
+    },
+    {
+        "id": 645,
+        "anime": "Eyeshield 21",
+        "chara": "Mr. Don",
+        "quote": "Kekuatan orang tidak akan meningkat dengan janji atau perasaan.. Itu hanya impian sedih orang-orang biasa."
+    },
+    {
+        "id": 646,
+        "anime": "Arcana Famiglia",
+        "chara": "Debito",
+        "quote": "Seorang wanita akan mekar ketika ia dipuji."
+    },
+    {
+        "id": 647,
+        "anime": "Angel Beats",
+        "chara": "Hideki Hinata",
+        "quote": "Tidak ada yang salah tentang cinta.. Jatuh cinta di dunia ini mungkin akan menyembuhkan luka kita di dunia sebelumnya."
+    },
+    {
+        "id": 648,
+        "anime": "Princess Resurrection",
+        "chara": "Hiro Hiyorimi",
+        "quote": "Jika aku harus memilih untuk bernafas/mencintaimu, maka akan ku gunakan nafas terakhirku untuk mengatakan \"Aku Mencintaimu\"."
+    },
+    {
+        "id": 649,
+        "anime": "Kyo Kara Maoh!",
+        "chara": "Murata Ken",
+        "quote": "Masa lalu adalah masa lalu. Kita tidak bisa memanjakan diri kita dalam kenangan dan menghancurkan masa kini."
+    },
+    {
+        "id": 650,
+        "anime": "Hunter X Hunter",
+        "chara": "Killua",
+        "quote": "Apa kau tidak tahu betapa indahnya hidup jika kita memiliki seorang yang sangat berharga di dunia ini yaitu sahabat."
+    },
+    {
+        "id": 651,
+        "anime": "Soul Eater",
+        "chara": "Excalibur",
+        "quote": "Sebuah simfoni tdk dpt dibuat menggunakan akal sehat &amp; probabilitas, hal ini sudah ditulis dlm nasib komposer."
+    },
+    {
+        "id": 652,
+        "anime": "Kuroshitsuji",
+        "chara": "Ciel Phantomhive",
+        "quote": "Ada beberapa hal yg tidak akan pernah bisa kembali padamu, tdk peduli berapa banyak usaha yang kau lakukan."
+    },
+    {
+        "id": 653,
+        "anime": "Naruto",
+        "chara": "Kisame",
+        "quote": "Dunia memang penuh dengan kebohongan."
+    },
+    {
+        "id": 654,
+        "anime": "Hunter X Hunter",
+        "chara": "Kurapika",
+        "quote": "Semakin banyak kau berbicara semakin banyak kau menunjukan kelemahanmu."
+    },
+    {
+        "id": 655,
+        "anime": "Neon Genesis Evangelion",
+        "chara": "Nagisa Kaworu",
+        "quote": "Lagu itu hal baik, menyanyi membawakan kita kegembiraan."
+    },
+    {
+        "id": 656,
+        "anime": "unknown",
+        "chara": "Kaito Kid",
+        "quote": "Tentara yang kuat seperti apapun, saat kesulitan pasti akan melihat kearah komandannya"
+    },
+    {
+        "id": 657,
+        "anime": "unknown",
+        "chara": "Conan Edogawa",
+        "quote": "Bodoh, tahu isinya sebelum membuka, itulah detektif"
+    },
+    {
+        "id": 658,
+        "anime": "Angel Beats",
+        "chara": "Otonashi",
+        "quote": "Hidup itu berharga, seberapa buruk itu dan orang akan sadar sesuatu itu berharga setelah kehilangannya"
+    },
+    {
+        "id": 659,
+        "anime": "unknown",
+        "chara": "Kaitou Kid",
+        "quote": "Biarkanlah rahasia tetap menjadi rahasia"
+    },
+    {
+        "id": 660,
+        "anime": "unknown",
+        "chara": "Shinichi Kudo",
+        "quote": "Jika kita menang karena ini, kita bisa jadi legenda!"
+    },
+    {
+        "id": 661,
+        "anime": "unknown",
+        "chara": "Kogoro Mouri",
+        "quote": "Orang yang kehilangan jati diri sampai melakukan pembunuhan, tak bisa terusterusan memikul takdir timnya"
+    },
+    {
+        "id": 662,
+        "anime": "unknown",
+        "chara": "Conan Edogawa",
+        "quote": "Kalau cuma bicara mimpi, kita tak akan bisa melihat kenyataan"
+    },
+    {
+        "id": 663,
+        "anime": "Sharon Vineyard",
+        "chara": "Vermouth",
+        "quote": "A secret makes a woman woman!"
+    },
+    {
+        "id": 664,
+        "anime": "Gundam 00",
+        "chara": "Lockon Stratos",
+        "quote": "Satusatunya yang dapat mengubah masa lalu adalah bagaimana Anda merasakan hal itu di masa kini"
+    },
+    {
+        "id": 665,
+        "anime": "unknown",
+        "chara": "Shinichi Kudo",
+        "quote": "Kebenaran selalu hanya ada satu"
+    },
+    {
+        "id": 666,
+        "anime": "unknown",
+        "chara": "Shinichi Kudo",
+        "quote": "Alasan untuk membunuh orang itu banyak, tapi tidak diperlukan alasan untuk menolong seseorang"
+    },
+    {
+        "id": 667,
+        "anime": "unknown",
+        "chara": "Jodie Santemillion",
+        "quote": "Sembunyikan kepala, tapi tidak sembunyikan pantat"
+    },
+    {
+        "id": 668,
+        "anime": "Eyeshield 21",
+        "chara": "Hiruma",
+        "quote": "Penghargaan terbaik bukan hadiah tapi kejayaan dari kemenangan itu sendiri"
+    },
+    {
+        "id": 669,
+        "anime": "unknown",
+        "chara": "Sharon Vineyard",
+        "quote": "Malaikat tak pernah tersenyum padaku, Tidak pernah"
+    },
+    {
+        "id": 670,
+        "anime": "unknown",
+        "chara": "Vermouth",
+        "quote": "Kami dapat menjadi Tuhan maupun setan Karena kami melawan arus waktu untuk membangkitkan orang mati"
+    },
+    {
+        "id": 671,
+        "anime": "unknown",
+        "chara": "Kogoro Mouri",
+        "quote": "Huh, Siapa yang setan?! Aku tak tahu apapun alasannya,Aku tak ingin tahu perasaan pembunuh"
+    },
+    {
+        "id": 672,
+        "anime": "unknown",
+        "chara": "Kogoro Mouri",
+        "quote": "Bodoh!kau saja yang lemah hati dan jiwamu"
+    },
+    {
+        "id": 673,
+        "anime": "Samurai Deeper Kyo",
+        "chara": "Yukimura",
+        "quote": "Jarak antara hidup dan mati itu setipis kertas Artinya kehidupan adalah kenyataan"
+    },
+    {
+        "id": 674,
+        "anime": "unknown",
+        "chara": "Conan",
+        "quote": "Sekalipun itu ditempatkan di telapak tangan kitabukan berarti kita dapat menggegamnya"
+    },
+    {
+        "id": 675,
+        "anime": "unknown",
+        "chara": "Ai Haibara",
+        "quote": "Matahari senja, sampai kapan aku akan bertemu lagi dengan warna menyedihkan ini?"
+    },
+    {
+        "id": 676,
+        "anime": "unknown",
+        "chara": "Ai Haibara",
+        "quote": "Manusia tak akan bisa menahan lajunya waktu Jika memaksa memutarnya, manusia akan mendapat hukuman"
+    },
+    {
+        "id": 677,
+        "anime": "unknown",
+        "chara": "Ayumi Yoshida",
+        "quote": "Kalau lari terus, aku tak akan menang!!"
+    },
+    {
+        "id": 678,
+        "anime": "unknown",
+        "chara": "Shinichi Kudo",
+        "quote": "Bodoh Detektif juga manusia, bukan Tuhan yang tahu segala"
+    },
+    {
+        "id": 679,
+        "anime": "Beelzebub",
+        "chara": "Oga Tatsumi",
+        "quote": "Arti menjadi lakilaki adalah sekali kau menetapkan hatimu, kau tidak boleh mengingkarinya"
+    },
+    {
+        "id": 680,
+        "anime": "unknown",
+        "chara": "Jodie Saintemillion",
+        "quote": "Suatu saat, mungkin tidak ada lagi orang yang bisa diandalkan"
+    },
+    {
+        "id": 681,
+        "anime": "unknown",
+        "chara": "Conan Edogawa",
+        "quote": "Naluri detektif, bisa merasakan hawa mereka yang memiliki nafsu membunuh!"
+    },
+    {
+        "id": 682,
+        "anime": "unknown",
+        "chara": "Shinichi Kudo",
+        "quote": "Benda yang tersisa kecuali yang tidak ada, semuanya tak bisa dipercaya"
+    },
+    {
+        "id": 683,
+        "anime": "unknown",
+        "chara": "Ran Mouri",
+        "quote": "Aku tahu itu sulit untuk diungkapkan, tapi sebagai pria, kau harus berani dan kau harus mengatakannya"
+    },
+    {
+        "id": 684,
+        "anime": "Ouran High School",
+        "chara": "Kyoya Ottory",
+        "quote": "Pemenang adalah orang yang dapat memanfaatkan teman atau lawan disaat kondisi yang tepat"
+    },
+    {
+        "id": 685,
+        "anime": "unknown",
+        "chara": "Jodie Saintemillion",
+        "quote": "Bagaimana bisa orang yang membunuh dengan senyuman dikatakan orang baik?!"
+    },
+    {
+        "id": 686,
+        "anime": "unknown",
+        "chara": "Sanjuro Tsurugi",
+        "quote": "Jalan yang kau tempuh, harus indah seperti bunga dan kuat seperti pohon"
+    },
+    {
+        "id": 687,
+        "anime": "unknown",
+        "chara": "Natsuki Koshimizu",
+        "quote": "Yakin akan tetap hidup sebelum kematian dipastikan datang adalah sikap seorang detektif sejati"
+    },
+    {
+        "id": 688,
+        "anime": "unknown",
+        "chara": "Conan",
+        "quote": "Katakata adalah pedang Jika salah menggunakannya akan mengubahnya menjadi senjata yang tajam"
+    },
+    {
+        "id": 689,
+        "anime": "Eureka7",
+        "chara": "Euruka",
+        "quote": "Seberapa jauh pun kau melangkah, Seberapa kuat pun kau berusaha, Masa Lalu, akan tetap mengejar mu"
+    },
+    {
+        "id": 690,
+        "anime": "unknown",
+        "chara": "Ran Mouri",
+        "quote": "Sebab, hadiah valentine kalau diberikan lewat dari harinya, perasaanku tak akan sampai padanya"
+    },
+    {
+        "id": 691,
+        "anime": "unknown",
+        "chara": "Yukiko Kudo",
+        "quote": "Wanita akan menatap pria kalau ada sesuatu di wajahnya atau jatuh cinta padanya"
+    },
+    {
+        "id": 692,
+        "anime": "Kuro Shitsuji",
+        "chara": "Ciel Phantomhive",
+        "quote": "Pengalaman yang memiliki luka akan menjadi suatu pelajaran yang baik"
+    },
+    {
+        "id": 693,
+        "anime": "unknown",
+        "chara": "aoko nakamori",
+        "quote": "aku tidak akan pernah memaafkannya Aku tidak akan pernah memaafkan orang yang senang mempermainkan orang lain"
+    },
+    {
+        "id": 694,
+        "anime": "unknown",
+        "chara": "sherlock holmes",
+        "quote": "walaupun hal yang tersisa setelah kau menyingkirkan hal yang mustahil adalah hal yang mustahil pula, itulah kebenarannya!"
+    },
+    {
+        "id": 695,
+        "anime": "unknown",
+        "chara": "Yahiko, chapter 372",
+        "quote": "Kalau mau saling mengerti, lakukan saja setelah membuat lawan mengalami hal yang sama"
+    },
+    {
+        "id": 696,
+        "anime": "unknown",
+        "chara": "Nagato, chapter 373",
+        "quote": "Aku hanya ingin melindungi mereka, walau harus menjalani penderitaan seperti apapun"
+    },
+    {
+        "id": 697,
+        "anime": "unknown",
+        "chara": "Pain, chapter 474",
+        "quote": "Penderitaan membuatku semakin kuat dan berkembang"
+    },
+    {
+        "id": 698,
+        "anime": "One Piece",
+        "chara": "Zoro",
+        "quote": "Jika keajaiban itu tidak berpihak kepada kita, maka kita sendiri yang akan membuat keajaiban itu"
+    },
+    {
+        "id": 699,
+        "anime": "unknown",
+        "chara": "Hatake Kakashi",
+        "quote": "Aku tersesat di jalan yang bernama kehidupan"
+    },
+    {
+        "id": 700,
+        "anime": "unknown",
+        "chara": "Uzumaki Naruto",
+        "quote": "Aku tak akan menarik kembali katakataku, karena itulah jalan ninjaku"
+    },
+    {
+        "id": 701,
+        "anime": "unknown",
+        "chara": "Aburame Shino",
+        "quote": "Selemah apapun musuhku, aku tidak akan meremehkan mereka"
+    },
+    {
+        "id": 702,
+        "anime": "Full Metal Alchemist",
+        "chara": "Edward",
+        "quote": "Hal yang sudah hilang tidak akan bisa dikembalikan lagi"
+    },
+    {
+        "id": 703,
+        "anime": "unknown",
+        "chara": "Gaara",
+        "quote": "Suatu hari aku ingin menjadi sesuatu yang berharga bagi orang lain"
+    },
+    {
+        "id": 704,
+        "anime": "unknown",
+        "chara": "Deidara",
+        "quote": "Seni itu adalah sesuatu yang rapuh, yang menghilang dalam sekejap"
+    },
+    {
+        "id": 705,
+        "anime": "unknown",
+        "chara": "Uchiha Obito",
+        "quote": "Shinobi yang melanggar aturan memang disebut sampah, tetapi shinobi yang meninggalkan sahabatnya lebih rendah dari sampah"
+    },
+    {
+        "id": 706,
+        "anime": "unknown",
+        "chara": "Jiraiya",
+        "quote": "Sepertinya aku harus meninggalkan Konoha demi menyelamatkan Konoha"
+    },
+    {
+        "id": 707,
+        "anime": "unknown",
+        "chara": "Gaara",
+        "quote": "Manusia tak kan pernah bisa menang dari rasa kesepian"
+    },
+    {
+        "id": 708,
+        "anime": "K-ON !",
+        "chara": "Mio Akiyama",
+        "quote": "Jangan banyak mengeluh jika kamu ingin bisa"
+    },
+    {
+        "id": 709,
+        "anime": "unknown",
+        "chara": "Uchiha Itachi",
+        "quote": "Kau lemah, kenapa kau lemah??? Soalnya kurang sesuatu, yaitu kebencian"
+    },
+    {
+        "id": 710,
+        "anime": "unknown",
+        "chara": "Neji Hyuuga",
+        "quote": "A loser is a loser"
+    },
+    {
+        "id": 711,
+        "anime": "unknown",
+        "chara": "Hatake Kakashi",
+        "quote": "Kemampuan individu seorang ninja memang penting, tetapi yang lebih penting lagi adalah kerjasama tim"
+    }
+]
