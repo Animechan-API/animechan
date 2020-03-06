@@ -1,5 +1,6 @@
 <img src="https://i.ibb.co/nctydTg/anime-banner.jpg">
-> <b>Lets make an open source anime quotes api for all the otaku devs out there(＾◡＾)</b>
+
+> <b>Lets make an open source anime quotes api for all the otaku devs out there(＾◡＾) </b>
 
 ### Development
 
@@ -13,4 +14,7 @@ npm start
 
 This will start the dev server 🚀.
 
-__Lets all contribute (＾◡＾)__
+### Contribute
+
+* Help me add more quotes in the database `/data/data.json`
+* any others suggestions then leave a issue.
