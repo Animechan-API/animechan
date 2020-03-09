@@ -5,7 +5,7 @@ module.exports.quotes = (req, res) => {
     let quotes = null, results = db;
     // regular expression to match query with "anime" ignoring case!!
     let regexMatch = new RegExp(`^${anime}$`, 'gi');
-    if(anime){
+    if (anime) {
         // filter results based on query
         results = db.filter(itm => regexMatch.test(itm.anime));
     }
@@ -14,7 +14,7 @@ module.exports.quotes = (req, res) => {
      */
     if (!page) {
         quotes = results.slice(0, 10);
-        res.json({ message: 'success', error: false, data: quotes });
+        res.json({ message: 'success', data: quotes });
     }
     /** pagination limit is up to 10 
      * request up than 10 will send a warning
@@ -24,17 +24,16 @@ module.exports.quotes = (req, res) => {
         const endIndex = page * 10;
 
         quotes = results.slice(startIndex, endIndex);
-        res.json({ message: 'success', error: false, data: quotes });
+        res.json({ message: 'success', data: quotes });
     } else {
-        res.json({ 
-            message: 'page request limit is only up to 10!', 
-            error: true, 
-            data: null 
+        res.json({
+            message: 'page request limit is only up to 10!',
+            error: true
         });
     };
 }
 
 module.exports.randomQuote = (req, res) => {
     const quote = db[Math.floor(Math.random() * db.length)]
-    res.json({ message: 'success', error: false, data: quote });
+    res.json({ message: 'success', data: quote });
 }
