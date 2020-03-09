@@ -13,16 +13,23 @@ app.get('/', (req, res) => {
 
 
 app.get('/api/quotes', (req, res) => {
-    const page = req.query.page;
+    const { page, anime } = req.query;
 
-    let quotes = null;
+    let quotes = null, results = db;
+    // regular expression to match query with "anime" ignoring case!!
+    let regexMatch = new RegExp(`^${anime}$`, 'gi');
+
+    if (anime) {
+        // filter results based on query
+        results = db.filter(itm => regexMatch.test(itm.anime));
+    }
 
     /** if pagination is not specified return 10 quotes
      * as default
      */
-    if (page == '') {
-        quotes = db.slice(0, 10);
-        res.json(quotes)
+    if (!page) {
+        quotes = results.slice(0, 10);
+        return res.json(quotes)
     }
 
     /** pagination limit is up to 10 
@@ -32,10 +39,10 @@ app.get('/api/quotes', (req, res) => {
         const startIndex = (page - 1) * 10;
         const endIndex = page * 10;
 
-        quotes = db.slice(startIndex, endIndex);
+        quotes = results.slice(startIndex, endIndex);
         res.json(quotes);
-    } else if (page > 10) {
-        res.send('page request limit is only up to 10!');
+    } else {
+        res.json('page request limit is only up to 10!');
     };
 });
 
@@ -44,11 +51,6 @@ app.get('/api/quotes/random', (req, res) => {
     const quote = db[Math.floor(Math.random() * db.length)]
     res.json(quote)
 });
-
-/** TODO
- *  Get quotes by the anime name 
-*/
-
 
 app.listen(process.env.PORT, () => {
     console.log(`server is connected at ${process.env.PORT}`);
