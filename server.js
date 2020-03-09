@@ -19,7 +19,7 @@ app.get('/api/quotes', (req, res) => {
     // regular expression to match query with "anime" ignoring case!!
     let regexMatch = new RegExp(`^${anime}$`, 'gi');
 
-    if(anime){
+    if (anime) {
         // filter results based on query
         results = db.filter(itm => regexMatch.test(itm.anime));
     }
