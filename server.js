@@ -52,6 +52,12 @@ app.get('/api/quotes/random', (req, res) => {
     res.json(quote)
 });
 
+
+/**  404 page */
+app.use((req, res, next) => {
+    res.status(404).send(`sorry can't find it 😀`);
+});
+
 app.listen(process.env.PORT, () => {
     console.log(`server is connected at ${process.env.PORT}`);
 })
