@@ -14,7 +14,7 @@ module.exports.quotes = (req, res) => {
      */
     if (!page) {
         quotes = results.slice(0, 10);
-        return res.json({ message: 'success', error: false, data: quotes });
+        res.json({ message: 'success', error: false, data: quotes });
     }
     /** pagination limit is up to 10 
      * request up than 10 will send a warning
@@ -26,7 +26,11 @@ module.exports.quotes = (req, res) => {
         quotes = results.slice(startIndex, endIndex);
         res.json({ message: 'success', error: false, data: quotes });
     } else {
-        res.json({ message: 'page request limit is only up to 10!', error: true, data: null });
+        res.json({ 
+            message: 'page request limit is only up to 10!', 
+            error: true, 
+            data: null 
+        });
     };
 }
 

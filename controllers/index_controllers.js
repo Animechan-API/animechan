@@ -5,3 +5,11 @@ module.exports.index = (req, res) => {
         data: null 
     });
 }
+
+module.exports.notFound = (req, res) => {
+    res.json({
+        message: `sorry can't find it 😀`,
+        error: true,
+        data: null
+    })
+}
