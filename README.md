@@ -16,5 +16,8 @@ This will start the dev server 🚀.
 
 ### Contribute
 
-* Help me add more quotes in the database `/data/data.json`
+* fork and clone this repo.
+* create a separate branch `git checkout -b "rocktim-branch"`.
+* Add your favorite quotes in the database `/data/data.json`
+* then push the changes.
 * any others suggestions then leave a issue.
