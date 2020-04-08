@@ -1,11 +1,11 @@
-require('dotenv').config({ path: '.env' });
+require('dotenv').config({ path: '/.env' });
 const express = require('express');
 const mongoose = require('mongoose');
 const app = express();
 
 const db = mongoose.connection;
 
-mongoose.connect(`${process.env.URI}`, {
+mongoose.connect(process.env.URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true
 });
