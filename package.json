@@ -24,8 +24,6 @@
   "dependencies": {
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "express-paginate": "^1.0.0",
-    "isomorphic-unfetch": "^3.0.0",
     "mongoose": "^5.9.7",
     "nodemon": "^2.0.2"
   },
