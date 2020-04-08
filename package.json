@@ -1,6 +1,6 @@
 {
   "name": "animechan",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "a tiny api with the largest database of anime quotes",
   "main": "server.js",
   "scripts": {
