@@ -1,7 +1,7 @@
 {
-  "name": "quality-anime-quotes",
+  "name": "animechan",
   "version": "0.0.1",
-  "description": "a tiny api that returns quality anime quotes",
+  "description": "a tiny api with the largest database of anime quotes",
   "main": "server.js",
   "scripts": {
     "start": "nodemon server.js"
@@ -26,10 +26,10 @@
     "express": "^4.17.1",
     "express-paginate": "^1.0.0",
     "isomorphic-unfetch": "^3.0.0",
+    "mongoose": "^5.9.7",
     "nodemon": "^2.0.2"
   },
   "engines": {
-    "node": "12.13.0",
-    "npm": "6.13.7"
+    "node": "12.x"
   }
 }

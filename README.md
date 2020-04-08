@@ -1,4 +1,4 @@
-<img src="https://i.ibb.co/nctydTg/anime-banner.jpg">
+# Animechan
 
 > <b>Lets make an open source anime quotes api for all the otaku devs out there(＾◡＾) </b>
 

@@ -1,39 +1,54 @@
-const db = require('../data/data.japanese.json');
+const { slugGen } = require('../util/slugGen.js');
+const { matchAnime, matchChar, defaultFetch, pagination, radomQuery } = require('../util/query')
 
 module.exports.quotes = (req, res) => {
-    const { page, anime } = req.query;
-    let quotes = null, results = db;
-    // regular expression to match query with "anime" ignoring case!!
-    let regexMatch = new RegExp(`^${anime}$`, 'gi');
-    if (anime) {
-        // filter results based on query
-        results = db.filter(itm => regexMatch.test(itm.anime));
-    }
-    /** if pagination is not specified return 10 quotes
-     * as default
-     */
-    if (!page) {
-        quotes = results.slice(0, 10);
-        res.json({ message: 'success', data: quotes });
-    }
-    /** pagination limit is up to 10 
-     * request up than 10 will send a warning
-    */
-    if (page <= 10) {
-        const startIndex = (page - 1) * 10;
-        const endIndex = page * 10;
+    const { page, anime, char } = req.query;
 
-        quotes = results.slice(startIndex, endIndex);
-        res.json({ message: 'success', data: quotes });
-    } else {
-        res.json({
-            message: 'page request limit is only up to 10!',
-            error: true
-        });
+
+    /**
+     * query through anime name
+     */
+    if (anime) {
+        const slug = slugGen(anime);
+        matchAnime(slug).then(db => {
+            res.json(db);
+        })
     };
+
+    /**
+    * query through character name
+    */
+    if (char) {
+        const slug = slugGen(char);
+        matchChar(slug).then(db => {
+            res.json(db);
+        })
+    };
+
+    /** 
+     * if pagination is not specified return 10 quotes as default
+     * (pagination limit is up to 10)
+     */
+    if (!page || page <= 0) {
+        defaultFetch().then(db => {
+            res.json(db)
+        });
+    } else {
+        if (page <= 10 && page > 0) {
+            pagination(page).then(db => {
+                res.json(db);
+            })
+        } else {
+            res.json({
+                message: 'page request limit is only up to 10!',
+                error: true
+            });
+        };
+    }
 }
 
 module.exports.randomQuote = (req, res) => {
-    const quote = db[Math.floor(Math.random() * db.length)]
-    res.json({ message: 'success', data: quote });
+    radomQuery().then(db => {
+        res.json(db)
+    })
 }

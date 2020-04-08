@@ -1,6 +1,19 @@
 require('dotenv').config();
 const express = require('express');
+const mongoose = require('mongoose');
 const app = express();
+
+const db = mongoose.connection;
+
+mongoose.connect(process.env.URI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+});
+
+db.once('open', () => console.log('mongodb is connected'));
+db.on('error', console.error.bind(console, 'connection error:'));
+
+
 
 app.set('json spaces', 2);
 
