@@ -1,8 +1,10 @@
 # Animechan
 
-> <b>Lets make an open source anime quotes api for all the otaku devs out there(＾◡＾) </b>
+> An api with the the largest database of anime quotes(＾◡＾)
 
 ### Development
+
+Add an `.env` file with the contents of `example.env` file.
 
 ```js
 npm install
@@ -18,6 +20,5 @@ This will start the dev server 🚀.
 
 * fork and clone this repo.
 * create a separate branch `git checkout -b "rocktim-branch"`.
-* Add your favorite quotes in the database `/data/data.json`
 * then push the changes.
 * any others suggestions then leave a issue.
