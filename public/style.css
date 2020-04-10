@@ -1,0 +1,85 @@
+body,html{
+    display:grid;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    background-color: #F3F3F3;
+    color: #282828;
+  }
+  .container{
+    position: relative;
+  }
+  
+  header{
+      text-align: center;
+      border-top:1px solid red;
+      border-bottom:1px solid red;
+      padding: 8px 0px;
+      margin-top: 50px;
+      margin-bottom: 50px;
+  }
+  
+  a{
+      text-decoration: none;
+  }
+  h1,p,li{
+    margin: 0px;
+    font-weight: 500;
+    letter-spacing: 0.205em;
+  }
+  
+  .title{
+    line-height: 94px;
+    font-size: 80px;
+    letter-spacing: 0.205em;
+  }
+  .sub-title{
+    letter-spacing: 0.205em;
+    line-height: 27px;
+  }
+  
+  
+  section{
+    margin-bottom : 100px;
+  }
+  .routes-container{
+    list-style: none;
+    margin: 0px;
+    padding:0px;
+  }
+  .routes-header{
+    margin-bottom: 20px;
+  }
+  .routes-container li{
+    background-color: #fff;
+    box-shadow: 10px 42px 50px rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
+    margin-bottom: 30px;
+    padding: 15px 20px;
+  }
+  .routes-container li a{
+    color: #217AFF;
+  }
+  
+  footer{
+    position: absolute;
+    width: 100%;
+    margin-bottom: 10px;
+    text-align:center;
+    bottom: 0px;
+  }
+  
+  footer .fas{
+    color: #FB555D;
+  }
+  footer a{
+    color: #3D8BFF;
+  }
+  
+  .repo{
+    position: absolute;
+    right: 10px;
+    font-size: 22px;
+    color: #282828;
+  }
