@@ -4,7 +4,7 @@
 
 ### Development
 
-Add an `.env` file with the contents of `example.env` file.
+create a `.env` file by copy pasting the `env.example` file.
 
 ```js
 npm install
