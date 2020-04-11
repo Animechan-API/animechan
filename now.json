@@ -1,0 +1,8 @@
+{
+    "build": {
+        "env": {
+            "URI": "mongodb+srv://rocktim1998:rocktim1998@rocktimcluster-mqzsh.mongodb.net/quoteBase?retryWrites=true",
+            "SECRET": "@rocktim61"
+        }
+    }
+}

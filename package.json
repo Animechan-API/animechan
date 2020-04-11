@@ -4,7 +4,8 @@
   "description": "a tiny api with the largest database of anime quotes",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "nodemon server.js",
+    "build": "node server.js"
   },
   "repository": {
     "type": "git",
