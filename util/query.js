@@ -1,4 +1,3 @@
-const mongoose = require('mongoose');
 const schema = require('../model/schema');
 
 const formatModal = {
@@ -10,18 +9,28 @@ const formatModal = {
 
 module.exports = {
     defaultFetch: async function () {
-        const db = await schema.aggregate([
-            { $project: formatModal }
-        ]).limit(10);
-        return db;
+        try {
+            const db = await schema.aggregate([
+                { $project: formatModal }
+            ]).limit(10);
+            return db;
+        } catch (error) {
+            console.error(error)
+        }
+
     },
 
     matchAnime: async function (anime_slug) {
-        const db = await schema.aggregate([
-            { $match: { "anime.anime_slug": anime_slug } },
-            { $project: formatModal }
-        ]).limit(10);
-        return db;
+        try {
+            const db = await schema.aggregate([
+                { $match: { "anime.anime_slug": anime_slug } },
+                { $project: formatModal }
+            ]).limit(10);
+            return db;
+        } catch (error) {
+            console.error(error)
+        }
+
     },
 
     matchChar: async function (char_slug) {
@@ -33,18 +42,28 @@ module.exports = {
     },
 
     pagination: async function (page) {
-        const db = await schema.aggregate([
-            { $project: formatModal }
-        ]).skip(10 * (page - 1)).limit(10);
-        return db;
+        try {
+            const db = await schema.aggregate([
+                { $project: formatModal }
+            ]).skip(10 * (page - 1)).limit(10);
+            return db;
+        } catch (error) {
+            console.error(error)
+        }
+
     },
 
     radomQuery: async function () {
-        const db = await schema.aggregate([
-            { $sample: { size: 1 } },
-            { $project: formatModal }
-        ]);
-        return db;
+        try {
+            const db = await schema.aggregate([
+                { $sample: { size: 1 } },
+                { $project: formatModal }
+            ]);
+            return db;
+        } catch (error) {
+            console.error(error)
+        }
+
     }
 }
 

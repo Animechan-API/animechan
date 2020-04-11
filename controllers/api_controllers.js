@@ -10,6 +10,7 @@ module.exports.quotes = (req, res) => {
      */
     if (anime) {
         const slug = slugGen(anime);
+        console.log(slug);
         matchAnime(slug).then(db => {
             res.json(db);
         })
@@ -18,12 +19,12 @@ module.exports.quotes = (req, res) => {
     /**
     * query through character name
     */
-    if (char) {
-        const slug = slugGen(char);
-        matchChar(slug).then(db => {
-            res.json(db);
-        })
-    };
+    // if (char) {
+    //     const slug = slugGen(char);
+    //     matchChar(slug).then(db => {
+    //         res.json(db);
+    //     })
+    // };
 
     /** 
      * if pagination is not specified return 10 quotes as default
