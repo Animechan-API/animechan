@@ -1,0 +1,7 @@
+{
+    "name": "anime-chan",
+    "version": 1,
+    "env": {
+        "MONGODB_URI": "@URI"
+    }
+}
