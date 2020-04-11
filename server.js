@@ -9,7 +9,7 @@ app.use(express.static(path.join(__dirname, './public')));
 
 const db = mongoose.connection;
 
-mongoose.connect(process.env.URI, {
+mongoose.connect(process.env.MONGODB_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true
 });
