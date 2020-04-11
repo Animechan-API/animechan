@@ -24,22 +24,50 @@
                 <section>
                     <p class="routes-header">Primary api routes</p>
                     <ul class="routes-container">
-                        <li><a
-                                href="https://anime-chan.herokuapp.com/api/quotes/random">
-                                /api/quotes/random</a></li>
-                        <li><a
-                                href="https://anime-chan.herokuapp.com/api/quotes">
-                                /api/quotes</a>
-                        </li>
-                        <li><a
-                                href="https://anime-chan.herokuapp.com/api/quotes?page=2">
-                                /api/quotes?page=2</a>
-                        </li>
-                        <li><a
-                                href="https://anime-chan.herokuapp.com/api/quotes?anime=naruto">
-                                /api/quotes?anime=naruto</a>
-                        </li>
+                        <li><a class="get-btn" href="">GET</a> /quotes/random</li>
+                        <li><a class="get-btn" href="">GET</a> /api/quotes</li>
+                        <li><a class="get-btn" href="">GET</a> /quotes?page=2</li>
+                        <li><a class="get-btn" href="">GET</a>
+                            /quotes?anime=naruto</li>
                     </ul>
+                </section>
+
+                <section>
+                    <p class="routes-header">Brief explanation</p>
+                    <div class="desc-wrapper">
+                        <div class="explanation-header">1. Get one random quote</div>
+                        <div class="http-link-wrapper">
+                            <div>GET</div>
+                            <div class="http-link">https://anime-chan.live/api/quotes/random</div>
+                        </div>
+                    </div>
+
+                    <div class="desc-wrapper">
+                        <div class="explanation-header">2. Get 10 quotes by
+                            default</div>
+                        <div class="http-link-wrapper">
+                            <div>GET</div>
+                            <div class="http-link">https://anime-chan.live/api/quotes</div>
+                        </div>
+                    </div>
+
+                    <div class="desc-wrapper">
+                        <div class="explanation-header">3. Paginate by passing a
+                            number (1>10)</div>
+                        <div class="http-link-wrapper">
+                            <div>GET</div>
+                            <div class="http-link">https://anime-chan.live/api/quotes?page=2</div>
+                        </div>
+                    </div>
+
+                    <div class="desc-wrapper">
+                        <div class="explanation-header">4. Query by an anime
+                            series name</div>
+                        <div class="http-link-wrapper">
+                            <div>GET</div>
+                            <div class="http-link">https://anime-chan.live/api/quotes?anime=naruto</div>
+                        </div>
+                    </div>
                 </section>
 
                 <footer>
