@@ -2,14 +2,14 @@ const { slugGen } = require('../util/slugGen.js');
 const { matchAnime, matchChar, defaultFetch, pagination, radomQuery } = require('../util/query')
 
 module.exports.quotes = (req, res) => {
-    const { page, anime, char } = req.query;
+    const { page, anime } = req.query;
 
-    if (!page && !anime) {
+
+    if (Object.keys(req.query).length === 0) {
         defaultFetch().then(db => {
             res.json(db);
         })
     }
-
 
     /**
      * query through anime name
@@ -18,7 +18,6 @@ module.exports.quotes = (req, res) => {
         const slug = slugGen(anime);
         matchAnime(slug).then(db => {
             res.json(db);
-            res.end();
         })
     };
 

@@ -34,11 +34,15 @@ module.exports = {
     },
 
     matchChar: async function (char_slug) {
-        const db = await schema.aggregate([
-            { $match: { "char.char_slug": char_slug } },
-            { $project: formatModal }
-        ]).limit(10);
-        return db;
+        try {
+            const db = await schema.aggregate([
+                { $match: { "char.char_slug": char_slug } },
+                { $project: formatModal }
+            ]).limit(10);
+            return db;
+        } catch (error) {
+            console.error(error)
+        }
     },
 
     pagination: async function (page) {
