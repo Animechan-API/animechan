@@ -7,4 +7,4 @@ const { quotes, randomQuote } = require("../../controllers/api_controllers.js");
 router.get("/quotes", quotes);
 router.get("/quotes/random", randomQuote);
 
-module.exports = router
+module.exports = router;

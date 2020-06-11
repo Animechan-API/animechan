@@ -6,4 +6,4 @@ const { index } = require("../controllers/index_controllers.js");
 
 router.get("/", index);
 
-module.exports = router
+module.exports = router;
