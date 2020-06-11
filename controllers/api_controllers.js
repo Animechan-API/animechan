@@ -2,8 +2,14 @@ const { slugGen } = require('../util/slugGen.js');
 const { matchAnime, matchChar, defaultFetch, pagination, radomQuery } = require('../util/query')
 
 module.exports.quotes = (req, res) => {
-    const { page, anime, char } = req.query;
+    const { page, anime } = req.query;
 
+
+    if (Object.keys(req.query).length === 0) {
+        defaultFetch().then(db => {
+            res.json(db);
+        })
+    }
 
     /**
      * query through anime name
@@ -18,22 +24,18 @@ module.exports.quotes = (req, res) => {
     /**
     * query through character name
     */
-    if (char) {
-        const slug = slugGen(char);
-        matchChar(slug).then(db => {
-            res.json(db);
-        })
-    };
+    // if (char) {
+    //     const slug = slugGen(char);
+    //     matchChar(slug).then(db => {
+    //         res.json(db);
+    //     })
+    // };
 
     /** 
      * if pagination is not specified return 10 quotes as default
      * (pagination limit is up to 10)
      */
-    if (!page || page <= 0) {
-        defaultFetch().then(db => {
-            res.json(db)
-        });
-    } else {
+    if (page) {
         if (page <= 10 && page > 0) {
             pagination(page).then(db => {
                 res.json(db);
