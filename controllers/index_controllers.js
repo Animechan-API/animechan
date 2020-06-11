@@ -1,5 +1,5 @@
 module.exports.index = (req, res) => {
-    res.json('quality anime quotes coming soon 🚀');
+    res.render('index')
 }
 
 module.exports.notFound = (req, res) => {

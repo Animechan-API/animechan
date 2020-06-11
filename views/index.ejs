@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Anime-Chan</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&amp;display=swap">
+    </head>
+    <body>
+        <a class="repo" href="https://github.com/RocktimSaikia/anime-chan"
+            target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+        <div class="container">
+            <section>
+                <header>
+                    <h1 class="title">ANIME CHAN</h1>
+                    <p class="sub-title">a tiny anime quote api with a huge
+                        quotes database</p>
+                </header>
+
+                <section>
+                    <p class="routes-header">Primary api routes</p>
+                    <ul class="routes-container">
+                        <li><a class="get-btn"
+                                href="https://anime-chan.herokuapp.com/api/quotes/random">GET</a>
+                            /quotes/random</li>
+                        <li><a class="get-btn"
+                                href="https://anime-chan.herokuapp.com/api/quotes">GET</a>
+                            /api/quotes</li>
+                        <li><a class="get-btn"
+                                href="https://anime-chan.herokuapp.com/api/quotes?page=2">GET</a>
+                            /quotes?page=2</li>
+                        <li><a class="get-btn"
+                                href="https://anime-chan.herokuapp.com/api/quotes?anime=naruto">GET</a>
+                            /quotes?anime=naruto</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <p class="routes-header">Brief explanation</p>
+                    <div class="desc-wrapper">
+                        <div class="explanation-header">1. Get one random quote</div>
+                        <div class="http-link-wrapper">
+                            <div>GET</div>
+                            <div class="http-link">https://anime-chan.herokuapp.com/api/quotes/random</div>
+                        </div>
+                    </div>
+
+                    <div class="desc-wrapper">
+                        <div class="explanation-header">2. Get 10 quotes by
+                            default</div>
+                        <div class="http-link-wrapper">
+                            <div>GET</div>
+                            <div class="http-link">https://anime-chan.herokuapp.com/api/quotes</div>
+                        </div>
+                    </div>
+
+                    <div class="desc-wrapper">
+                        <div class="explanation-header">3. Paginate by passing a
+                            number (1>10)</div>
+                        <div class="http-link-wrapper">
+                            <div>GET</div>
+                            <div class="http-link">https://anime-chan.herokuapp.com/api/quotes?page=2</div>
+                        </div>
+                    </div>
+
+                    <div class="desc-wrapper">
+                        <div class="explanation-header">4. Query by an anime
+                            series name</div>
+                        <div class="http-link-wrapper">
+                            <div>GET</div>
+                            <div class="http-link">https://anime-chan.herokuapp.com/api/quotes?anime=naruto</div>
+                        </div>
+                    </div>
+                </section>
+
+                <footer>
+                    <p class="footer-text">coded in quarantine with <i
+                            class="fas fa-heart"></i> by<a
+                            href="https://github.com/rocktimsaikia"
+                            target="_blank" rel="noopener">
+                            rocktimsaikia</a></p>
+                </footer>
+                <div>
+
+                </body>
+            </html>

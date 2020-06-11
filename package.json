@@ -1,6 +1,6 @@
 {
   "name": "animechan",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "a tiny api with the largest database of anime quotes",
   "main": "server.js",
   "scripts": {
@@ -23,13 +23,13 @@
   "homepage": "https://github.com/RocktimSaikia/quality-anime-quotes#readme",
   "dependencies": {
     "dotenv": "^8.2.0",
+    "ejs": "^3.0.2",
     "express": "^4.17.1",
-    "express-paginate": "^1.0.0",
-    "isomorphic-unfetch": "^3.0.0",
     "mongoose": "^5.9.7",
     "nodemon": "^2.0.2"
   },
   "engines": {
     "node": "12.x"
-  }
+  },
+  "devDependencies": {}
 }
