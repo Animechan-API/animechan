@@ -21,7 +21,7 @@ module.exports = {
     try {
       const db = await schema
         .aggregate([
-          { $match: { "anime.anime_slug": "naruto" } },
+          { $match: { "anime.anime_slug": anime_slug } },
           { $project: formatModal },
         ])
         .limit(10);
