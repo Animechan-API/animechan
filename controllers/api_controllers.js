@@ -8,7 +8,7 @@ const {
 } = require("../util/query");
 
 module.exports.quotes = (req, res) => {
-  const { page, anime } = req.query;
+  const { page, anime, char } = req.query;
 
   if (Object.keys(req.query).length === 0) {
     defaultFetch().then((db) => {
@@ -29,12 +29,12 @@ module.exports.quotes = (req, res) => {
   /**
    * query through character name
    */
-  // if (char) {
-  //     const slug = slugGen(char);
-  //     matchChar(slug).then(db => {
-  //         res.json(db);
-  //     })
-  // };
+  if (char) {
+    const slug = slugGen(char);
+    matchChar(slug).then((db) => {
+      res.json(db);
+    });
+  }
 
   /**
    * if pagination is not specified return 10 quotes as default

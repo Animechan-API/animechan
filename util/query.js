@@ -7,6 +7,13 @@ const formatModal = {
   _id: 0,
 };
 
+const shuffleArray = (arr) => {
+  if (arr.length > 10) {
+    return arr.sort(() => 0.5 - Math.random()).slice(0, 10);
+  }
+  return arr;
+};
+
 module.exports = {
   defaultFetch: async function () {
     try {
@@ -19,13 +26,11 @@ module.exports = {
 
   matchAnime: async function (anime_slug) {
     try {
-      const db = await schema
-        .aggregate([
-          { $match: { "anime.anime_slug": anime_slug } },
-          { $project: formatModal },
-        ])
-        .limit(10);
-      return db;
+      const db = await schema.aggregate([
+        { $match: { "anime.anime_slug": anime_slug } },
+        { $project: formatModal },
+      ]);
+      return shuffleArray(db);
     } catch (error) {
       console.error(error);
     }
@@ -33,13 +38,11 @@ module.exports = {
 
   matchChar: async function (char_slug) {
     try {
-      const db = await schema
-        .aggregate([
-          { $match: { "char.char_slug": char_slug } },
-          { $project: formatModal },
-        ])
-        .limit(10);
-      return db;
+      const db = await schema.aggregate([
+        { $match: { "char.char_slug": char_slug } },
+        { $project: formatModal },
+      ]);
+      return shuffleArray(db);
     } catch (error) {
       console.error(error);
     }
