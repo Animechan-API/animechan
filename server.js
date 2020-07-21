@@ -16,7 +16,7 @@ mongoose.connect(process.env.URI, {
   useUnifiedTopology: true,
 });
 
-db.once("open", () => console.log("mongodb is connected 🚀"));
+// db.once("open", () => console.log("mongodb is connected 🚀"));
 db.on("error", console.error.bind(console, "connection error:"));
 
 app.set("json spaces", 2);
@@ -31,3 +31,5 @@ app.use("*", require("./controllers/index_controllers").notFound);
 app.listen(process.env.PORT, () => {
   console.log(`server is connected at ${process.env.PORT} 🚀`);
 });
+
+module.exports = app;
