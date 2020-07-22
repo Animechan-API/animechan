@@ -5,8 +5,14 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "test": "mocha --timeout 15000",
-    "test:watch": "nodemon --ext js ./test --exec \"npm run test\""
+    "test": "mocha --timeout 15000 --exit",
+    "test:watch": "nodemon --ext js ./test --exec \"yarn run test\""
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn run test",
+      "pre-push": "yarn run test"
+    }
   },
   "repository": {
     "type": "git",
@@ -35,12 +41,9 @@
     "node": "12.x"
   },
   "devDependencies": {
-    "@babel/cli": "^7.10.5",
-    "@babel/node": "^7.10.5",
-    "@babel/preset-env": "^7.10.4",
     "chai": "^4.2.0",
     "chai-http": "^4.3.0",
-    "mocha": "^8.0.1",
-    "watch": "^1.0.2"
+    "husky": "^4.2.5",
+    "mocha": "^8.0.1"
   }
 }
