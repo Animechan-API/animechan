@@ -7,7 +7,7 @@ const server = require("../server");
 chai.use(chatHttp);
 
 const test = async (pathname) => chai.request(server).get(`/api/${pathname}`);
-const paginationNumber = Math.floor(Math.random() * 10);
+const paginationNumber = Math.floor(Math.random() * 10) + 1;
 
 describe("Status check : /quotes?page=n  (n>=00&&n<=10)", () => {
   it("should return status 200", async () => {
