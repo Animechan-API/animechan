@@ -8,12 +8,6 @@
     "test": "mocha --timeout 15000 --exit",
     "test:watch": "nodemon --ext js ./test --exec \"yarn run test\""
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "yarn run test",
-      "pre-push": "yarn run test"
-    }
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/RocktimSaikia/quality-anime-quotes.git"
