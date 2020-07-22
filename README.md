@@ -1,10 +1,7 @@
 # Anime-chan
 
 > An api with the the largest database of anime quotes(＾ ◡ ＾)
-> [![Build Status](https://travis-ci.org/RocktimSaikia/anime-chan.svg?branch=develop)](https://travis-ci.org/RocktimSaikia/anime-chan)
-> ![David](https://img.shields.io/david/rocktimsaikia/anime-chan?style=for-the-badge)
-> ![GitHub package.json version](https://img.shields.io/github/package-json/v/RocktimSaikia/anime-chan?style=for-the-badge)
-> ![GitHub](https://img.shields.io/github/license/rocktimsaikia/anime-chan?style=for-the-badge)
+> ![Travis (.org) branch](https://img.shields.io/travis/RocktimSaikia/anime-chan/develop?style=for-the-badge) > ![David](https://img.shields.io/david/rocktimsaikia/anime-chan?style=for-the-badge) > ![GitHub package.json version](https://img.shields.io/github/package-json/v/RocktimSaikia/anime-chan?style=for-the-badge) > ![GitHub](https://img.shields.io/github/license/rocktimsaikia/anime-chan?style=for-the-badge)
 
 <img src="https://s4.gifyu.com/images/deku.gif" alt="deku.gif" style="border-radius: 50%; width: 80px" />
 
