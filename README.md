@@ -42,7 +42,7 @@ axios.get(uri).then(({ data }) => {
 
 ## :rocket: How to contribute
 
-Have an idea? Found a bug? See [how to contribute][contributing].
+Have an idea? Found a bug? Create [a new issue](https://github.com/RocktimSaikia/anime-chan/issues) with detailed explanation.
 
 ## :zap: Support
 
