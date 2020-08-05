@@ -1,4 +1,4 @@
-<p align="center"><img src="https://github.com/rocktimsaikia/anime-chan/blob/master/.github/deku_headbang.gif?raw=true" height="160px"/></p>
+<p align="center"><img src="https://github.com/RocktimSaikia/anime-chan/blob/develop/.github/deku_headbang.gif?raw=true" height="160px"/></p>
 
 <h1 align="center">Anime-chan</h1>
 <h4 align="center">An api with the the largest database of anime quotes :zap:</h4>
