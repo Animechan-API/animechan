@@ -1,6 +1,6 @@
 {
   "name": "animechan",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "a tiny api with the largest database of anime quotes",
   "main": "server.js",
   "scripts": {
@@ -15,9 +15,14 @@
   "keywords": [
     "anime",
     "quotes",
-    "api"
+    "api",
+    "animechan"
   ],
-  "author": "Rocktim Saikia",
+  "author": {
+    "name": "Rocktim Saikia",
+    "email": "rocktimthedev@gmail.com",
+    "url": "https://rocktimsaikia.me"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/RocktimSaikia/quality-anime-quotes/issues"
