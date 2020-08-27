@@ -2,3 +2,5 @@
 /node_modules
 /.yo-rc.json
 /.env
+/combined.log
+/error.log
