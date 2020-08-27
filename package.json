@@ -11,7 +11,7 @@
   "license": "BSD-3-Clause",
   "scripts": {
     "start": "node app.js",
-    "dev": "nodemon app.js",
+    "dev": "nodemon --trace-warnings app.js",
     "lint": "xo --fix",
     "test": "jest ."
   },
@@ -21,6 +21,7 @@
     "dotenv": "8.2.0",
     "express": "4.17.1",
     "helmet": "4.1.0",
+    "joi": "17.2.1",
     "mongoose": "5.10.1",
     "morgan": "1.10.0",
     "node-fetch": "2.6.0",
