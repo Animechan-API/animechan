@@ -1,0 +1,34 @@
+{
+  "name": "animechanapi",
+  "version": "1.0.0",
+  "description": "A anime quotes serving rest api",
+  "main": "app.js",
+  "author": {
+    "name": "Rocktim Saikia",
+    "email": "rocktimthedev@gmail.com",
+    "website": "https://rocktim.xyz"
+  },
+  "license": "BSD-3-Clause",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "lint": "xo --fix",
+    "test": "jest ."
+  },
+  "dependencies": {
+    "compression": "1.7.4",
+    "cors": "2.8.5",
+    "dotenv": "8.2.0",
+    "express": "4.17.1",
+    "helmet": "4.1.0",
+    "mongoose": "5.10.1",
+    "morgan": "1.10.0",
+    "node-fetch": "2.6.0"
+  },
+  "devDependencies": {
+    "ava": "3.12.1",
+    "jest": "26.4.2",
+    "nodemon": "2.0.4",
+    "xo": "0.33.0"
+  }
+}
