@@ -10,7 +10,7 @@
   },
   "license": "BSD-3-Clause",
   "scripts": {
-    "start": "node app.js",
+    "start": "node --trace-warnings app.js",
     "dev": "nodemon --trace-warnings app.js",
     "lint": "xo --fix",
     "test": "jest ."
