@@ -21,14 +21,11 @@
     "dotenv": "8.2.0",
     "express": "4.17.1",
     "helmet": "4.1.0",
-    "joi": "17.2.1",
     "mongoose": "5.10.1",
     "morgan": "1.10.0",
-    "node-fetch": "2.6.0",
     "winston": "3.3.3"
   },
   "devDependencies": {
-    "ava": "3.12.1",
     "jest": "26.4.2",
     "nodemon": "2.0.4",
     "xo": "0.33.0"
