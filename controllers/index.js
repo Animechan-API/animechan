@@ -76,7 +76,7 @@ module.exports = {
 	},
 
 	// Get one random quote
-	randomQuote(res) {
+	randomQuote(req, res) {
 		try {
 			schema.aggregate([
 				{$sample: {size: 1}},
