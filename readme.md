@@ -23,7 +23,7 @@
 ```js
 //you can use any http library you want
 const axios = require("axios");
-const uri = "https://anime-chan.herokuapp.com/api/quotes/random";
+const uri = "https://animechanapi.xyz/api/quotes/random";
 
 //returns one random quote
 axios.get(uri).then((res) => {
