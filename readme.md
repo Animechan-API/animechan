@@ -4,7 +4,7 @@
 <p align="center">An api with the the largest database of anime quotes :zap:</p>
 
 <p align="center">
-<img alt="Travis (.com) branch" src="https://img.shields.io/travis/com/rocktimsaikia/anime-chan/master?style=flat"/> 
+<img alt="Travis (.com) branch" src="https://travis-ci.org/RocktimSaikia/anime-chan.svg?branch=production"/> 
 <img alt="Twitter URL" src="https://img.shields.io/twitter/url?url=https%3A%2F%2Fanimechan.xyz"/>
 </p><br/>
 
