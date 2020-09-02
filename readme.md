@@ -10,7 +10,7 @@
 
 <p align="center"><img src="/.github/banner.png" alt="github-readme-template" border="0"></p>
 
-Check the **[Frotend Repository](https://github.com/RocktimSaikia/anime-chan-website)** for the API
+Check out the **[Frotend Website Repository](https://github.com/RocktimSaikia/anime-chan-website) :rocket:**
 
 ## Routes
 
