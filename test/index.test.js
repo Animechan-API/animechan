@@ -2,10 +2,8 @@ const server = require('../app');
 const chai = require('chai');
 const chaiHttp = require('chai-http');
 const {expect} = require('chai');
-const chaiAsPromised = require('chai-as-promised');
 
 chai.use(chaiHttp);
-chai.use(chaiAsPromised);
 const request = async path => chai.request(server).get(`/api${path}`);
 
 describe('api status check', () => {
