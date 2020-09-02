@@ -1,21 +1,17 @@
-before_install:
-  - curl -o- -L https://yarnpkg.com/install.sh | bash -s -- --version 1.22.4
-  - export PATH="$HOME/.yarn/bin:$PATH"
-
-cache:
-  yarn: true
-
 language: node_js
 
 node_js:
   - "12"
   - "10"
 
+before_install:
+  - npm install -g pnpm
+
 install:
-  - yarn install
+  - pnpm install
 
 script:
-  - yarn run test
+  - pnpm run test
 
 notifications:
-  email: falses
+  email: false
