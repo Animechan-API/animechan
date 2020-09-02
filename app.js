@@ -9,3 +9,6 @@ mongoose.connect();
 app.listen(process.env.PORT, () => {
 	logger.info(`Server is running at port https://localhost:${process.env.PORT}`);
 });
+
+module.exports = app;
+

@@ -63,10 +63,7 @@ module.exports = {
 							});
 						});
 				} else {
-					res.json({
-						message: 'page request limit is only up to 10!',
-						error: true
-					});
+					throw new Error('pagination limit is only up to 10!');
 				}
 			}
 		} catch (error) {
