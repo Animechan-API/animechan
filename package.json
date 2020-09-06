@@ -14,10 +14,15 @@
       "test/**/*"
     ]
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pnpm run lint && pnpm run test"
+    }
+  },
   "scripts": {
     "start": "node --trace-warnings app.js",
     "dev": "nodemon --trace-warnings app.js",
-    "lint": "xo --fix",
+    "lint": "xo",
     "test": "mocha --timeout 15000 --exit"
   },
   "dependencies": {
@@ -33,6 +38,7 @@
   "devDependencies": {
     "chai": "4.2.0",
     "chai-http": "4.3.0",
+    "husky": "^4.2.5",
     "mocha": "8.1.3",
     "nodemon": "2.0.4",
     "xo": "0.33.0"
