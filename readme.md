@@ -10,7 +10,8 @@
 
 <p align="center"><img src="/.github/banner.png" alt="github-readme-template" border="0"></p>
 
-Check out the **[Frotend Website Repository](https://github.com/RocktimSaikia/anime-chan-website) :rocket:**
+
+> As of Oct 28, Animechan stopped its service due to lack of financial backing. See issue #29
 
 ## Routes
 
@@ -51,15 +52,9 @@ axios.get(uri).then(({ data }) => {
 
 Have an idea? Found a bug? Create [a new issue](https://github.com/RocktimSaikia/anime-chan/issues) with detailed explanation.
 
-## Support
-
-<a href="https://www.buymeacoffee.com/7BdaxfI"><img src="https://user-images.githubusercontent.com/33410545/91206759-48d5d180-e725-11ea-93b5-754d98c007af.png" height="70px"/></a>
-
-> If you are using the API for your app, your online tutorials or your coding challenges, please consider supporting to help keep the project alive. :)
-
 ## License
 
-[MIT][license] © [Rocktim Saikia][website]
+[GPL-3.0][license] © [Rocktim Saikia][website]
 
-[license]: /LICENSE
+[license]: /license
 [website]: https://rocktim.xyz
