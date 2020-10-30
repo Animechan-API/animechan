@@ -10,8 +10,7 @@
 
 <p align="center"><img src="/.github/banner.png" alt="github-readme-template" border="0"></p>
 
-
-> As of Oct 28, Animechan stopped its service due to lack of financial backing. See issue #29
+> !! As of Oct 28, Animechan stopped its service due to lack of financial backing. See issue [`#29`](https://github.com/RocktimSaikia/anime-chan/issues/29)
 
 ## Routes
 
