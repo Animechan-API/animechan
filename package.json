@@ -8,7 +8,7 @@
     "email": "rocktimthedev@gmail.com",
     "website": "https://rocktim.xyz"
   },
-  "license": "BSD-3-Clause",
+  "license": "GPL-3.0",
   "xo": {
     "ignores": [
       "test/**/*"
