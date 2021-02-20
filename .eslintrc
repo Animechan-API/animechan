@@ -1,0 +1,15 @@
+{
+    "env": {
+        "node": true,
+        "jest": true
+    },
+    "parserOptions": {
+        "ecmaVersion": 2018
+    },
+    "extends": ["airbnb-base"],
+    "rules": {
+        "linebreak-style": ["error", "unix"],
+        "no-useless-catch": "off",
+        "no-multi-assign": "off"
+    }
+}
