@@ -1,20 +1,20 @@
 require('dotenv').config();
 const supertest = require('supertest');
-const database = require('../config/mongo');
+const gracefulShutdown = require('http-graceful-shutdown');
 const { app } = require('../config/server');
 
 let server;
 let request;
+let shutdown;
 
 beforeAll(async () => {
-  await database.connect();
-  server = app.listen();
+  server = app.listen(3000);
   request = supertest(server);
+  shutdown = gracefulShutdown(server);
 });
 
 afterAll(async () => {
-  await database.disconnect();
-  server.close();
+  await shutdown();
 });
 
 describe('GET /status', () => {

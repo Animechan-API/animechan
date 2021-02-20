@@ -8,8 +8,8 @@
     },
     "extends": ["airbnb-base"],
     "rules": {
-        "linebreak-style": ["error", "unix"],
         "no-useless-catch": "off",
-        "no-multi-assign": "off"
+        "no-multi-assign": "off",
+        "no-return-await": "off"
     }
 }
