@@ -28,7 +28,7 @@ describe('GET /api/quotes', () => {
     expect(res.type).toMatch(/json/i);
     expect(_.isArray(res.body)).toBe(true);
     expect(res.body).toHaveLength(50);
-    expect(res.body[_.random(50)]).not.toHaveProperty(['_id', ' created_At', 'updatedAt', '__v']);
+    expect(res.body[_.random(49)]).not.toHaveProperty(['_id', ' created_At', 'updatedAt', '__v']);
     done();
   });
 });
@@ -94,7 +94,7 @@ describe('GET /api/quotes/anime?title=<anime-title>', () => {
     expect(_.isArray(res.body)).toBe(true);
     expect(bodyLength).toBeGreaterThanOrEqual(1);
     expect(bodyLength).toBeLessThanOrEqual(50);
-    expect(res.body[_.random(bodyLength)]).not.toHaveProperty(['_id', ' created_At', 'updatedAt', '__v']);
+    expect(res.body[_.random(bodyLength - 1)]).not.toHaveProperty(['_id', ' created_At', 'updatedAt', '__v']);
     done();
   });
 });
@@ -145,7 +145,7 @@ describe('GET /api/quotes/character?name=<character-name>', () => {
     expect(_.isArray(res.body)).toBe(true);
     expect(bodyLength).toBeGreaterThanOrEqual(1);
     expect(bodyLength).toBeLessThanOrEqual(50);
-    expect(res.body[_.random(bodyLength)]).not.toHaveProperty(['_id', ' created_At', 'updatedAt', '__v']);
+    expect(res.body[_.random(bodyLength - 1)]).not.toHaveProperty(['_id', ' created_At', 'updatedAt', '__v']);
     done();
   });
 });
