@@ -1,18 +1,15 @@
 const { StatusCodes, getReasonPhrase } = require('http-status-codes');
+const _ = require('lodash');
 const Quote = require('../model/quote');
-
-function shuffleArray(array) {
-  if (array.length > 10) array.sort(() => 0.5 - Math.random()).slice(0, 10);
-  return array;
-}
 
 /**
  * GET /api/quotes
  * Retreives quotes, default limit 50
  */
 module.exports.list = async (ctx) => {
-  const quotes = await Quote.find({}, '-_id').limit(50);
-  ctx.body = shuffleArray(quotes);
+  let quotes = await Quote.find();
+  quotes = _.map(quotes, _.partialRight(_.pick, ['anime', 'character', 'quote']));
+  ctx.body = _.shuffle(quotes).slice(0, 50);
 };
 
 /**
@@ -20,10 +17,9 @@ module.exports.list = async (ctx) => {
  * Retreives a single random quote
  */
 module.exports.random = async (ctx) => {
-  const docCount = await Quote.countDocuments();
-  const random = Math.floor(Math.random() * docCount);
-  const randomDoc = await Quote.findOne({}, '-_id').skip(random);
-  ctx.body = randomDoc;
+  const totoalDocCount = await Quote.countDocuments();
+  const randomQuote = await Quote.findOne().skip(_.random(totoalDocCount));
+  ctx.body = _.pick(randomQuote, ['anime', 'character', 'quote']);
 };
 
 /**
@@ -39,12 +35,14 @@ module.exports.listByAnime = async (ctx) => {
     return;
   }
 
-  const quotes = await Quote.find({ anime: new RegExp(title, 'i') }, '-_id').limit(50);
-  if (quotes.length === 0) {
+  let quotes = await Quote.find({ anime: new RegExp(title, 'i') }).limit(50).exec();
+  if (_.isEmpty(quotes)) {
     ctx.response.status = StatusCodes.NOT_FOUND;
     ctx.body = { error: getReasonPhrase(StatusCodes.NOT_FOUND) };
     return;
   }
+
+  quotes = _.map(quotes, _.partialRight(_.pick, ['anime', 'character', 'quote']));
   ctx.body = quotes;
 };
 
@@ -61,11 +59,13 @@ module.exports.listByCharacter = async (ctx) => {
     return;
   }
 
-  const quotes = await Quote.find({ character: new RegExp(name, 'i') }, '-_id').limit(50);
-  if (quotes.length === 0) {
+  let quotes = await Quote.find({ character: new RegExp(name, 'i') }).limit(50).exec();
+  if (_.isEmpty(quotes)) {
     ctx.response.status = StatusCodes.NOT_FOUND;
     ctx.body = { error: getReasonPhrase(StatusCodes.NOT_FOUND) };
     return;
   }
+
+  quotes = _.map(quotes, _.partialRight(_.pick, ['anime', 'character', 'quote']));
   ctx.body = quotes;
 };

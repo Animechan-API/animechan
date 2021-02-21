@@ -1,6 +1,7 @@
 require('dotenv').config();
 const supertest = require('supertest');
 const { StatusCodes, getReasonPhrase } = require('http-status-codes');
+const _ = require('lodash');
 const database = require('../config/mongo');
 const { app } = require('../config/server');
 const seedDatabase = require('./seeds/seeder');
@@ -25,8 +26,9 @@ describe('GET /api/quotes', () => {
     expect(res.status).toBe(200);
     expect(res.ok).toBe(true);
     expect(res.type).toMatch(/json/i);
-    expect(Array.isArray(res.body)).toBe(true);
+    expect(_.isArray(res.body)).toBe(true);
     expect(res.body).toHaveLength(50);
+    expect(res.body[_.random(50)]).not.toHaveProperty(['_id', ' created_At', 'updatedAt', '__v']);
     done();
   });
 });
@@ -37,10 +39,11 @@ describe('GET /api/quotes/random', () => {
     expect(res.status).toBe(200);
     expect(res.ok).toBe(true);
     expect(res.type).toMatch(/json/i);
-    expect(typeof res.body).toBe('object');
+    expect(_.isObject(res.body)).toBe(true);
     expect(res.body).toHaveProperty('anime');
     expect(res.body).toHaveProperty('character');
     expect(res.body).toHaveProperty('quote');
+    expect(res.body).not.toHaveProperty(['_id', ' created_At', 'updatedAt', '__v']);
     done();
   });
 });
@@ -84,12 +87,14 @@ describe('GET /api/quotes/anime?title=<anime-title>', () => {
 
   it('it should return 200 when matching anime is found anime?title=naruto', async (done) => {
     const res = await request.get('/api/quotes/anime?title=naruto');
+    const bodyLength = res.body.length;
     expect(res.status).toBe(200);
     expect(res.ok).toBe(true);
     expect(res.type).toMatch(/json/i);
-    expect(Array.isArray(res.body)).toBe(true);
-    expect(res.body.length).toBeGreaterThanOrEqual(1);
-    expect(res.body.length).toBeLessThanOrEqual(50);
+    expect(_.isArray(res.body)).toBe(true);
+    expect(bodyLength).toBeGreaterThanOrEqual(1);
+    expect(bodyLength).toBeLessThanOrEqual(50);
+    expect(res.body[_.random(bodyLength)]).not.toHaveProperty(['_id', ' created_At', 'updatedAt', '__v']);
     done();
   });
 });
@@ -133,12 +138,14 @@ describe('GET /api/quotes/character?name=<character-name>', () => {
 
   it('it should return 200 when matching character is found /character?name=naruto', async (done) => {
     const res = await request.get('/api/quotes/character?name=naruto');
+    const bodyLength = res.body.length;
     expect(res.status).toBe(200);
     expect(res.ok).toBe(true);
     expect(res.type).toMatch(/json/i);
-    expect(Array.isArray(res.body)).toBe(true);
-    expect(res.body.length).toBeGreaterThanOrEqual(1);
-    expect(res.body.length).toBeLessThanOrEqual(50);
+    expect(_.isArray(res.body)).toBe(true);
+    expect(bodyLength).toBeGreaterThanOrEqual(1);
+    expect(bodyLength).toBeLessThanOrEqual(50);
+    expect(res.body[_.random(bodyLength)]).not.toHaveProperty(['_id', ' created_At', 'updatedAt', '__v']);
     done();
   });
 });
