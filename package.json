@@ -11,9 +11,9 @@
     "dev": "nodemon index.js",
     "start": "cross-env NODE_ENV=production node index.js",
     "pretest": "rimraf coverage",
-    "test": "cross-env NODE_ENV=test jest",
-    "test:coveralls": "cross-env NODE_ENV=test jest --coverage && coveralls < coverage/lcov.info",
-    "test:watch": "cross-env NODE_ENV=test jest --watchAll",
+    "test": "jest",
+    "test:cov": "jest --coverage",
+    "test:watch": "jest --watchAll",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "postinstall": "husky install"
@@ -32,7 +32,6 @@
   },
   "devDependencies": {
     "@types/jest": "^26.0.20",
-    "coveralls": "^3.1.0",
     "eslint": "7.2.0",
     "eslint-config-airbnb-base": "14.2.1",
     "eslint-plugin-import": "2.22.1",
