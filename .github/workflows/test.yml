@@ -5,7 +5,7 @@ on: "push"
 jobs:
   build:
     runs-on: ubutu-latest
-    startegy:
+    strategy:
       matrix:
         node-versions: [12.x, 14.x]
         mongodb-version: [4.0, 4.2, 4.4]
