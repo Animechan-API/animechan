@@ -6,15 +6,11 @@
   "scripts": {
     "dev": "nodemon index.js",
     "start": "cross-env NODE_ENV=production node index.js",
-    "test": "cross-env NODE_ENV=test jest --coverage --detectOpenHandles",
+    "test": "cross-env NODE_ENV=test jest --coverage --detectOpenHandles --forceExit",
     "test:watch": "cross-env NODE_ENV=test jest --watchAll",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "postinstall": "husky install"
-  },
-  "jest": {
-    "testEnvironment": "node",
-    "verbose": true
   },
   "dependencies": {
     "@koa/cors": "^3.1.0",
@@ -32,6 +28,7 @@
     "query-string": "^6.14.0"
   },
   "devDependencies": {
+    "@shelf/jest-mongodb": "^1.2.3",
     "@types/jest": "^26.0.20",
     "app-root-path": "^3.0.0",
     "eslint": "7.2.0",
