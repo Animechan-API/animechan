@@ -28,7 +28,9 @@ describe('GET /api/quotes', () => {
     expect(res.type).toMatch(/json/i);
     expect(_.isArray(res.body)).toBe(true);
     expect(res.body).toHaveLength(50);
-    expect(res.body[_.random(49)]).not.toHaveProperty(['_id', ' created_At', 'updatedAt', '__v']);
+    _.forEach(res.body, (quote) => {
+      expect(quote).not.toHaveProperty(['_id', ' created_At', 'updatedAt', '__v']);
+    });
     done();
   });
 });
@@ -87,14 +89,16 @@ describe('GET /api/quotes/anime?title=<anime-title>', () => {
 
   it('it should return 200 when matching anime is found anime?title=naruto', async (done) => {
     const res = await request.get('/api/quotes/anime?title=naruto');
-    const bodyLength = res.body.length;
+    const { body: quotes } = res;
     expect(res.status).toBe(200);
     expect(res.ok).toBe(true);
     expect(res.type).toMatch(/json/i);
     expect(_.isArray(res.body)).toBe(true);
-    expect(bodyLength).toBeGreaterThanOrEqual(1);
-    expect(bodyLength).toBeLessThanOrEqual(50);
-    expect(res.body[_.random(bodyLength - 1)]).not.toHaveProperty(['_id', ' created_At', 'updatedAt', '__v']);
+    expect(quotes.length).toBeGreaterThanOrEqual(1);
+    expect(quotes.length).toBeLessThanOrEqual(50);
+    _.forEach(quotes, (quote) => {
+      expect(quote).not.toHaveProperty(['_id', ' created_At', 'updatedAt', '__v']);
+    });
     done();
   });
 });
@@ -138,14 +142,16 @@ describe('GET /api/quotes/character?name=<character-name>', () => {
 
   it('it should return 200 when matching character is found /character?name=naruto', async (done) => {
     const res = await request.get('/api/quotes/character?name=naruto');
-    const bodyLength = res.body.length;
+    const { body: quotes } = res;
     expect(res.status).toBe(200);
     expect(res.ok).toBe(true);
     expect(res.type).toMatch(/json/i);
     expect(_.isArray(res.body)).toBe(true);
-    expect(bodyLength).toBeGreaterThanOrEqual(1);
-    expect(bodyLength).toBeLessThanOrEqual(50);
-    expect(res.body[_.random(bodyLength - 1)]).not.toHaveProperty(['_id', ' created_At', 'updatedAt', '__v']);
+    expect(quotes.length).toBeGreaterThanOrEqual(1);
+    expect(quotes.length).toBeLessThanOrEqual(50);
+    _.forEach(quotes, (quote) => {
+      expect(quote).not.toHaveProperty(['_id', ' created_At', 'updatedAt', '__v']);
+    });
     done();
   });
 });
