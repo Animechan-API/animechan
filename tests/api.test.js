@@ -1,29 +1,22 @@
 require('dotenv').config();
 const supertest = require('supertest');
 const { StatusCodes, getReasonPhrase } = require('http-status-codes');
-const gracefulShutdown = require('http-graceful-shutdown');
 const database = require('../config/mongo');
 const { app } = require('../config/server');
 const seedDatabase = require('./seeds/seeder');
 const db = require('./seeds/quote.json');
 const Quote = require('../model/quote');
 
-let server;
-let request;
-let shutdown;
+const request = supertest(app.callback());
 
 beforeAll(async () => {
   await database.connect();
   await seedDatabase(Quote, db);
-
-  server = app.listen();
-  request = supertest(server);
-  shutdown = gracefulShutdown(server);
 });
 
 afterAll(async () => {
+  await Quote.removeCollection();
   await database.disconnect();
-  await shutdown();
 });
 
 describe('GET /api/quotes', () => {

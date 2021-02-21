@@ -1,21 +1,8 @@
 require('dotenv').config();
 const supertest = require('supertest');
-const gracefulShutdown = require('http-graceful-shutdown');
 const { app } = require('../config/server');
 
-let server;
-let request;
-let shutdown;
-
-beforeAll(async () => {
-  server = app.listen(3000);
-  request = supertest(server);
-  shutdown = gracefulShutdown(server);
-});
-
-afterAll(async () => {
-  await shutdown();
-});
+const request = supertest(app.callback());
 
 describe('GET /status', () => {
   it('it should return 200', async (done) => {

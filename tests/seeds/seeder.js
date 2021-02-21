@@ -1,9 +1,6 @@
 module.exports = async function seedDatabase(model, seedData, options) {
   // eslint-disable-next-line no-param-reassign
-  options = {
-    runSaveMiddleware: false,
-    ...options,
-  };
+  options = { runSaveMiddleware: false, ...options };
 
   try {
     return options.runSaveMiddleware
