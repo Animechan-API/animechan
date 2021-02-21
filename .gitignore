@@ -1,4 +1,5 @@
 node_modules
 yarn-error.log
 package-lock.json
+coverage
 .env
