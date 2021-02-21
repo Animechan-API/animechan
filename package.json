@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/RocktimSaikia/anime-chan.git"
+  },
   "scripts": {
     "dev": "nodemon index.js",
     "start": "cross-env NODE_ENV=production node index.js",
