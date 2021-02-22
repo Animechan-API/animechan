@@ -17,7 +17,7 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "postinstall": "husky install",
-    "cm": "cz"
+    "commit": "cz"
   },
   "dependencies": {
     "@koa/cors": "^3.1.0",
