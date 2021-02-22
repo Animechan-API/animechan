@@ -25,10 +25,10 @@ jobs:
         mongodb-version: ${{ matrix.mongodb-version }}
       
     - name: Install dependencies
-      run: npm install
+      run: yarn install
 
     - name: Run tests
-      run: npm run test:cov
+      run: yarn test:cov
 
     - name: Coveralls
       uses: coverallsapp/github-action@master
