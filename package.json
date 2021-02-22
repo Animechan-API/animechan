@@ -16,7 +16,8 @@
     "test:watch": "jest --watchAll",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "postinstall": "husky install"
+    "postinstall": "husky install",
+    "cm": "cz"
   },
   "dependencies": {
     "@koa/cors": "^3.1.0",
@@ -33,6 +34,7 @@
   },
   "devDependencies": {
     "@types/jest": "^26.0.20",
+    "commitizen": "^4.2.3",
     "cz-conventional-changelog": "3.3.0",
     "eslint": "7.2.0",
     "eslint-config-airbnb-base": "14.2.1",
