@@ -20,9 +20,9 @@ afterAll(async () => {
   await database.disconnect();
 });
 
-describe('GET /api/quotes', () => {
+describe('GET /quotes', () => {
   it('it should return 200', async (done) => {
-    const res = await request.get('/api/quotes');
+    const res = await request.get('/quotes');
     expect(res.status).toBe(200);
     expect(res.ok).toBe(true);
     expect(res.type).toMatch(/json/i);
@@ -35,9 +35,9 @@ describe('GET /api/quotes', () => {
   });
 });
 
-describe('GET /api/quotes/random', () => {
+describe('GET /quotes/random', () => {
   it('it should return 200', async (done) => {
-    const res = await request.get('/api/quotes/random');
+    const res = await request.get('/quotes/random');
     expect(res.status).toBe(200);
     expect(res.ok).toBe(true);
     expect(res.type).toMatch(/json/i);
@@ -50,9 +50,9 @@ describe('GET /api/quotes/random', () => {
   });
 });
 
-describe('GET /api/quotes/anime?title=<anime-title>', () => {
+describe('GET /quotes/anime?title=<anime-title>', () => {
   it('it should return 400 when title is not provided /anime', async (done) => {
-    const res = await request.get('/api/quotes/anime');
+    const res = await request.get('/quotes/anime');
     expect(res.status).toBe(400);
     expect(res.ok).toBe(false);
     expect(res.type).toMatch(/json/i);
@@ -61,7 +61,7 @@ describe('GET /api/quotes/anime?title=<anime-title>', () => {
   });
 
   it('it should return 400 when title is has no value /anime?title', async (done) => {
-    const res = await request.get('/api/quotes/anime?title');
+    const res = await request.get('/quotes/anime?title');
     expect(res.status).toBe(400);
     expect(res.ok).toBe(false);
     expect(res.type).toMatch(/json/i);
@@ -70,7 +70,7 @@ describe('GET /api/quotes/anime?title=<anime-title>', () => {
   });
 
   it('it should return 400 when title has no value /anime?title=', async (done) => {
-    const res = await request.get('/api/quotes/anime?title=');
+    const res = await request.get('/quotes/anime?title=');
     expect(res.status).toBe(400);
     expect(res.ok).toBe(false);
     expect(res.type).toMatch(/json/i);
@@ -79,7 +79,7 @@ describe('GET /api/quotes/anime?title=<anime-title>', () => {
   });
 
   it('it should return 404 when no matching anime is found /anime?title=foobar', async (done) => {
-    const res = await request.get('/api/quotes/anime?title=foobar');
+    const res = await request.get('/quotes/anime?title=foobar');
     expect(res.status).toBe(404);
     expect(res.ok).toBe(false);
     expect(res.type).toMatch(/json/i);
@@ -88,7 +88,7 @@ describe('GET /api/quotes/anime?title=<anime-title>', () => {
   });
 
   it('it should return 200 when matching anime is found anime?title=naruto', async (done) => {
-    const res = await request.get('/api/quotes/anime?title=naruto');
+    const res = await request.get('/quotes/anime?title=naruto');
     const { body: quotes } = res;
     expect(res.status).toBe(200);
     expect(res.ok).toBe(true);
@@ -103,9 +103,9 @@ describe('GET /api/quotes/anime?title=<anime-title>', () => {
   });
 });
 
-describe('GET /api/quotes/character?name=<character-name>', () => {
+describe('GET /quotes/character?name=<character-name>', () => {
   it('it should return 400 when title is not provided /character', async (done) => {
-    const res = await request.get('/api/quotes/character');
+    const res = await request.get('/quotes/character');
     expect(res.status).toBe(400);
     expect(res.ok).toBe(false);
     expect(res.type).toMatch(/json/i);
@@ -114,7 +114,7 @@ describe('GET /api/quotes/character?name=<character-name>', () => {
   });
 
   it('it should return 400 when title is has no value /character?name', async (done) => {
-    const res = await request.get('/api/quotes/character?name');
+    const res = await request.get('/quotes/character?name');
     expect(res.status).toBe(400);
     expect(res.ok).toBe(false);
     expect(res.type).toMatch(/json/i);
@@ -123,7 +123,7 @@ describe('GET /api/quotes/character?name=<character-name>', () => {
   });
 
   it('it should return 400 when title has no value /character?name=', async (done) => {
-    const res = await request.get('/api/quotes/character?name=');
+    const res = await request.get('/quotes/character?name=');
     expect(res.status).toBe(400);
     expect(res.ok).toBe(false);
     expect(res.type).toMatch(/json/i);
@@ -132,7 +132,7 @@ describe('GET /api/quotes/character?name=<character-name>', () => {
   });
 
   it('it should return 404 when no matching character is found /character?name=foobar', async (done) => {
-    const res = await request.get('/api/quotes/character?name=foobar');
+    const res = await request.get('/quotes/character?name=foobar');
     expect(res.status).toBe(404);
     expect(res.ok).toBe(false);
     expect(res.type).toMatch(/json/i);
@@ -141,7 +141,7 @@ describe('GET /api/quotes/character?name=<character-name>', () => {
   });
 
   it('it should return 200 when matching character is found /character?name=naruto', async (done) => {
-    const res = await request.get('/api/quotes/character?name=naruto');
+    const res = await request.get('/quotes/character?name=naruto');
     const { body: quotes } = res;
     expect(res.status).toBe(200);
     expect(res.ok).toBe(true);
