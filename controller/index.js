@@ -1,15 +1,31 @@
 const { StatusCodes, getReasonPhrase } = require('http-status-codes');
 const _ = require('lodash');
 const Quote = require('../model/quote');
+const { canPaginate, paginate, filterQuote } = require('./util');
 
 /**
  * GET /api/quotes
  * Retreives quotes, default limit 50
  */
 module.exports.list = async (ctx) => {
+  const { query: { page } } = ctx.request;
   let quotes = await Quote.find();
-  quotes = _.map(quotes, _.partialRight(_.pick, ['anime', 'character', 'quote']));
-  ctx.body = _.shuffle(quotes).slice(0, 50);
+
+  // Pagination
+  if (page) {
+    // when (page * count) is more than the found data
+    if (!canPaginate(quotes, page)) {
+      ctx.response.status = StatusCodes.NOT_FOUND;
+      ctx.body = { error: 'End of pagination!' };
+      return;
+    }
+
+    quotes = paginate(quotes, page).map(filterQuote);
+    ctx.body = quotes;
+    return;
+  }
+  quotes = _.shuffle(quotes).slice(0, 10).map(filterQuote);
+  ctx.body = quotes;
 };
 
 /**
@@ -17,9 +33,9 @@ module.exports.list = async (ctx) => {
  * Retreives a single random quote
  */
 module.exports.random = async (ctx) => {
-  const totoalDocCount = await Quote.countDocuments();
-  const randomQuote = await Quote.findOne().skip(_.random(totoalDocCount));
-  ctx.body = _.pick(randomQuote, ['anime', 'character', 'quote']);
+  const docCount = await Quote.countDocuments();
+  const randomQuote = await Quote.findOne().skip(_.random(docCount));
+  ctx.body = filterQuote(randomQuote);
 };
 
 /**
@@ -27,7 +43,7 @@ module.exports.random = async (ctx) => {
  * Retreives quotes by anime title, default limit 50
  */
 module.exports.listByAnime = async (ctx) => {
-  const { query: { title } } = ctx.request;
+  const { query: { title, page } } = ctx.request;
 
   if (!title) {
     ctx.response.status = StatusCodes.BAD_REQUEST;
@@ -35,14 +51,30 @@ module.exports.listByAnime = async (ctx) => {
     return;
   }
 
-  let quotes = await Quote.find({ anime: new RegExp(title, 'i') }).limit(50).exec();
+  let quotes = await Quote.find({ anime: new RegExp(title, 'i') });
+
+  // No related entries found
   if (_.isEmpty(quotes)) {
     ctx.response.status = StatusCodes.NOT_FOUND;
-    ctx.body = { error: getReasonPhrase(StatusCodes.NOT_FOUND) };
+    ctx.body = { error: 'No related quotes found!' };
     return;
   }
 
-  quotes = _.map(quotes, _.partialRight(_.pick, ['anime', 'character', 'quote']));
+  // if page is passsed
+  if (page) {
+    // when (page * count) is more than the found data
+    if (!canPaginate(quotes, page)) {
+      ctx.response.status = StatusCodes.NOT_FOUND;
+      ctx.body = { error: 'End of pagination!' };
+      return;
+    }
+
+    quotes = paginate(quotes, page).map(filterQuote);
+    ctx.body = quotes;
+    return;
+  }
+
+  quotes = quotes.map(filterQuote);
   ctx.body = quotes;
 };
 
@@ -51,7 +83,7 @@ module.exports.listByAnime = async (ctx) => {
    * Retreives quotes by anime character, default limit 50
    */
 module.exports.listByCharacter = async (ctx) => {
-  const { query: { name } } = ctx.request;
+  const { query: { name, page } } = ctx.request;
 
   if (!name) {
     ctx.response.status = StatusCodes.BAD_REQUEST;
@@ -59,13 +91,29 @@ module.exports.listByCharacter = async (ctx) => {
     return;
   }
 
-  let quotes = await Quote.find({ character: new RegExp(name, 'i') }).limit(50).exec();
+  let quotes = await Quote.find({ character: new RegExp(name, 'i') });
+
+  // No related entries found
   if (_.isEmpty(quotes)) {
     ctx.response.status = StatusCodes.NOT_FOUND;
-    ctx.body = { error: getReasonPhrase(StatusCodes.NOT_FOUND) };
+    ctx.body = { error: 'No related quotes found!' };
     return;
   }
 
-  quotes = _.map(quotes, _.partialRight(_.pick, ['anime', 'character', 'quote']));
+  // Pagination
+  if (page) {
+    // when (page * count) is more than the found data
+    if (!canPaginate(quotes, page)) {
+      ctx.response.status = StatusCodes.NOT_FOUND;
+      ctx.body = { error: 'End of pagination!' };
+      return;
+    }
+
+    quotes = paginate(quotes, page).map(filterQuote);
+    ctx.body = quotes;
+    return;
+  }
+
+  quotes = quotes.map(filterQuote);
   ctx.body = quotes;
 };

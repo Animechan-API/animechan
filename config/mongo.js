@@ -1,8 +1,8 @@
 const mongoose = require('mongoose');
 
-module.exports.connect = async () => {
+module.exports.connect = async (mongoUri) => {
   try {
-    await mongoose.connect(process.env.NODE_ENV !== 'production' ? 'mongodb://localhost:27017/animechan' : process.env.MONGO_URI, {
+    await mongoose.connect(mongoUri, {
       useFindAndModify: false,
       useNewUrlParser: true,
       useCreateIndex: true,
