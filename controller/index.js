@@ -5,7 +5,7 @@ const { canPaginate, paginate, filterQuote } = require('./util');
 
 /**
  * GET /api/quotes
- * Retreives quotes, default limit 50
+ * List quotes
  */
 module.exports.list = async (ctx) => {
   const { query: { page } } = ctx.request;
@@ -30,7 +30,7 @@ module.exports.list = async (ctx) => {
 
 /**
  * GET /api/quotes/random
- * Retreives a single random quote
+ * List a single random quote
  */
 module.exports.random = async (ctx) => {
   const docCount = await Quote.countDocuments();
@@ -39,8 +39,8 @@ module.exports.random = async (ctx) => {
 };
 
 /**
- * GET /api/quotes/anime?title="naruto"
- * Retreives quotes by anime title, default limit 50
+ * GET /api/quotes/anime?title=<title>
+ * List quotes by anime title
  */
 module.exports.listByAnime = async (ctx) => {
   const { query: { title, page } } = ctx.request;
@@ -60,7 +60,7 @@ module.exports.listByAnime = async (ctx) => {
     return;
   }
 
-  // if page is passsed
+  // Pagination
   if (page) {
     // when (page * count) is more than the found data
     if (!canPaginate(quotes, page)) {
@@ -79,8 +79,8 @@ module.exports.listByAnime = async (ctx) => {
 };
 
 /**
-   * GET /api/quotes/character?name="naruto"
-   * Retreives quotes by anime character, default limit 50
+   * GET /api/quotes/character?name=<name>
+   * List quotes by anime character
    */
 module.exports.listByCharacter = async (ctx) => {
   const { query: { name, page } } = ctx.request;
