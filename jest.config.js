@@ -4,7 +4,7 @@ module.exports = {
   testPathIgnorePatterns: ['/tests/seeds/'],
   watchPathIgnorePatterns: ['/tests/seeds/'],
   collectCoverageFrom: [
-    '**/controller/*.js',
+    '**/controller/index.js',
     '**/routes/*.js',
   ],
 };

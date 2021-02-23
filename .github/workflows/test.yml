@@ -28,7 +28,7 @@ jobs:
       run: yarn install
 
     - name: Run tests
-      run: yarn test:cov
+      run: yarn testcov
 
     - name: Coveralls
       uses: coverallsapp/github-action@master

@@ -10,9 +10,9 @@
   "scripts": {
     "dev": "nodemon index.js",
     "start": "cross-env NODE_ENV=production node index.js",
-    "pretest": "rimraf coverage",
     "test": "jest",
-    "test:cov": "jest --coverage",
+    "pretestcov": "rimraf coverage",
+    "testcov": "jest --coverage",
     "test:watch": "jest --watchAll",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
