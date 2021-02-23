@@ -1,7 +1,7 @@
 const { StatusCodes, getReasonPhrase } = require('http-status-codes');
 const _ = require('lodash');
 const Quote = require('../model/quote');
-const { canPaginate, paginate, filterQuote } = require('./util');
+const { paginate, filterQuote } = require('./util');
 
 /**
  * GET /api/quotes
@@ -13,14 +13,12 @@ module.exports.list = async (ctx) => {
 
   // Pagination
   if (page) {
-    // when (page * count) is more than the found data
-    if (!canPaginate(quotes, page)) {
-      ctx.response.status = StatusCodes.NOT_FOUND;
-      ctx.body = { error: 'End of pagination!' };
+    quotes = paginate(quotes, page).map(filterQuote);
+    if (_.isEmpty(quotes)) {
+      ctx.response.status = 404;
+      ctx.body = { error: 'No quotes found!' };
       return;
     }
-
-    quotes = paginate(quotes, page).map(filterQuote);
     ctx.body = quotes;
     return;
   }
@@ -62,14 +60,12 @@ module.exports.listByAnime = async (ctx) => {
 
   // Pagination
   if (page) {
-    // when (page * count) is more than the found data
-    if (!canPaginate(quotes, page)) {
-      ctx.response.status = StatusCodes.NOT_FOUND;
-      ctx.body = { error: 'End of pagination!' };
+    quotes = paginate(quotes, page).map(filterQuote);
+    if (_.isEmpty(quotes)) {
+      ctx.response.status = 404;
+      ctx.body = { error: 'No quotes found!' };
       return;
     }
-
-    quotes = paginate(quotes, page).map(filterQuote);
     ctx.body = quotes;
     return;
   }
@@ -102,14 +98,12 @@ module.exports.listByCharacter = async (ctx) => {
 
   // Pagination
   if (page) {
-    // when (page * count) is more than the found data
-    if (!canPaginate(quotes, page)) {
-      ctx.response.status = StatusCodes.NOT_FOUND;
-      ctx.body = { error: 'End of pagination!' };
+    quotes = paginate(quotes, page).map(filterQuote);
+    if (_.isEmpty(quotes)) {
+      ctx.response.status = 404;
+      ctx.body = { error: 'No quotes found!' };
       return;
     }
-
-    quotes = paginate(quotes, page).map(filterQuote);
     ctx.body = quotes;
     return;
   }

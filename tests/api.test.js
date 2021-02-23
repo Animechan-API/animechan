@@ -15,6 +15,7 @@ beforeAll(async () => {
 });
 
 afterAll(async () => {
+  await Quote.removeCollection();
   await database.disconnect();
 });
 
@@ -37,7 +38,7 @@ describe('GET /quotes', () => {
     expect(res.status).toBe(404);
     expect(res.ok).toBe(false);
     expect(res.type).toMatch(/json/i);
-    expect(res.body.error).toBe('End of pagination!');
+    expect(res.body.error).toBe('No quotes found!');
     done();
   });
 
@@ -47,7 +48,7 @@ describe('GET /quotes', () => {
     expect(res.status).toBe(404);
     expect(res.ok).toBe(false);
     expect(res.type).toMatch(/json/i);
-    expect(res.body.error).toBe('End of pagination!');
+    expect(res.body.error).toBe('No quotes found!');
     done();
   });
 });
@@ -110,7 +111,7 @@ describe('GET /quotes/anime?title=<anime-title>', () => {
       expect(res.status).toBe(404);
       expect(res.ok).toBe(false);
       expect(res.type).toMatch(/json/i);
-      expect(res.body.error).toBe('End of pagination!');
+      expect(res.body.error).toBe('No quotes found!');
       done();
     });
   });
@@ -190,7 +191,7 @@ describe('GET /quotes/character?name=<character-name>', () => {
       expect(res.status).toBe(404);
       expect(res.ok).toBe(false);
       expect(res.type).toMatch(/json/i);
-      expect(res.body.error).toBe('End of pagination!');
+      expect(res.body.error).toBe('No quotes found!');
       done();
     });
   });
@@ -210,7 +211,7 @@ describe('GET /quotes/character?name=<character-name>', () => {
       done();
     });
 
-    it('it should return 200 when matching character is found /character?name=naruto&page=1', async (done) => {
+    it('it should return 200 with pagination /character?name=naruto&page=1', async (done) => {
       const res = await request.get('/quotes/character?name=naruto&page=1');
       const { body: quotes } = res;
       expect(res.status).toBe(200);
