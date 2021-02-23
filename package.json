@@ -7,6 +7,10 @@
     "type": "git",
     "url": "git://github.com/RocktimSaikia/anime-chan.git"
   },
+  "engines": {
+    "node": "14.x",
+    "yarn": "1.x"
+  },
   "scripts": {
     "dev": "nodemon index.js",
     "start": "cross-env NODE_ENV=production node index.js",
