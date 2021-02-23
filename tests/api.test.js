@@ -1,4 +1,3 @@
-require('dotenv').config();
 const supertest = require('supertest');
 const { StatusCodes, getReasonPhrase } = require('http-status-codes');
 const _ = require('lodash');
@@ -11,7 +10,7 @@ const Quote = require('../model/quote');
 const request = supertest(app.callback());
 
 beforeAll(async () => {
-  await database.connect(process.env.MONGO_URI_TEST);
+  await database.connect('mongodb://localhost:27017/animechan-test');
   await seedDatabase(Quote, db);
 });
 

@@ -1,4 +1,3 @@
-require('dotenv').config();
 const supertest = require('supertest');
 const { app } = require('../config/server');
 
