@@ -32,7 +32,7 @@ module.exports.list = async (ctx) => {
  */
 module.exports.random = async (ctx) => {
   const docCount = await Quote.countDocuments();
-  const randomQuote = await Quote.findOne().skip(_.random(docCount));
+  const randomQuote = await Quote.findOne().skip(_.random(docCount - 1));
   ctx.body = filterQuote(randomQuote);
 };
 
