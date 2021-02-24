@@ -12,7 +12,10 @@
     "yarn": "1.x"
   },
   "scripts": {
+    "seed-db": "node seed/index.js",
+    "del-db": "node cleandb.js",
     "dev": "nodemon index.js",
+    "postdev": "npm run cleandb",
     "start": "cross-env NODE_ENV=production node index.js",
     "test": "jest",
     "pretestcov": "rimraf coverage",
