@@ -33,10 +33,12 @@
     "cross-env": "^7.0.3",
     "dotenv": "^8.2.0",
     "http-status-codes": "^2.1.4",
+    "ioredis": "^4.22.0",
     "koa": "^2.13.1",
     "koa-bodyparser": "^4.3.0",
     "koa-helmet": "^6.0.0",
     "koa-logger": "^3.2.1",
+    "koa-ratelimit": "^5.0.0",
     "lodash": "^4.17.21",
     "mongoose": "5.11.15"
   },
