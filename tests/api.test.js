@@ -2,12 +2,12 @@ const supertest = require('supertest');
 const { StatusCodes, getReasonPhrase } = require('http-status-codes');
 const _ = require('lodash');
 const database = require('../config/mongo');
-const { app } = require('../config/server');
-const seedDatabase = require('./seeds/seeder');
-const db = require('./seeds/quote.json');
+const server = require('../config/server');
+const seedDatabase = require('../seed/seeder');
+const db = require('../seed/quote.json');
 const Quote = require('../model/quote');
 
-const request = supertest(app.callback());
+const request = supertest(server);
 
 beforeAll(async () => {
   await database.connect('mongodb://localhost:27017/animechan-test');

@@ -8,6 +8,7 @@ module.exports.connect = async (mongoUri) => {
       useCreateIndex: true,
       useUnifiedTopology: true,
     });
+    return mongoose.connection;
   } catch (error) {
     throw error;
   }

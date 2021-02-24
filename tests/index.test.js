@@ -1,7 +1,7 @@
 const supertest = require('supertest');
-const { app } = require('../config/server');
+const server = require('../config/server');
 
-const request = supertest(app.callback());
+const request = supertest(server);
 
 describe('GET /status', () => {
   it('it should return 200', async (done) => {
