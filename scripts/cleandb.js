@@ -1,6 +1,6 @@
 require('dotenv').config();
-const database = require('./config/mongo');
-const Quote = require('./model/quote');
+const database = require('../config/mongo');
+const Quote = require('../model/quote');
 
 (async () => {
   await database.connect(process.env.MONGO_URI_DEV);

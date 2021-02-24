@@ -5,7 +5,6 @@ const helmet = require('koa-helmet');
 const bodyParser = require('koa-bodyparser');
 const rateLimit = require('koa-ratelimit');
 const http = require('http');
-const Redis = require('ioredis');
 
 const app = new Koa();
 const server = http.createServer(app.callback());
@@ -13,8 +12,8 @@ const router = require('../routes');
 
 if (process.env.NODE_ENV !== 'test') app.use(logger());
 app.use(rateLimit({
-  driver: process.env.NODE_ENV !== 'production' ? 'memory' : 'redis',
-  db: process.env.NODE_ENV !== 'production' ? new Map() : new Redis(),
+  driver: 'memory',
+  db: new Map(),
   duration: 60000,
   errorMessage: 'Default API limit is up',
   id: (ctx) => ctx.ip,
