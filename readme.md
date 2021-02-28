@@ -1,8 +1,8 @@
 <p align="center">
-  <a href="https://github.com/rocktimsaikia/anime-chan/stargazers"><img src=" https://img.shields.io/github/stars/rocktimsaikia/anime-chan.svg?style=for-the-badge"/></a>
-  <a href="https://github.com/rocktimsaikia/anime-chan/network/members"><img src=" https://img.shields.io/github/forks/rocktimsaikia/anime-chan.svg?style=for-the-badge"/></a>
-  <a href="https://github.com/rocktimsaikia/anime-chan/issues"><img src=" https://img.shields.io/github/issues/rocktimsaikia/anime-chan.svg?style=for-the-badge"/></a>
-  <a href="https://github.com/rocktimsaikia/anime-chan/blob/master/LICENSE.txt"><img src=" https://img.shields.io/github/license/rocktimsaikia/anime-chan.svg?style=for-the-badge"/></a>
+  <a href="https://github.com/rocktimsaikia/anime-chan/stargazers"><img src="https://img.shields.io/github/stars/rocktimsaikia/anime-chan.svg?style=for-the-badge"/></a>
+  <a href="https://github.com/rocktimsaikia/anime-chan/network/members"><img src="https://img.shields.io/github/forks/rocktimsaikia/anime-chan.svg?style=for-the-badge"/></a>
+  <a href="https://github.com/rocktimsaikia/anime-chan/issues"><img src="https://img.shields.io/github/issues/rocktimsaikia/anime-chan.svg?style=for-the-badge"/></a>
+  <a href="https://github.com/rocktimsaikia/anime-chan/blob/master/LICENSE.txt"><img src="https://img.shields.io/github/license/rocktimsaikia/anime-chan.svg?style=for-the-badge"/></a>
 </a>
 
 <!-- PROJECT LOGO -->
