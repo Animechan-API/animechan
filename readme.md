@@ -51,7 +51,7 @@ Animechan is free restful API that serves thoudsands of anime quotes every minut
 * [TailwindCSS](https://tailwindcss.com/)
 
 
-> Join the [Discord server](https://discord.gg/CwZ3jvuu) for upcoming updates or just to say Hi.
+> Join the [Discord server](https://discord.gg/zjVWGTAVyC) for upcoming updates or just to say Hi.
 
 <!-- ABOUT THE PROJECT -->
 ## Background
