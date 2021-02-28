@@ -22,7 +22,7 @@
     <br />
     <a href="https://github.com/RocktimSaikia/anime-chan/issues/39">Anime reuest</a>
     ·
-    <a href="https://github.com/rocktimsaikia/anime-chan/issues">anime-chanrt Bug</a>
+    <a href="https://github.com/rocktimsaikia/anime-chan/issues">anime-chan Bug</a>
     ·
     <a href="https://github.com/rocktimsaikia/anime-chan/issues">Request Feature</a>
   </p>
@@ -46,10 +46,9 @@
 ## About
 Animechan is free restful API that serves thoudsands of anime quotes every minute. It is built with
 
-* [Next.js]()
-* [Serverless functions]()
-* [Koa.js]()
-* [TailwindCSS]()
+* [Next.js](https://nextjs.org/)
+* [Koa.js](https://koajs.com/)
+* [TailwindCSS](https://tailwindcss.com/)
 
 
 > Join the [Discord server](https://discord.gg/CwZ3jvuu) for upcoming updates or just to say Hi.
