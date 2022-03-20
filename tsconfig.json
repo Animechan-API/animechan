@@ -1,0 +1,16 @@
+{
+	"compilerOptions": {
+		"baseUrl": ".",
+		"paths": {
+			"~/*": ["./src/*"]
+		},
+		"module": "CommonJS",
+		"target": "ES2018",
+		"moduleResolution": "Node",
+		"resolveJsonModule": true,
+		"skipLibCheck": true,
+		"esModuleInterop": true,
+		"outDir": "dist"
+	},
+	"include": ["src/**/*.ts", "__tests__/**/*.test.ts"]
+}
