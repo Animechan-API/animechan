@@ -9,6 +9,7 @@
 		"url": "https://rocktimsaikia.com"
 	},
 	"scripts": {
+		"migrate:postgress": "dotenv -e .env.development -- npx prisma migrate dev --name postgres-init",
 		"build": "del dist && tsup",
 		"dev": "npm run build --watch & nodemon dist/server.js",
 		"start": "npm run build && node dist/server.js",
@@ -23,6 +24,7 @@
 		"@prisma/client": "^3.10.0",
 		"@types/jest": "^27.4.1",
 		"@types/supertest": "^2.0.11",
+		"dotenv-cli": "^5.0.0",
 		"http-status-codes": "^2.2.0",
 		"koa": "^2.13.4",
 		"koa-helmet": "^6.1.0",
