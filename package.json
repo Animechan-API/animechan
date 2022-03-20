@@ -31,7 +31,8 @@
 		"koa-logger": "^3.2.1",
 		"koa-router": "^10.1.1",
 		"koa2-ratelimit": "^1.1.0",
-		"prisma": "^3.10.0"
+		"prisma": "^3.10.0",
+		"del-cli": "^4.0.1"
 	},
 	"devDependencies": {
 		"@faker-js/faker": "^6.0.0-beta.0",
@@ -41,7 +42,6 @@
 		"@types/koa2-ratelimit": "^0.9.2",
 		"@types/koa__cors": "^3.1.1",
 		"@types/node": "^17.0.21",
-		"del-cli": "^4.0.1",
 		"dotenv": "^16.0.0",
 		"http-graceful-shutdown": "^3.1.7",
 		"jest": "^27.5.1",
