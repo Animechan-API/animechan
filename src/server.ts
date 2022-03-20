@@ -1,4 +1,5 @@
-import 'dotenv/config';
+import { config } from 'dotenv';
+config({ path: '.env.development' });
 import process from 'node:process';
 import { app } from '~/config/server';
 

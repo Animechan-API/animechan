@@ -1,7 +1,7 @@
 -- CreateTable
 CREATE TABLE "Quote" (
     "id" SERIAL NOT NULL,
-    "text" TEXT NOT NULL,
+    "quote" TEXT NOT NULL,
     "character" TEXT NOT NULL,
     "anime" TEXT NOT NULL,
 

@@ -9,7 +9,7 @@ generator client {
 
 model Quote {
     id        Int    @id @default(autoincrement())
-    text      String
+    quote     String
     character String
     anime     String
 }
