@@ -1,0 +1,14 @@
+{
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true,
+    "source.fixAll": true
+  },
+  "cSpell.words": [
+    "Animechan",
+    "clsx",
+    "hellobar",
+    "Naruto",
+    "Saitama",
+    "scroller"
+  ]
+}
