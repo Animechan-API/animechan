@@ -90,7 +90,7 @@ export const API_GUIDES: GuideType[] = [
       request: `fetch('https://animechan.vercel.app/api/quotes/anime?title=naruto&page=2')
       .then(response => response.json())
       .then(quotes => console.log(quotes))
-  
+
       // works on character queries too 👇
       // https://animechan.vercel.app/api/quotes/character?name=luffy&page=2`,
       response: stringify([
@@ -112,7 +112,7 @@ export default function Guide() {
     <Layout metaInfo={metaInfo}>
       <div className="container relative lg:mx-auto px-2 max-w-4xl py-16 mt-10">
         <div>
-          <h1 className="text-4xl font-bold mb-4">Guide</h1>
+          <h1 className="text-4xl font-bold mb-4">Docs</h1>
           <h2 className="text-lg">
             Below you'll find examples using{' '}
             <a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API">
@@ -120,6 +120,28 @@ export default function Guide() {
             </a>{' '}
             but you can use any other http library out there.
           </h2>
+        </div>
+
+        <div className="mt-10 relative">
+          <hr className="mb-5" />
+          <h3 className="text-2xl font-bold mb-4 text-wavy">Important Notes</h3>
+          <ol className="list-disc list-inside lg:text-lg text-base">
+            <li>
+              Default rate limit is <i className="font-medium">100 requests</i> per hour.
+            </li>
+            <li>
+              Default number of quotes returned from query endpoints is{' '}
+              <i className="font-medium">10.</i>
+            </li>
+            <li>
+              If you don't find the anime you are looking for then{' '}
+              <a
+                target="_blank"
+                href="https://github.com/rocktimsaikia/anime-chan/discussions/65">
+                submit a request here.
+              </a>
+            </li>
+          </ol>
         </div>
 
         <div className="my-10">
@@ -151,30 +173,6 @@ export default function Guide() {
           ))}
         </div>
         <hr />
-
-        <div className="mt-20 relative">
-          <hr className="mb-5" />
-          <h3 className="lg:text-2xl text-xl font-bold mb-4 text-wavy">
-            Important Notes
-          </h3>
-          <ol className="list-disc list-inside lg:text-lg text-base">
-            <li>
-              Default rate limit is <i className="font-medium">100 requests</i> per hour.
-            </li>
-            <li>
-              Default number of quotes returned from query endpoints is{' '}
-              <i className="font-medium">10.</i>
-            </li>
-            <li>
-              If you don't find the anime you are looking for then{' '}
-              <a
-                target="_blank"
-                href="https://github.com/rocktimsaikia/anime-chan/discussions/65">
-                submit a request here.
-              </a>
-            </li>
-          </ol>
-        </div>
       </div>
     </Layout>
   );

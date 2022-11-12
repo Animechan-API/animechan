@@ -48,9 +48,9 @@ export default function Navbar() {
               className="flex flex-col lg:flex-row list-none ml-auto"
               onClick={() => setNavbarOpen(false)}>
               <li className="nav-item">
-                <Link href="/guide">
+                <Link href="/docs">
                   <a className="no-underline px-3 py-2 flex items-center text-sm font-bold leading-snug cursor-pointer hover:opacity-75">
-                    <span className="ml-2">Guide</span>
+                    <span className="ml-2">Docs</span>
                   </a>
                 </Link>
               </li>

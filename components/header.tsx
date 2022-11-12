@@ -15,7 +15,7 @@ export default function Header() {
         </p>
       </div>
 
-      <Link href="/guide">
+      <Link href="/docs">
         <button
           className="text-gray-800 shadow-sm inline-flex items-center bg-transparent border border-solid border-green-500 hover:bg-green-500 hover:text-white active:bg-green-600 font-bold uppercase text-sm px-6 py-3 rounded outline-none focus:outline-none mr-1 mb-1"
           type="submit"
