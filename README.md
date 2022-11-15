@@ -38,16 +38,6 @@ I started Animechan as a side project in 2020 because I needed help finding an A
 
 <br/>
 
-### Support
-
-If you use the api in your projects then consider showing some support .
-
-<a href="https://www.buymeacoffee.com/rocktimcodes"><img src="https://www.buymeacoffee.com/assets/img/guidelines/download-assets-sm-1.svg" height="35px"/></a>
-
-<br/>
-
-<!-- CONTRIBUTING -->
-
 ### Contributing
 
 - For new Anime requests please [add comments here](https://github.com/rocktimsaikia/anime-chan/discussions/65).

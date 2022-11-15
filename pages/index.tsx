@@ -5,7 +5,6 @@ import CodeBlock from '~/components/codeblock';
 import Header from '~/components/header';
 import Layout from '~/components/Layout';
 import Spinner from '~/components/spinner';
-import Sponsors from '~/components/sponsors';
 import { CodeBlock as CodeBlockType, Quote } from '~/types';
 
 export default function Home() {
@@ -48,7 +47,7 @@ export default function Home() {
           <h2 className="my-5 text-lg">Run this code to get a random quote</h2>
           <CodeBlock {...requestCodeBlock} />
           <button
-            className={`inline-flex items-center bg-green-500 text-white active:bg-green-600 font-bold uppercase text-xs px-4 py-3 
+            className={`inline-flex items-center bg-green-500 text-white active:bg-green-600 font-bold uppercase text-xs px-4 py-3
         rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 my-8 ${
           isLoading && 'cursor-not-allowed'
         }`}
@@ -70,7 +69,6 @@ export default function Home() {
           )}
         </div>
       </Element>
-      <Sponsors />
     </Layout>
   );
 }
