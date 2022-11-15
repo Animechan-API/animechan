@@ -13,7 +13,7 @@
     <a href="https://animechan.vercel.app/"><strong>Explore the api »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/RocktimSaikia/anime-chan/issues/39">Anime request</a>
+    <a href="https://github.com/rocktimsaikia/anime-chan/discussions/65">Anime request</a>
     ·
     <a href="https://github.com/rocktimsaikia/anime-chan/issues">Bug report</a>
     ·
@@ -25,30 +25,23 @@
 
 ### Techstack
 
-- [Koa.js](https://koajs.com/) - api is written in Koa
-- [Next.js](https://nextjs.org/) - website is created in Next
-- [TailwindCSS](https://tailwindcss.com/) - Tailwind is used for styling
+[Koa](https://koajs.com/) | [NextJS](https://nextjs.org/) | [TailwindCSS](https://tailwindcss.com/)
 
-> The frontend of the api is hosted on Vercel and the api is on Heroku.
-> <br/>
+> The frontend is hosted on Vercel and the backend is on Heroku.
 
 ### About
 
-I started Animechan as a side project in 2020 because I needed help finding an API service that provides anime quotes. I was surprised that there weren't any. Hence I created Animechan so that you don't have to.
+I started Animechan as a side project in 2020 because I could not find an API service that provides anime quotes. So I ended up creating my this API so that you don't have to.
 
-<br/>
-
-### Contributing
+## Contributing
 
 - For new Anime requests please [add comments here](https://github.com/rocktimsaikia/anime-chan/discussions/65).
 - And for any bug or feature requests, [Submit a issue here](https://github.com/rocktimsaikia/anime-chan/issues).
 
 Also please see the [open issues](https://github.com/rocktimsaikia/anime-chan/issues) for a list of proposed features before submitting one.
 
-<br/>
-
 <!-- LICENSE -->
 
-### Copyright
+## Copyright
 
 Copyright © 2022 [Rocktim Saikia](https://rocktimsaikia.com)
