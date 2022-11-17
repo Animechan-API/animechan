@@ -23,25 +23,12 @@
 
 <br/>
 
-### Techstack
+## About
 
-[Koa](https://koajs.com/) | [NextJS](https://nextjs.org/) | [TailwindCSS](https://tailwindcss.com/)
+Animechan is a side project I started in 2020 because I could not find an API that provides anime quotes. So I ended up creating this API so that you don't have to.
 
-> The frontend is hosted on Vercel and the backend is on Heroku.
+> API is written in koa and hosted on Heroku. The frontend is in NextJS hosted on Vercel.
 
-### About
+## License
 
-I started Animechan as a side project in 2020 because I could not find an API service that provides anime quotes. So I ended up creating my this API so that you don't have to.
-
-## Contributing
-
-- For new Anime requests please [add comments here](https://github.com/rocktimsaikia/anime-chan/discussions/65).
-- And for any bug or feature requests, [Submit a issue here](https://github.com/rocktimsaikia/anime-chan/issues).
-
-Also please see the [open issues](https://github.com/rocktimsaikia/anime-chan/issues) for a list of proposed features before submitting one.
-
-<!-- LICENSE -->
-
-## Copyright
-
-Copyright © 2022 [Rocktim Saikia](https://rocktimsaikia.com)
+[MIT License](./LICENSE) © 2022 [Rocktim Saikia](https://rocktimsaikia.com)
