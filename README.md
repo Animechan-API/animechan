@@ -33,6 +33,8 @@ Animechan is a side project I started in 2020 because I could not find an API th
 
 ## Libraries
 
+### Python
+
 * [anime-api](https://github.com/AniBase-co/anime-api) by [AniBase-co](https://github.com/Nekidev) - [[issue#63](https://github.com/rocktimsaikia/anime-chan/issues/63)]
 
 ## License
