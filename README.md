@@ -31,11 +31,9 @@ Animechan is a side project I started in 2020 because I could not find an API th
 
 > _Update (Nov 24, 2022)_: Migrated server side hosting to Render from Heroku as [Heroku has eliminated all of their free dynos.](https://blog.heroku.com/new-low-cost-plans)
 
-## Libraries
+## Related
 
-### Python
-
-* [anime-api](https://github.com/AniBase-co/anime-api) by [AniBase-co](https://github.com/Nekidev) - [[issue#63](https://github.com/rocktimsaikia/anime-chan/issues/63)]
+- [AniBase-co/anime-api](https://github.com/AniBase-co/anime-api) - Python wrapper for anime-related APIs
 
 ## License
 
