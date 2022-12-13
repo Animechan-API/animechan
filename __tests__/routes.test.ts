@@ -1,6 +1,7 @@
 import request from 'supertest';
 import { app } from '~/config/server';
 import { prisma } from '~/config/prisma';
+import { strict } from 'node:assert';
 
 let server;
 beforeAll((done) => {
@@ -111,3 +112,14 @@ test("get available quotes by character", async () => {
 	expect(response.body).toHaveProperty('counts');
 	expect(response.body.character).toBe('Father Willibald');
 });
+
+test("get available animes and check for doubles", async () => {
+	const response = await request(server).get('/available')
+	.expect('Content-type', /json/)
+	.expect(200);
+	const body = response.body as Array<string>;
+	expect(body).toBeDefined();
+	expect(typeof body[0] === "string");
+	expect(new Set(body).size).toBe(body.length);
+
+})
