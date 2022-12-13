@@ -4,6 +4,15 @@ import Router from 'koa-router';
 
 const router = new Router();
 
+router.get('/', async (ctx) => {
+	var animes = await prisma.quote.findMany({distinct: ["anime"], select: {anime: true}});
+	const animesArray = animes.map((anime) => {
+		return anime.anime
+	})
+	ctx.body = animesArray;
+
+})
+
 /**
  * GET /api/available/anime?title=<title>
  * Returns the available number of quotes by anime title
