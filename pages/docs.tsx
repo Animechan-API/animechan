@@ -23,7 +23,6 @@ export const API_GUIDES: GuideType[] = [
   {
     heading: 'Get a random quote by anime title',
     link: '#random-quote-by-anime',
-    isNewlyAdded: true,
     codeSample: {
       request: `fetch("https://animechan.vercel.app/api/random/anime?title=naruto")
           .then((response) => response.json())
@@ -34,7 +33,6 @@ export const API_GUIDES: GuideType[] = [
   {
     heading: 'Get a random quote by anime character',
     link: '#random-quote-by-character',
-    isNewlyAdded: true,
     codeSample: {
       request: `fetch("https://animechan.vercel.app/api/random/character?name=saitama")
           .then((response) => response.json())
@@ -79,6 +77,28 @@ export const API_GUIDES: GuideType[] = [
         { anime: '...', character: 'Saitama', quote: '...' },
         '...9 more',
       ]),
+    },
+  },
+  {
+    heading: 'Get all available anime names',
+    link: '#available-anime',
+    isNewlyAdded: true,
+    codeSample: {
+      request: `fetch('https://animechan.vercel.app/api/available/anime')
+      .then(response => response.json())
+      .then(animes => console.log(animes))`,
+      response: stringify(['Naruto', 'One punch man', 'Bleach', '...']),
+    },
+  },
+  {
+    heading: 'Get all available character names',
+    link: '#available-characters',
+    isNewlyAdded: true,
+    codeSample: {
+      request: `fetch('https://animechan.vercel.app/api/available/character')
+      .then(response => response.json())
+      .then(characters => console.log(characters))`,
+      response: stringify(['Naruto Uzumaki', 'Saitama', 'Kurosaki Ichigo', '...']),
     },
   },
   {
