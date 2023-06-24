@@ -10,7 +10,7 @@
   <p align="center">
     <samp>A free restful API serving quality anime quotes</samp>
     <br />
-    <a href="https://animechan.vercel.app/"><strong>Explore the api »</strong></a>
+    <a href="https://animechan.xyz/"><strong>Explore the api »</strong></a>
     <br />
     <br />
     <a href="https://github.com/rocktimsaikia/anime-chan/discussions/65">Anime request</a>
@@ -30,6 +30,8 @@ Animechan is a side project I started in 2020 because I could not find an API th
 > API is written in koa and hosted on ~~Heroku~~. The frontend is in NextJS hosted on Vercel.
 
 > _Update (Nov 24, 2022)_: Migrated server side hosting to Render from Heroku as [Heroku has eliminated all of their free dynos.](https://blog.heroku.com/new-low-cost-plans)
+
+> _Update (Jun 24, 2023)_: Migrated entire project (both backend and frontend) to AWS and got the new domain (animechan.xyz)
 
 ## Related
 
