@@ -36,6 +36,8 @@ Animechan is a side project I started in 2020 because I could not find an API th
 ## Related
 
 - [AniBase-co/anime-api](https://github.com/AniBase-co/anime-api) - Python wrapper for anime-related APIs
+- [Joao-1/Animechan-go](https://github.com/Joao-1/Animechan-go) - Golang wrapper for Animechan API
+
 
 ## License
 
