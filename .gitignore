@@ -1,0 +1,13 @@
+node_modules
+yarn.lock
+
+client/node_modules
+client/dist
+client/yarn.lock
+client/pnpm-lock.yaml
+client/.env
+
+server/node_modules
+server/yarn.lock
+server/pnpm-lock.yaml
+server/.env*

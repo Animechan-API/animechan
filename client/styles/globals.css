@@ -1,0 +1,56 @@
+/* ./src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  a {
+    @apply underline text-green-700;
+  }
+  h1,
+  h2,
+  h3 {
+    @apply text-gray-800;
+  }
+}
+
+@layer utilities {
+  .text-wavy {
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-thickness: 1.5px;
+    text-decoration-color: #9389ffd4;
+  }
+
+  .hellobar-gradient {
+    @apply bg-gradient-to-r from-green-300 via-blue-500 to-purple-600;
+  }
+
+  .fancy-undeline {
+    background-image: linear-gradient(120deg, #3b82f6c2, #7c3aedb5 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.2em;
+    background-position: 0 100%;
+    transition: background-size 0.25s ease-in;
+  }
+
+  .fancy-undeline:hover {
+    background-size: 100% 88% !important;
+  }
+
+  .text-shadow {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .text-shadow-md {
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.08);
+  }
+
+  .text-shadow-lg {
+    text-shadow: 0 15px 30px rgba(0, 0, 0, 0.11), 0 5px 15px rgba(0, 0, 0, 0.08);
+  }
+
+  .text-shadow-none {
+    text-shadow: none;
+  }
+}

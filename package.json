@@ -1,0 +1,22 @@
+{
+  "name": "animechan",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"cd server && pnpm start\" \"cd client && pnpm start\"",
+    "dev": "concurrently \"cd server && pnpm dev\" \"cd client && pnpm dev\"",
+    "server": "cd server && pnpm dev",
+    "client": "cd client && pnpm dev",
+    "format-all": "prettier --write ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^8.2.0"
+  },
+  "devDependencies": {
+    "prettier": "^2.8.8"
+  }
+}
