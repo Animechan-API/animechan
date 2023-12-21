@@ -1,1 +1,0 @@
-## animechan v2.0.0

@@ -10,4 +10,4 @@ client/.env
 server/node_modules
 server/yarn.lock
 server/pnpm-lock.yaml
-server/.env*
+server/.env
