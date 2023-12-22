@@ -148,7 +148,7 @@ module.exports.listByCharacter = async (req, res) => {
 		return;
 	}
 
-	const quotes = await Quote.find({ character: new RegExp(name, 'i') }).limit(10);
+	const quotes = await Quote.find({ character: new RegExp(name, 'i') }, '-_id').limit(10);
 
 	if (isEmpty(quotes)) {
 		res.status(StatusCodes.NOT_FOUND).json({

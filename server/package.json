@@ -12,6 +12,7 @@
 		"yarn": "1.x"
 	},
 	"scripts": {
+		"seed": "node ./scripts/seed.js",
 		"dev": "nodemon index.js",
 		"start": "cross-env NODE_ENV=production node index.js"
 	},
