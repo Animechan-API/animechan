@@ -11,8 +11,8 @@ dependencies:
 
 devDependencies:
   '@rocktimsaikia/prettier-config':
-    specifier: ^1.0.2
-    version: 1.0.2(prettier@3.1.1)
+    specifier: ^1.0.4
+    version: 1.0.4(prettier@3.1.1)
 
 packages:
 
@@ -23,8 +23,9 @@ packages:
       regenerator-runtime: 0.13.11
     dev: false
 
-  /@rocktimsaikia/prettier-config@1.0.2(prettier@3.1.1):
-    resolution: {integrity: sha512-F+QR474wF1ThRfGXxVxKvM65Zh4uf1tItodi8/VocHSVMbXMeW4sWIGBxvruH80EAhutH9ys6kw5AtyIZNAamA==}
+  /@rocktimsaikia/prettier-config@1.0.4(prettier@3.1.1):
+    resolution: {integrity: sha512-2Ni2znjPBhQlPP5GNiib7Hd+p0NuoVZjUVNvV3+MhTHfYU1Wv+lyKmvlNQREQ8K6qMfmNW1e69m8v9mWcsnL7w==}
+    engines: {node: '>=16.0.0'}
     peerDependencies:
       prettier: '>=2.0.0'
     dependencies:

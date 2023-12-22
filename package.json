@@ -31,7 +31,6 @@
 		"node": ">=16.0.0"
 	},
 	"devDependencies": {
-		"@rocktimsaikia/prettier-config": "^1.0.2"
-	},
-	"prettier": "@rocktimsaikia/prettier-config"
+		"@rocktimsaikia/prettier-config": "^1.0.4"
+	}
 }
