@@ -74,20 +74,6 @@ export default function Navbar() {
 									</a>
 								</Link>
 							</li>
-							<li className="nav-item border border-gray-400 pr-1">
-								<Link href="/signup">
-									<a className="no-underline px-3 py-2 flex items-center text-sm font-bold leading-snug cursor-pointer hover:opacity-75">
-										<span className="ml-2">Sign Up</span>
-									</a>
-								</Link>
-							</li>
-							<li className="nav-item">
-								<Link href="/login">
-									<a className="no-underline px-3 py-2 flex items-center text-sm font-bold leading-snug cursor-pointer hover:opacity-75">
-										<span className="ml-2">Sign In</span>
-									</a>
-								</Link>
-							</li>
 						</ul>
 					</div>
 				</div>
