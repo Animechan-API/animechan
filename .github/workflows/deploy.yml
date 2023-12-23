@@ -12,12 +12,12 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+
+      - name: SSH and Run Commands on EC2
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
           EC2_HOSTNAME: ${{ secrets.EC2_HOSTNAME }}
           EC2_USERNAME: ${{ secrets.EC2_USERNAME }}
-
-      - name: SSH and Run Commands on EC2
         run: |
           # Save private key to a file
           echo ${SSH_PRIVATE_KEY} > ec2_key.pem
