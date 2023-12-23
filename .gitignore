@@ -1,12 +1,14 @@
 node_modules
 yarn.lock
 Session.vim
+logs
 
 client/node_modules
 client/dist
 client/yarn.lock
 client/pnpm-lock.yaml
 client/.env
+client/.next
 
 server/node_modules
 server/yarn.lock
