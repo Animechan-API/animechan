@@ -10,7 +10,7 @@
 		"backend:start": "cd server && pnpm start",
 		"frontend:dev": "cd client && pnpm dev",
 		"backend:dev": "cd server && pnpm dev",
-		"install:all": "pnpm frontend:install && pnpm backend:install",
+		"install:all": "pnpm install && pnpm frontend:install && pnpm backend:install",
 		"backend:seed": "cd server && pnpm seed",
 		"start:prod": "concurrently \"pnpm backend:start\" \"pnpm frontend:start\"",
 		"start:dev": "concurrently \"cd server && pnpm dev\" \"cd client && pnpm dev\"",
@@ -31,7 +31,7 @@
 		"node": ">=16.0.0"
 	},
 	"devDependencies": {
-		"@rocktimsaikia/prettier-config": "^1.0.2"
+		"@rocktimsaikia/prettier-config": "^1.0.4"
 	},
 	"prettier": "@rocktimsaikia/prettier-config"
 }
