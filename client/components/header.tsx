@@ -1,9 +1,11 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import { scroller } from 'react-scroll';
 
 export default function Header() {
 	return (
-		<div className="container px-2 relative mx-auto max-w-4xl text-center mt-20 pt-20 pb-10 bg-gradient-to-r">
+		<div className="container px-2 relative mx-auto max-w-4xl text-center pt-10 bg-gradient-to-r">
+			<Image src="/logo.png" width="200" height="200" priority />
 			<h1 className="lg:text-7xl text-6xl font-display font-bold text-shadow-md">
 				Animechan
 			</h1>
@@ -45,7 +47,7 @@ export default function Header() {
 					<img src="/coffee-cup.png" height="12" width="12" className="ml-2" />
 				</button>
 			</a>
-			<div className="mt-28">
+			<div className="lg:block lg:mt-28 hidden">
 				<button
 					className="text-gray-800 focus:outline-none"
 					aria-label="Scroll Down"

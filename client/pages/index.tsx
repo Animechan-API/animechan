@@ -42,13 +42,13 @@ export default function Home() {
 		<Layout>
 			<Header />
 			<Element name="tryThis">
-				<div className="container relative max-w-4xl px-2 py-16 lg:mx-auto">
+				<div className="container relative max-w-4xl px-2 py-10 lg:mx-auto">
 					<h1 className="text-4xl font-bold font-display">Try it</h1>
-					<h2 className="my-5 text-lg">Run this code to get a random quote</h2>
+					<h2 className="my-2 text-lg">Run this code to get a random quote</h2>
 					<CodeBlock {...requestCodeBlock} />
 					<button
 						className={`inline-flex items-center bg-green-500 text-white active:bg-green-600 font-bold uppercase text-xs px-4 py-3
-        rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 my-8 ${
+        rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 my-5 ${
 					isLoading && 'cursor-not-allowed'
 				}`}
 						type="button"

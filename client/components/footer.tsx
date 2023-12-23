@@ -3,7 +3,7 @@ export default function footer() {
 		<div className="container relative mx-auto max-w-4xl py-10 mt-18 text-center">
 			<p>
 				Created ❤️ by{' '}
-				<a href="https://rocktimsaikia.com/" target="_blank">
+				<a href="https://rocktimsaikia.dev/" target="_blank">
 					rocktimsaikia
 				</a>{' '}
 				© {new Date().getFullYear()}
