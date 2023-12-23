@@ -1,8 +1,7 @@
 {
 	"name": "animechan",
-	"version": "1.0.0",
 	"description": "A REST API for anime quotes",
-	"main": "index.js",
+	"private": true,
 	"scripts": {
 		"frontend:install": "cd client && pnpm install",
 		"backend:install": "cd server && pnpm install",
@@ -16,19 +15,13 @@
 		"start:dev": "concurrently \"cd server && pnpm dev\" \"cd client && pnpm dev\"",
 		"format-all": "prettier --write ."
 	},
-	"keywords": [
-		"anime",
-		"quotes",
-		"api",
-		"animechan"
-	],
 	"author": "Rocktim Saikia <rocktimthedev@gmail.com> (https://rocktimsaikia.dev/)",
-	"license": "MIT",
+	"license": "MPL-2.",
 	"dependencies": {
 		"concurrently": "^8.2.0"
 	},
 	"engines": {
-		"node": ">=16.0.0"
+		"node": ">=20.0.0"
 	},
 	"devDependencies": {
 		"@rocktimsaikia/prettier-config": "^1.0.4"

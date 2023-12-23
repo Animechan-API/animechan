@@ -1,6 +1,5 @@
 {
-	"name": "animechan-website",
-	"version": "0.1.0",
+	"name": "animechan-frontend",
 	"private": true,
 	"scripts": {
 		"dev": "next",

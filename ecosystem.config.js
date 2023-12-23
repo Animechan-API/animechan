@@ -17,6 +17,7 @@ module.exports = {
 				'client/.next',
 				'LICENSE',
 				'logs',
+				'.nvmrc',
 			],
 			autorestart: true,
 			max_memory_restart: '1G',

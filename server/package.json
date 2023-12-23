@@ -1,16 +1,6 @@
 {
-	"name": "anime-chan-api",
-	"version": "2.0.0",
-	"main": "index.js",
-	"license": "MIT",
-	"repository": {
-		"type": "git",
-		"url": "git://github.com/RocktimSaikia/anime-chan.git"
-	},
-	"engines": {
-		"node": "16.x",
-		"yarn": "1.x"
-	},
+	"name": "animechan-backend",
+	"private": true,
 	"scripts": {
 		"seed": "node ./scripts/seed.js",
 		"dev": "nodemon index.js",
