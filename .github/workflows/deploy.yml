@@ -20,16 +20,14 @@ jobs:
           EC2_USERNAME: ${{ secrets.EC2_USERNAME }}
         run: |
           # Save private key to a file
-          echo ${SSH_PRIVATE_KEY} > ec2_key.pem
+          echo "$SSH_PRIVATE_KEY" > ec2_key.pem
           chmod 600 ec2_key.pem
 
           # SSH, run the Commands and capture the output
-          output=$(ssh -o StrictHostKeyChecking=no -i ec2_key.pem ${EC2_USERNAME}@${EC2_HOSTNAME} '
-
+          output=$(ssh -o StrictHostKeyChecking=no -i ec2_key.pem "$EC2_USERNAME"@"$EC2_HOSTNAME" '
           # Pull the latest changes from main branch
           cd /home/ubuntu/animechan-main &&
           git switch main &&
-          git pull origin main &&
-          pm2 status
+          git pull origin main
           ')
           echo "$output"
