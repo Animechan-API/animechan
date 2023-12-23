@@ -1,0 +1,35 @@
+name: EC2 Deploy
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          EC2_HOSTNAME: ${{ secrets.EC2_HOSTNAME }}
+          EC2_USERNAME: ${{ secrets.EC2_USERNAME }}
+
+      - name: SSH and Run Commands on EC2
+        run: |
+          # Save private key to a file
+          echo ${SSH_PRIVATE_KEY} > ec2_key.pem
+          chmod 600 ec2_key.pem
+
+          # SSH, run the Commands and capture the output
+          output=$(ssh -o StrictHostKeyChecking=no -i ec2_key.pem ${EC2_USERNAME}@${EC2_HOSTNAME} '
+
+          # Pull the latest changes from main branch
+          cd /home/ubuntu/animechan-main &&
+          git switch main &&
+          git pull origin main &&
+          pm2 status
+          ')
+          echo "$output"
