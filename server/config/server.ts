@@ -1,11 +1,10 @@
-import router from '~/routes';
-import express from 'express';
-import cors from 'cors';
-import helmet from 'helmet';
-import bodyParser from 'body-parser';
 import compression from 'compression';
-import morgan from 'morgan';
+import cors from 'cors';
+import express from 'express';
 import { rateLimit } from 'express-rate-limit';
+import helmet from 'helmet';
+import morgan from 'morgan';
+import router from '~/routes';
 
 const app = express();
 
@@ -24,9 +23,6 @@ app.use(
 
 app.use(compression());
 app.use(morgan('dev'));
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
-
 app.use(router);
 
 export default app;
