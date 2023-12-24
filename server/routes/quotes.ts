@@ -1,5 +1,5 @@
 import express from 'express';
-import { getQuotesByAnime, getQuotesByCharacter, getRandomQuotes } from '../controller';
+import { getQuotesByAnime, getQuotesByCharacter, getRandomQuotes } from '~/controller';
 
 const router = express.Router();
 

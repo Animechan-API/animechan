@@ -1,6 +1,6 @@
 import 'dotenv/config';
-import server from './config/server';
-import database from './config/mongo';
+import database from '~/config/mongo';
+import server from '~/config/server';
 
 const MONGO_URI = (
 	process.env.NODE_ENV !== 'production'

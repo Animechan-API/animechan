@@ -3,7 +3,7 @@ import {
 	getRandomQuote,
 	getRandomQuoteByAnime,
 	getRandomQuoteByCharacter,
-} from '../controller';
+} from '~/controller';
 
 const router = express.Router();
 

@@ -1,4 +1,4 @@
-import router from '../routes';
+import router from '~/routes';
 import express from 'express';
 import cors from 'cors';
 import helmet from 'helmet';

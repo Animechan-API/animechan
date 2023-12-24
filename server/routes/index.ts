@@ -1,9 +1,9 @@
 import express from 'express';
-import { getAllAnimeNames, getAllCharacterNames } from '../controller';
+import { getAllAnimeNames, getAllCharacterNames } from '~/controller';
+import quotes from '~/routes/quotes';
+import random from '~/routes/random';
 
 const router = express.Router();
-import quotes from './quotes';
-import random from './random';
 
 router.get('/status', (_, res) => {
 	res.json({

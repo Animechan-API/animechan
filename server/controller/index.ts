@@ -1,8 +1,8 @@
+import type { Request, Response } from 'express';
 import { StatusCodes, getReasonPhrase } from 'http-status-codes';
-import { random, isEmpty, sample } from 'lodash';
-import Quote from '../model/quote';
-import { paginate } from './util';
-import type { Response, Request } from 'express';
+import { isEmpty, random, sample } from 'lodash';
+import { paginate } from '~/controller/util';
+import Quote from '~/model/quote';
 
 export const getRandomQuote = async (_: Request, res: Response) => {
 	// List a single random quote
