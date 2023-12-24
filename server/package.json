@@ -20,6 +20,7 @@
 		"express-session": "^1.17.3",
 		"helmet": "^7.0.0",
 		"http-status-codes": "^2.1.4",
+		"koa-ratelimit": "^5.1.0",
 		"lodash": "^4.17.21",
 		"mongoose": "5.11.15",
 		"morgan": "^1.10.0",
