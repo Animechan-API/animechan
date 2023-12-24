@@ -2,9 +2,7 @@
 	"name": "animechan-backend",
 	"private": true,
 	"scripts": {
-		"seed": "ts-node ./scripts/seed.js",
-		"build": "tsc",
-		"build:watch": "tsc -w",
+		"seed": "tsx scripts/seed.ts",
 		"dev": "tsx watch index.ts",
 		"start": "cross-env NODE_ENV=production tsx index.ts"
 	},
