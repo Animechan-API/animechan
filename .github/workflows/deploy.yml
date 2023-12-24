@@ -28,6 +28,7 @@ jobs:
           # Pull the latest changes from main branch
           cd /home/ubuntu/animechan-main &&
           git switch main &&
-          git pull --rebase origin main
+          git pull --rebase origin main &&
+          pnpm install:all
           ')
           echo "$output"
