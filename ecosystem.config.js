@@ -7,7 +7,6 @@ module.exports = {
 			watch: true,
 			ignore_watch: [
 				'**/node_modules',
-				'**/pnpm-lock.yaml',
 				'**/*.md',
 				'.github',
 				'.editorconfig',
