@@ -1,6 +1,6 @@
-const mongoose = require('mongoose');
+import mongoose from 'mongoose';
 
-function stripSlashes(quote) {
+export function stripSlashes(quote: string) {
 	return quote.replace(/\\|\//g, '');
 }
 
@@ -26,4 +26,4 @@ const quoteSchema = new mongoose.Schema(
 	{ timestamps: true }
 );
 
-module.exports = mongoose.model('Quote', quoteSchema);
+export default mongoose.model('Quote', quoteSchema);

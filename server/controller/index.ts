@@ -1,13 +1,17 @@
-const { StatusCodes, getReasonPhrase } = require('http-status-codes');
-const { random, isEmpty, sample } = require('lodash');
-const Quote = require('../model/quote');
-const { paginate } = require('./util');
+import { StatusCodes, getReasonPhrase } from 'http-status-codes';
+import { random, isEmpty, sample } from 'lodash';
+import Quote from '../model/quote';
+import { paginate } from './util';
+import type { Response, Request } from 'express';
 
-/**
- * GET /api/quotes
- * List 10 random quotes
- */
-module.exports.list = async (req, res) => {
+export const getRandomQuote = async (_: Request, res: Response) => {
+	// List a single random quote
+	const randomQuote = await Quote.findOne({}, '-_id').skip(random(7678));
+	res.json(randomQuote);
+};
+
+export const getRandomQuotes = async (_: Request, res: Response) => {
+	// List 10 random quotes
 	const quotes = await Quote.aggregate([
 		{
 			$sample: {
@@ -23,23 +27,11 @@ module.exports.list = async (req, res) => {
 	res.json(quotes);
 };
 
-/**
- * GET /api/random
- * List a single random quote
- */
-module.exports.random = async (req, res) => {
-	const randomQuote = await Quote.findOne({}, '-_id').skip(random(7678));
-	res.json(randomQuote);
-};
-
-/**
- * GET /api/random/anime?title=<title>
- * List a single random quote by anime name
- */
-module.exports.randomByAnime = async (req, res) => {
+export const getRandomQuoteByAnime = async (req: Request, res: Response) => {
+	// List a single random quote by anime name
 	const { title } = req.query;
 
-	if (!title) {
+	if (!title || typeof title !== 'string') {
 		res.status(StatusCodes.BAD_REQUEST).json({
 			error: getReasonPhrase(StatusCodes.BAD_REQUEST),
 		});
@@ -59,14 +51,11 @@ module.exports.randomByAnime = async (req, res) => {
 	res.json(randomQuote);
 };
 
-/**
- * GET /api/random/character?name=<name>
- * List a single random quote by character name
- */
-module.exports.randomByCharacter = async (req, res) => {
-	const { name } = req.query;
+export const getRandomQuoteByCharacter = async (req: Request, res: Response) => {
+	// List a single random quote by character name
+	let { name } = req.query;
 
-	if (!name) {
+	if (!name || typeof name !== 'string') {
 		res.status(StatusCodes.BAD_REQUEST).json({
 			error: getReasonPhrase(StatusCodes.BAD_REQUEST),
 		});
@@ -86,23 +75,20 @@ module.exports.randomByCharacter = async (req, res) => {
 	res.json(randomQuote);
 };
 
-/**
- * GET /api/quotes/anime?title=<title>
- * List quotes by anime title
- */
-module.exports.listByAnime = async (req, res) => {
-	const { title, page } = req.query;
+export const getQuotesByAnime = async (req: Request, res: Response) => {
+	// List quotes by anime title
+	let { title, page } = req.query;
 
-	if (!title) {
+	if (!title || typeof title !== 'string') {
 		res.status(StatusCodes.BAD_REQUEST).json({
 			error: getReasonPhrase(StatusCodes.BAD_REQUEST),
 		});
 		return;
 	}
 
-	if (page) {
+	if (page && typeof page === 'string') {
 		let quotes = await Quote.find({ anime: new RegExp(title, 'i') }, '-_id');
-		quotes = paginate(quotes, page);
+		quotes = paginate(quotes, parseInt(page));
 		if (isEmpty(quotes)) {
 			res.status(404).json({ error: 'No quotes found!' });
 			return;
@@ -123,12 +109,11 @@ module.exports.listByAnime = async (req, res) => {
 	res.json(quotes);
 };
 
-/**
- * GET /api/quotes/character?name=<name>
- * List quotes by anime character
- */
-module.exports.listByCharacter = async (req, res) => {
-	const { name, page } = req.query;
+export const getQuotesByCharacter = async (req: Request, res: Response) => {
+	// List quotes by anime character
+	let { name, page } = req.query;
+	name = name as string;
+	page = page as string;
 
 	if (!name) {
 		res.status(StatusCodes.BAD_REQUEST).json({
@@ -139,7 +124,7 @@ module.exports.listByCharacter = async (req, res) => {
 
 	if (page) {
 		let quotes = await Quote.find({ character: new RegExp(name, 'i') }, '-_id');
-		quotes = paginate(quotes, page);
+		quotes = paginate(quotes, parseInt(page));
 		if (isEmpty(quotes)) {
 			res.status(404).json({ error: 'No quotes found!' });
 			return;
@@ -160,20 +145,14 @@ module.exports.listByCharacter = async (req, res) => {
 	res.json(quotes);
 };
 
-/**
- * GET /api/available/anime
- * List all the available anime
- */
-module.exports.listAllAnime = async (req, res) => {
+export const getAllAnimeNames = async (_: Request, res: Response) => {
+	// List all the available anime names
 	const allAnime = await Quote.find().distinct('anime');
 	res.json(allAnime);
 };
 
-/**
- * GET /api/available/character
- * List all the available characters
- */
-module.exports.listAllCharacters = async (req, res) => {
+export const getAllCharacterNames = async (_: Request, res: Response) => {
+	// List all the available character names
 	const allCharacters = await Quote.find().distinct('character');
 	res.json(allCharacters);
 };

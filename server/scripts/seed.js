@@ -1,7 +1,7 @@
-const database = require('../config/mongo');
-const Quote = require('../model/quote');
+import database from '../config/mongo';
+import Quote from '../model/quote';
+import SEED_DATA from './test-data.json';
 
-const SEED_DATA = require('./test-data.json');
 const MONGO_URI = process.env.MONGO_READ_WRITE_URI_DEV;
 
 database.connect(MONGO_URI).then(() => {
