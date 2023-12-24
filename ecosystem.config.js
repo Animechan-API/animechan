@@ -20,7 +20,7 @@ module.exports = {
 				'.nvmrc',
 			],
 			autorestart: true,
-			max_memory_restart: '1G',
+			max_memory_restart: '500M',
 			out_file: 'logs/out.log',
 			error_file: 'logs/error.log',
 		},
