@@ -1,7 +1,7 @@
-require('dotenv').config();
-const mongoose = require('mongoose');
+import 'dotenv/config';
+import mongoose from 'mongoose';
 
-module.exports.connect = async (mongoUri) => {
+const connect = async (mongoUri: string) => {
 	try {
 		await mongoose.connect(mongoUri, {
 			useFindAndModify: false,
@@ -18,10 +18,12 @@ module.exports.connect = async (mongoUri) => {
 	}
 };
 
-module.exports.disconnect = async () => {
+const disconnect = async () => {
 	try {
 		await mongoose.disconnect();
 	} catch (error) {
 		throw error;
 	}
 };
+
+export default { connect, disconnect };

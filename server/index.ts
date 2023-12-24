@@ -1,11 +1,12 @@
-require('dotenv').config();
-const server = require('./config/server');
-const database = require('./config/mongo');
+import 'dotenv/config';
+import database from '~/config/mongo';
+import server from '~/config/server';
 
-const MONGO_URI =
+const MONGO_URI = (
 	process.env.NODE_ENV !== 'production'
 		? process.env.MONGO_READ_WRITE_URI_DEV
-		: process.env.MONGO_READ_URI_PROD;
+		: process.env.MONGO_READ_URI_PROD
+) as string;
 
 database
 	.connect(MONGO_URI)

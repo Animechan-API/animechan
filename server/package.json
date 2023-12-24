@@ -2,35 +2,31 @@
 	"name": "animechan-backend",
 	"private": true,
 	"scripts": {
-		"seed": "node ./scripts/seed.js",
-		"dev": "nodemon index.js",
-		"start": "cross-env NODE_ENV=production node index.js"
+		"seed": "tsx scripts/seed.ts",
+		"dev": "tsx watch index.ts",
+		"start": "cross-env NODE_ENV=production tsx index.ts"
 	},
 	"dependencies": {
-		"bcrypt": "^5.1.0",
-		"bcryptjs": "^2.4.3",
-		"body-parser": "^1.20.2",
 		"compression": "^1.7.4",
-		"connect-flash": "^0.1.1",
 		"cors": "^2.8.5",
 		"cross-env": "^7.0.3",
 		"dotenv": "^8.2.0",
-		"eslint-config-prettier": "^8.5.0",
 		"express": "^4.18.2",
 		"express-rate-limit": "^7.1.5",
-		"express-session": "^1.17.3",
 		"helmet": "^7.0.0",
 		"http-status-codes": "^2.1.4",
 		"lodash": "^4.17.21",
 		"mongoose": "5.11.15",
-		"morgan": "^1.10.0",
-		"passport": "^0.6.0",
-		"passport-local": "^1.0.0"
+		"morgan": "^1.10.0"
 	},
 	"devDependencies": {
-		"eslint": "7.2.0",
-		"eslint-config-airbnb-base": "14.2.1",
-		"eslint-plugin-import": "2.22.1",
-		"nodemon": "^2.0.7"
+		"@types/body-parser": "^1.19.5",
+		"@types/compression": "^1.7.5",
+		"@types/cors": "^2.8.17",
+		"@types/express": "^4.17.21",
+		"@types/lodash": "^4.14.202",
+		"@types/morgan": "^1.9.9",
+		"tsx": "^4.7.0",
+		"typescript": "^5.3.3"
 	}
 }

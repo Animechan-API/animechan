@@ -5,11 +5,11 @@
 	"scripts": {
 		"frontend:install": "cd client && pnpm install",
 		"backend:install": "cd server && pnpm install",
+		"install:all": "pnpm install && pnpm frontend:install && pnpm backend:install",
 		"frontend:start": "cd client && pnpm build && pnpm start",
 		"backend:start": "cd server && pnpm start",
 		"frontend:dev": "cd client && pnpm dev",
 		"backend:dev": "cd server && pnpm dev",
-		"install:all": "pnpm install && pnpm frontend:install && pnpm backend:install",
 		"backend:seed": "cd server && pnpm seed",
 		"start:prod": "concurrently \"pnpm backend:start\" \"pnpm frontend:start\"",
 		"start:dev": "concurrently \"cd server && pnpm dev\" \"cd client && pnpm dev\"",
