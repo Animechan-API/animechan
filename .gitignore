@@ -15,8 +15,4 @@ server/yarn.lock
 server/pnpm-lock.yaml
 server/.env
 server/dist
-/.idea/.gitignore
-/.idea/anime-chan.iml
-/.idea/modules.xml
-/.idea/inspectionProfiles/Project_Default.xml
-/.idea/vcs.xml
+/.idea
