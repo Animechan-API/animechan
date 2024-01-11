@@ -1,30 +1,36 @@
-import type { Request, Response } from 'express';
-import { StatusCodes, getReasonPhrase } from 'http-status-codes';
-import { isEmpty, random, sample } from 'lodash';
-import { paginate } from '~/controller/util';
-import Quote from '~/model/quote';
+import type {Request, Response} from 'express';
+import {getReasonPhrase, StatusCodes} from 'http-status-codes';
+import {isEmpty} from 'lodash';
+import {paginate} from '~/controller/util';
+import {db} from "~/db/drizzle";
+import {anime, character, quoteView} from "~/db/schema";
+
+import {iLike, rand} from "~/db/utils";
 
 export const getRandomQuote = async (_: Request, res: Response) => {
 	// List a single random quote
-	const randomQuote = await Quote.findOne({}, '-_id').skip(random(7678));
-	res.json(randomQuote);
+	// const randomQuote = await Quote.findOne({}, '-_id').skip(random(7678));
+	const randomQuote = await db.select().from(quoteView).orderBy(rand).limit(1);
+	res.json(randomQuote[0]);
 };
 
 export const getRandomQuotes = async (_: Request, res: Response) => {
 	// List 10 random quotes
-	const quotes = await Quote.aggregate([
-		{
-			$sample: {
-				size: 10,
+	/*	const quotes = await Quote.aggregate([
+			{
+				$sample: {
+					size: 10,
+				},
 			},
-		},
-		{
-			$project: {
-				_id: 0,
+			{
+				$project: {
+					_id: 0,
+				},
 			},
-		},
-	]);
+		]);*/
+	const quotes = await db.select().from(quoteView).orderBy(rand).limit(10)
 	res.json(quotes);
+
 };
 
 export const getRandomQuoteByAnime = async (req: Request, res: Response) => {
@@ -38,17 +44,9 @@ export const getRandomQuoteByAnime = async (req: Request, res: Response) => {
 		return;
 	}
 
-	const quotes = await Quote.find({ anime: new RegExp(title, 'i') }, '-_id');
-
-	if (isEmpty(quotes)) {
-		res.status(StatusCodes.NOT_FOUND).json({
-			error: 'No related quotes found!',
-		});
-		return;
-	}
-
-	const randomQuote = sample(quotes);
-	res.json(randomQuote);
+	const randomQuote = await db.select().from(quoteView).where(iLike(quoteView.anime, title)).orderBy(rand).limit(1)
+	res.status(200)
+	res.json(randomQuote[0]);
 };
 
 export const getRandomQuoteByCharacter = async (req: Request, res: Response) => {
@@ -61,8 +59,9 @@ export const getRandomQuoteByCharacter = async (req: Request, res: Response) => 
 		});
 		return;
 	}
+	// const quotes = await Quote.find({ character: new RegExp(name, 'i') }, '-_id');
 
-	const quotes = await Quote.find({ character: new RegExp(name, 'i') }, '-_id');
+	const quotes = await db.select().from(quoteView).where(iLike(quoteView.character, name)).limit(1);
 
 	if (isEmpty(quotes)) {
 		res.status(StatusCodes.NOT_FOUND).json({
@@ -71,8 +70,7 @@ export const getRandomQuoteByCharacter = async (req: Request, res: Response) => 
 		return;
 	}
 
-	const randomQuote = sample(quotes);
-	res.json(randomQuote);
+	res.json(quotes[0]);
 };
 
 export const getQuotesByAnime = async (req: Request, res: Response) => {
@@ -87,8 +85,7 @@ export const getQuotesByAnime = async (req: Request, res: Response) => {
 	}
 
 	if (page && typeof page === 'string') {
-		let quotes = await Quote.find({ anime: new RegExp(title, 'i') }, '-_id');
-		quotes = paginate(quotes, parseInt(page));
+		let quotes = await db.select().from(quoteView).where(iLike(quoteView.anime, title)).offset(parseInt(page) * 10).limit(10);
 		if (isEmpty(quotes)) {
 			res.status(404).json({ error: 'No quotes found!' });
 			return;
@@ -97,7 +94,9 @@ export const getQuotesByAnime = async (req: Request, res: Response) => {
 		return;
 	}
 
-	const quotes = await Quote.find({ anime: new RegExp(title, 'i') }, '-_id').limit(10);
+
+	// const quotes = await Quote.find({ anime: new RegExp(title, 'i') }, '-_id').limit(10);
+	const quotes = await db.select().from(quoteView).where(iLike(quoteView.anime, title)).limit(10)
 
 	if (isEmpty(quotes)) {
 		res.status(StatusCodes.NOT_FOUND).json({
@@ -123,7 +122,8 @@ export const getQuotesByCharacter = async (req: Request, res: Response) => {
 	}
 
 	if (page) {
-		let quotes = await Quote.find({ character: new RegExp(name, 'i') }, '-_id');
+		// let quotes = await Quote.find({ character: new RegExp(name, 'i') }, '-_id');
+		let quotes = await db.select().from(quoteView).where(iLike(quoteView.character, name)).offset(parseInt(page) * 10).limit(10);
 		quotes = paginate(quotes, parseInt(page));
 		if (isEmpty(quotes)) {
 			res.status(404).json({ error: 'No quotes found!' });
@@ -133,8 +133,8 @@ export const getQuotesByCharacter = async (req: Request, res: Response) => {
 		return;
 	}
 
-	const quotes = await Quote.find({ character: new RegExp(name, 'i') }, '-_id').limit(10);
-
+	//const quotes = await Quote.find({ character: new RegExp(name, 'i') }, '-_id').limit(10);
+	const quotes = await db.select().from(quoteView).where(iLike(quoteView.anime, name)).limit(10);
 	if (isEmpty(quotes)) {
 		res.status(StatusCodes.NOT_FOUND).json({
 			error: 'No related quotes found!',
@@ -147,12 +147,14 @@ export const getQuotesByCharacter = async (req: Request, res: Response) => {
 
 export const getAllAnimeNames = async (_: Request, res: Response) => {
 	// List all the available anime names
-	const allAnime = await Quote.find().distinct('anime');
-	res.json(allAnime);
+	const allAnime = await db.select({name: anime.name}).from(anime);
+	const animeList: string[] = allAnime.map((a) => a.name)
+	res.json(animeList);
 };
 
 export const getAllCharacterNames = async (_: Request, res: Response) => {
 	// List all the available character names
-	const allCharacters = await Quote.find().distinct('character');
-	res.json(allCharacters);
+	const allCharacters = await db.select({name: character.name}).from(character);
+	const characterList = allCharacters.map((c) => c.name)
+	res.json(characterList);
 };

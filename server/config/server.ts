@@ -1,7 +1,7 @@
 import compression from 'compression';
 import cors from 'cors';
 import express from 'express';
-import { rateLimit } from 'express-rate-limit';
+import {rateLimit} from 'express-rate-limit';
 import helmet from 'helmet';
 import morgan from 'morgan';
 import router from '~/routes';
@@ -21,8 +21,17 @@ app.use(
 	})
 );
 
-app.use(compression());
+app.use(function responseLogger(req, res, next) {
+	const originalSendFunc = res.send.bind(res);
+	res.send = function (body) {
+		console.log(body);    // do whatever here
+		return originalSendFunc(body);
+	};
+	next();
+});
+
 app.use(morgan('dev'));
+app.use(compression());
 app.use(router);
 
 export default app;

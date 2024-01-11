@@ -1,6 +1,6 @@
 import "dotenv/config"
-import { drizzle } from "drizzle-orm/planetscale-serverless"
-import { connect } from "@planetscale/database"
+import {drizzle} from "drizzle-orm/planetscale-serverless"
+import {connect} from "@planetscale/database"
 import * as schema from "./schema"
 
 const connection = connect({
@@ -9,4 +9,4 @@ const connection = connect({
 	password: process.env.PLANETSCALE_PASSWORD
 })
 
-export const db = drizzle(connection, {schema})
+export const db = drizzle(connection, {schema, logger: true})

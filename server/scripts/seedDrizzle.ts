@@ -1,24 +1,16 @@
 import {db} from "~/db/drizzle";
 import SEED_DATA from '~/scripts/test-data.json';
-import {and, Column, eq, SQL, SQLWrapper} from "drizzle-orm";
+import {and, eq} from "drizzle-orm";
 import {anime, character, quote} from "~/db/schema";
-import {sql} from "drizzle-orm/sql/sql";
+import {iLike} from "~/db/utils";
 
-// mysql implementation of ILike
-const ilike = (column: Column, data: string | SQLWrapper): SQL => {
-	return sql`LOWER
-		(${column})
-		LIKE LOWER(
-		${data}
-		)`
-}
 
 // DO LOTS OF MAGIC
 const seedDb = async () => {
 
 	for (const seed of SEED_DATA) {
 		const dbAnime = await db.query.anime.findFirst({
-			where: ilike(anime.name, seed.anime)
+			where: iLike(anime.name, seed.anime)
 		});
 
 		if (dbAnime === undefined) {
@@ -33,7 +25,7 @@ const seedDb = async () => {
 		}
 		const dbCharacter = await db.query.character.findFirst({
 			where: and(
-				ilike(character.name, seed.character),
+				iLike(character.name, seed.character),
 				eq(character.animeId, dbAnime.id)
 			)
 		});
@@ -51,7 +43,7 @@ const seedDb = async () => {
 			where: and(
 				eq(quote.characterId, dbCharacter.id),
 				eq(quote.animeId, dbAnime.id),
-				ilike(quote.content, seed.quote),
+				iLike(quote.content, seed.quote),
 			)
 		});
 		if (dbQuote !== undefined) continue;

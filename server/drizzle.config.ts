@@ -7,5 +7,6 @@ export default {
 	out: "./drizzle",
 	dbCredentials: {
 		uri: process.env.PLANETSCALE_URL!
-	}
+	},
+	strict: true
 } satisfies Config;

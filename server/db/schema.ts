@@ -1,5 +1,5 @@
-import { mysqlTable, text, int } from 'drizzle-orm/mysql-core';
-import { relations } from 'drizzle-orm';
+import {index, int, mysqlTable, mysqlView, text} from 'drizzle-orm/mysql-core';
+import {relations} from 'drizzle-orm';
 
 // Tables
 export const quote = mysqlTable('quote', {
@@ -12,12 +12,20 @@ export const quote = mysqlTable('quote', {
 export const anime = mysqlTable('anime', {
 	id: int('id').autoincrement().primaryKey(),
 	name: text('name').notNull(),
+}, (table) => {
+	return {
+		nameIdx: index("name_index")
+	}
 });
 
 export const character = mysqlTable('character', {
 	id: int('id').autoincrement().primaryKey(),
 	name: text('name').notNull(),
 	animeId: int('anime_id').notNull(),
+}, (table) => {
+	return {
+		nameIdx: index("name_index")
+	}
 });
 
 // Relations
@@ -44,3 +52,9 @@ export const characterRelations = relations(character, ({ many, one }) => ({
 		references: [anime.id],
 	}),
 }));
+
+export const quoteView = mysqlView("quote_view", {
+	anime: text("anime"),
+	character: text("character"),
+	quote: text("quote")
+}).existing()

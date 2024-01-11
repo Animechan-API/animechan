@@ -1,13 +1,7 @@
 import 'dotenv/config';
-import database from '~/config/mongo';
 import server from '~/config/server';
 
-const MONGO_URI = (
-	process.env.NODE_ENV !== 'production'
-		? process.env.MONGO_READ_WRITE_URI_DEV
-		: process.env.MONGO_READ_URI_PROD
-) as string;
-
+/*
 database
 	.connect(MONGO_URI)
 	.then(() => {
@@ -17,6 +11,7 @@ database
 		console.log(`Failed to connect to database on ${MONGO_URI} ❌`);
 		console.error(error);
 	});
+*/
 
 server.listen(process.env.PORT, () => {
 	console.log(`Live at http://localhost:${process.env.PORT} 🚀`);
