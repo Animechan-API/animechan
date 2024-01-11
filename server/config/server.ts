@@ -11,6 +11,10 @@ const app = express();
 app.use(helmet());
 app.use(cors());
 
+// This is for debugging purposes
+app.set('trust proxy', 1);
+app.get('/ip', (req, res) => res.send(req.ip));
+
 app.use(
 	rateLimit({
 		windowMs: 60 * 60 * 1000, // 1 hour window

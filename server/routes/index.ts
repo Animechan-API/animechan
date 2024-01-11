@@ -12,9 +12,6 @@ router.get('/status', (_req, res) => {
 	});
 });
 
-// This is for debugging purposes
-router.get('/ip', (req, res) => res.send(req.ip));
-
 // Main routes
 router.use('/random', random);
 router.use('/quotes', quotes);
