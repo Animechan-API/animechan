@@ -11,8 +11,12 @@ const app = express();
 app.use(helmet());
 app.use(cors());
 
-// This is for debugging purposes
-app.set('trust proxy', 4);
+// This is required to get the original IP address of the user
+// since the whole app is behind a nginx proxy server.
+// If we don't set this, we get the IP address of the proxy server
+// and this will cause rate limiting at global level rather than
+// on a per user basis.
+app.set('trust proxy', 2);
 app.get('/ip', (req, res) => res.send(req.ip));
 app.get('/x-forwarded-for', (req, res) => res.send(req.headers['x-forwarded-for']));
 
