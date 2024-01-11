@@ -30,5 +30,6 @@ jobs:
           git switch main &&
           git pull --rebase origin main &&
           pnpm install:all
+          pm2 restart ecosystem.config.js
           ')
           echo "$output"
