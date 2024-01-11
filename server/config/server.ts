@@ -12,7 +12,7 @@ app.use(helmet());
 app.use(cors());
 
 // This is for debugging purposes
-app.set('trust proxy', 3);
+app.set('trust proxy', 4);
 app.get('/ip', (req, res) => res.send(req.ip));
 app.get('/x-forwarded-for', (req, res) => res.send(req.headers['x-forwarded-for']));
 
