@@ -5,12 +5,15 @@ import random from '~/routes/random';
 
 const router = express.Router();
 
-router.get('/status', (_, res) => {
+router.get('/status', (_req, res) => {
 	res.json({
 		status: 200,
 		active: true,
 	});
 });
+
+// This is for debugging purposes
+router.get('/ip', (req, res) => res.send(req.ip));
 
 // Main routes
 router.use('/random', random);

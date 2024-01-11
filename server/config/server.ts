@@ -22,7 +22,7 @@ app.use(
 );
 
 app.use(compression());
-app.use(morgan('dev'));
+app.use(morgan('short'));
 app.use(router);
 
 export default app;

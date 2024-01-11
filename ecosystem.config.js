@@ -20,8 +20,9 @@ module.exports = {
 			],
 			autorestart: true,
 			max_memory_restart: '500M',
-			out_file: 'logs/out.log',
+			out_file: 'logs/output.log',
 			error_file: 'logs/error.log',
+			log_file: 'logs/combined.log',
 		},
 	],
 };
