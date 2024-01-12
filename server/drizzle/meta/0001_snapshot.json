@@ -27,9 +27,7 @@
 			"compositePrimaryKeys": {
 				"anime_id": {
 					"name": "anime_id",
-					"columns": [
-						"id"
-					]
+					"columns": ["id"]
 				}
 			},
 			"uniqueConstraints": {}
@@ -64,9 +62,7 @@
 			"compositePrimaryKeys": {
 				"character_id": {
 					"name": "character_id",
-					"columns": [
-						"id"
-					]
+					"columns": ["id"]
 				}
 			},
 			"uniqueConstraints": {}
@@ -108,9 +104,7 @@
 			"compositePrimaryKeys": {
 				"quote_id": {
 					"name": "quote_id",
-					"columns": [
-						"id"
-					]
+					"columns": ["id"]
 				}
 			},
 			"uniqueConstraints": {}

@@ -1,63 +1,67 @@
-import {db} from "~/db/drizzle";
+import { db } from '~/db/drizzle';
 import SEED_DATA from '~/scripts/test-data.json';
-import {and, eq} from "drizzle-orm";
-import {anime, character, quote} from "~/db/schema";
-import {iLike} from "~/db/utils";
-
+import { and, eq } from 'drizzle-orm';
+import { anime, character, quote } from '~/db/schema';
+import { iLike } from '~/db/utils';
 
 // DO LOTS OF MAGIC
 const seedDb = async () => {
-
 	for (const seed of SEED_DATA) {
 		const dbAnime = await db.query.anime.findFirst({
-			where: iLike(anime.name, seed.anime)
+			where: iLike(anime.name, seed.anime),
 		});
 
 		if (dbAnime === undefined) {
-			const newAnime = await db.insert(anime).values({name: seed.anime});
+			const newAnime = await db.insert(anime).values({ name: seed.anime });
 			let animeId = parseInt(newAnime.insertId);
 
-			const newCharacter = await db.insert(character).values({name: seed.character, animeId: animeId});
+			const newCharacter = await db
+				.insert(character)
+				.values({ name: seed.character, animeId: animeId });
 			let characterId = parseInt(newCharacter.insertId);
 
-			await db.insert(quote).values({animeId, content: seed.quote, characterId});
+			await db.insert(quote).values({ animeId, content: seed.quote, characterId });
 			continue;
 		}
 		const dbCharacter = await db.query.character.findFirst({
 			where: and(
 				iLike(character.name, seed.character),
 				eq(character.animeId, dbAnime.id)
-			)
+			),
 		});
 
 		if (dbCharacter === undefined) {
-			const newCharacter = await db.insert(character).values({name: seed.character, animeId: dbAnime.id});
+			const newCharacter = await db
+				.insert(character)
+				.values({ name: seed.character, animeId: dbAnime.id });
 			await db.insert(quote).values({
 				animeId: dbAnime.id,
 				content: seed.quote,
-				characterId: parseInt(newCharacter.insertId)
-			})
+				characterId: parseInt(newCharacter.insertId),
+			});
 			continue;
 		}
 		const dbQuote = await db.query.quote.findFirst({
 			where: and(
 				eq(quote.characterId, dbCharacter.id),
 				eq(quote.animeId, dbAnime.id),
-				iLike(quote.content, seed.quote),
-			)
+				iLike(quote.content, seed.quote)
+			),
 		});
 		if (dbQuote !== undefined) continue;
-		await db.insert(quote).values({animeId: dbAnime.id, content: seed.quote, characterId: dbCharacter.id})
+		await db
+			.insert(quote)
+			.values({ animeId: dbAnime.id, content: seed.quote, characterId: dbCharacter.id });
 	}
-}
+};
 
 (async () => {
 	// await seedDb();
 
 	try {
-		await seedDb()
+		await seedDb();
 	} catch (err) {
-		console.log(err)
+		console.log(err);
 	}
 
 	// DEBUGGING THE SCRIPT (spoiler lots of MAGIC)
@@ -89,7 +93,6 @@ const seedDb = async () => {
 				console.log(row.table, "now: " + row.RowCount + " before: " + table)
 			});
 		});*/
-})()
+})();
 
-type TROW = Record<string, any>
-
+type TROW = Record<string, any>;

@@ -1,12 +1,12 @@
-import type {Config} from "drizzle-kit";
+import type { Config } from 'drizzle-kit';
 
 // @ts-ignore
 export default {
-	driver: "mysql2",
-	schema: "./db/schema.ts",
-	out: "./drizzle",
+	driver: 'mysql2',
+	schema: './db/schema.ts',
+	out: './drizzle',
 	dbCredentials: {
-		uri: process.env.PLANETSCALE_URL!
+		uri: process.env.PLANETSCALE_URL!,
 	},
-	strict: true
+	strict: true,
 } satisfies Config;
