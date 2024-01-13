@@ -6,7 +6,7 @@ export default {
 	schema: './db/schema.ts',
 	out: './drizzle',
 	dbCredentials: {
-		uri: process.env.PLANETSCALE_URL!,
+		uri: process.env.DATABASE_URL!,
 	},
 	strict: true,
 } satisfies Config;
