@@ -22,6 +22,7 @@
 <br/>
 
 ## About
+[![EC2 Deploy](https://github.com/rocktimsaikia/animechan/actions/workflows/deploy.yml/badge.svg)](https://github.com/rocktimsaikia/animechan/actions/workflows/deploy.yml)
 
 Animechan is a side project I started in 2020 because I could not find an API that provides anime quotes. So I ended up creating this API so that you don't have to.
 
