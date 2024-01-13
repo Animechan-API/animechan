@@ -9,25 +9,12 @@ import { iLike, rand } from '~/db/utils';
 
 export const getRandomQuote = async (_: Request, res: Response) => {
 	// List a single random quote
-	// const randomQuote = await Quote.findOne({}, '-_id').skip(random(7678));
 	const randomQuote = await db.select().from(quoteView).orderBy(rand).limit(1);
 	res.json(randomQuote[0]);
 };
 
 export const getRandomQuotes = async (_: Request, res: Response) => {
 	// List 10 random quotes
-	/*	const quotes = await Quote.aggregate([
-			{
-				$sample: {
-					size: 10,
-				},
-			},
-			{
-				$project: {
-					_id: 0,
-				},
-			},
-		]);*/
 	const quotes = await db.select().from(quoteView).orderBy(rand).limit(10);
 	res.json(quotes);
 };
@@ -49,6 +36,7 @@ export const getRandomQuoteByAnime = async (req: Request, res: Response) => {
 		.where(iLike(quoteView.anime, title))
 		.orderBy(rand)
 		.limit(1);
+
 	res.status(200);
 	res.json(randomQuote[0]);
 };
@@ -63,7 +51,6 @@ export const getRandomQuoteByCharacter = async (req: Request, res: Response) => 
 		});
 		return;
 	}
-	// const quotes = await Quote.find({ character: new RegExp(name, 'i') }, '-_id');
 
 	const quotes = await db
 		.select()
@@ -99,10 +86,12 @@ export const getQuotesByAnime = async (req: Request, res: Response) => {
 			.where(iLike(quoteView.anime, title))
 			.offset(parseInt(page) * 10)
 			.limit(10);
+
 		if (isEmpty(quotes)) {
 			res.status(404).json({ error: 'No quotes found!' });
 			return;
 		}
+
 		res.json(quotes);
 		return;
 	}
@@ -145,11 +134,14 @@ export const getQuotesByCharacter = async (req: Request, res: Response) => {
 			.where(iLike(quoteView.character, name))
 			.offset(parseInt(page) * 10)
 			.limit(10);
+
 		quotes = paginate(quotes, parseInt(page));
+
 		if (isEmpty(quotes)) {
 			res.status(404).json({ error: 'No quotes found!' });
 			return;
 		}
+
 		res.json(quotes);
 		return;
 	}
@@ -160,6 +152,7 @@ export const getQuotesByCharacter = async (req: Request, res: Response) => {
 		.from(quoteView)
 		.where(iLike(quoteView.anime, name))
 		.limit(10);
+
 	if (isEmpty(quotes)) {
 		res.status(StatusCodes.NOT_FOUND).json({
 			error: 'No related quotes found!',
