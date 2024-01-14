@@ -17,7 +17,8 @@ export const anime = mysqlTable(
 	},
 	(table) => {
 		return {
-			nameIdx: index('name_index'),
+			// Indexes
+			nameIdx: index('name_index').on(table.name),
 		};
 	}
 );
@@ -31,13 +32,15 @@ export const character = mysqlTable(
 	},
 	(table) => {
 		return {
-			nameIdx: index('name_index'),
+			// Indexs
+			nameIdx: index('name_index').on(table.name),
 		};
 	}
 );
 
 // Relations
 export const quoteRelations = relations(quote, ({ one }) => ({
+	// quote has one-to-one relation with anime and character
 	anime: one(anime, {
 		fields: [quote.animeId],
 		references: [anime.id],
@@ -49,11 +52,15 @@ export const quoteRelations = relations(quote, ({ one }) => ({
 }));
 
 export const animeRelations = relations(anime, ({ many }) => ({
+	// anime has one-to-many relation with quote and character
 	quotes: many(quote),
 	characters: many(character),
 }));
 
 export const characterRelations = relations(character, ({ many, one }) => ({
+	// character has:
+	// 1. one-to-many relation with quotes
+	// 2. one-to-one relation with anime
 	quotes: many(quote),
 	anime: one(anime, {
 		fields: [character.animeId],
@@ -61,6 +68,7 @@ export const characterRelations = relations(character, ({ many, one }) => ({
 	}),
 }));
 
+// quote view for ease of access
 export const quoteView = mysqlView('quote_view', {
 	anime: text('anime'),
 	character: text('character'),
