@@ -1,8 +1,8 @@
-import { db } from '~/db/drizzle';
-import SEED_DATA from '~/scripts/test-data.json';
 import { and, eq } from 'drizzle-orm';
+import { db } from '~/db/drizzle';
 import { anime, character, quote } from '~/db/schema';
 import { iLike } from '~/db/utils';
+import SEED_DATA from '~/scripts/test-data.json';
 
 // DO LOTS OF MAGIC
 const seedDb = async () => {

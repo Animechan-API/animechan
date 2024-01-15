@@ -1,10 +1,9 @@
 import type { Config } from 'drizzle-kit';
 
-// @ts-ignore
 export default {
 	driver: 'mysql2',
 	schema: './db/schema.ts',
-	out: './drizzle',
+	out: './migrations',
 	dbCredentials: {
 		uri: process.env.DATABASE_URL!,
 	},
