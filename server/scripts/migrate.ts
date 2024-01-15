@@ -4,5 +4,5 @@ import { db } from '~/db/drizzle';
 
 // This will run migrations on the database, skipping the ones already applied
 (async () => {
-	await migrate(db, { migrationsFolder: './drizzle' });
+	await migrate(db, { migrationsFolder: './migrations' });
 })();
