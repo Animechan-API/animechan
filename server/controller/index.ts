@@ -1,7 +1,7 @@
 import type { Request, Response } from 'express';
 import { getReasonPhrase, StatusCodes } from 'http-status-codes';
 import { isEmpty } from 'lodash';
-import { paginate } from '~/controller/util';
+import { paginate } from '~/controller/utils';
 import { db } from '~/db/drizzle';
 import { anime, character, quoteView } from '~/db/schema';
 
