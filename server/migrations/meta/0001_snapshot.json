@@ -1,8 +1,8 @@
 {
+  "id": "f385b7ea-0617-4db3-a337-ff1338cd9a6c",
+  "prevId": "205b2d5e-1770-43e9-87d2-f7d40c42495a",
   "version": "5",
   "dialect": "mysql",
-  "id": "205b2d5e-1770-43e9-87d2-f7d40c42495a",
-  "prevId": "00000000-0000-0000-0000-000000000000",
   "tables": {
     "anime": {
       "name": "anime",
@@ -118,8 +118,8 @@
   },
   "schemas": {},
   "_meta": {
+    "columns": {},
     "schemas": {},
-    "tables": {},
-    "columns": {}
+    "tables": {}
   }
 }

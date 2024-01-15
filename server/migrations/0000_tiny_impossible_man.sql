@@ -18,6 +18,3 @@ CREATE TABLE `quote` (
 	`character_id` int NOT NULL,
 	CONSTRAINT `quote_id` PRIMARY KEY(`id`)
 );
---> statement-breakpoint
-CREATE INDEX `name_index` ON `anime` (`name`);--> statement-breakpoint
-CREATE INDEX `name_index` ON `character` (`name`);

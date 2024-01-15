@@ -1,4 +1,4 @@
-import { index, int, mysqlTable, mysqlView, text } from 'drizzle-orm/mysql-core';
+import { int, mysqlTable, mysqlView, text } from 'drizzle-orm/mysql-core';
 import { relations } from 'drizzle-orm';
 
 // Tables
@@ -9,34 +9,16 @@ export const quote = mysqlTable('quote', {
 	characterId: int('character_id').notNull(),
 });
 
-export const anime = mysqlTable(
-	'anime',
-	{
-		id: int('id').autoincrement().primaryKey(),
-		name: text('name').notNull(),
-	},
-	(table) => {
-		return {
-			// Indexes
-			nameIdx: index('name_index').on(table.name),
-		};
-	}
-);
+export const anime = mysqlTable('anime', {
+	id: int('id').autoincrement().primaryKey(),
+	name: text('name').notNull(),
+});
 
-export const character = mysqlTable(
-	'character',
-	{
-		id: int('id').autoincrement().primaryKey(),
-		name: text('name').notNull(),
-		animeId: int('anime_id').notNull(),
-	},
-	(table) => {
-		return {
-			// Indexs
-			nameIdx: index('name_index').on(table.name),
-		};
-	}
-);
+export const character = mysqlTable('character', {
+	id: int('id').autoincrement().primaryKey(),
+	name: text('name').notNull(),
+	animeId: int('anime_id').notNull(),
+});
 
 // Relations
 export const quoteRelations = relations(quote, ({ one }) => ({
