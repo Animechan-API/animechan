@@ -23,15 +23,20 @@ app.get('/x-forwarded-for', (req, res) => res.send(req.headers['x-forwarded-for'
 app.use(
 	rateLimit({
 		windowMs: 60 * 60 * 1000, // 1 hour window
-		max: 100, // Limit each IP to 5 requests per hour
+		max: 100, // Limit each IP to 100 requests per hour
 		standardHeaders: true, // Return rate limit info in the `RateLimit-*` headers
 		legacyHeaders: false, // Disable the `X-RateLimit-*` headers
 		message: 'Hold up, The characters behind the scenes cant keep coming up with quotes',
 	})
 );
 
+// This is basically the standard Apache common log format
+// but tweaked the date format from `clf` to `web` for better readability.
+const CUSTOM_MORGAN_FORMAT =
+	':remote-addr - :remote-user [:date[web]] ":method :url HTTP/:http-version" :status :res[content-length]';
+
 app.use(compression());
-app.use(morgan('short'));
+app.use(morgan(CUSTOM_MORGAN_FORMAT));
 app.use(router);
 
 export default app;
