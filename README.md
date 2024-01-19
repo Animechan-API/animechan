@@ -4,7 +4,7 @@
   <a href="https://github.com/rocktimsaikia/anime-chan">
     <img src=".github/logo.png" alt="Logo" width="200" height="200">
   </a>
-  <h3 align="center">Animechan</h3
+  <h3 align="center">Animechan</h3>
   <p align="center">
     <samp>A free restful API serving quality anime quotes</samp>
     <br />
@@ -21,10 +21,10 @@
 
 <br/>
 
-# IMPORTANT!
-due to restrictions on concurrent connections on our current db solution, we have decreased the ratelimit to 60 request/hr untill a fix has been found, we believe our db migration away from mongodb atlas to planetscale will fix the issue (see #90).
+> :bell: NOTICE: Due to restrictions on concurrent connections on our current free db solution, we have decreased the ratelimit to 60 request/hr from 100/hr. We believe our upcoming database migration away from Mongodb Atlas to PlanetScale will fix sort of issues (see #90).
 
 ## About
+
 [![EC2 Deploy](https://github.com/rocktimsaikia/animechan/actions/workflows/deploy.yml/badge.svg)](https://github.com/rocktimsaikia/animechan/actions/workflows/deploy.yml)
 
 Animechan is a side project I started in 2020 because I could not find an API that provides anime quotes. So I ended up creating this API so that you don't have to.
@@ -45,4 +45,4 @@ Animechan is a side project I started in 2020 because I could not find an API th
 
 ## License
 
-[MIT License](./LICENSE) © 2022 [Rocktim Saikia](https://rocktimsaikia.com)
+[MPL-2.0 license](./LICENSE) © 2024 [Rocktim Saikia](https://rocktimsaikia.dev)
