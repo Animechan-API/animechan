@@ -4,7 +4,7 @@
   <a href="https://github.com/rocktimsaikia/anime-chan">
     <img src=".github/logo.png" alt="Logo" width="200" height="200">
   </a>
-  <h3 align="center">Animechan</h3>
+  <h3 align="center">Animechan</h3
   <p align="center">
     <samp>A free restful API serving quality anime quotes</samp>
     <br />
@@ -20,6 +20,9 @@
 </p>
 
 <br/>
+
+# IMPORTANT!
+due to restrictions on concurrent connections on our current db solution, we have decreased the ratelimit to 60 request/hr untill a fix has been found, we believe our db migration away from mongodb atlas to planetscale will fix the issue (see #90).
 
 ## About
 [![EC2 Deploy](https://github.com/rocktimsaikia/animechan/actions/workflows/deploy.yml/badge.svg)](https://github.com/rocktimsaikia/animechan/actions/workflows/deploy.yml)
