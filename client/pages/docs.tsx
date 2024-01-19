@@ -127,7 +127,11 @@ export default function Guide() {
 					<h3 className="text-2xl font-bold mb-4 text-wavy">Important Notes</h3>
 					<ol className="list-disc list-inside lg:text-lg text-base">
 						<li>
-							Default rate limit is <i className="font-medium">100 requests</i> per hour.
+							Default rate limit is{' '}
+							<i className="font-medium">
+								<span className="line-through">100</span> 60
+							</i>{' '}
+							per hour.
 						</li>
 						<li>
 							Default number of quotes returned from query endpoints is{' '}

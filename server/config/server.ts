@@ -23,7 +23,7 @@ app.get('/x-forwarded-for', (req, res) => res.send(req.headers['x-forwarded-for'
 app.use(
 	rateLimit({
 		windowMs: 60 * 60 * 1000, // 1 hour window
-		max: 100, // Limit each IP to 100 requests per hour
+		max: 60, // Limit each IP to 60 requests per hour
 		standardHeaders: true, // Return rate limit info in the `RateLimit-*` headers
 		legacyHeaders: false, // Disable the `X-RateLimit-*` headers
 		message: 'Hold up, The characters behind the scenes cant keep coming up with quotes',
