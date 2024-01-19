@@ -21,7 +21,7 @@
 
 <br/>
 
-> :bell: NOTICE: Due to restrictions on concurrent connections on our current free db solution, we have decreased the ratelimit to 60 request/hr from 100/hr. We believe our upcoming database migration away from Mongodb Atlas to PlanetScale will fix sort of issues (see #90).
+> :bell: NOTICE: Due to restrictions on concurrent connections on our current free db solution, we have decreased the ratelimit to 60 requests/hr from 100/hr. We believe our upcoming database migration away from Mongodb Atlas to PlanetScale will fix these sort of issues (see https://github.com/rocktimsaikia/animechan/pull/90).
 
 ## About
 
