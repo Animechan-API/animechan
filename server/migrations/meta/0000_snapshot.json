@@ -1,7 +1,7 @@
 {
   "version": "5",
   "dialect": "mysql",
-  "id": "e3c83968-8800-4aae-94db-57be99185309",
+  "id": "eb7cb76d-d371-457f-92e2-3adea7b1cd58",
   "prevId": "00000000-0000-0000-0000-000000000000",
   "tables": {
     "anime": {
@@ -16,7 +16,7 @@
         },
         "name": {
           "name": "name",
-          "type": "text",
+          "type": "varchar(500)",
           "primaryKey": false,
           "notNull": true,
           "autoincrement": false
@@ -32,7 +32,14 @@
           ]
         }
       },
-      "uniqueConstraints": {}
+      "uniqueConstraints": {
+        "anime_name_unique": {
+          "name": "anime_name_unique",
+          "columns": [
+            "name"
+          ]
+        }
+      }
     },
     "character": {
       "name": "character",
@@ -46,7 +53,7 @@
         },
         "name": {
           "name": "name",
-          "type": "text",
+          "type": "varchar(500)",
           "primaryKey": false,
           "notNull": true,
           "autoincrement": false
@@ -69,7 +76,14 @@
           ]
         }
       },
-      "uniqueConstraints": {}
+      "uniqueConstraints": {
+        "character_name_unique": {
+          "name": "character_name_unique",
+          "columns": [
+            "name"
+          ]
+        }
+      }
     },
     "quote": {
       "name": "quote",

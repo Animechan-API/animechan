@@ -1,5 +1,5 @@
 import { relations } from 'drizzle-orm';
-import { int, mysqlTable, text } from 'drizzle-orm/mysql-core';
+import { int, mysqlTable, text, varchar } from 'drizzle-orm/mysql-core';
 
 // Plannetscale does not support actual foreign keys.
 // Read more here: https://planetscale.com/blog/working-with-related-data-using-drizzle-and-planetscale#querying-related-data-without-foreign-key-constraints
@@ -9,19 +9,22 @@ import { int, mysqlTable, text } from 'drizzle-orm/mysql-core';
 // handle the heavy lifting instead of the database engine.
 
 // Notes:
+// 1.
 // Using .references() for foreign keys will result in an error like this:
 // Error: VT10001: foreign key constraints are not allowed
 // This is because using this method will automatically attempt to add foreign key constraints in the schema, which is not supported by Planetscale as mentioned above.
+// 2.
+// In MySQL, `TEXT` and `BLOB` columns cannot have a unique constraint because they are potentially too large.
 
 // Schemas for the MySQL tables in Planetscale
 export const anime = mysqlTable('anime', {
 	id: int('id').autoincrement().primaryKey(),
-	name: text('name').notNull(),
+	name: varchar('name', { length: 500 }).notNull().unique(),
 });
 
 export const character = mysqlTable('character', {
 	id: int('id').autoincrement().primaryKey(),
-	name: text('name').notNull(),
+	name: varchar('name', { length: 500 }).notNull().unique(),
 	animeId: int('anime_id').notNull(),
 });
 

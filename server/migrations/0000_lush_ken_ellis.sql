@@ -1,14 +1,16 @@
 CREATE TABLE `anime` (
 	`id` int AUTO_INCREMENT NOT NULL,
-	`name` text NOT NULL,
-	CONSTRAINT `anime_id` PRIMARY KEY(`id`)
+	`name` varchar(500) NOT NULL,
+	CONSTRAINT `anime_id` PRIMARY KEY(`id`),
+	CONSTRAINT `anime_name_unique` UNIQUE(`name`)
 );
 --> statement-breakpoint
 CREATE TABLE `character` (
 	`id` int AUTO_INCREMENT NOT NULL,
-	`name` text NOT NULL,
+	`name` varchar(500) NOT NULL,
 	`anime_id` int NOT NULL,
-	CONSTRAINT `character_id` PRIMARY KEY(`id`)
+	CONSTRAINT `character_id` PRIMARY KEY(`id`),
+	CONSTRAINT `character_name_unique` UNIQUE(`name`)
 );
 --> statement-breakpoint
 CREATE TABLE `quote` (
