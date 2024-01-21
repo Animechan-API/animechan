@@ -1,7 +1,7 @@
 {
   "version": "5",
   "dialect": "mysql",
-  "id": "4d2d3d00-893b-4b37-9f25-3bc1dbfb7e9d",
+  "id": "e3c83968-8800-4aae-94db-57be99185309",
   "prevId": "00000000-0000-0000-0000-000000000000",
   "tables": {
     "anime": {
@@ -55,26 +55,12 @@
           "name": "anime_id",
           "type": "int",
           "primaryKey": false,
-          "notNull": false,
+          "notNull": true,
           "autoincrement": false
         }
       },
       "indexes": {},
-      "foreignKeys": {
-        "character_anime_id_anime_id_fk": {
-          "name": "character_anime_id_anime_id_fk",
-          "tableFrom": "character",
-          "tableTo": "anime",
-          "columnsFrom": [
-            "anime_id"
-          ],
-          "columnsTo": [
-            "id"
-          ],
-          "onDelete": "no action",
-          "onUpdate": "no action"
-        }
-      },
+      "foreignKeys": {},
       "compositePrimaryKeys": {
         "character_id": {
           "name": "character_id",
@@ -118,34 +104,7 @@
         }
       },
       "indexes": {},
-      "foreignKeys": {
-        "quote_anime_id_anime_id_fk": {
-          "name": "quote_anime_id_anime_id_fk",
-          "tableFrom": "quote",
-          "tableTo": "anime",
-          "columnsFrom": [
-            "anime_id"
-          ],
-          "columnsTo": [
-            "id"
-          ],
-          "onDelete": "no action",
-          "onUpdate": "no action"
-        },
-        "quote_character_id_character_id_fk": {
-          "name": "quote_character_id_character_id_fk",
-          "tableFrom": "quote",
-          "tableTo": "character",
-          "columnsFrom": [
-            "character_id"
-          ],
-          "columnsTo": [
-            "id"
-          ],
-          "onDelete": "no action",
-          "onUpdate": "no action"
-        }
-      },
+      "foreignKeys": {},
       "compositePrimaryKeys": {
         "quote_id": {
           "name": "quote_id",
