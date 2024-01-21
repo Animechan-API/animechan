@@ -1,3 +1,4 @@
+import 'dotenv/config';
 import type { Config } from 'drizzle-kit';
 
 export default {
@@ -5,7 +6,9 @@ export default {
 	schema: './db/schema.ts',
 	out: './migrations',
 	dbCredentials: {
-		uri: process.env.DATABASE_URL!,
+		host: process.env.PROD_DATABASE_HOST as string,
+		user: process.env.PROD_DATABASE_USERNAME as string,
+		password: process.env.PROD_DATABASE_PASSWORD as string,
+		database: process.env.PROD_DATABASE_NAME as string,
 	},
-	strict: true,
 } satisfies Config;

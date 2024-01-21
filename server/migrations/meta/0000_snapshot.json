@@ -1,7 +1,7 @@
 {
   "version": "5",
   "dialect": "mysql",
-  "id": "205b2d5e-1770-43e9-87d2-f7d40c42495a",
+  "id": "f10aafd8-a8ae-417e-926c-d52fe944f6f4",
   "prevId": "00000000-0000-0000-0000-000000000000",
   "tables": {
     "anime": {

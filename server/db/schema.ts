@@ -1,5 +1,5 @@
-import { int, mysqlTable, mysqlView, text } from 'drizzle-orm/mysql-core';
 import { relations } from 'drizzle-orm';
+import { int, mysqlTable, text } from 'drizzle-orm/mysql-core';
 
 // Tables
 export const quote = mysqlTable('quote', {
@@ -49,10 +49,3 @@ export const characterRelations = relations(character, ({ many, one }) => ({
 		references: [anime.id],
 	}),
 }));
-
-// quote view for ease of access
-export const quoteView = mysqlView('quote_view', {
-	anime: text('anime'),
-	character: text('character'),
-	quote: text('quote'),
-}).existing();
