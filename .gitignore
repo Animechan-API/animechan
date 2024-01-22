@@ -15,4 +15,5 @@ server/yarn.lock
 server/pnpm-lock.yaml
 server/.env
 server/dist
+server/data
 /.idea

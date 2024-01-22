@@ -1,5 +1,5 @@
 import { eq } from 'drizzle-orm';
-import jsonData from '~/data/21-1-2024.json';
+import jsonData from '~/data/22-01-2024.json';
 import { db } from '~/db/drizzle';
 import { anime, character, quote } from '~/db/schema';
 
@@ -39,10 +39,7 @@ async function feedData() {
 			.select()
 			.from(quote)
 			.where(eq(quote.content, item.quote));
-		let quoteId: number;
-		if (existingQuote.length == 1) {
-			quoteId = existingQuote[0].id;
-		} else {
+		if (existingQuote.length != 1) {
 			await db
 				.insert(quote)
 				.values({ content: item.quote, characterId: characterId, animeId: animeId });
