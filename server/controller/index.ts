@@ -4,16 +4,15 @@ import { isEmpty } from 'lodash';
 import { paginate } from '~/controller/utils';
 import { db } from '~/db/drizzle';
 import { anime, character, quote } from '~/db/schema';
-
 import { iLike, rand } from '~/db/utils';
 
-export const getRandomQuote = async (_: Request, res: Response) => {
+export const getRandomQuote = async (_req: Request, res: Response) => {
 	// List a single random quote
 	const randomQuote = await db.select().from(quote).orderBy(rand).limit(1);
 	res.json(randomQuote[0]);
 };
 
-export const getRandomQuotes = async (_: Request, res: Response) => {
+export const getRandomQuotes = async (_req: Request, res: Response) => {
 	// List 10 random quotes
 	const quotes = await db.select().from(quote).orderBy(rand).limit(10);
 	res.json(quotes);
@@ -152,14 +151,14 @@ export const getQuotesByCharacter = async (req: Request, res: Response) => {
 	res.json(quotes);
 };
 
-export const getAllAnimeNames = async (_: Request, res: Response) => {
+export const getAllAnimeNames = async (_req: Request, res: Response) => {
 	// List all the available anime names
 	const allAnime = await db.select({ name: anime.name }).from(anime);
 	const animeList: string[] = allAnime.map((a) => a.name);
 	res.json(animeList);
 };
 
-export const getAllCharacterNames = async (_: Request, res: Response) => {
+export const getAllCharacterNames = async (_req: Request, res: Response) => {
 	// List all the available character names
 	const allCharacters = await db.select({ name: character.name }).from(character);
 	const characterList = allCharacters.map((c) => c.name);
