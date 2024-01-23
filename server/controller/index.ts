@@ -6,27 +6,32 @@ import { db } from '~/db/drizzle';
 import { anime, character, quote } from '~/db/schema';
 import { iLike, rand } from '~/db/utils';
 
+interface QueryParams {
+	title?: string;
+	name?: string;
+	page?: string;
+}
+
+// List a single random quote
 export const getRandomQuote = async (_req: Request, res: Response) => {
-	// List a single random quote
 	const randomQuote = await db.select().from(quote).orderBy(rand).limit(1);
 	res.json(randomQuote[0]);
 };
 
+// List 10 random quotes
 export const getRandomQuotes = async (_req: Request, res: Response) => {
-	// List 10 random quotes
 	const quotes = await db.select().from(quote).orderBy(rand).limit(10);
 	res.json(quotes);
 };
 
+// List a single random quote by anime name
 export const getRandomQuoteByAnime = async (req: Request, res: Response) => {
-	// List a single random quote by anime name
-	const { title } = req.query;
+	const { title } = req.query as unknown as QueryParams;
 
-	if (!title || typeof title !== 'string') {
-		res.status(StatusCodes.BAD_REQUEST).json({
+	if (!title) {
+		return res.status(StatusCodes.BAD_REQUEST).json({
 			error: getReasonPhrase(StatusCodes.BAD_REQUEST),
 		});
-		return;
 	}
 
 	const randomQuote = await db
@@ -40,15 +45,14 @@ export const getRandomQuoteByAnime = async (req: Request, res: Response) => {
 	res.json(randomQuote[0]);
 };
 
+// List a single random quote by character name
 export const getRandomQuoteByCharacter = async (req: Request, res: Response) => {
-	// List a single random quote by character name
-	let { name } = req.query;
+	const { name } = req.query as unknown as QueryParams;
 
-	if (!name || typeof name !== 'string') {
-		res.status(StatusCodes.BAD_REQUEST).json({
+	if (!name) {
+		return res.status(StatusCodes.BAD_REQUEST).json({
 			error: getReasonPhrase(StatusCodes.BAD_REQUEST),
 		});
-		return;
 	}
 
 	const quotes = await db
@@ -58,27 +62,25 @@ export const getRandomQuoteByCharacter = async (req: Request, res: Response) => 
 		.limit(1);
 
 	if (isEmpty(quotes)) {
-		res.status(StatusCodes.NOT_FOUND).json({
+		return res.status(StatusCodes.NOT_FOUND).json({
 			error: 'No related quotes found!',
 		});
-		return;
 	}
 
 	res.json(quotes[0]);
 };
 
+// List quotes by anime title
 export const getQuotesByAnime = async (req: Request, res: Response) => {
-	// List quotes by anime title
-	let { title, page } = req.query;
+	const { title, page } = req.query as unknown as QueryParams;
 
-	if (!title || typeof title !== 'string') {
-		res.status(StatusCodes.BAD_REQUEST).json({
+	if (!title) {
+		return res.status(StatusCodes.BAD_REQUEST).json({
 			error: getReasonPhrase(StatusCodes.BAD_REQUEST),
 		});
-		return;
 	}
 
-	if (page && typeof page === 'string') {
+	if (page) {
 		let quotes = await db
 			.select()
 			.from(quote)
@@ -87,8 +89,7 @@ export const getQuotesByAnime = async (req: Request, res: Response) => {
 			.limit(10);
 
 		if (isEmpty(quotes)) {
-			res.status(404).json({ error: 'No quotes found!' });
-			return;
+			return res.status(404).json({ error: 'No quotes found!' });
 		}
 
 		res.json(quotes);
@@ -98,26 +99,22 @@ export const getQuotesByAnime = async (req: Request, res: Response) => {
 	const quotes = await db.select().from(quote).where(iLike(anime.name, title)).limit(10);
 
 	if (isEmpty(quotes)) {
-		res.status(StatusCodes.NOT_FOUND).json({
+		return res.status(StatusCodes.NOT_FOUND).json({
 			error: 'No related quotes found!',
 		});
-		return;
 	}
 
 	res.json(quotes);
 };
 
+// List quotes by anime character
 export const getQuotesByCharacter = async (req: Request, res: Response) => {
-	// List quotes by anime character
-	let { name, page } = req.query;
-	name = name as string;
-	page = page as string;
+	let { name, page } = req.query as unknown as QueryParams;
 
 	if (!name) {
-		res.status(StatusCodes.BAD_REQUEST).json({
+		return res.status(StatusCodes.BAD_REQUEST).json({
 			error: getReasonPhrase(StatusCodes.BAD_REQUEST),
 		});
-		return;
 	}
 
 	if (page) {
@@ -131,21 +128,18 @@ export const getQuotesByCharacter = async (req: Request, res: Response) => {
 		quotes = paginate(quotes, parseInt(page));
 
 		if (isEmpty(quotes)) {
-			res.status(404).json({ error: 'No quotes found!' });
-			return;
+			return res.status(404).json({ error: 'No quotes found!' });
 		}
 
-		res.json(quotes);
-		return;
+		return res.json(quotes);
 	}
 
 	const quotes = await db.select().from(quote).where(iLike(anime.name, name)).limit(10);
 
 	if (isEmpty(quotes)) {
-		res.status(StatusCodes.NOT_FOUND).json({
+		return res.status(StatusCodes.NOT_FOUND).json({
 			error: 'No related quotes found!',
 		});
-		return;
 	}
 
 	res.json(quotes);
