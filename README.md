@@ -21,7 +21,11 @@
 
 <br/>
 
+> :bell: NOTICE: Due to restrictions on concurrent connections on our current free db solution, we have decreased the ratelimit to 60 requests/hr from 100/hr. We believe our upcoming database migration away from Mongodb Atlas to PlanetScale will fix these sort of issues (see https://github.com/rocktimsaikia/animechan/pull/90).
+
 ## About
+
+[![EC2 Deploy](https://github.com/rocktimsaikia/animechan/actions/workflows/deploy.yml/badge.svg)](https://github.com/rocktimsaikia/animechan/actions/workflows/deploy.yml)
 
 Animechan is a side project I started in 2020 because I could not find an API that provides anime quotes. So I ended up creating this API so that you don't have to.
 
@@ -41,4 +45,4 @@ Animechan is a side project I started in 2020 because I could not find an API th
 
 ## License
 
-[MIT License](./LICENSE) © 2022 [Rocktim Saikia](https://rocktimsaikia.com)
+[MPL-2.0 license](./LICENSE) © 2024 [Rocktim Saikia](https://rocktimsaikia.dev)
