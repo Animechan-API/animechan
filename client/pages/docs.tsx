@@ -8,12 +8,17 @@ import { Guide as GuideType } from '~/types';
 const stringify = (input: any) =>
 	stringifyObject(input, { singleQuotes: false, inlineCharacterLimit: 4 });
 
+const API_ORIGIN =
+	process.env.NODE_ENV !== 'production'
+		? 'http://localhost:3000/api'
+		: 'https://animechan.xyz/api';
+
 export const API_GUIDES: GuideType[] = [
 	{
 		heading: 'Get a random quote',
 		link: '#random-quote',
 		codeSample: {
-			request: `fetch("https://animechan.xyz/api/random")
+			request: `fetch("${API_ORIGIN}/random")
           .then((response) => response.json())
           .then((quote) => console.log(quote));`,
 			response: stringify({ anime: '...', character: '...', quote: '...' }),
@@ -25,7 +30,7 @@ export const API_GUIDES: GuideType[] = [
 		link: '#random-quote-by-anime',
 		isNewlyAdded: true,
 		codeSample: {
-			request: `fetch("https://animechan.xyz/api/random/anime?title=naruto")
+			request: `fetch("${API_ORIGIN}/random/anime?title=naruto")
           .then((response) => response.json())
           .then((quote) => console.log(quote));`,
 			response: stringify({ anime: 'Naruto', character: '...', quote: '...' }),
@@ -36,7 +41,7 @@ export const API_GUIDES: GuideType[] = [
 		link: '#random-quote-by-character',
 		isNewlyAdded: true,
 		codeSample: {
-			request: `fetch("https://animechan.xyz/api/random/character?name=saitama")
+			request: `fetch("${API_ORIGIN}/random/character?name=saitama")
           .then((response) => response.json())
           .then((quote) => console.log(quote));`,
 			response: stringify({ anime: '...', character: 'Saitama', quote: '...' }),
@@ -46,7 +51,7 @@ export const API_GUIDES: GuideType[] = [
 		heading: 'Get 10 random quotes',
 		link: '#10-quotes',
 		codeSample: {
-			request: `fetch("https://animechan.xyz/api/quotes")
+			request: `fetch("${API_ORIGIN}/quotes")
           .then((response) => response.json())
           .then((quotes) => console.log(quotes));`,
 			response: stringify([
@@ -59,7 +64,7 @@ export const API_GUIDES: GuideType[] = [
 		heading: 'Get 10 quotes by anime title',
 		link: '#10quotes-by-anime',
 		codeSample: {
-			request: `fetch("https://animechan.xyz/api/quotes/anime?title=naruto")
+			request: `fetch("${API_ORIGIN}/quotes/anime?title=naruto")
           .then((response) => response.json())
           .then((quotes) => console.log(quotes));`,
 			response: stringify([
@@ -72,7 +77,7 @@ export const API_GUIDES: GuideType[] = [
 		heading: 'Get 10 quotes by anime character',
 		link: '#10quotes-by-character',
 		codeSample: {
-			request: `fetch("https://animechan.xyz/api/quotes/character?name=saitama")
+			request: `fetch("${API_ORIGIN}/quotes/character?name=saitama")
           .then((response) => response.json())
           .then((quotes) => console.log(quotes));`,
 			response: stringify([
@@ -87,7 +92,7 @@ export const API_GUIDES: GuideType[] = [
 			'Pagination works only on the query endpoints. Default pagination count is 10 quotes per page.',
 		link: '#pagination',
 		codeSample: {
-			request: `fetch('https://animechan.xyz/api/quotes/anime?title=naruto&page=2')
+			request: `fetch('${API_ORIGIN}/quotes/anime?title=naruto&page=2')
       .then(response => response.json())
       .then(quotes => console.log(quotes))
 
