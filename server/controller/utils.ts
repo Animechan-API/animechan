@@ -1,4 +1,4 @@
-import { take, drop } from 'lodash';
-
-export const paginate = (data: any, pageNum: number, count = 10): any =>
-	take(drop(data, pageNum), count);
+export function paginate<T>(data: T[], pageNum: number, count = 10) {
+	const startIdx = pageNum * count;
+	return data.slice(startIdx, startIdx + count);
+}
