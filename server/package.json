@@ -11,6 +11,7 @@
 	},
 	"dependencies": {
 		"@planetscale/database": "^1.13.0",
+		"@sentry/node": "^7.99.0",
 		"compression": "^1.7.4",
 		"cors": "^2.8.5",
 		"cross-env": "^7.0.3",
