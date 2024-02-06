@@ -6,6 +6,7 @@ import { db } from '~/db/drizzle';
 import { anime, character, quote } from '~/db/schema';
 import { iLike, rand } from '~/db/utils';
 import { eq } from 'drizzle-orm';
+import * as Sentry from '@sentry/node';
 
 interface QueryParams {
 	title?: string;
@@ -31,6 +32,7 @@ export const getRandomQuote = async (_req: Request, res: Response) => {
 		res.status(200).json(randomQuote[0]);
 	} catch (error) {
 		console.error('Database Error:', error);
+		Sentry.captureException(error);
 		res.status(500).json({ error: 'Internal Server Error' });
 	}
 };
@@ -53,6 +55,7 @@ export const getRandomQuotes = async (_req: Request, res: Response) => {
 		res.status(200).json(quotes);
 	} catch (error) {
 		console.error('Database Error:', error);
+		Sentry.captureException(error);
 		res.status(500).json({ error: 'Internal Server Error' });
 	}
 };
@@ -85,6 +88,7 @@ export const getRandomQuoteByAnime = async (req: Request, res: Response) => {
 		res.status(200).json(randomQuote[0]);
 	} catch (error) {
 		console.error('Database Error:', error);
+		Sentry.captureException(error);
 		res.status(500).json({ error: 'Internal Server Error' });
 	}
 };
@@ -123,6 +127,7 @@ export const getRandomQuoteByCharacter = async (req: Request, res: Response) => 
 		res.status(200).json(randomQuote[0]);
 	} catch (error) {
 		console.error('Database Error:', error);
+		Sentry.captureException(error);
 		res.status(500).json({ error: 'Internal Server Error' });
 	}
 };
@@ -183,6 +188,7 @@ export const getQuotesByAnime = async (req: Request, res: Response) => {
 		res.status(200).json(quotes);
 	} catch (error) {
 		console.error('Database Error:', error);
+		Sentry.captureException(error);
 		res.status(500).json({ error: 'Internal Server Error' });
 	}
 };
@@ -244,6 +250,7 @@ export const getQuotesByCharacter = async (req: Request, res: Response) => {
 		res.status(200).json(quotes);
 	} catch (error) {
 		console.error('Database Error:', error);
+		Sentry.captureException(error);
 		res.status(500).json({ error: 'Internal Server Error' });
 	}
 };
@@ -256,6 +263,7 @@ export const getAllAnimeNames = async (_req: Request, res: Response) => {
 		res.status(200).json(animeList);
 	} catch (error) {
 		console.error('Database Error:', error);
+		Sentry.captureException(error);
 		res.status(500).json({ error: 'Internal Server Error' });
 	}
 };
@@ -268,6 +276,7 @@ export const getAllCharacterNames = async (_req: Request, res: Response) => {
 		res.status(200).json(characterList);
 	} catch (error) {
 		console.error('Database Error:', error);
+		Sentry.captureException(error);
 		res.status(500).json({ error: 'Internal Server Error' });
 	}
 };
