@@ -12,8 +12,14 @@ export default function Header() {
 			<div className="py-10">
 				<h2 className="text-2xl">A free restful API serving quality anime quotes</h2>
 				<p className="my-2">
-					Powered by <a href="https://koajs.com/">Koa.js</a> and{' '}
-					<a href="https://www.mongodb.com/">MongoDB</a>
+					Powered by{' '}
+					<a href="https://expressjs.com/" target="_blank">
+						Express.js
+					</a>{' '}
+					and{' '}
+					<a href="https://planetscale.com/" target="_blank">
+						PlanetScale
+					</a>
 				</p>
 			</div>
 

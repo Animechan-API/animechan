@@ -21,9 +21,6 @@
 
 <br/>
 
-> :bell: **UPDATE: We have migrated our database to PlanetScale**. \
-> This should potentially help with all the connection issues we have been facing. If you still face any issues, please let us know.
-
 ## About
 
 [![EC2 Deploy](https://github.com/rocktimsaikia/animechan/actions/workflows/deploy.yml/badge.svg)](https://github.com/rocktimsaikia/animechan/actions/workflows/deploy.yml)
@@ -38,6 +35,7 @@ Animechan is a side project I started in 2020 because I could not find an API th
 2. _(Nov 24, 2022)_: Transitioned server-side hosting to Render from Heroku, in response to [Heroku discontinuing their free dyno plans](https://blog.heroku.com/new-low-cost-plans).
 3. _(Jun 24, 2023)_: Relocated the entire project, including both backend and frontend, to AWS and acquired the new domain animechan.xyz.
 4. _(Dec 21, 2023)_: Released the API's backend server code as open source.
+5. _(Feb 4, 2024)_: Migrated the database to PlanetScale.
 
 ## Related
 
