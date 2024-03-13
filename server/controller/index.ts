@@ -85,6 +85,12 @@ export const getRandomQuoteByAnime = async (req: Request, res: Response) => {
 			.orderBy(rand)
 			.limit(1);
 
+		if (isEmpty(randomQuote)) {
+			return res.status(StatusCodes.NOT_FOUND).json({
+				error: 'No related quotes found!',
+			});
+		}
+
 		res.status(200).json(randomQuote[0]);
 	} catch (error) {
 		console.error('Database Error:', error);
