@@ -19,7 +19,6 @@ export const getRandomQuote = async (_req: Request, res: Response) => {
 	try {
 		const randomQuote = await db
 			.select({
-				id: quote.id,
 				quote: quote.content,
 				anime: anime.name,
 				character: character.name,
@@ -42,7 +41,6 @@ export const getRandomQuotes = async (_req: Request, res: Response) => {
 	try {
 		const quotes = await db
 			.select({
-				id: quote.id,
 				quote: quote.content,
 				anime: anime.name,
 				character: character.name,
@@ -73,7 +71,6 @@ export const getRandomQuoteByAnime = async (req: Request, res: Response) => {
 	try {
 		const randomQuote = await db
 			.select({
-				id: quote.id,
 				quote: quote.content,
 				anime: anime.name,
 				character: character.name,
@@ -112,7 +109,6 @@ export const getRandomQuoteByCharacter = async (req: Request, res: Response) => 
 	try {
 		const randomQuote = await db
 			.select({
-				id: quote.id,
 				quote: quote.content,
 				anime: anime.name,
 				character: character.name,
@@ -152,7 +148,6 @@ export const getQuotesByAnime = async (req: Request, res: Response) => {
 		if (page) {
 			let quotes = await db
 				.select({
-					id: quote.id,
 					quote: quote.content,
 					anime: anime.name,
 					character: character.name,
@@ -174,7 +169,6 @@ export const getQuotesByAnime = async (req: Request, res: Response) => {
 
 		let quotes = await db
 			.select({
-				id: quote.id,
 				quote: quote.content,
 				anime: anime.name,
 				character: character.name,
@@ -213,7 +207,6 @@ export const getQuotesByCharacter = async (req: Request, res: Response) => {
 		if (page) {
 			let quotes = await db
 				.select({
-					id: quote.id,
 					quote: quote.content,
 					anime: anime.name,
 					character: character.name,
@@ -236,7 +229,6 @@ export const getQuotesByCharacter = async (req: Request, res: Response) => {
 
 		let quotes = await db
 			.select({
-				id: quote.id,
 				quote: quote.content,
 				anime: anime.name,
 				character: character.name,
