@@ -4,7 +4,7 @@
 	"scripts": {
 		"dev": "next",
 		"build": "next build",
-		"start": "next start"
+		"start": "next build && next start"
 	},
 	"dependencies": {
 		"clsx": "^1.2.1",
