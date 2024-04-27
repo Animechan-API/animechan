@@ -3,7 +3,7 @@ module.exports = {
 		{
 			name: 'animechan',
 			script: 'pnpm',
-			args: 'start:prod',
+			args: 'start',
 			watch: true,
 			ignore_watch: [
 				'**/node_modules',
