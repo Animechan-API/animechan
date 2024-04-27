@@ -13,6 +13,7 @@
 		"react": "18.2.0",
 		"react-dom": "18.2.0",
 		"react-scroll": "^1.8.8",
+		"sharp": "^0.33.3",
 		"stringify-object": "^4.0.1"
 	},
 	"devDependencies": {
