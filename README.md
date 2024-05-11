@@ -19,6 +19,10 @@
   </p>
 </p>
 
+> [!IMPORTANT]
+> **THIS PROJECT HAS BEEN TEMPORARILY STOPPED DUE TO INCREASED HOSTING AND DATABASE BILLS!!!** \
+> Due to the escalating costs associated with higher traffic, including server, database, and routing service fees, I have decided to temporarily suspend this project, which I have self-funded for nearly three to four years. However, I am exploring the introduction of a premium version with enhanced features in the future. For now, the project will be paused. If you value this project and wish to see it continue, please consider supporting me through [Github Sponsors](https://github.com/sponsors/rocktimsaikia/). Thank you for showing love and support for this project till now. I hope to bring it back soon.
+
 <br/>
 
 ## About
