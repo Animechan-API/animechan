@@ -1,0 +1,22 @@
+{
+	"organizeImports": {
+		"enabled": true
+	},
+	"formatter": {
+		"enabled": true,
+		"lineWidth": 100
+	},
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"recommended": true,
+			"a11y": {
+				"useKeyWithClickEvents": "off"
+			},
+			"style": {
+				"noUnusedTemplateLiteral": "off",
+				"useTemplate": "off"
+			}
+		}
+	}
+}

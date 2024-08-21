@@ -1,19 +1,18 @@
-import Head from 'next/head';
-import { useRouter } from 'next/router';
-import { ReactNode } from 'react';
-import Footer from '~/components/footer';
-import HelloBar from '~/components/hello-bar';
-import Navbar from '~/components/navbar';
+import Head from "next/head";
+import { useRouter } from "next/router";
+import Footer from "~/components/footer";
+import HelloBar from "~/components/hello-bar";
+import Navbar from "~/components/navbar";
 
 interface MetaInformation {
 	title: string;
 	description: string;
 	image: string;
-	type: 'website';
+	type: "website";
 }
 
 interface Props {
-	children: ReactNode;
+	children: React.ReactNode;
 	metaInfo?: Partial<MetaInformation>;
 }
 
@@ -21,22 +20,20 @@ export default function Layout({ children, metaInfo }: Props) {
 	const router = useRouter();
 
 	const host =
-		process.env.NODE_ENV !== 'production'
-			? 'http://localhost:3000'
-			: 'https://animechan.xyz';
+		process.env.NODE_ENV !== "production" ? "http://localhost:3000" : "https://animechan.io";
 
 	const currentPath = host + router.asPath;
 
 	const meta: MetaInformation = {
-		title: 'Animechan – Anime quotes API',
-		description: `Animechan is a free online REST API for anime quotes.`,
+		title: "Animechan – Anime quotes API",
+		description: "Animechan is a free online REST API for anime quotes.",
 		image: `${host}/image/home.jpeg`,
-		type: 'website',
+		type: "website",
 		...metaInfo,
 	};
 
 	return (
-		<>
+		<div>
 			<Head>
 				<title>{meta.title}</title>
 				<meta name="robots" content="follow, index" />
@@ -57,6 +54,6 @@ export default function Layout({ children, metaInfo }: Props) {
 			<Navbar />
 			<main>{children}</main>
 			<Footer />
-		</>
+		</div>
 	);
 }

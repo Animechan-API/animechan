@@ -1,20 +1,24 @@
 {
 	"name": "animechan",
-	"description": "A REST API for anime quotes",
 	"private": true,
-	"scripts": {
-		"server:seed": "pnpm --filter ./server seed",
-		"start": "pnpm run -r --parallel start",
-		"dev": "pnpm run -r --parallel dev",
-		"format-all": "prettier --write ."
-	},
-	"author": "Rocktim Saikia <rocktimthedev@gmail.com> (https://rocktimsaikia.dev/)",
+	"description": "A REST API for anime quotes",
 	"license": "MPL-2.",
+	"author": "Rocktim Saikia <rocktimthedev@gmail.com> (https://rocktimsaikia.dev/)",
+	"scripts": {
+		"client:dev": "pnpm --filter client dev",
+		"client:build": "pnpm --filter client build",
+		"client:start": "pnpm --filter client start",
+		"server:dev": "pnpm --filter server dev",
+		"server:build": "pnpm --filter server build",
+		"server:start": "pnpm --filter server start",
+		"dev": "concurrently \"pnpm server:dev\" \"pnpm client:dev\"",
+		"build": "pnpm client:build && pnpm server:build",
+		"start": "pnpm run build && concurrently \"pnpm server:start\" \"pnpm client:start\""
+	},
+	"dependencies": {
+		"concurrently": "^8.2.2"
+	},
 	"engines": {
-		"node": ">=20.0.0"
-	},
-	"devDependencies": {
-		"@rocktimsaikia/prettier-config": "^1.0.4"
-	},
-	"prettier": "@rocktimsaikia/prettier-config"
+		"node": "19.9.0"
+	}
 }
