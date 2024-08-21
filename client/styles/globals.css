@@ -3,10 +3,29 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	margin: 0;
+}
+
+main {
+	flex: 1;
+}
+
+footer {
+
+}
+
 @layer base {
-	a {
-		@apply underline text-green-700;
-	}
+	/* a { */
+	/* 	@apply underline text-green-700; */
+	/* } */
 	h1,
 	h2,
 	h3 {
@@ -22,9 +41,9 @@
 		text-decoration-color: #9389ffd4;
 	}
 
-	.hellobar-gradient {
-		@apply bg-gradient-to-r from-green-300 via-blue-500 to-purple-600;
-	}
+	/* .hellobar-gradient { */
+	/* 	@apply bg-gradient-to-r from-green-300 via-blue-500 to-purple-600; */
+	/* } */
 
 	.fancy-undeline {
 		background-image: linear-gradient(120deg, #3b82f6c2, #7c3aedb5 100%);
@@ -57,4 +76,5 @@
 	.text-shadow-none {
 		text-shadow: none;
 	}
+
 }
