@@ -13,7 +13,7 @@
 		"server:start": "pnpm --filter server start",
 		"dev": "concurrently \"pnpm server:dev\" \"pnpm client:dev\"",
 		"build": "pnpm client:build && pnpm server:build",
-		"start": "pnpm run build && concurrently \"pnpm server:start\" \"pnpm client:start\""
+		"start": "concurrently \"pnpm server:start\" \"pnpm client:start\""
 	},
 	"dependencies": {
 		"concurrently": "^8.2.2"
