@@ -16,7 +16,7 @@ export default function Home() {
 
 	const requestCodeBlock: CodeBlockType = {
 		language: "javascript",
-		snippet: `fetch('https://animechan.io/api/random')
+		snippet: `fetch('https://animechan.io/api/v1/random')
     .then(response => response.json())
     .then(quote => console.log(quote))`,
 	};
@@ -43,13 +43,9 @@ export default function Home() {
 		<Layout>
 			<Section className="text-center">
 				<Image src="/logo.png" width="200" height="200" priority />
-				<h1 className="lg:text-7xl text-6xl font-display font-bold text-shadow-md">
-					Anime-chan
-				</h1>
+				<h1 className="lg:text-7xl text-6xl font-display font-bold text-shadow-md">Anime-chan</h1>
 				<div className="py-5">
-					<h2 className="text-2xl">
-						A restful API serving quality anime quotes
-					</h2>
+					<h2 className="text-2xl">A restful API serving quality anime quotes</h2>
 				</div>
 
 				<Link href="/docs">
@@ -84,12 +80,7 @@ export default function Home() {
 
 					<CodeBlock {...requestCodeBlock} />
 
-					<Button
-						loading={fetching}
-						disabled={fetching}
-						onClick={handleClick}
-						my="2"
-					>
+					<Button loading={fetching} disabled={fetching} onClick={handleClick} my="2">
 						<PlayIcon />
 						Run code
 					</Button>
@@ -100,9 +91,8 @@ export default function Home() {
 						<p className="mt-3 text-md">
 							Here is {clickCount > 1 ? "another" : "a"} random quote by -{" "}
 							<span className="font-semibold">
-								{randomQuote?.character}{" "}
-								<span className="font-normal">from</span> {randomQuote?.anime}{" "}
-								😃 🎉
+								{randomQuote?.character} <span className="font-normal">from</span>{" "}
+								{randomQuote?.anime} 😃 🎉
 							</span>
 						</p>
 					)}
