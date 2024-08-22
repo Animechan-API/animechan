@@ -1,13 +1,37 @@
-import { PrismaClient } from "@prisma/client";
+import type { Prisma } from "@prisma/client";
 import * as Sentry from "@sentry/node";
 import type { Request, Response } from "express";
 import { formatPrismaResponse } from "~/controllers/utils";
+import { prisma } from "~/libs/prisma";
 
-const prisma = new PrismaClient();
+export const getOneRandomQuote = async (req: Request, res: Response) => {
+	const anime = req.query.anime as string;
+	const character = req.query.character as string;
 
-export const getOneRandomQuote = async (_req: Request, res: Response) => {
 	try {
-		const count = await prisma.animeQuote.count();
+		const whereClause: Prisma.AnimeQuoteWhereInput = {};
+
+		if (anime) {
+			whereClause.anime = {
+				name: {
+					contains: anime,
+				},
+			};
+		}
+
+		if (character) {
+			whereClause.animeCharacter = {
+				name: {
+					contains: character,
+				},
+			};
+		}
+		const count = await prisma.animeQuote.count({ where: whereClause });
+
+		if (count === 0) {
+			return res.status(404).json({ error: "No matching quotes found" });
+		}
+
 		const randomInt = Math.floor(Math.random() * count);
 		const randomQuote = await prisma.animeQuote.findMany({
 			take: 1,
@@ -16,6 +40,7 @@ export const getOneRandomQuote = async (_req: Request, res: Response) => {
 				anime: true,
 				animeCharacter: true,
 			},
+			where: whereClause,
 		});
 		const formattedRandomQuote = formatPrismaResponse(randomQuote[0]);
 		res.status(200).json(formattedRandomQuote);

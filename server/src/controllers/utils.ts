@@ -19,7 +19,7 @@ type Quote =
 
 interface FormattedQuote {
 	anime: string;
-	animeCharacter: string;
+	character: string;
 	content: string;
 }
 
@@ -27,7 +27,7 @@ export const formatPrismaResponse = (quote: Quote): FormattedQuote | null => {
 	if (!quote) return null;
 	return {
 		anime: quote.anime.name,
-		animeCharacter: quote.animeCharacter.name,
+		character: quote.animeCharacter.name,
 		content: quote.content,
 	};
 };
