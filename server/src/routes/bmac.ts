@@ -7,6 +7,7 @@ import express from "express";
 import crypto from "node:crypto";
 import { generateRandomApiKey, sendEmail } from "~/libs/common";
 import { prisma } from "~/libs/prisma";
+import { WELCOME_ACTIVATE_EMAIL } from "~/constants/email";
 
 const router = express.Router();
 
@@ -76,7 +77,7 @@ router.post("/bmac", async (req, res) => {
 				await sendEmail({
 					to: supporterEmail,
 					subject: "Thank you for your support | Animechan.io",
-					content: `Thank you for your support! Your API key is: ${apiKey.key}`,
+					content: WELCOME_ACTIVATE_EMAIL(apiKey.key),
 				});
 				console.log("Created user and API key:", user, apiKey);
 			});
