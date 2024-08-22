@@ -5,9 +5,9 @@ import * as Sentry from "@sentry/node";
 import type { Request } from "express";
 import express from "express";
 import crypto from "node:crypto";
-import { generateRandomApiKey, sendEmail } from "~/libs/common";
-import { prisma } from "~/libs/prisma";
 import { WELCOME_ACTIVATE_EMAIL } from "~/constants/email";
+import { sendEmail } from "~/libs/common";
+import { prisma } from "~/libs/prisma";
 
 const router = express.Router();
 
@@ -66,10 +66,15 @@ router.post("/bmac", async (req, res) => {
 					},
 				});
 
+				const randApiKey = `ani-${crypto
+					.randomBytes(47)
+					.toString("base64")
+					.replace(/[^a-zA-Z0-9]/g, "")
+					.substring(0, 60)}`;
 				const apiKey = await prisma.apiKey.create({
 					data: {
 						name: `${supporterName}'s API Key - ${eventId}`,
-						key: generateRandomApiKey(),
+						key: randApiKey,
 						userId: user.id,
 					},
 				});
