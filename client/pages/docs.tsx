@@ -15,7 +15,7 @@ import Resource from "~/components/resource";
 const API_ORIGIN = "https://animechan.io/api/v1/quotes";
 
 const AUTH_CODE_SAMPLE = `
-		fetch('${API_ORIGIN}/quotes/anime?title=naruto', {
+		fetch('${API_ORIGIN}/anime?title=naruto', {
 			headers: {
 				x-api-key: 'YOUR_API_KEY',
 			}
@@ -43,7 +43,7 @@ export const API_GUIDES = [
 		link: "10-quotes",
 		isPremium: false,
 		codeSample: {
-			request: `fetch("${API_ORIGIN}/quotes")
+			request: `fetch("${API_ORIGIN}")
           .then((response) => response.json())
           .then((quotes) => console.log(quotes));`,
 			response: `[{ anime: "", character: "", quote: "" }, // 9 more]`,
