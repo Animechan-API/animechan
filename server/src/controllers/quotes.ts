@@ -5,6 +5,14 @@ import { formatPrismaResponse } from "~/controllers/utils";
 import { prisma } from "~/libs/prisma";
 
 export const getOneRandomQuote = async (req: Request, res: Response) => {
+	const allowedParams = ["anime", "character"];
+	const requestParams = Object.keys(req.query);
+	const isAllowedParams = requestParams.every((param) => allowedParams.includes(param));
+
+	if (!isAllowedParams) {
+		return res.status(400).json({ error: "Invalid request parameters" });
+	}
+
 	const anime = req.query.anime as string;
 	const character = req.query.character as string;
 
@@ -51,8 +59,16 @@ export const getOneRandomQuote = async (req: Request, res: Response) => {
 };
 
 export const getQuotes = async (req: Request, res: Response) => {
-	const animeName = req.query.anime as string;
-	const characterName = req.query.character as string;
+	const allowedParams = ["anime", "character"];
+	const requestParams = Object.keys(req.query);
+	const isAllowedParams = requestParams.every((param) => allowedParams.includes(param));
+
+	if (!isAllowedParams) {
+		return res.status(400).json({ error: "Invalid request parameters" });
+	}
+
+	const anime = req.query.anime as string;
+	const character = req.query.character as string;
 	const page = Number.parseInt(req.query.page as string) || 1;
 
 	try {
@@ -64,19 +80,20 @@ export const getQuotes = async (req: Request, res: Response) => {
 			where: {
 				anime: {
 					name: {
-						contains: animeName,
+						contains: anime,
 					},
 				},
 				animeCharacter: {
 					name: {
-						contains: characterName,
+						contains: character,
 					},
 				},
 			},
 			take: 10,
 			skip: 10 * (page - 1),
 		});
-		res.status(200).json(quotes);
+		const formattedQuotes = quotes.map((q) => formatPrismaResponse(q));
+		res.status(200).json(formattedQuotes);
 	} catch (error) {
 		Sentry.captureException(error);
 		res.status(500).json({ error: "Internal Server Error" });
