@@ -80,7 +80,7 @@ export const API_GUIDES = [
 		link: "10quotes-by-anime",
 		isPremium: true,
 		codeSample: {
-			request: `fetch("${API_ORIGIN}/quotes/anime?title=naruto")
+			request: `fetch("${API_ORIGIN}/anime?title=naruto")
           .then((response) => response.json())
           .then((quotes) => console.log(quotes));`,
 			response: `[{ anime: "Naruto", character: "", quote: "" }, // 9 more]`,
@@ -91,7 +91,7 @@ export const API_GUIDES = [
 		link: "10quotes-by-character",
 		isPremium: true,
 		codeSample: {
-			request: `fetch("${API_ORIGIN}/quotes/character?name=saitama")
+			request: `fetch("${API_ORIGIN}/character?name=saitama")
           .then((response) => response.json())
           .then((quotes) => console.log(quotes));`,
 			response: `[{ anime: "", character: "Saitama", quote: "" }, // 9 more]`,
@@ -104,7 +104,7 @@ export const API_GUIDES = [
 			"Pagination works only on the query endpoints. Default pagination count is 10 quotes per page.",
 		link: "pagination",
 		codeSample: {
-			request: `fetch('${API_ORIGIN}/quotes/anime?title=naruto&page=2')
+			request: `fetch('${API_ORIGIN}/anime?title=naruto&page=2')
       .then(response => response.json())
       .then(quotes => console.log(quotes))
 
