@@ -10,8 +10,8 @@ import cors from "cors";
 import express from "express";
 import helmet from "helmet";
 import morgan from "morgan";
+import { protectedRoutes } from "~/libs/auth";
 import { prisma } from "~/libs/prisma";
-import { rateLimiter } from "~/libs/rate-limit";
 import { redisClient } from "~/libs/redis";
 import animeRoute from "~/routes";
 import bmacRouter from "~/routes/bmac";
@@ -76,7 +76,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.get("/api/ping", (_, res) => res.send("pong"));
 
 // Anime related routes (Primary resources)
-app.use("/api/v1", rateLimiter, animeRoute);
+app.use("/api/v1", protectedRoutes, animeRoute);
 
 app.use("/api/webhook", bmacRouter);
 

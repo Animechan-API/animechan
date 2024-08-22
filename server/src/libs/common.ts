@@ -61,7 +61,7 @@ export async function sendEmail({
 
 export const generateRandomApiKey = () => {
 	return `ani-${crypto
-		.randomBytes(47)
+		.randomBytes(46)
 		.toString("base64")
 		.replace(/[^a-zA-Z0-9]/g, "")}`;
 };
