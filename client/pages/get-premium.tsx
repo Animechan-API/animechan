@@ -11,80 +11,110 @@ import Layout from "~/components/Layout";
 export default function GetPremium() {
 	return (
 		<Layout>
-			<Flex justify="center" align="start" mt="100px" gapX="8" className="text-[#423e62]">
-				<FreePricingCard />
-				<PremiumPricingCard />
-			</Flex>
-
-			<Container size="2">
-				<Section>
-					<Text size="6" weight="bold" as="div">
-						HOW TO GET A PREMIUM API KEY:
-					</Text>
-					<Flex direction="column" gapY="3" mt="3" className="">
-						<Text>
-							1. Go to our buy me a coffee page here:
-							<a
-								href="https://buymeacoffee.com/animechan_api"
-								className="block text-blue-500 underline underline-offset-2"
-								target="_blank"
-								rel="noreferrer"
-							>
-								https://buymeacoffee.com/animechan_api
-							</a>
-						</Text>
-						<Text>
-							2. Subscribe to a <b>monthly plan</b> of your choice. As long as it is a membership
-							subscription, you can use our premium API.
-						</Text>
-						<Text>
-							3. Once subscribed, you will get a premium API key in your email address that is
-							associated with your buymeacoffee account.
-						</Text>
-						<Callout.Root size="1">
-							<Callout.Icon>
-								<InfoCircledIcon />
-							</Callout.Icon>
-							<div className="flex flex-col space-y-2 text-sm font-medium">
-								<p>That's it 🎉 </p>
-								<p>
-									You now have access to all the premium API endpoints. You can use the provided API
-									key in the email to make authenticated requests with higher rate-limits.{" "}
-								</p>
-								<p>
-									Check how to make authenticated requests with the API key{" "}
-									<ThickArrowRightIcon className="inline-block" />
-									<a href="/docs" className="text-blue-500 font-semibold">
-										here.
-									</a>
-								</p>
-							</div>
-						</Callout.Root>
-					</Flex>
-				</Section>
-
-				<Flex direction="column" gapY="3" mt="3">
-					<Text size="6" weight="bold" as="div">
-						<HeartFilledIcon className="inline-block" color="red" /> Developers Note:
-					</Text>
-					<Text as="p">
-						We are a small team of developers dedicated to creating the best free and open-source
-						Anime information API available. While our project is open-source on GitHub and driven
-						by a love for the community, maintaining and scaling this service comes with significant
-						costs—such as DigitalOcean servers, MySQL databases, Redis instances, domain renewals,
-						and general upkeep.
-					</Text>
-
-					<Text as="p">
-						Though we aim to keep this project free, our expenses make it challenging. If you value
-						this project and want to see it thrive, please consider supporting us by subscribing to
-						one of our monthly plans. Your support is greatly appreciated and will help ensure the
-						continued growth of Animechan.
-					</Text>
-
-					<Text as="p">Thank you from the Animechan team.</Text>
+			<div className="mx-4 lg:mx-0">
+				<Flex
+					justify="center"
+					direction={{
+						xl: "row",
+						md: "row",
+						initial: "column",
+					}}
+					align={{
+						xl: "start",
+						md: "start",
+						initial: "stretch",
+					}}
+					mt={{
+						xl: "100px",
+						md: "100px",
+						initial: "50px",
+					}}
+					gapX={{
+						lg: "8",
+						md: "8",
+						initial: "0",
+					}}
+					gapY={{
+						lg: "0",
+						md: "0",
+						initial: "8",
+					}}
+					className="text-[#423e62]"
+				>
+					<FreePricingCard />
+					<PremiumPricingCard />
 				</Flex>
-			</Container>
+
+				<Container size="2">
+					<Section>
+						<Text size="6" weight="bold" as="div">
+							HOW TO GET A PREMIUM API KEY:
+						</Text>
+						<Flex direction="column" gapY="3" mt="3" className="">
+							<Text>
+								1. Go to our buy me a coffee page here:
+								<a
+									href="https://buymeacoffee.com/animechan_api"
+									className="block text-blue-500 underline underline-offset-2"
+									target="_blank"
+									rel="noreferrer"
+								>
+									https://buymeacoffee.com/animechan_api
+								</a>
+							</Text>
+							<Text>
+								2. Subscribe to a <b>monthly plan</b> of your choice. As long as it is a membership
+								subscription, you can use our premium API.
+							</Text>
+							<Text>
+								3. Once subscribed, you will get a premium API key in your email address that is
+								associated with your buymeacoffee account.
+							</Text>
+							<Callout.Root size="1">
+								<Callout.Icon>
+									<InfoCircledIcon />
+								</Callout.Icon>
+								<div className="flex flex-col space-y-2 text-sm font-medium">
+									<p>That's it 🎉 </p>
+									<p>
+										You now have access to all the premium API endpoints. You can use the provided
+										API key in the email to make authenticated requests with higher rate-limits.{" "}
+									</p>
+									<p>
+										Check how to make authenticated requests with the API key{" "}
+										<ThickArrowRightIcon className="inline-block" />
+										<a href="/docs" className="text-blue-500 font-semibold">
+											here.
+										</a>
+									</p>
+								</div>
+							</Callout.Root>
+						</Flex>
+					</Section>
+
+					<Flex direction="column" gapY="3" mt="3">
+						<Text size="6" weight="bold" as="div">
+							<HeartFilledIcon className="inline-block" color="red" /> Developers Note:
+						</Text>
+						<Text as="p">
+							We are a small team of developers dedicated to creating the best free and open-source
+							Anime information API available. While our project is open-source on GitHub and driven
+							by a love for the community, maintaining and scaling this service comes with
+							significant costs—such as DigitalOcean servers, MySQL databases, Redis instances,
+							domain renewals, and general upkeep.
+						</Text>
+
+						<Text as="p">
+							Though we aim to keep this project free, our expenses make it challenging. If you
+							value this project and want to see it thrive, please consider supporting us by
+							subscribing to one of our monthly plans. Your support is greatly appreciated and will
+							help ensure the continued growth of Animechan.
+						</Text>
+
+						<Text as="p">Thank you from the Animechan team.</Text>
+					</Flex>
+				</Container>
+			</div>
 		</Layout>
 	);
 }

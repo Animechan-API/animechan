@@ -11,11 +11,11 @@ export default function Footer() {
 					{new Date().getFullYear()}
 				</Text>
 				<Flex gap="3" align="center" justify="center" className="mt-2">
-					<a href="https://github.com/rocktimsaikia/animechan">
+					<a href="https://github.com/Animechan-API/animechan">
 						<GitHubLogoIcon className="inline-block mb-1" /> Github
 					</a>
 					<Separator orientation="vertical" />
-					<a href="#">
+					<a href="https://discord.gg/yVEDXVYaT3" target="_blank" rel="noreferrer">
 						<DiscordLogoIcon className="inline-block mb-1" /> Discord
 					</a>
 				</Flex>
