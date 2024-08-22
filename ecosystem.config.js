@@ -4,7 +4,7 @@ module.exports = {
 			name: "animechan",
 			script: "pnpm",
 			args: "start",
-			watch: ["server/dist", "client/.next"],
+			watch: false,
 			autorestart: true,
 			max_memory_restart: "500M",
 			out_file: "logs/output.log",
