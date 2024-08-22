@@ -7,16 +7,17 @@ const prisma = new PrismaClient();
 
 export const getOneRandomQuote = async (_req: Request, res: Response) => {
 	try {
-		const randomQuote = await prisma.animeQuote.findFirst({
+		const count = await prisma.animeQuote.count();
+		const randomInt = Math.floor(Math.random() * count);
+		const randomQuote = await prisma.animeQuote.findMany({
+			take: 1,
+			skip: randomInt,
 			include: {
 				anime: true,
 				animeCharacter: true,
 			},
-			orderBy: {
-				id: "desc",
-			},
 		});
-		const formattedRandomQuote = formatPrismaResponse(randomQuote);
+		const formattedRandomQuote = formatPrismaResponse(randomQuote[0]);
 		res.status(200).json(formattedRandomQuote);
 	} catch (error) {
 		Sentry.captureException(error);
