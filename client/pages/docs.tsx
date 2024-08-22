@@ -12,7 +12,7 @@ import { CopyBlock, dracula } from "react-code-blocks";
 import Layout from "~/components/Layout";
 import Resource from "~/components/resource";
 
-const API_ORIGIN = "https://animechan.io/api/v1";
+const API_ORIGIN = "https://animechan.io/api/v1/quotes";
 
 const AUTH_CODE_SAMPLE = `
 		fetch('${API_ORIGIN}/quotes/anime?title=naruto', {

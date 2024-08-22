@@ -16,7 +16,7 @@ export default function Home() {
 
 	const requestCodeBlock: CodeBlockType = {
 		language: "javascript",
-		snippet: `fetch('https://animechan.io/api/v1/random')
+		snippet: `fetch('https://animechan.io/api/v1/quotes/random')
     .then(response => response.json())
     .then(quote => console.log(quote))`,
 	};
