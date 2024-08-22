@@ -15,7 +15,7 @@ import Resource from "~/components/resource";
 const API_ORIGIN = "https://animechan.io/api/v1/quotes";
 
 const AUTH_CODE_SAMPLE = `
-		fetch('${API_ORIGIN}/anime?title=naruto', {
+		fetch('${API_ORIGIN}?anime=naruto', {
 			headers: {
 				x-api-key: 'YOUR_API_KEY',
 			}
@@ -35,7 +35,7 @@ export const API_GUIDES = [
 			request: `fetch("${API_ORIGIN}/random")
           .then((response) => response.json())
           .then((quote) => console.log(quote));`,
-			response: `{ anime: "", character: "", quote: "" }`,
+			response: `{ anime: "", character: "", content: "" }`,
 		},
 	},
 	{
@@ -46,7 +46,7 @@ export const API_GUIDES = [
 			request: `fetch("${API_ORIGIN}")
           .then((response) => response.json())
           .then((quotes) => console.log(quotes));`,
-			response: `[{ anime: "", character: "", quote: "" }, // 9 more]`,
+			response: `[{ anime: "", character: "", content: "" }, // 9 more]`,
 		},
 	},
 
@@ -57,10 +57,10 @@ export const API_GUIDES = [
 		isPremium: true,
 		isNewlyAdded: true,
 		codeSample: {
-			request: `fetch("${API_ORIGIN}/random/anime?title=naruto")
+			request: `fetch("${API_ORIGIN}/random?anime=naruto")
           .then((response) => response.json())
           .then((quote) => console.log(quote));`,
-			response: `{ anime: "Naruto", character: "", quote: "" }`,
+			response: `{ anime: "Naruto", character: "", content: "" }`,
 		},
 	},
 	{
@@ -69,10 +69,10 @@ export const API_GUIDES = [
 		isPremium: true,
 		isNewlyAdded: true,
 		codeSample: {
-			request: `fetch("${API_ORIGIN}/random/character?name=saitama")
+			request: `fetch("${API_ORIGIN}/random?character=saitama")
           .then((response) => response.json())
           .then((quote) => console.log(quote));`,
-			response: `{ anime: "", character: "", quote: "" }`,
+			response: `{ anime: "", character: "", content: "" }`,
 		},
 	},
 	{
@@ -80,10 +80,10 @@ export const API_GUIDES = [
 		link: "10quotes-by-anime",
 		isPremium: true,
 		codeSample: {
-			request: `fetch("${API_ORIGIN}/anime?title=naruto")
+			request: `fetch("${API_ORIGIN}?anime=naruto")
           .then((response) => response.json())
           .then((quotes) => console.log(quotes));`,
-			response: `[{ anime: "Naruto", character: "", quote: "" }, // 9 more]`,
+			response: `[{ anime: "Naruto", character: "", content: "" }, // 9 more]`,
 		},
 	},
 	{
@@ -91,10 +91,10 @@ export const API_GUIDES = [
 		link: "10quotes-by-character",
 		isPremium: true,
 		codeSample: {
-			request: `fetch("${API_ORIGIN}/character?name=saitama")
+			request: `fetch("${API_ORIGIN}?character=saitama")
           .then((response) => response.json())
           .then((quotes) => console.log(quotes));`,
-			response: `[{ anime: "", character: "Saitama", quote: "" }, // 9 more]`,
+			response: `[{ anime: "", character: "Saitama", content: "" }, // 9 more]`,
 		},
 	},
 	{
@@ -104,13 +104,13 @@ export const API_GUIDES = [
 			"Pagination works only on the query endpoints. Default pagination count is 10 quotes per page.",
 		link: "pagination",
 		codeSample: {
-			request: `fetch('${API_ORIGIN}/anime?title=naruto&page=2')
+			request: `fetch('${API_ORIGIN}?anime=naruto&page=2')
       .then(response => response.json())
       .then(quotes => console.log(quotes))
 
       // works on character queries too 👇
-      // https://animechan.io/api/quotes/character?name=luffy&page=2`,
-			response: `[{ anime: "Naruto", character: "", quote: "" }, // 9 more]`,
+      // https://animechan.io/api/quotes?character=luffy&page=2`,
+			response: `[{ anime: "Naruto", character: "", content: "" }, // 9 more]`,
 		},
 	},
 ];
