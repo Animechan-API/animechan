@@ -23,7 +23,7 @@ export const protectedRoutes = async (req: Request, res: Response, next: NextFun
 		return res.status(401).json({ message: "Unauthorized. Missing API key!" });
 	}
 
-	if (!reqApiKey.startsWith("ani-") || reqApiKey.length !== 64) {
+	if (!reqApiKey.startsWith("ani-") || reqApiKey.length < 60) {
 		return res.status(401).json({ message: "Unauthorized. Invalid API key!" });
 	}
 
