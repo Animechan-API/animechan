@@ -12,7 +12,6 @@ import helmet from "helmet";
 import morgan from "morgan";
 import { protectedRoutes } from "~/libs/auth";
 import { prisma } from "~/libs/prisma";
-import { redisClient } from "~/libs/redis";
 import animeRoute from "~/routes";
 import bmacRouter from "~/routes/bmac";
 
@@ -85,12 +84,6 @@ app.use("/api/webhook", bmacRouter);
 if (isProduction) {
 	app.use(Sentry.Handlers.errorHandler());
 }
-
-// Redis connection
-redisClient
-	.connect()
-	.then(() => console.log("✅ Connected to Redis"))
-	.catch(() => console.error("Failed to connect to Redis"));
 
 // Database connection
 prisma.$connect().then(() => {
