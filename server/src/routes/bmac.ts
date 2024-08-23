@@ -11,7 +11,7 @@ import { prisma } from "~/libs/prisma";
 
 const router = express.Router();
 
-const isDevEnv = process.env.NODE_ENV !== "production";
+const isProduction = process.env.NODE_ENV === "production";
 
 function verifyWebhook(req: Request) {
 	try {
@@ -81,7 +81,7 @@ router.post("/bmac", async (req, res) => {
 					},
 				});
 
-				if (!isDevEnv) {
+				if (isProduction) {
 					await sendEmail({
 						to: supporterEmail,
 						subject: "Thank you for your support | Animechan.io",
