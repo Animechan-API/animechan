@@ -2,7 +2,6 @@ import dotenv from "dotenv";
 dotenv.config();
 
 import * as Sentry from "@sentry/node";
-import crypto from "node:crypto";
 import { EMAIL_ADDRESSES } from "~/constants/common";
 
 interface SendEmailOptions {

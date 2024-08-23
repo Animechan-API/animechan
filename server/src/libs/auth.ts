@@ -1,8 +1,7 @@
-// Middleware to block requests to premium endpoints
-
 import type { NextFunction, Request, Response } from "express";
 import { prisma } from "~/libs/prisma";
-import { rateLimitOnApiKey, rateLimitOnIP } from "./rate-limit";
+import { rateLimitOnApiKey, rateLimitOnIP } from "~/libs/rate-limit";
+import { redisClient } from "~/libs/redis";
 
 const PUBLIC_ENDPOINTS = [
 	"/api/v1/quotes/random",
@@ -27,14 +26,18 @@ export const protectedRoutes = async (req: Request, res: Response, next: NextFun
 		return res.status(401).json({ message: "Unauthorized. Invalid API key!" });
 	}
 
-	// Primary db check for API key validation
-	const apiKeyObj = await prisma.apiKey.findUnique({
-		where: { key: reqApiKey },
-	});
+	// Cache validate
+	const cachedApiKey = await redisClient.get(`rl_api:${reqApiKey}`);
 
-	if (!apiKeyObj) {
-		console.log("db check");
-		return res.status(401).json({ message: "Invalid API key" });
+	if (!cachedApiKey) {
+		// Primary db validate
+		const apiKeyObj = await prisma.apiKey.findUnique({
+			where: { key: reqApiKey },
+		});
+		if (!apiKeyObj) {
+			console.log("db check");
+			return res.status(401).json({ message: "Invalid API key" });
+		}
 	}
 	return rateLimitOnApiKey(reqApiKey)(req, res, next);
 };

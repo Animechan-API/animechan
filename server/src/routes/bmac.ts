@@ -11,6 +11,8 @@ import { prisma } from "~/libs/prisma";
 
 const router = express.Router();
 
+const isDevEnv = process.env.NODE_ENV !== "production";
+
 function verifyWebhook(req: Request) {
 	try {
 		const signature = req.headers["x-signature-sha256"] as string;
@@ -79,12 +81,14 @@ router.post("/bmac", async (req, res) => {
 					},
 				});
 
-				await sendEmail({
-					to: supporterEmail,
-					subject: "Thank you for your support | Animechan.io",
-					content: WELCOME_ACTIVATE_EMAIL(apiKey.key),
-				});
-				console.log("Created user and API key:", user, apiKey);
+				if (!isDevEnv) {
+					await sendEmail({
+						to: supporterEmail,
+						subject: "Thank you for your support | Animechan.io",
+						content: WELCOME_ACTIVATE_EMAIL(apiKey.key),
+					});
+					console.log("Created user and API key:", user, apiKey);
+				}
 			});
 
 			break;
