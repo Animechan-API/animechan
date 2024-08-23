@@ -79,7 +79,7 @@ export const getOneRandomQuote = async (req: Request, res: Response) => {
 };
 
 export const getQuotes = async (req: Request, res: Response) => {
-	const allowedParams = ["anime", "character"];
+	const allowedParams = ["anime", "character", "page"];
 	const requestParams = Object.keys(req.query);
 	const isAllowedParams = requestParams.every((param) => allowedParams.includes(param));
 
