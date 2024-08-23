@@ -3,6 +3,7 @@ import * as Sentry from "@sentry/node";
 import type { Request, Response } from "express";
 import { formatPrismaResponse } from "~/controllers/utils";
 import { prisma } from "~/libs/prisma";
+import { redisClient } from "~/libs/redis";
 
 export const getOneRandomQuote = async (req: Request, res: Response) => {
 	const allowedParams = ["anime", "character"];
@@ -19,12 +20,15 @@ export const getOneRandomQuote = async (req: Request, res: Response) => {
 	try {
 		const whereClause: Prisma.AnimeQuoteWhereInput = {};
 
+		let cachedKey = `total_quote_count:`;
+
 		if (anime) {
 			whereClause.anime = {
 				name: {
 					contains: anime,
 				},
 			};
+			cachedKey += `${anime}_`;
 		}
 
 		if (character) {
@@ -33,14 +37,30 @@ export const getOneRandomQuote = async (req: Request, res: Response) => {
 					contains: character,
 				},
 			};
+			cachedKey += `${character}_`;
 		}
-		const count = await prisma.animeQuote.count({ where: whereClause });
 
-		if (count === 0) {
+		// This optimizes database queries by caching the total count of records
+		// for different variations of the query. Instead of querying the database
+		// multiple times to get the total count, the cache is used to quickly
+		// retrieve the count, reducing unnecessary database roundtrips.
+		let quoteCount: number;
+		const cachedCount = await redisClient.get(cachedKey);
+
+		if (!cachedCount) {
+			quoteCount = await prisma.animeQuote.count({ where: whereClause });
+			await redisClient.set(cachedKey, quoteCount, { EX: 30 * 60 * 60 * 24 }); // 30 days
+			console.log(`Cache missing & setting: ${cachedKey} | ${quoteCount}`);
+		} else {
+			quoteCount = Number.parseInt(cachedCount);
+			console.log(`Cache available: ${cachedKey} | ${cachedCount}`);
+		}
+
+		if (quoteCount === 0) {
 			return res.status(404).json({ error: "No matching quotes found" });
 		}
 
-		const randomInt = Math.floor(Math.random() * count);
+		const randomInt = Math.floor(Math.random() * quoteCount);
 		const randomQuote = await prisma.animeQuote.findMany({
 			take: 1,
 			skip: randomInt,
