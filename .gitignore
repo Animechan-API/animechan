@@ -18,3 +18,4 @@ server/.env
 server/dist
 server/data
 /.idea
+server/test*.[tj]s
