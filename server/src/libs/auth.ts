@@ -11,15 +11,15 @@ const PUBLIC_ENDPOINTS = [
 ];
 
 export const protectedRoutes = async (req: Request, res: Response, next: NextFunction) => {
-	const isProtected = PUBLIC_ENDPOINTS.every((endpoint) => req.originalUrl !== endpoint);
-	if (!isProtected) {
-		return rateLimitOnIP(req, res, next);
-	}
+	const isProtectedEndpoint = PUBLIC_ENDPOINTS.every((endpoint) => req.originalUrl !== endpoint);
 	// Basic auth checks before hitting the db for final verification
 	const reqApiKey = req.headers["x-api-key"] as string;
 
 	if (!reqApiKey) {
-		return res.status(401).json({ message: "Unauthorized. Missing API key!" });
+		if (isProtectedEndpoint) {
+			return res.status(401).json({ message: "Unauthorized. Missing API key!" });
+		}
+		return rateLimitOnIP(req, res, next);
 	}
 
 	if (!reqApiKey.startsWith("ani-") || reqApiKey.length < 60) {
