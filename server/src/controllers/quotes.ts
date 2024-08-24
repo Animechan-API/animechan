@@ -144,8 +144,8 @@ export const getQuotes = async (req: Request, res: Response) => {
 					},
 				},
 			},
-			take: 10,
-			skip: 10 * (page - 1),
+			take: 5,
+			skip: 5 * (page - 1),
 		});
 		const formattedQuotes = quotes.map((q) => formatPrismaResponse(q));
 		res.status(200).json(formattedQuotes);
