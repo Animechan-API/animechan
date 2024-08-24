@@ -20,5 +20,6 @@ jobs:
           username: ${{ secrets.DROPLET_USER }}
           key: ${{ secrets.DROPLET_SSH_KEY }}
           script: |
+            which $SHELL
             cd animechan
             ./deploy.sh
