@@ -1,8 +1,9 @@
-name: EC2 Deploy
+name: Deployment
 
 on:
-  release:
-    types: [published]
+  push:
+    branches:
+      - main
 
 jobs:
   deploy:
@@ -15,11 +16,9 @@ jobs:
       - name: ssh into EC2 and execute commands
         uses: appleboy/ssh-action@v1.0.3
         with:
-          host: ${{ secrets.HOST }}
-          username: ${{ secrets.USERNAME }}
-          key: ${{ secrets.KEY }}
+          host: ${{ secrets.DROPLET_HOST }}
+          username: ${{ secrets.DROPLET_USER }}
+          key: ${{ secrets.DROPLET_SSH_KEY }}
           script: |
-            cd animechan-main
-            git switch main
-            git pull --rebase origin main
-            pnpm install:all
+            cd animechan
+            ./deploy.sh
