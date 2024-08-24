@@ -1,8 +1,9 @@
 import dotenv from "dotenv";
 dotenv.config();
 
+import * as Sentry from "@sentry/node";
 import { RateLimiterRedis } from "rate-limiter-flexible";
-import { createClient } from "redis";
+import { SocketClosedUnexpectedlyError, createClient } from "redis";
 
 export const redisClient = createClient({
 	url: process.env.REDIS_URL,
@@ -11,7 +12,15 @@ export const redisClient = createClient({
 redisClient.connect();
 
 redisClient.on("error", (err) => {
-	console.log("Redis Error", err);
+	if (err instanceof SocketClosedUnexpectedlyError) {
+		// TODO: Debug why this error keeps popping up
+		// only on production server but not locally.
+		// For now, just capture it in Sentry just to
+		// keep the server logs less verbose and messy.
+		Sentry.captureException(err);
+	} else {
+		console.log("Redis Error", err);
+	}
 });
 
 redisClient.on("connect", () => {
