@@ -89,18 +89,19 @@ export const getQuotes = async (req: Request, res: Response) => {
 
 	const anime = req.query.anime as string;
 	const character = req.query.character as string;
-	const page = Number.parseInt(req.query.page as string) || 1;
+	const page = req.query.page as string;
 
 	// If no anime or character is provided, return 5 random records.
 	// Return 400 if tried with pagination, since it doesn't make sense
 	// to paginate a route that simply returns random records each time.
 	if (!anime && !character) {
-		if (page > 1) {
+		if (page) {
 			return res
 				.status(400)
 				.json({ error: "Pagination only works with anime and character parameters" });
 		}
 
+		// No query parameters processing here
 		let totalQuoteCount: number;
 		const cachedKey = `total_quote_count:`;
 		const cahcedValue = await redisClient.get(cachedKey);
@@ -127,6 +128,7 @@ export const getQuotes = async (req: Request, res: Response) => {
 	}
 
 	try {
+		const pageNumber = page ? Number.parseInt(page) : 1;
 		const quotes = await prisma.animeQuote.findMany({
 			include: {
 				anime: true,
@@ -145,7 +147,7 @@ export const getQuotes = async (req: Request, res: Response) => {
 				},
 			},
 			take: 5,
-			skip: 5 * (page - 1),
+			skip: 5 * (pageNumber - 1),
 		});
 		const formattedQuotes = quotes.map((q) => formatPrismaResponse(q));
 		res.status(200).json(formattedQuotes);
