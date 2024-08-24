@@ -91,9 +91,9 @@ export const getQuotes = async (req: Request, res: Response) => {
 	const character = req.query.character as string;
 	const page = Number.parseInt(req.query.page as string) || 1;
 
-	// If no anime or character is provided, return 10 random quotes.
+	// If no anime or character is provided, return 5 random records.
 	// Return 400 if tried with pagination, since it doesn't make sense
-	// to paginate a route that returns 10 random records each time.
+	// to paginate a route that simply returns random records each time.
 	if (!anime || !character) {
 		if (page > 1) {
 			return res
