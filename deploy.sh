@@ -2,6 +2,9 @@
 
 set -e  # Exit immediately if a command exits with a non-zero status
 
+export PNPM_HOME="/root/.local/share/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+
 PROJECT_DIR="/root/animechan"
 
 cd "$PROJECT_DIR" || exit 1

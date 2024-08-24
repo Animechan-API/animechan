@@ -3,7 +3,7 @@ name: Deployment
 on:
   push:
     branches:
-      - main
+      - ci
 
 jobs:
   deploy:
@@ -21,7 +21,5 @@ jobs:
           key: ${{ secrets.DROPLET_SSH_KEY }}
           script: |
             which $SHELL
-            export PNPM_HOME="/root/.local/share/pnpm"
-            export PATH="$PNPM_HOME:$PATH"
             cd animechan
             ./deploy.sh
