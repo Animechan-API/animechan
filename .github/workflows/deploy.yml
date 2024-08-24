@@ -21,5 +21,6 @@ jobs:
           key: ${{ secrets.DROPLET_SSH_KEY }}
           script: |
             export PATH=$HOME/n/bin:$PATH
+            export PATH=$HOME/.local/share/pnpm:$PATH
             cd animechan
             ./deploy.sh
