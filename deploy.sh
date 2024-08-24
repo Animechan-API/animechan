@@ -2,8 +2,6 @@
 
 set -e  # Exit immediately if a command exits with a non-zero status
 
-source ~/.bashrc
-
 PROJECT_DIR="/root/animechan"
 
 cd "$PROJECT_DIR" || exit 1

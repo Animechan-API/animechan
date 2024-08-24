@@ -21,5 +21,6 @@ jobs:
           key: ${{ secrets.DROPLET_SSH_KEY }}
           script: |
             which $SHELL
+            source ~/.bashrc
             cd animechan
             ./deploy.sh
