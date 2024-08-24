@@ -2,33 +2,22 @@ import type { NextFunction, Request, Response } from "express";
 import { prisma } from "~/libs/prisma";
 import { rateLimitOnApiKey, rateLimitOnIP } from "~/libs/rate-limit";
 import { redisClient } from "~/libs/redis";
-
-const AVAILABLE_ENDPOINTS = [
-	/^\/api\/v1\/quotes(\/random)?\/?$/,
-	// Add more regex patterns here as needed
-];
-
-const PROTECTED_ENDPOINTS = AVAILABLE_ENDPOINTS.map(
-	(regex) => new RegExp(regex.source + "(\\?(.*&)?(anime|quote|page)=)", regex.flags),
-);
+import { isProtectedEndpoint, isValidEndpoint } from "./auth.util";
 
 export const protectedRoutes = async (req: Request, res: Response, next: NextFunction) => {
-	const isValidEndpoint = AVAILABLE_ENDPOINTS.some((regex) => regex.test(req.path));
-
 	// If endpoint is not valid at all, return 404
 	// No need to hit the Redis nor the main db.
-	if (!isValidEndpoint) {
+	if (!isValidEndpoint(req.path)) {
 		return res.status(404).json({ message: "Endpoint not found" });
 	}
 
 	// Verification for protected endpoints
-	const isProtectedEndpoint = PROTECTED_ENDPOINTS.some((regex) => regex.test(req.url));
 	const reqApiKey = req.headers["x-api-key"] as string;
 
 	if (!reqApiKey) {
 		// If no API key is provided and the requested endpoint is protected
 		// Return 401 immediately and end the request.
-		if (isProtectedEndpoint) {
+		if (isProtectedEndpoint(req.url)) {
 			return res.status(401).json({ message: "Unauthorized. Missing API key!" });
 		}
 
