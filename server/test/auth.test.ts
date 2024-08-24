@@ -26,6 +26,10 @@ test("Should pass on protected API urls", () => {
 	expect(isProtectedEndpoint(`${BASE_PATH}quotes?character=naruto`)).toBeTruthy();
 	expect(isProtectedEndpoint(`${BASE_PATH}quotes/?anime=naruto`)).toBeTruthy();
 	expect(isProtectedEndpoint(`${BASE_PATH}quotes/?character=naruto`)).toBeTruthy();
+
+	// Accepts additional not pre-defined params like `foo` here but only in the presence
+	// of a premium query param which is `character` in this case below.
+	expect(isProtectedEndpoint(`${BASE_PATH}quotes/random/?character=naruto&foo=bar`)).toBeTruthy();
 });
 
 test("should fail on unprotected/free API urls", () => {
