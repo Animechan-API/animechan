@@ -15,9 +15,9 @@ const addTrailingSlash = (path: string) => {
 	return path.endsWith("/") ? path : `${path}/`;
 };
 
-export const isValidEndpoint = (path: string) => {
-	const updatedPath = addTrailingSlash(path);
-	return AVAILABLE_ENDPOINT_PATHS.includes(updatedPath);
+export const isValidEndpoint = (url: string) => {
+	const updatedPath = addTrailingSlash(url);
+	return AVAILABLE_ENDPOINT_PATHS.some((endpoint) => updatedPath.startsWith(endpoint));
 };
 
 export const isProtectedEndpoint = (url: string) => {

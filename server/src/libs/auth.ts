@@ -7,7 +7,7 @@ import { isProtectedEndpoint, isValidEndpoint } from "./auth.util";
 export const protectedRoutes = async (req: Request, res: Response, next: NextFunction) => {
 	// If endpoint is not valid at all, return 404
 	// No need to hit the Redis nor the main db.
-	if (!isValidEndpoint(req.path)) {
+	if (!isValidEndpoint(req.originalUrl)) {
 		return res.status(404).json({ message: "Endpoint not found" });
 	}
 
@@ -17,7 +17,7 @@ export const protectedRoutes = async (req: Request, res: Response, next: NextFun
 	if (!reqApiKey) {
 		// If no API key is provided and the requested endpoint is protected
 		// Return 401 immediately and end the request.
-		if (isProtectedEndpoint(req.url)) {
+		if (isProtectedEndpoint(req.originalUrl)) {
 			return res.status(401).json({ message: "Unauthorized. Missing API key!" });
 		}
 
