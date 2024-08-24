@@ -94,7 +94,7 @@ export const getQuotes = async (req: Request, res: Response) => {
 	// If no anime or character is provided, return 5 random records.
 	// Return 400 if tried with pagination, since it doesn't make sense
 	// to paginate a route that simply returns random records each time.
-	if (!anime || !character) {
+	if (!anime && !character) {
 		if (page > 1) {
 			return res
 				.status(400)
