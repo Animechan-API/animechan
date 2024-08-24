@@ -20,8 +20,7 @@ jobs:
           username: ${{ secrets.DROPLET_USER }}
           key: ${{ secrets.DROPLET_SSH_KEY }}
           script: |
-            which $SHELL
-            export PATH=$HOME/.local/share/pnpm:$PATH
-            echo $PATH
+            export PNPM_HOME=$HOME/.local/share/pnpm
+            export PATH=$PNPM_HOME:$PATH
             cd animechan
             ./deploy.sh
