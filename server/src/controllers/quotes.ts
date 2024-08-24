@@ -91,6 +91,41 @@ export const getQuotes = async (req: Request, res: Response) => {
 	const character = req.query.character as string;
 	const page = Number.parseInt(req.query.page as string) || 1;
 
+	// If no anime or character is provided, return 10 random quotes.
+	// Return 400 if tried with pagination, since it doesn't make sense
+	// to paginate a route that returns 10 random records each time.
+	if (!anime || !character) {
+		if (page > 1) {
+			return res
+				.status(400)
+				.json({ error: "Pagination only works with anime and character parameters" });
+		}
+
+		let totalQuoteCount: number;
+		const cachedKey = `total_quote_count:`;
+		const cahcedValue = await redisClient.get(cachedKey);
+
+		if (!cahcedValue) {
+			totalQuoteCount = await prisma.animeQuote.count();
+			await redisClient.set(cachedKey, totalQuoteCount, { EX: 30 * 60 * 60 * 24 }); // 30 days
+			console.log(`Cache missing & setting: ${cachedKey} | ${totalQuoteCount}`);
+		} else {
+			totalQuoteCount = Number.parseInt(cahcedValue);
+			console.log(`Cache available: ${cachedKey} | ${cahcedValue}`);
+		}
+
+		const quotes = await prisma.animeQuote.findMany({
+			include: {
+				anime: true,
+				animeCharacter: true,
+			},
+			skip: Math.floor(Math.random() * totalQuoteCount),
+			take: 5,
+		});
+		const formattedQuotes = quotes.map((q) => formatPrismaResponse(q));
+		return res.status(200).json(formattedQuotes);
+	}
+
 	try {
 		const quotes = await prisma.animeQuote.findMany({
 			include: {
