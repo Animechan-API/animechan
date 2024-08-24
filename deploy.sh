@@ -2,9 +2,6 @@
 
 set -e  # Exit immediately if a command exits with a non-zero status
 
-PROJECT_DIR="/root/animechan"
-
-cd "$PROJECT_DIR" || exit 1
 git stash save "stashing for clean deploy"
 git switch main
 
