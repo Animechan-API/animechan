@@ -39,14 +39,14 @@ export const API_GUIDES = [
 		},
 	},
 	{
-		heading: "Get 10 random quotes",
-		link: "10-quotes",
+		heading: "Get 5 random quotes (Pagination not supported)",
+		link: "5-quotes",
 		isPremium: false,
 		codeSample: {
 			request: `fetch("${API_ORIGIN}")
           .then((response) => response.json())
           .then((quotes) => console.log(quotes));`,
-			response: `[{ anime: "", character: "", content: "" }, // 9 more]`,
+			response: `[{ anime: "", character: "", content: "" }, // 4 more]`,
 		},
 	},
 
@@ -76,32 +76,32 @@ export const API_GUIDES = [
 		},
 	},
 	{
-		heading: "Get 10 quotes by anime title",
-		link: "10quotes-by-anime",
+		heading: "Get 5 quotes by anime title",
+		link: "5quotes-by-anime",
 		isPremium: true,
 		codeSample: {
 			request: `fetch("${API_ORIGIN}?anime=naruto")
           .then((response) => response.json())
           .then((quotes) => console.log(quotes));`,
-			response: `[{ anime: "Naruto", character: "", content: "" }, // 9 more]`,
+			response: `[{ anime: "Naruto", character: "", content: "" }, // 4 more]`,
 		},
 	},
 	{
-		heading: "Get 10 quotes by anime character",
-		link: "10quotes-by-character",
+		heading: "Get 5 quotes by anime character",
+		link: "5quotes-by-character",
 		isPremium: true,
 		codeSample: {
 			request: `fetch("${API_ORIGIN}?character=saitama")
           .then((response) => response.json())
           .then((quotes) => console.log(quotes));`,
-			response: `[{ anime: "", character: "Saitama", content: "" }, // 9 more]`,
+			response: `[{ anime: "", character: "Saitama", content: "" }, // 4 more]`,
 		},
 	},
 	{
 		heading: "Pagination",
 		isPremium: true,
 		subHeading:
-			"Pagination works only on the query endpoints. Default pagination count is 10 quotes per page.",
+			"Pagination works only on the query endpoints. Default pagination count is 5 quotes per page.",
 		link: "pagination",
 		codeSample: {
 			request: `fetch('${API_ORIGIN}?anime=naruto&page=2')
@@ -110,7 +110,7 @@ export const API_GUIDES = [
 
       // works on character queries too 👇
       // https://animechan.io/api/quotes?character=luffy&page=2`,
-			response: `[{ anime: "Naruto", character: "", content: "" }, // 9 more]`,
+			response: `[{ anime: "Naruto", character: "", content: "" }, // 4 more]`,
 		},
 	},
 ];
