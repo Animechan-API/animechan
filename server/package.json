@@ -37,9 +37,6 @@
 		"typescript": "^5.4.5",
 		"vitest": "^2.0.5"
 	},
-	"engines": {
-		"node": "19.9.0"
-	},
 	"prisma": {
 		"seed": "tsx scripts/seed.ts"
 	}

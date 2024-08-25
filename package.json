@@ -20,6 +20,6 @@
 		"concurrently": "^8.2.2"
 	},
 	"engines": {
-		"node": "19.9.0"
+		"node": "v20.17.0"
 	}
 }
