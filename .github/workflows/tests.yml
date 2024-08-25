@@ -3,11 +3,14 @@ name: Tests
 on:
   push:
     branches: [main]
+    paths:
+      - 'server/**/*.ts'
+      - 'server/test/**'
   pull_request:
     branches: [main]
-  paths:
-    - 'server/**/*.ts'
-    - 'server/test/**'
+    paths:
+      - 'server/**/*.ts'
+      - 'server/test/**'
 
 jobs:
   build:
