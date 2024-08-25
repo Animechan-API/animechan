@@ -20,7 +20,7 @@
 
 ## About
 
-[![Deployment](https://github.com/Animechan-API/animechan/actions/workflows/deploy.yml/badge.svg)](https://github.com/Animechan-API/animechan/actions/workflows/deploy.yml)
+[![Deployment](https://github.com/Animechan-API/animechan/actions/workflows/deploy.yml/badge.svg)](https://github.com/Animechan-API/animechan/actions/workflows/deploy.yml) [![Tests](https://github.com/Animechan-API/animechan/actions/workflows/tests.yml/badge.svg)](https://github.com/Animechan-API/animechan/actions/workflows/tests.yml)
 
 Animechan.io is an evolving project aims to deliver a variety of anime information through a straightforward API interface. Currently focused on providing anime quotes, we are actively developing new features to expand its offerings and transform it into a more comprehensive public API.
 
