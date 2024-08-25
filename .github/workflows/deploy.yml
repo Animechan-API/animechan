@@ -4,6 +4,11 @@ on:
   push:
     branches:
       - main
+    paths:
+      - 'server/**/*.ts'
+      - 'client/**/*.ts'
+      - 'client/**/*.tsx'
+      - 'deploy.sh'
 
 jobs:
   deploy:

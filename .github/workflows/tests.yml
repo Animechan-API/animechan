@@ -5,6 +5,9 @@ on:
     branches: [main]
   pull_request:
     branches: [main]
+  paths:
+    - 'server/**/*.ts'
+    - 'server/test/**'
 
 jobs:
   build:
