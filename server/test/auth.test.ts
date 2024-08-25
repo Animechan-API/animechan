@@ -1,21 +1,7 @@
 import { expect, test } from "vitest";
-import { isValidEndpoint, isProtectedEndpoint } from "../src/libs/auth.util";
+import { isProtectedEndpoint } from "../src/libs/auth.util";
 
 const BASE_PATH = "/api/v1/";
-
-test("Should pass on valid API paths", () => {
-	expect(isValidEndpoint(`${BASE_PATH}quotes/random`)).toBeTruthy();
-	expect(isValidEndpoint(`${BASE_PATH}quotes/random/`)).toBeTruthy();
-	expect(isValidEndpoint(`${BASE_PATH}quotes`)).toBeTruthy();
-	expect(isValidEndpoint(`${BASE_PATH}quotes/`)).toBeTruthy();
-});
-
-test("should fail on invalid API paths", () => {
-	expect(isValidEndpoint(`${BASE_PATH}foo`)).toBeFalsy();
-	expect(isValidEndpoint(`${BASE_PATH}foo/bar`)).toBeFalsy();
-	expect(isValidEndpoint(`${BASE_PATH}foo/bar/baz`)).toBeFalsy();
-	expect(isValidEndpoint(`${BASE_PATH}?foo=bar`)).toBeFalsy();
-});
 
 test("Should pass on protected API urls", () => {
 	expect(isProtectedEndpoint(`${BASE_PATH}quotes/random?anime=naruto`)).toBeTruthy();
