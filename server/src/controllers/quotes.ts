@@ -149,6 +149,11 @@ export const getQuotes = async (req: Request, res: Response) => {
 			take: 5,
 			skip: 5 * (pageNumber - 1),
 		});
+
+		if (quotes.length === 0) {
+			return res.status(404).json({ error: "No matching quotes found" });
+		}
+
 		const formattedQuotes = quotes.map((q) => formatPrismaResponse(q));
 		res.status(200).json(formattedQuotes);
 	} catch (error) {
