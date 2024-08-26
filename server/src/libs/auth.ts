@@ -2,7 +2,7 @@ import type { NextFunction, Request, Response } from "express";
 import { prisma } from "~/libs/prisma";
 import { rateLimitOnApiKey, rateLimitOnIP } from "~/libs/rate-limit";
 import { redisClient } from "~/libs/redis";
-import { isProtectedEndpoint, isValidEndpoint } from "./auth.util";
+import { isProtectedEndpoint } from "./auth.util";
 
 export const protectedRoutes = async (req: Request, res: Response, next: NextFunction) => {
 	// Verification for protected endpoints

@@ -25,7 +25,15 @@ const AUTH_CODE_SAMPLE = `
 
 `;
 
-export const API_GUIDES = [
+export interface IApiGuide {
+	heading: string;
+	subHeading?: string;
+	link: string;
+	isPremium: boolean;
+	isNewlyAdded?: boolean;
+	codeSample: { request: string; response: string };
+}
+export const API_GUIDES: IApiGuide[] = [
 	// Free Endpoints:
 	{
 		heading: "Get a random quote",
@@ -55,7 +63,6 @@ export const API_GUIDES = [
 		heading: "Get a random quote by anime title",
 		link: "random-quote-by-anime",
 		isPremium: true,
-		isNewlyAdded: true,
 		codeSample: {
 			request: `fetch("${API_ORIGIN}/random?anime=naruto")
           .then((response) => response.json())
@@ -67,7 +74,6 @@ export const API_GUIDES = [
 		heading: "Get a random quote by anime character",
 		link: "random-quote-by-character",
 		isPremium: true,
-		isNewlyAdded: true,
 		codeSample: {
 			request: `fetch("${API_ORIGIN}/random?character=saitama")
           .then((response) => response.json())

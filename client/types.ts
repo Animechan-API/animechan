@@ -1,4 +1,4 @@
-import type { Language } from 'prism-react-renderer';
+import type { Language } from "prism-react-renderer";
 
 export interface Quote {
 	anime: string;
@@ -9,14 +9,6 @@ export interface Quote {
 export interface CodeSample {
 	request: string;
 	response: string;
-}
-
-export interface Guide {
-	heading: string;
-	subHeading?: string;
-	link: string;
-	isNewlyAdded?: boolean;
-	codeSample: CodeSample;
 }
 
 export interface CodeBlock {
