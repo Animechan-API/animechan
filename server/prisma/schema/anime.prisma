@@ -6,11 +6,13 @@ model Anime {
 }
 
 model AnimeCharacter {
-  id      Int          @id @default(autoincrement())
-  name    String       @unique @db.VarChar(500)
-  animeId Int
-  anime   Anime        @relation(fields: [animeId], references: [id])
-  quotes  AnimeQuote[]
+  id         Int          @id @default(autoincrement())
+  name       String       @unique @db.VarChar(500)
+  animeId    Int
+  anime      Anime        @relation(fields: [animeId], references: [id])
+  quotes     AnimeQuote[]
+  birthDay   Int?
+  birthMonth Int?
 }
 
 model AnimeQuote {
