@@ -4,6 +4,7 @@ model Anime {
   animeCharacters AnimeCharacter[]
   quotes          AnimeQuote[]
   genres          GenresOnAnime[]
+  synopsis        String?          @db.Text()
 }
 
 model AnimeGenre {
