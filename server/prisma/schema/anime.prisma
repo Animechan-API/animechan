@@ -8,7 +8,7 @@ model Anime {
 
 model AnimeGenre {
   id     Int             @id @default(autoincrement())
-  name   String
+  name   String // default varchar(191)
   animes GenresOnAnime[]
 }
 
