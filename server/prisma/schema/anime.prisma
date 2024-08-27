@@ -3,6 +3,24 @@ model Anime {
   name            String           @unique @db.VarChar(500)
   animeCharacters AnimeCharacter[]
   quotes          AnimeQuote[]
+  genres          GenresOnAnime[]
+  synopsis        String?          @db.Text()
+	//episodeCount		Int?
+}
+
+model AnimeGenre {
+  id     Int             @id @default(autoincrement())
+  name   String // default varchar(191)
+  animes GenresOnAnime[]
+}
+
+model GenresOnAnime {
+  animeId Int
+  anime   Anime      @relation(fields: [animeId], references: [id])
+  genreId Int
+  genre   AnimeGenre @relation(fields: [genreId], references: [id])
+
+  @@id([animeId, genreId])
 }
 
 model AnimeCharacter {
