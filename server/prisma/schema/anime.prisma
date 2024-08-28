@@ -5,7 +5,7 @@ model Anime {
   quotes          AnimeQuote[]
   genres          GenresOnAnime[]
   synopsis        String?          @db.Text()
-	//episodeCount		Int?
+  // episodeCount Int?
 }
 
 model AnimeGenre {
@@ -16,7 +16,7 @@ model AnimeGenre {
 
 model GenresOnAnime {
   animeId Int
-  anime   Anime      @relation(fields: [animeId], references: [id])
+  anime   Anime      @relation(fields: [animeId], references: [id], onDelete: Cascade)
   genreId Int
   genre   AnimeGenre @relation(fields: [genreId], references: [id])
 
@@ -27,7 +27,7 @@ model AnimeCharacter {
   id         Int          @id @default(autoincrement())
   name       String       @unique @db.VarChar(500)
   animeId    Int
-  anime      Anime        @relation(fields: [animeId], references: [id])
+  anime      Anime        @relation(fields: [animeId], references: [id], onDelete: Cascade)
   quotes     AnimeQuote[]
   birthDay   Int?
   birthMonth Int?
@@ -38,6 +38,6 @@ model AnimeQuote {
   content          String         @db.Text()
   animeId          Int
   animeCharacterId Int
-  anime            Anime          @relation(fields: [animeId], references: [id])
-  animeCharacter   AnimeCharacter @relation(fields: [animeCharacterId], references: [id])
+  anime            Anime          @relation(fields: [animeId], references: [id], onDelete: Cascade)
+  animeCharacter   AnimeCharacter @relation(fields: [animeCharacterId], references: [id], onDelete: Cascade)
 }
