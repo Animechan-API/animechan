@@ -5,7 +5,7 @@ model Anime {
   quotes          AnimeQuote[]
   genres          GenresOnAnime[]
   synopsis        String?          @db.Text()
-  // episodeCount Int?
+  episodeCount    Int?
 }
 
 model AnimeGenre {
