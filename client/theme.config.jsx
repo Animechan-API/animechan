@@ -4,6 +4,6 @@ export default {
 	},
 	logo: <span>Animechan</span>,
 	project: {
-		link: "https://github.com/shuding/nextra",
+		link: "https://github.com/Animechan-API/animechan",
 	},
 };
