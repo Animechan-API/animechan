@@ -12,6 +12,7 @@
 		"@radix-ui/themes": "^3.1.3",
 		"@stripe/react-stripe-js": "^2.7.1",
 		"@stripe/stripe-js": "^3.4.0",
+		"@uidotdev/usehooks": "^2.4.1",
 		"canvas-confetti": "^1.9.3",
 		"clsx": "^1.2.1",
 		"next": "12.3.1",
