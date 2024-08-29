@@ -8,32 +8,45 @@ import {
 import { Badge, Callout, Flex, IconButton, Text } from "@radix-ui/themes";
 import clsx from "clsx";
 import { useId } from "react";
-import { CopyBlock, dracula } from "react-code-blocks";
 import Layout from "~/components/Layout";
 import Resource from "~/components/resource";
 
 const API_ORIGIN = "https://animechan.io/api/v1/quotes";
 
 const AUTH_CODE_SAMPLE = `
-		fetch('${API_ORIGIN}?anime=naruto', {
-			headers: {
-				x-api-key: 'YOUR_API_KEY',
-			}
-		})
-		.then((response) => response.json())
-		.then((quotes) => console.log(quotes));
-
+fetch(\`${API_ORIGIN}?anime=naruto\`, {
+    headers: {
+        'x-api-key': 'YOUR_API_KEY',
+    },
+})
+.then(response => response.json())
+.then(quotes => console.log(quotes));
 `;
+
+const auth_sub_heading = (
+	<>
+		Some of the Premium endpoints require an API key for authentication. The API key needs to be
+		passed in the request header as <code className="text-green-800">"x-api-key"</code>. Here is an
+		example:
+	</>
+);
 
 export interface IApiGuide {
 	heading: string;
-	subHeading?: string;
+	subHeading?: React.ReactNode;
 	link: string;
 	isPremium: boolean;
 	isNewlyAdded?: boolean;
-	codeSample: { request: string; response: string };
+	codeSample: { request: string; response?: string };
 }
 export const API_GUIDES: IApiGuide[] = [
+	{
+		heading: "Authentication",
+		subHeading: auth_sub_heading,
+		link: "#auth",
+		isPremium: false,
+		codeSample: { request: AUTH_CODE_SAMPLE },
+	},
 	// Free Endpoints:
 	{
 		heading: "Get a random quote",
@@ -169,9 +182,6 @@ export default function Guide() {
 						Premium endpoints that requires a API key to use.
 					</Text>
 					<Flex direction="column" gapY="3" className="text-green-800">
-						<a href="#auth">
-							<ThickArrowRightIcon className="inline-block" /> Authentication
-						</a>
 						{API_GUIDES.map((guide) => (
 							<a
 								href={`#${guide.link}`}
@@ -194,20 +204,6 @@ export default function Guide() {
 				<hr />
 
 				<div className="my-10 space-y-20">
-					<div>
-						<h2 className="lg:text-2xl text-xl font-bold mb-1">
-							<ThickArrowRightIcon className="inline-block mb-1" /> Authentication
-						</h2>
-						<Text>
-							Some of the Premium endpoints require an API key for authentication. The API key needs
-							to be passed in the request header as{" "}
-							<code className="text-green-800">"x-api-key"</code>. Here is an example:
-						</Text>
-						<div className="text-sm mt-2">
-							<CopyBlock language="javascript" text={AUTH_CODE_SAMPLE} theme={dracula} />
-						</div>
-					</div>
-
 					{API_GUIDES.map((guide) => (
 						<Resource {...guide} key={guide.heading} />
 					))}
