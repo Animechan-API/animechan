@@ -18,7 +18,7 @@ router.get("/quotes/random", getOneRandomQuote);
 router.get("/quotes", getQuotes);
 
 // Anime routes
-router.get("/anime/:name", getAnimeInformation);
-router.get("/anime/:name/summary", getAnimeInformation);
+router.get("/anime/:id", getAnimeInformation);
+router.get("/anime/:id/summary", getAnimeInformation);
 
 export default router;

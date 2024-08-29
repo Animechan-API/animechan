@@ -2,49 +2,79 @@ import type { Request, Response } from "express";
 import { prisma } from "~/libs/prisma";
 
 export const getAnimeInformation = async (req: Request, res: Response) => {
-	const animeName = req.params?.name;
+	const animeId = req.params?.id;
 
-	if (!animeName) {
-		return res.status(400).json({ error: "Invalid request parameters" });
+	if (!animeId) {
+		return res.status(400).json({
+			status: "error",
+			error: {
+				code: 400,
+				message: "Not a valid 'animeId'",
+			},
+		});
 	}
 
-	const anime = await prisma.anime.findFirst({
-		where: { name: animeName },
+	const anime = await prisma.anime.findUnique({
+		where: { id: Number.parseInt(animeId) },
 		include: { animeCharacters: true },
 	});
 
 	if (!anime) {
-		return res.status(404).json({ error: "No matching animes found" });
+		return res.status(404).json({
+			status: "error",
+			error: {
+				code: 404,
+				message: "No matching anime found",
+			},
+		});
 	}
 
 	return res.json({
-		id: anime.id,
-		name: anime.name,
-		characters: anime.animeCharacters.map((c) => c.name),
-		summary: anime.synopsis,
+		status: "success",
+		data: {
+			id: anime.id,
+			name: anime.name,
+			summary: anime.synopsis,
+			episodesCount: anime.episodeCount,
+			characters: anime.animeCharacters.map((c) => c.name),
+		},
 	});
 };
 
 export const getAnimeSummary = async (req: Request, res: Response) => {
-	const animeName = req.params?.name;
+	const animeId = req.params?.id;
 
-	if (!animeName) {
-		return res.status(400).json({ error: "Invalid request parameters" });
+	if (!animeId) {
+		return res.status(400).json({
+			status: "error",
+			error: {
+				code: 400,
+				message: "Not a valid 'animeId'",
+			},
+		});
 	}
 
-	const anime = await prisma.anime.findFirst({
-		where: { name: animeName },
+	const anime = await prisma.anime.findUnique({
+		where: { id: Number.parseInt(animeId) },
 		include: { animeCharacters: true },
 	});
 
 	if (!anime) {
-		return res.status(404).json({ error: "No matching animes found" });
+		return res.status(404).json({
+			status: "error",
+			error: {
+				code: 404,
+				message: "No matching anime found",
+			},
+		});
 	}
 
 	return res.json({
-		id: anime.id,
-		name: anime.name,
-		characters: anime.animeCharacters.map((c) => c.name),
-		summary: anime.synopsis,
+		status: "success",
+		data: {
+			id: anime.id,
+			name: anime.name,
+			summary: anime.synopsis,
+		},
 	});
 };
