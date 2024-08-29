@@ -73,6 +73,7 @@ export const getOneRandomQuote = async (req: Request, res: Response) => {
 
 		const randQuote = randQuoteQs[0];
 		const data = {
+			content: randQuote.content,
 			anime: {
 				id: randQuote.animeId,
 				name: randQuote.anime.name,
@@ -81,7 +82,6 @@ export const getOneRandomQuote = async (req: Request, res: Response) => {
 				id: randQuote.animeCharacterId,
 				name: randQuote.animeCharacter.name,
 			},
-			content: randQuote.content,
 		};
 		return sendSuccessResponse(res, data);
 	} catch (error) {
@@ -137,6 +137,7 @@ export const getQuotes = async (req: Request, res: Response) => {
 			take: 5,
 		});
 		const data = quotes.map((q) => ({
+			content: q.content,
 			anime: {
 				id: q.animeId,
 				name: q.anime.name,
@@ -145,7 +146,6 @@ export const getQuotes = async (req: Request, res: Response) => {
 				id: q.animeCharacterId,
 				name: q.animeCharacter.name,
 			},
-			content: q.content,
 		}));
 		return sendSuccessResponse(res, data);
 	}
@@ -178,6 +178,7 @@ export const getQuotes = async (req: Request, res: Response) => {
 		}
 
 		const data = quotes.map((q) => ({
+			content: q.content,
 			anime: {
 				id: q.animeId,
 				name: q.anime.name,
@@ -186,7 +187,6 @@ export const getQuotes = async (req: Request, res: Response) => {
 				id: q.animeCharacterId,
 				name: q.animeCharacter.name,
 			},
-			content: q.content,
 		}));
 		return sendSuccessResponse(res, data);
 	} catch (error) {
