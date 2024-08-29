@@ -29,6 +29,10 @@ export const getAnimeInformation = async (req: Request, res: Response) => {
 		});
 	}
 
+	const characters = anime.animeCharacters.map((c) => ({
+		id: c.id,
+		name: c.name,
+	}));
 	return res.json({
 		status: "success",
 		data: {
@@ -36,7 +40,7 @@ export const getAnimeInformation = async (req: Request, res: Response) => {
 			name: anime.name,
 			summary: anime.synopsis,
 			episodesCount: anime.episodeCount,
-			characters: anime.animeCharacters.map((c) => c.name),
+			characters: characters,
 		},
 	});
 };
