@@ -15,7 +15,6 @@ export const isProtectedEndpoint = (url: string) => {
 	const { pathname, searchParams } = new URL(url, "https://animechan.io");
 
 	const updatedPath = pathname.split("/").slice(0, 4).join("/");
-	console.log({ updatedPath });
 	if (PROTECTED_BASIC_ENDPOINTS.includes(updatedPath)) {
 		return true;
 	}
