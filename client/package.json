@@ -16,6 +16,8 @@
 		"canvas-confetti": "^1.9.3",
 		"clsx": "^1.2.1",
 		"next": "12.3.1",
+		"nextra": "^2.13.4",
+		"nextra-theme-docs": "^2.13.4",
 		"nookies": "^2.5.2",
 		"nprogress": "^0.2.0",
 		"password-validator": "^5.3.0",

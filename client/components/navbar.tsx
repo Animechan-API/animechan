@@ -19,7 +19,7 @@ export default function Navbar() {
 					</div>
 
 					<Flex gapX="4" align="center" justify="end">
-						<Link href="/docs">
+						<Link href="/docs-new">
 							<Button variant="ghost">
 								<Text weight="medium" size="3">
 									{windowSize.width <= 500 ? "Docs" : "Documentation"}
