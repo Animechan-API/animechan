@@ -18,17 +18,17 @@ export const getAnimeInformation = async (req: Request, res: Response) => {
 		return sendErrorResponse(res, { code: 404, message: "No matching anime found" });
 	}
 
-	const characters = anime.animeCharacters.map((c) => ({
-		id: c.id,
-		name: c.name,
-	}));
+	// const characters = anime.animeCharacters.map((c) => ({
+	// 	id: c.id,
+	// 	name: c.name,
+	// }));
 
 	const data = {
 		id: anime.id,
 		name: anime.name,
+		episodeCount: anime.episodeCount,
 		summary: anime.synopsis,
-		episodesCount: anime.episodeCount,
-		characters: characters,
+		// characters: characters,
 	};
 
 	return sendSuccessResponse(res, data);
