@@ -1,14 +1,32 @@
-# Get information of a given Anime ID
+# Get information of a given Anime
 
-It accepts a valid anime ID as path parameter in the endpoint and returns all information on that anime.
+It accepts a valid anime ID or name as path parameter in the endpoint and returns all information on that anime.
 
 ### Endpoint:
 ```sh
+# Using anime id
 /api/v1/anime/<anime_id>
+
+# Or using anime name
+/api/v1/anime/<anime_name>
 ```
 
+> Event tho both of the above approaches work. Quering a anime information via anime ID is generally recommended for more accurate and faster response. Using anime name can lead to inaccuate results if the name does not match properly.
+
 ### Return
-It will return an [`Anime`](/anime-object) object.
+It will return the following JSON object:
+
+```json
+{
+  "status": "success",
+  "data": {
+    "id": 10,
+    "name": "Durarara!!",
+    "episodeCount": 24,
+    "summary": "In Tokyo's downtown district of Ikebukuro, amidst many strange rumors and warnings of anonymous gangs and dangerous occupants, one urban legend stands out above the rest—the existence of a headless \"Black Rider\" who is said to be seen driving a jet-black motorcycle through the city streets.\n\nMikado Ryuugamine has always longed for the excitement of the city life, and an invitation from a childhood friend convinces him to move to Tokyo. Witnessing the Black Rider on his first day in the city, his wishes already seem to have been granted. But as supernatural events begin to occur, ordinary citizens like himself, along with Ikebukuro's most colorful inhabitants, are mixed up in the commotion breaking out in their city."
+  }
+}
+```
 
 ### Example:
 > We are using the built-in global `fetch` API here, which is both available in browser and NodeJS as of now. But you can use any other programming language or request lib.
