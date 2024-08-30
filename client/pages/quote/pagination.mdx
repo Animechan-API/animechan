@@ -1,0 +1,23 @@
+# Pagination
+
+Pagination is only a few supported endpoints that returns an array instead of a single object.
+
+Currently supported pagination endpoints:
+1. [Get quotes by anime](/quotes-via-anime)
+2. [Get quotes by character](/quotes-via-character)
+
+### Usage
+```sh
+/api/v1/quotes/?anime=<anime>&page=<page_number>
+```
+
+### Return
+It will return an `array` of [`Quote`](/quote) object
+
+### Example:
+> We are using the built-in global `fetch` API here, which is both available in browser and NodeJS as of now. But you can use any other programming language or request lib.
+
+```js
+const response = await fetch(`/api/v1/quotes?anime=${animeName}&page=${pageNumber}`)
+const quote = await response.json()
+```

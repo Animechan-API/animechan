@@ -1,0 +1,20 @@
+# Get a random quote via Character
+
+This endpoint a random quote from a given character name.
+
+### The endpoint:
+```sh
+/api/v1/quotes/random?character=<character>
+```
+
+### Return
+It will return a [`Quote`](/quote) object
+
+
+### Example:
+> We are using the built-in global `fetch` API here, which is both available in browser and NodeJS as of now. But you can use any other programming language or request lib.
+
+```js
+const response = await fetch(`/api/v1/quotes/random?character=${characterName}`)
+const quote = await response.json()
+```

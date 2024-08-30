@@ -1,0 +1,19 @@
+# Get information of a given Anime ID
+
+It accepts a valid anime ID as path parameter in the endpoint and returns all information on that anime.
+
+### Endpoint:
+```sh
+/api/v1/anime/<anime_id>
+```
+
+### Return
+It will return an [`Anime`](/anime-object) object.
+
+### Example:
+> We are using the built-in global `fetch` API here, which is both available in browser and NodeJS as of now. But you can use any other programming language or request lib.
+
+```js
+const response = await fetch(`/api/v1/anime/${animeId}`)
+const quote = await response.json()
+```

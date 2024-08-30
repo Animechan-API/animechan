@@ -1,0 +1,19 @@
+# Get quotes from an Character
+
+This endpoint returns 5 ordered quotes from a given Character name.
+
+### The endpoint:
+```sh
+/api/v1/quotes/?character=<character>
+```
+
+### Return
+It will return an `array` of [`Quote`](/quote) object
+
+### Example:
+> We are using the built-in global `fetch` API here, which is both available in browser and NodeJS as of now. But you can use any other programming language or request lib.
+
+```js
+const response = await fetch(`/api/v1/quotes?character=${characterName}`)
+const quote = await response.json()
+```

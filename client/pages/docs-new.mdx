@@ -1,3 +1,27 @@
+import { InfoCircledIcon, RocketIcon } from "@radix-ui/react-icons";
+import { Callout, Text } from "@radix-ui/themes";
+
 # Animechan API docs
 
-Here you will find all the currently available resources and API endpoints from Animechan. The API project is still under active development so expect to see new changes and features every week ✨
+<div style={{marginTop: '20px;'}}>
+	<Callout.Root size="1" color="blue">
+		<Callout.Icon>
+			<InfoCircledIcon />
+		</Callout.Icon>
+		<Callout.Text weight="medium">
+			<Text>All the free API endpoints has a default Rate Limit of 20 requests per hour only.</Text>
+		</Callout.Text>
+	</Callout.Root>
+
+
+	<Callout.Root size="1" mt="2">
+		<Callout.Icon>
+			<RocketIcon />
+		</Callout.Icon>
+		<Callout.Text weight="medium">
+			<Text>Get Premium API access for higher rate limits with other better features.</Text>
+		</Callout.Text>
+	</Callout.Root>
+</div>
+
+Here you will find all the currently available resources and API endpoints from Animechan. The API project is still under active development so expect to see new changes and features every week.

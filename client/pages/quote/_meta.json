@@ -1,0 +1,8 @@
+{
+	"index": "The `Quote` object",
+	"random": "Get a random quote",
+	"random-via-anime": "Get a random quote via anime",
+	"random-via-character": "Get a random quote via character",
+	"quotes-by-anime": "Get quotes by anime",
+	"quotes-by-character": "Get quotes by character"
+}

@@ -1,9 +1,4 @@
 {
 	"docs-new": "Overview",
-	"auth": "Authentication",
-	"quote-random": "Get random quotes",
-	"quotes-character": "Get quotes by character",
-	"quotes-anime": "Get quotes by anime",
-	"anime-info": "Get anime info",
-	"anime-summary": "Get anime summary"
+	"auth": "Authentication"
 }

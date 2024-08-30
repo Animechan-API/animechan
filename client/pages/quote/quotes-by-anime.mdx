@@ -1,0 +1,19 @@
+# Get 5 quotes from an Anime
+
+This endpoint returns 5 ordered quotes from a given Anime name.
+
+### The endpoint:
+```sh
+/api/v1/quotes/?anime=<anime_name>
+```
+
+### Return
+It will return an `array` of [`Quote`](/quote) object
+
+### Example:
+> We are using the built-in global `fetch` API here, which is both available in browser and NodeJS as of now. But you can use any other programming language or request lib.
+
+```js
+const response = await fetch(`/api/v1/quotes?anime=${animeName}`)
+const quote = await response.json()
+```
