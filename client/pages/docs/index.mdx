@@ -1,0 +1,37 @@
+import { InfoCircledIcon, RocketIcon, ThickArrowRightIcon, LockClosedIcon } from "@radix-ui/react-icons";
+import { Badge, Callout, Text } from "@radix-ui/themes";
+import Link from "next/link";
+import { Button } from "@radix-ui/themes";
+
+# Animechan API docs
+
+<div style={{marginTop: '20px;'}}>
+	<Callout.Root size="1" color="blue">
+		<Callout.Icon>
+			<InfoCircledIcon />
+		</Callout.Icon>
+		<Callout.Text weight="medium">
+			<Text>All the free API endpoints has a default Rate Limit of 20 requests per hour only.</Text>
+		</Callout.Text>
+	</Callout.Root>
+
+
+	<Callout.Root size="1" mt="2">
+		<Callout.Icon>
+			<InfoCircledIcon />
+		</Callout.Icon>
+		<Callout.Text weight="medium">
+			<Text>The Base URL (`BASE_URL`) for all API endpoint is: **`https://animechan.io/api/v1`**</Text>
+		</Callout.Text>
+	</Callout.Root>
+</div>
+
+Here you will find all the currently available resources and API endpoints from Animechan. The API project is still under active development so expect to see new changes and features every week.
+
+Some of the API endpoints are protected and requires a secrect API key to access them. You can learn more about how to get premium API key clicking the button below:<br/>
+
+<Link href="/get-premium">
+	<Button size="3">
+		<span>Get Premium API</span> <RocketIcon />
+	</Button>
+</Link>

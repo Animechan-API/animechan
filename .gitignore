@@ -3,6 +3,7 @@ node_modules
 yarn.lock
 Session.vim
 logs
+request.curl
 
 client/node_modules
 client/dist

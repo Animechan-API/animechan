@@ -1,84 +1,91 @@
 import type { Request, Response } from "express";
 import { prisma } from "~/libs/prisma";
+import { sendErrorResponse, sendSuccessResponse } from "./utils";
 
 export const getAnimeInformation = async (req: Request, res: Response) => {
-	const animeId = req.params?.id;
+	const identifier = req.params?.identifier;
 
-	if (!animeId) {
-		return res.status(400).json({
-			status: "error",
-			error: {
-				code: 400,
-				message: "Not a valid 'animeId'",
-			},
-		});
+	if (!identifier) {
+		return sendErrorResponse(res, { code: 400, message: "Not a valid 'animeId'" });
 	}
 
-	const anime = await prisma.anime.findUnique({
-		where: { id: Number.parseInt(animeId) },
-		include: { animeCharacters: true },
-	});
+	let anime = null;
+	const isNumeric = /^\d+$/.test(identifier);
+
+	if (isNumeric) {
+		// Query via ID
+		anime = await prisma.anime.findUnique({
+			where: { id: Number.parseInt(identifier) },
+			include: { animeCharacters: true },
+		});
+	} else {
+		// Query via name
+		anime = await prisma.anime.findFirst({
+			where: {
+				name: {
+					contains: identifier,
+				},
+			},
+			include: { animeCharacters: true },
+		});
+	}
 
 	if (!anime) {
-		return res.status(404).json({
-			status: "error",
-			error: {
-				code: 404,
-				message: "No matching anime found",
-			},
-		});
+		return sendErrorResponse(res, { code: 404, message: "No matching anime found" });
 	}
 
-	const characters = anime.animeCharacters.map((c) => ({
-		id: c.id,
-		name: c.name,
-	}));
-	return res.json({
-		status: "success",
-		data: {
-			id: anime.id,
-			name: anime.name,
-			summary: anime.synopsis,
-			episodesCount: anime.episodeCount,
-			characters: characters,
-		},
-	});
+	// const characters = anime.animeCharacters.map((c) => ({
+	// 	id: c.id,
+	// 	name: c.name,
+	// }));
+
+	const data = {
+		id: anime.id,
+		name: anime.name,
+		episodeCount: anime.episodeCount,
+		summary: anime.synopsis,
+		// characters: characters,
+	};
+
+	return sendSuccessResponse(res, data);
 };
 
 export const getAnimeSummary = async (req: Request, res: Response) => {
-	const animeId = req.params?.id;
+	const identifier = req.params?.identifier;
 
-	if (!animeId) {
-		return res.status(400).json({
-			status: "error",
-			error: {
-				code: 400,
-				message: "Not a valid 'animeId'",
-			},
-		});
+	if (!identifier) {
+		return sendErrorResponse(res, { code: 400, message: "Not a valid 'animeId'" });
 	}
 
-	const anime = await prisma.anime.findUnique({
-		where: { id: Number.parseInt(animeId) },
-		include: { animeCharacters: true },
-	});
+	let anime = null;
+	const isNumeric = /^\d+$/.test(identifier);
+
+	if (isNumeric) {
+		// Query via ID
+		anime = await prisma.anime.findUnique({
+			where: { id: Number.parseInt(identifier) },
+			include: { animeCharacters: true },
+		});
+	} else {
+		// Query via name
+		anime = await prisma.anime.findFirst({
+			where: {
+				name: {
+					contains: identifier,
+				},
+			},
+			include: { animeCharacters: true },
+		});
+	}
 
 	if (!anime) {
-		return res.status(404).json({
-			status: "error",
-			error: {
-				code: 404,
-				message: "No matching anime found",
-			},
-		});
+		return sendErrorResponse(res, { code: 404, message: "No matching anime found" });
 	}
 
-	return res.json({
-		status: "success",
-		data: {
-			id: anime.id,
-			name: anime.name,
-			summary: anime.synopsis,
-		},
-	});
+	const data = {
+		id: anime.id,
+		name: anime.name,
+		summary: anime.synopsis,
+	};
+	return sendSuccessResponse(res, data);
 };

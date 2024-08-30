@@ -1,0 +1,32 @@
+import { LockClosedIcon } from "@radix-ui/react-icons";
+import { Callout, Text } from "@radix-ui/themes";
+
+# Get a random quote via Character
+
+<Callout.Root size="1" color="orange">
+	<Callout.Icon>
+		<LockClosedIcon />
+	</Callout.Icon>
+	<Callout.Text weight="medium">
+		<Text>This is a protected endpoint. Authentication requried!</Text>
+	</Callout.Text>
+</Callout.Root>
+
+This endpoint a random quote from a given character name.
+
+### The endpoint:
+```sh
+/quotes/random?character=<character>
+```
+
+### Return
+It will return a [`Quote`](/quote) object
+
+
+### Example:
+> We are using the built-in global `fetch` API here, which is both available in browser and NodeJS as of now. But you can use any other programming language or request lib.
+
+```js
+const response = await fetch(`${BASE_URL}/quotes/random?character=Saitama`)
+const quote = await response.json()
+```

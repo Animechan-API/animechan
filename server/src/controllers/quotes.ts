@@ -1,7 +1,7 @@
 import type { Prisma } from "@prisma/client";
 import * as Sentry from "@sentry/node";
 import type { Request, Response } from "express";
-import { formatPrismaResponse } from "~/controllers/utils";
+import { sendErrorResponse, sendSuccessResponse } from "~/controllers/utils";
 import { prisma } from "~/libs/prisma";
 import { redisClient } from "~/libs/redis";
 
@@ -11,7 +11,7 @@ export const getOneRandomQuote = async (req: Request, res: Response) => {
 	const isAllowedParams = requestParams.every((param) => allowedParams.includes(param));
 
 	if (!isAllowedParams) {
-		return res.status(400).json({ error: "Invalid request parameters" });
+		return sendErrorResponse(res, { code: 400, message: "Invalid request parameters" });
 	}
 
 	const anime = req.query.anime as string;
@@ -57,24 +57,36 @@ export const getOneRandomQuote = async (req: Request, res: Response) => {
 		}
 
 		if (quoteCount === 0) {
-			return res.status(404).json({ error: "No matching quotes found" });
+			return sendErrorResponse(res, { code: 404, message: "No matching quote found" });
 		}
 
-		const randomInt = Math.floor(Math.random() * quoteCount);
-		const randomQuote = await prisma.animeQuote.findMany({
+		const randInt = Math.floor(Math.random() * quoteCount);
+		const randQuoteQs = await prisma.animeQuote.findMany({
 			take: 1,
-			skip: randomInt,
+			skip: randInt,
 			include: {
 				anime: true,
 				animeCharacter: true,
 			},
 			where: whereClause,
 		});
-		const formattedRandomQuote = formatPrismaResponse(randomQuote[0]);
-		res.status(200).json(formattedRandomQuote);
+
+		const randQuote = randQuoteQs[0];
+		const data = {
+			content: randQuote.content,
+			anime: {
+				id: randQuote.animeId,
+				name: randQuote.anime.name,
+			},
+			character: {
+				id: randQuote.animeCharacterId,
+				name: randQuote.animeCharacter.name,
+			},
+		};
+		return sendSuccessResponse(res, data);
 	} catch (error) {
 		Sentry.captureException(error);
-		res.status(500).json({ error: "Internal Server Error" });
+		return sendErrorResponse(res, { code: 500, message: "Internal server error" });
 	}
 };
 
@@ -84,7 +96,7 @@ export const getQuotes = async (req: Request, res: Response) => {
 	const isAllowedParams = requestParams.every((param) => allowedParams.includes(param));
 
 	if (!isAllowedParams) {
-		return res.status(400).json({ error: "Invalid request parameters" });
+		return sendErrorResponse(res, { code: 400, message: "Invalid request parameters" });
 	}
 
 	const anime = req.query.anime as string;
@@ -96,9 +108,10 @@ export const getQuotes = async (req: Request, res: Response) => {
 	// to paginate a route that simply returns random records each time.
 	if (!anime && !character) {
 		if (page) {
-			return res
-				.status(400)
-				.json({ error: "Pagination only works with anime and character parameters" });
+			return sendErrorResponse(res, {
+				code: 400,
+				message: "Pagination only works with anime and character parameters",
+			});
 		}
 
 		// No query parameters processing here
@@ -123,8 +136,18 @@ export const getQuotes = async (req: Request, res: Response) => {
 			skip: Math.floor(Math.random() * totalQuoteCount),
 			take: 5,
 		});
-		const formattedQuotes = quotes.map((q) => formatPrismaResponse(q));
-		return res.status(200).json(formattedQuotes);
+		const data = quotes.map((q) => ({
+			content: q.content,
+			anime: {
+				id: q.animeId,
+				name: q.anime.name,
+			},
+			character: {
+				id: q.animeCharacterId,
+				name: q.animeCharacter.name,
+			},
+		}));
+		return sendSuccessResponse(res, data);
 	}
 
 	try {
@@ -151,13 +174,23 @@ export const getQuotes = async (req: Request, res: Response) => {
 		});
 
 		if (quotes.length === 0) {
-			return res.status(404).json({ error: "No matching quotes found" });
+			return sendErrorResponse(res, { code: 404, message: "No matching quote found" });
 		}
 
-		const formattedQuotes = quotes.map((q) => formatPrismaResponse(q));
-		res.status(200).json(formattedQuotes);
+		const data = quotes.map((q) => ({
+			content: q.content,
+			anime: {
+				id: q.animeId,
+				name: q.anime.name,
+			},
+			character: {
+				id: q.animeCharacterId,
+				name: q.animeCharacter.name,
+			},
+		}));
+		return sendSuccessResponse(res, data);
 	} catch (error) {
 		Sentry.captureException(error);
-		res.status(500).json({ error: "Internal Server Error" });
+		return sendErrorResponse(res, { code: 500, message: "Internal server error" });
 	}
 };

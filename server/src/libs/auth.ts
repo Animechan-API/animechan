@@ -3,6 +3,7 @@ import { prisma } from "~/libs/prisma";
 import { rateLimitOnApiKey, rateLimitOnIP } from "~/libs/rate-limit";
 import { redisClient } from "~/libs/redis";
 import { isProtectedEndpoint } from "./auth.util";
+import { sendErrorResponse } from "~/controllers/utils";
 
 export const protectedRoutes = async (req: Request, res: Response, next: NextFunction) => {
 	// Verification for protected endpoints
@@ -12,7 +13,7 @@ export const protectedRoutes = async (req: Request, res: Response, next: NextFun
 		// Below we put all the validations if an potential API key
 		// is found in the incoming API request headers.
 		if (!reqApiKey.startsWith("ani-") || reqApiKey.length < 60) {
-			return res.status(401).json({ message: "Unauthorized. Invalid API key!" });
+			return sendErrorResponse(res, { code: 401, message: "Unauthorized. Invalid API key!" });
 		}
 
 		// Check if the API key is already cached in Redis store.
@@ -28,7 +29,7 @@ export const protectedRoutes = async (req: Request, res: Response, next: NextFun
 			});
 			if (!apiKeyObj) {
 				console.log("db check");
-				return res.status(401).json({ message: "Invalid API key" });
+				return sendErrorResponse(res, { code: 401, message: "Unauthorized. Invalid API key!" });
 			}
 		}
 		return rateLimitOnApiKey(reqApiKey)(req, res, next);
@@ -37,7 +38,7 @@ export const protectedRoutes = async (req: Request, res: Response, next: NextFun
 	// If no API key is provided and the requested endpoint is protected
 	// Return 401 immediately and end the request.
 	if (isProtectedEndpoint(req.originalUrl)) {
-		return res.status(401).json({ message: "Unauthorized. Missing API key!" });
+		return sendErrorResponse(res, { code: 401, message: "Unauthorized. Missing API key!" });
 	}
 
 	// If no API key is provided and the requested endpoint is FREE
