@@ -3,16 +3,32 @@ import { prisma } from "~/libs/prisma";
 import { sendErrorResponse, sendSuccessResponse } from "./utils";
 
 export const getAnimeInformation = async (req: Request, res: Response) => {
-	const animeId = req.params?.id;
+	const identifier = req.params?.identifier;
 
-	if (!animeId) {
+	if (!identifier) {
 		return sendErrorResponse(res, { code: 400, message: "Not a valid 'animeId'" });
 	}
 
-	const anime = await prisma.anime.findUnique({
-		where: { id: Number.parseInt(animeId) },
-		include: { animeCharacters: true },
-	});
+	let anime = null;
+	const isNumeric = /^\d+$/.test(identifier);
+
+	if (isNumeric) {
+		// Query via ID
+		anime = await prisma.anime.findUnique({
+			where: { id: Number.parseInt(identifier) },
+			include: { animeCharacters: true },
+		});
+	} else {
+		// Query via name
+		anime = await prisma.anime.findFirst({
+			where: {
+				name: {
+					contains: identifier,
+				},
+			},
+			include: { animeCharacters: true },
+		});
+	}
 
 	if (!anime) {
 		return sendErrorResponse(res, { code: 404, message: "No matching anime found" });
@@ -35,16 +51,32 @@ export const getAnimeInformation = async (req: Request, res: Response) => {
 };
 
 export const getAnimeSummary = async (req: Request, res: Response) => {
-	const animeId = req.params?.id;
+	const identifier = req.params?.identifier;
 
-	if (!animeId) {
+	if (!identifier) {
 		return sendErrorResponse(res, { code: 400, message: "Not a valid 'animeId'" });
 	}
 
-	const anime = await prisma.anime.findUnique({
-		where: { id: Number.parseInt(animeId) },
-		include: { animeCharacters: true },
-	});
+	let anime = null;
+	const isNumeric = /^\d+$/.test(identifier);
+
+	if (isNumeric) {
+		// Query via ID
+		anime = await prisma.anime.findUnique({
+			where: { id: Number.parseInt(identifier) },
+			include: { animeCharacters: true },
+		});
+	} else {
+		// Query via name
+		anime = await prisma.anime.findFirst({
+			where: {
+				name: {
+					contains: identifier,
+				},
+			},
+			include: { animeCharacters: true },
+		});
+	}
 
 	if (!anime) {
 		return sendErrorResponse(res, { code: 404, message: "No matching anime found" });
