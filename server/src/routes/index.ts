@@ -17,8 +17,8 @@ router.get("/health", (_req, res) => {
 router.get("/quotes/random", getOneRandomQuote);
 router.get("/quotes", getQuotes);
 
-// Anime routes
-router.get("/anime/:id", getAnimeInformation);
-router.get("/anime/:id/summary", getAnimeInformation);
+// Anime router
+router.get("/anime/:identifier", getAnimeInformation);
+router.get("/anime/:identifier/summary", getAnimeInformation);
 
 export default router;

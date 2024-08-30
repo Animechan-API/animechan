@@ -1,0 +1,14 @@
+# Authentication
+
+Some of the endpoints are protected and require a secret API key, which you can obtain by becoming a [premium member](/get-premium). Authentication with the `x-api-key` header is necessary to access these premium API endpoints that require the premium API key.
+
+Here is how to authenticate using a secret API key:
+
+```js
+const response = fetch(`${BASE_URL}/quotes/random/1`, {
+		headers: {
+				'x-api-key': 'YOUR_API_KEY',
+		},
+});
+const quote = await response.json()
+```

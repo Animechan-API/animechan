@@ -1,33 +1,20 @@
-type Quote =
-	| ({
-			anime: {
-				id: number;
-				name: string;
-			};
-			animeCharacter: {
-				id: number;
-				name: string;
-				animeId: number;
-			};
-	  } & {
-			id: number;
-			content: string;
-			animeId: number;
-			animeCharacterId: number;
-	  })
-	| null;
+import type { Response } from "express";
 
-interface FormattedQuote {
-	anime: string;
-	character: string;
-	content: string;
+type DataType<T> = Record<string, T>;
+export const sendSuccessResponse = <T>(res: Response, data: DataType<T> | Record<string, T>[]) => {
+	return res.status(200).json({
+		status: "success",
+		data: data,
+	});
+};
+
+interface IErrorOptions {
+	code: number;
+	message: string;
 }
-
-export const formatPrismaResponse = (quote: Quote): FormattedQuote | null => {
-	if (!quote) return null;
-	return {
-		anime: quote.anime.name,
-		character: quote.animeCharacter.name,
-		content: quote.content,
-	};
+export const sendErrorResponse = (res: Response, { code, message }: IErrorOptions) => {
+	return res.status(code).json({
+		status: "error",
+		error: { code, message },
+	});
 };
