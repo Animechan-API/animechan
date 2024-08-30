@@ -26,7 +26,7 @@ export default function Layout({ children, metaInfo }: Props) {
 
 	const meta: MetaInformation = {
 		title: "Animechan – Anime quotes API",
-		description: "Animechan is a free online REST API for anime quotes.",
+		description: "Animechan is a REST API for anime information and quotes.",
 		image: `${host}/image/home.jpeg`,
 		type: "website",
 		...metaInfo,

@@ -45,7 +45,7 @@ export default function Home() {
 				<Image src="/logo.png" width="200" height="200" priority />
 				<h1 className="lg:text-7xl text-6xl font-display font-bold text-shadow-md">Anime-chan</h1>
 				<div className="py-5">
-					<h2 className="text-2xl">A restful API serving quality anime quotes</h2>
+					<h2 className="text-2xl">A restful API serving quality anime information and quotes.</h2>
 				</div>
 
 				<Link href="/docs">
