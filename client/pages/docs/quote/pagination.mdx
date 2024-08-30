@@ -8,7 +8,7 @@ Currently supported pagination endpoints:
 
 ### Usage
 ```sh
-/api/v1/quotes/?anime=<anime>&page=<page_number>
+/quotes/?anime=<anime>&page=<page_number>
 ```
 
 ### Return
@@ -18,6 +18,6 @@ It will return an `array` of [`Quote`](/quote) object
 > We are using the built-in global `fetch` API here, which is both available in browser and NodeJS as of now. But you can use any other programming language or request lib.
 
 ```js
-const response = await fetch(`/api/v1/quotes?anime=${animeName}&page=${pageNumber}`)
+const response = await fetch(`${BASE_URL}/quotes?anime=${animeName}&page=2`)
 const quote = await response.json()
 ```

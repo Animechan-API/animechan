@@ -1,10 +1,22 @@
-# Get 5 quotes from an Anime
+import { LockClosedIcon } from "@radix-ui/react-icons";
+import { Callout, Text } from "@radix-ui/themes";
+
+# Get quotes from an Anime
+
+<Callout.Root size="1" color="orange">
+	<Callout.Icon>
+		<LockClosedIcon />
+	</Callout.Icon>
+	<Callout.Text weight="medium">
+		<Text>This is a protected endpoint. Authentication requried!</Text>
+	</Callout.Text>
+</Callout.Root>
 
 This endpoint returns 5 ordered quotes from a given Anime name.
 
 ### The endpoint:
 ```sh
-/api/v1/quotes/?anime=<anime_name>
+/quotes/?anime=<anime_name>
 ```
 
 ### Return
@@ -14,6 +26,6 @@ It will return an `array` of [`Quote`](/quote) object
 > We are using the built-in global `fetch` API here, which is both available in browser and NodeJS as of now. But you can use any other programming language or request lib.
 
 ```js
-const response = await fetch(`/api/v1/quotes?anime=${animeName}`)
+const response = await fetch(`${BASE_URL}/quotes?anime=ReLIFE`)
 const quote = await response.json()
 ```

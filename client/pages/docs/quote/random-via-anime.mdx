@@ -1,10 +1,22 @@
+import { LockClosedIcon } from "@radix-ui/react-icons";
+import { Callout, Text } from "@radix-ui/themes";
+
 # Get a random quote via Anime
 
 This endpoint returns random quote from a given Anime name.
 
+<Callout.Root size="1" color="orange">
+	<Callout.Icon>
+		<LockClosedIcon />
+	</Callout.Icon>
+	<Callout.Text weight="medium">
+		<Text>This is a protected endpoint. Authentication requried!</Text>
+	</Callout.Text>
+</Callout.Root>
+
 ### The endpoint:
 ```sh
-/api/v1/quotes/random?anime=<anime_name>
+/quotes/random?anime=<anime_name>
 ```
 
 ### Return
@@ -14,6 +26,6 @@ It will return a [`Quote`](/quote) object
 > We are using the built-in global `fetch` API here, which is both available in browser and NodeJS as of now. But you can use any other programming language or request lib.
 
 ```js
-const response = await fetch(`/api/v1/quotes/random?anime=${animeName}`)
+const response = await fetch(`${BASE_URL}/quotes/random?anime=ReLife`)
 const quote = await response.json()
 ```

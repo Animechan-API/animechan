@@ -1,14 +1,26 @@
+import { LockClosedIcon } from "@radix-ui/react-icons";
+import { Callout, Text } from "@radix-ui/themes";
+
 # Get information of a given Anime
+
+<Callout.Root size="1" color="orange">
+	<Callout.Icon>
+		<LockClosedIcon />
+	</Callout.Icon>
+	<Callout.Text weight="medium">
+		<Text>This is a protected endpoint. Authentication requried!</Text>
+	</Callout.Text>
+</Callout.Root>
 
 It accepts a valid anime ID or name as path parameter in the endpoint and returns all information on that anime.
 
 ### Endpoint:
 ```sh
 # Using anime id
-/api/v1/anime/<anime_id>
+/anime/<anime_id>
 
 # Or using anime name
-/api/v1/anime/<anime_name>
+/anime/<anime_name>
 ```
 
 > Event tho both of the above approaches work. Quering an anime information via anime ID is generally recommended for more accurate and faster response. Using anime name can lead to inaccuate results if the name does not match properly.
@@ -20,10 +32,10 @@ It will return the following JSON object:
 {
   "status": "success",
   "data": {
-    "id": 10,
-    "name": "Durarara!!",
-    "episodeCount": 24,
-    "summary": "In Tokyo's downtown district of Ikebukuro, amidst many strange rumors and warnings of anonymous gangs and dangerous occupants, one urban legend stands out above the rest—the existence of a headless \"Black Rider\" who is said to be seen driving a jet-black motorcycle through the city streets.\n\nMikado Ryuugamine has always longed for the excitement of the city life, and an invitation from a childhood friend convinces him to move to Tokyo. Witnessing the Black Rider on his first day in the city, his wishes already seem to have been granted. But as supernatural events begin to occur, ordinary citizens like himself, along with Ikebukuro's most colorful inhabitants, are mixed up in the commotion breaking out in their city."
+    "id": 188,
+    "name": "One Punch Man",
+    "episodeCount": 12,
+    "summary": "The seemingly unimpressive Saitama has a rather unique hobby: being a hero. In order to pursue his childhood dream, Saitama relentlessly trained for three years, losing all of his hair in the process. Now, Saitama is so powerful, he can defeat any enemy with just one punch. However, having no one capable of matching his strength has led Saitama to an unexpected problem—he is no longer able to enjoy the thrill of battling and has become quite bored. One day, Saitama catches the attention of 19-year-old cyborg Genos, who witnesses his power and wishes to become Saitama's disciple. Genos proposes that the two join the Hero Association in order to become certified heroes that will be recognized for their positive contributions to society. Saitama, who is shocked that no one knows who he is, quickly agrees. Meeting new allies and taking on new foes, Saitama embarks on a new journey as a member of the Hero Association to experience the excitement of battle he once felt."
   }
 }
 ```
@@ -32,9 +44,9 @@ It will return the following JSON object:
 > We are using the built-in global `fetch` API here, which is both available in browser and NodeJS as of now. But you can use any other programming language or request lib.
 
 ```js
-const response = await fetch(`/api/v1/anime/${animeId}`)
+const response = await fetch(`${BASE_URL}/anime/188`)
 // or
-const response = await fetch(`/api/v1/anime/${animeName}`)
+const response = await fetch(`${BASE_URL}/anime/One Punch Man`)
 
 const quote = await response.json()
 ```

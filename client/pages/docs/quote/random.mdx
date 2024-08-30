@@ -4,7 +4,7 @@ This endpoint simply a random quote from any anime/character.
 
 ### The endpoint:
 ```sh
-/api/v1/quotes/random
+/quotes/random
 ```
 
 ### Return
@@ -14,6 +14,6 @@ It will return a [`Quote`](/quote) object
 > We are using the built-in global `fetch` API here, which is both available in browser and NodeJS as of now. But you can use any other programming language or request lib.
 
 ```js
-const response = await fetch('/api/v1/quotes/random')
+const response = await fetch('/quotes/random')
 const quote = await response.json()
 ```
