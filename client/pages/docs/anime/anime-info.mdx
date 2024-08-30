@@ -11,7 +11,7 @@ It accepts a valid anime ID or name as path parameter in the endpoint and return
 /api/v1/anime/<anime_name>
 ```
 
-> Event tho both of the above approaches work. Quering a anime information via anime ID is generally recommended for more accurate and faster response. Using anime name can lead to inaccuate results if the name does not match properly.
+> Event tho both of the above approaches work. Quering an anime information via anime ID is generally recommended for more accurate and faster response. Using anime name can lead to inaccuate results if the name does not match properly.
 
 ### Return
 It will return the following JSON object:
@@ -33,5 +33,8 @@ It will return the following JSON object:
 
 ```js
 const response = await fetch(`/api/v1/anime/${animeId}`)
+// or
+const response = await fetch(`/api/v1/anime/${animeName}`)
+
 const quote = await response.json()
 ```
