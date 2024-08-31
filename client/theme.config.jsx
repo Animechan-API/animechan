@@ -1,6 +1,5 @@
 import { Text } from "@radix-ui/themes";
 
-
 export default {
 	nextThemes: {
 		defaultTheme: "light",
