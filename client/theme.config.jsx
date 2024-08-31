@@ -12,4 +12,7 @@ export default {
 	project: {
 		link: "https://github.com/Animechan-API/animechan",
 	},
+	search: {
+		component: null,
+	},
 };
