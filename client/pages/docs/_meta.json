@@ -1,4 +1,18 @@
 {
-	"index": "Overview",
-	"auth": "Authentication"
+	"index": {
+		"title": "Overview",
+		"theme": {
+			"footer": false,
+			"sidebar": true,
+			"toc": false
+		}
+	},
+	"auth": {
+		"title": "Authentication",
+		"theme": {
+			"footer": false,
+			"sidebar": true,
+			"toc": false
+		}
+	}
 }
