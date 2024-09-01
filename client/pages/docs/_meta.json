@@ -2,7 +2,7 @@
 	"index": {
 		"title": "Overview",
 		"theme": {
-			"footer": false,
+			"footer": true,
 			"sidebar": true,
 			"toc": false
 		}
@@ -10,7 +10,7 @@
 	"auth": {
 		"title": "Authentication",
 		"theme": {
-			"footer": false,
+			"footer": true,
 			"sidebar": true,
 			"toc": false
 		}

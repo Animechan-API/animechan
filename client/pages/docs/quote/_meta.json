@@ -2,7 +2,7 @@
 	"index": {
 		"title": "The `Quote` object",
 		"theme": {
-			"footer": false,
+			"footer": true,
 			"sidebar": true,
 			"toc": false
 		}
@@ -10,7 +10,7 @@
 	"random": {
 		"title": "Get random quote",
 		"theme": {
-			"footer": false,
+			"footer": true,
 			"sidebar": true,
 			"toc": false
 		}
@@ -18,7 +18,7 @@
 	"random-via-anime": {
 		"title": "Get random quote via anime",
 		"theme": {
-			"footer": false,
+			"footer": true,
 			"sidebar": true,
 			"toc": false
 		}
@@ -26,7 +26,7 @@
 	"random-via-character": {
 		"title": "Get random quote via character",
 		"theme": {
-			"footer": false,
+			"footer": true,
 			"sidebar": true,
 			"toc": false
 		}
@@ -34,7 +34,7 @@
 	"quotes-by-anime": {
 		"title": "Get quotes by anime",
 		"theme": {
-			"footer": false,
+			"footer": true,
 			"sidebar": true,
 			"toc": false
 		}
@@ -42,7 +42,7 @@
 	"quotes-by-character": {
 		"title": "Get quotes by character",
 		"theme": {
-			"footer": false,
+			"footer": true,
 			"sidebar": true,
 			"toc": false
 		}
@@ -50,7 +50,7 @@
 	"pagination": {
 		"title": "Pagination",
 		"theme": {
-			"footer": false,
+			"footer": true,
 			"sidebar": true,
 			"toc": false
 		}

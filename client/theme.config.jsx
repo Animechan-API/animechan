@@ -1,4 +1,5 @@
 import { Text } from "@radix-ui/themes";
+import Footer from "components/footer";
 
 export default {
 	nextThemes: {
@@ -15,4 +16,9 @@ export default {
 	search: {
 		component: null,
 	},
+	footer: {
+		component: (
+			<Footer></Footer>
+		)
+	}
 };

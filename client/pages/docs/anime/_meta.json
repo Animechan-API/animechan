@@ -2,7 +2,7 @@
 	"index": {
 		"title": "Get anime information",
 		"theme": {
-			"footer": false,
+			"footer": true,
 			"sidebar": true,
 			"toc": false
 		}
