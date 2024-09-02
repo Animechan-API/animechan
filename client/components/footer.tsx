@@ -4,7 +4,7 @@ import { Flex, Section, Separator, Text } from "@radix-ui/themes";
 export default function Footer() {
 	return (
 		<footer className="py-5 text-center text-sm text-gray-700">
-			<Section size="2" maxWidth="500px" mx="auto">
+			<Section className="py-2" size="2" maxWidth="500px" mx="auto">
 				<Separator my="3" size="4" mb="6" />
 				<Text>
 					Created ❤ by <a href="https://rocktimsaikia.dev/">rocktimsaikia</a> ©{" "}

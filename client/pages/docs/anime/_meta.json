@@ -1,3 +1,6 @@
 {
-	"index": "Get anime information"
+	"index": {
+		"title": "Get anime information"
+	}
 }
+
