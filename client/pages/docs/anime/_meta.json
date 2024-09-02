@@ -1,10 +1,5 @@
 {
 	"index": {
-		"title": "Get anime information",
-		"theme": {
-			"footer": true,
-			"sidebar": true,
-			"toc": false
-		}
+		"title": "Get anime information"
 	}
 }
