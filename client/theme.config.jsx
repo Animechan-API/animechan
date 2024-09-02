@@ -17,14 +17,12 @@ export default {
 		component: null,
 	},
 	footer: {
-		component: (
-			<Footer></Footer>
-		)
+		component: <Footer />,
 	},
 	editLink: {
-		component: null
+		component: null,
 	},
 	feedback: {
-		content: null
-	}
+		content: null,
+	},
 };
