@@ -20,5 +20,11 @@ export default {
 		component: (
 			<Footer></Footer>
 		)
+	},
+	editLink: {
+		component: null
+	},
+	feedback: {
+		content: null
 	}
 };
