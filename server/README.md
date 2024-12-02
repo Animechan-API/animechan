@@ -1,26 +1,28 @@
 ## Prisma commands
 
-All these commands should be only run on development environment.
+> [!IMPORTANT]
+> All these commands should be only run on development environment.
 
 ```sh
 # Seed the database
 pnpm prisma:seed
 
 # Generate/update the Prisma client
-pnpm prisma:generate
+pnpm prisma generate
 
 # Create migration files and apply them
-pnpm prisma:migrate:dev
+pnpm prisma migrate dev
 
 # Reset the database
-pnpm prisma:migrate:reset
+pnpm prisma migrate reset
 ```
 
-This is the only production command.
+> [!IMPORTANT]
+> This is the only production command.
 
 ```sh
 # Apply migrations.
-pnpm prisma:migrate:deploy
+pnpm prisma migrate deploy
 ```
 
 ## PM2 commands

@@ -1,6 +1,7 @@
 model Anime {
   id              Int              @id @default(autoincrement())
   name            String           @unique @db.VarChar(500)
+  altName         String?          @unique @db.VarChar(500)
   animeCharacters AnimeCharacter[]
   quotes          AnimeQuote[]
   genres          GenresOnAnime[]
