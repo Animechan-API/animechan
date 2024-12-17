@@ -42,6 +42,7 @@ export const getAnimeInformation = async (req: Request, res: Response) => {
 	const data = {
 		id: anime.id,
 		name: anime.name,
+		altName: anime.altName,
 		episodeCount: anime.episodeCount,
 		summary: anime.synopsis,
 		// characters: characters,
@@ -85,6 +86,7 @@ export const getAnimeSummary = async (req: Request, res: Response) => {
 	const data = {
 		id: anime.id,
 		name: anime.name,
+		altName: anime.altName,
 		summary: anime.synopsis,
 	};
 	return sendSuccessResponse(res, data);

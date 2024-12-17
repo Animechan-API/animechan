@@ -77,6 +77,7 @@ export const getOneRandomQuote = async (req: Request, res: Response) => {
 			anime: {
 				id: randQuote.animeId,
 				name: randQuote.anime.name,
+				altName: randQuote.anime.altName,
 			},
 			character: {
 				id: randQuote.animeCharacterId,
@@ -141,6 +142,7 @@ export const getQuotes = async (req: Request, res: Response) => {
 			anime: {
 				id: q.animeId,
 				name: q.anime.name,
+				altName: q.anime.altName,
 			},
 			character: {
 				id: q.animeCharacterId,
@@ -182,6 +184,7 @@ export const getQuotes = async (req: Request, res: Response) => {
 			anime: {
 				id: q.animeId,
 				name: q.anime.name,
+				altName: q.anime.name,
 			},
 			character: {
 				id: q.animeCharacterId,
