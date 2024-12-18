@@ -1,4 +1,3 @@
-import Link from "next/link";
 import React, { useId } from "react";
 import Layout from "~/components/Layout";
 
@@ -13,9 +12,9 @@ const faqs = [
 		answer: (
 			<>
 				Visit our{" "}
-				<Link href="/get-premium" className="underline text-green-700">
+				<a href="/get-premium" className="underline text-green-700">
 					Subscription Page
-				</Link>{" "}
+				</a>{" "}
 				and choose the premium plan for $5/month. Follow the instructions to set up your payment
 				through Stripe.
 			</>

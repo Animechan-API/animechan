@@ -1,7 +1,6 @@
 import { PlayIcon, RocketIcon } from "@radix-ui/react-icons";
 import { Button, Callout, Section, Text } from "@radix-ui/themes";
 import Image from "next/image";
-import Link from "next/link";
 import { useState } from "react";
 import { Element } from "react-scroll";
 import stringifyObject from "stringify-object";
@@ -48,17 +47,17 @@ export default function Home() {
 					<h2 className="text-2xl">A restful API serving quality anime information and quotes.</h2>
 				</div>
 
-				<Link href="/docs">
+				<a href="/docs">
 					<Button variant="surface" size="3" mr="4">
 						Get Started
 					</Button>
-				</Link>
+				</a>
 
-				<Link href="/get-premium">
+				<a href="/get-premium">
 					<Button size="3">
 						Get Premium API <RocketIcon />
 					</Button>
-				</Link>
+				</a>
 			</Section>
 
 			<Element name="tryThis">
