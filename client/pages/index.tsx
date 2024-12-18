@@ -42,9 +42,11 @@ export default function Home() {
 		<Layout>
 			<Section className="text-center">
 				<Image src="/logo.png" width="200" height="200" priority />
-				<h1 className="lg:text-7xl text-6xl font-display font-bold text-shadow-md">Anime-chan</h1>
+				<div className="lg:text-7xl text-6xl font-display font-bold text-shadow-md">Anime-chan</div>
 				<div className="py-5">
-					<h2 className="text-2xl">A restful API serving quality anime information and quotes.</h2>
+					<h1 className="text-2xl">
+						Anime-chan is a API service for curated anime information and quotes.
+					</h1>
 				</div>
 
 				<a href="/docs">
