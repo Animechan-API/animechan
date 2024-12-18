@@ -87,16 +87,6 @@ export default function Home() {
 					</Button>
 
 					<CodeBlock {...responseCodeBlock} />
-
-					{randomQuote && (
-						<p className="mt-3 text-md">
-							Here is {clickCount > 1 ? "another" : "a"} random quote by -{" "}
-							<span className="font-semibold">
-								{randomQuote?.character} <span className="font-normal">from</span>{" "}
-								{randomQuote?.anime} 😃 🎉
-							</span>
-						</p>
-					)}
 				</div>
 			</Element>
 		</Layout>
