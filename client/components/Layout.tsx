@@ -19,14 +19,13 @@ interface Props {
 export default function Layout({ children, metaInfo }: Props) {
 	const router = useRouter();
 
-	const host =
-		process.env.NODE_ENV !== "production" ? "http://localhost:3000" : "https://animechan.io";
+	const host = "https://animechan.io";
 
 	const currentPath = host + router.asPath;
 
 	const meta: MetaInformation = {
 		title: "Animechan – Anime quotes API",
-		description: "Animechan is a REST API for anime information and quotes.",
+		description: "Animechan is a API service for curated anime information and quotes.",
 		image: `${host}/image/home.jpeg`,
 		type: "website",
 		...metaInfo,
