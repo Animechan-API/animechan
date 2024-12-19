@@ -6,6 +6,7 @@ import { Element } from "react-scroll";
 import stringifyObject from "stringify-object";
 import CodeBlock from "~/components/codeblock";
 import Layout from "~/components/Layout";
+import { SPLITBEE_EVENTS } from "~/constants/common";
 import type { CodeBlock as CodeBlockType, Quote } from "~/types";
 
 export default function Home() {
@@ -55,7 +56,7 @@ export default function Home() {
 					</Button>
 				</a>
 
-				<a href="/get-premium">
+				<a data-splitbee-event={SPLITBEE_EVENTS.PREMIUM_CTA} href="/get-premium">
 					<Button size="3">
 						Get Premium API <RocketIcon />
 					</Button>
@@ -81,7 +82,13 @@ export default function Home() {
 
 					<CodeBlock {...requestCodeBlock} />
 
-					<Button loading={fetching} disabled={fetching} onClick={handleClick} my="2">
+					<Button
+						data-splitbee-event={SPLITBEE_EVENTS.RUN_CODE}
+						loading={fetching}
+						disabled={fetching}
+						onClick={handleClick}
+						my="2"
+					>
 						<PlayIcon />
 						Run code
 					</Button>

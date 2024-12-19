@@ -1,6 +1,7 @@
 import { RocketIcon } from "@radix-ui/react-icons";
 import { Button, Flex, Text } from "@radix-ui/themes";
 import { useWindowSize } from "@uidotdev/usehooks";
+import { SPLITBEE_EVENTS } from "~/constants/common";
 
 export default function Navbar() {
 	const windowSize = useWindowSize();
@@ -26,7 +27,7 @@ export default function Navbar() {
 							</Button>
 						</a>
 
-						<a href="/get-premium">
+						<a data-splitbee-event={SPLITBEE_EVENTS.PREMIUM_CTA} href="/get-premium">
 							<Button>
 								Get Premium API <RocketIcon />
 							</Button>

@@ -1,6 +1,7 @@
 import { InfoCircledIcon, RocketIcon, ThickArrowRightIcon, LockClosedIcon } from "@radix-ui/react-icons";
 import { Badge, Callout, Text } from "@radix-ui/themes";
 import { Button } from "@radix-ui/themes";
+import { SPLITBEE_EVENTS } from "~/constants/common";
 
 # Animechan API docs
 
@@ -29,7 +30,7 @@ Here you will find all the currently available resources and API endpoints from 
 
 Some of the API endpoints are protected and requires a secrect API key to access them. You can learn more about how to get premium API key clicking the button below:<br/>
 
-<a href="/get-premium">
+<a data-splitbee-event={SPLITBEE_EVENTS.PREMIUM_CTA} href="/get-premium">
 	<Button size="3">
 		<span>Get Premium API</span> <RocketIcon />
 	</Button>

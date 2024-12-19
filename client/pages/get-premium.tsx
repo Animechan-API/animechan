@@ -7,6 +7,7 @@ import {
 } from "@radix-ui/react-icons";
 import { Callout, Container, Flex, Section, Text } from "@radix-ui/themes";
 import Layout from "~/components/Layout";
+import { SPLITBEE_EVENTS } from "~/constants/common";
 
 export default function GetPremium() {
 	return (
@@ -54,6 +55,7 @@ export default function GetPremium() {
 							<Text>
 								1. Go to our buy me a coffee page here:
 								<a
+									data-splitbee-event={SPLITBEE_EVENTS.BMAC_LINK}
 									href="https://buymeacoffee.com/animechan_api"
 									className="block text-blue-500 underline underline-offset-2"
 									target="_blank"
@@ -83,7 +85,7 @@ export default function GetPremium() {
 									<p>
 										Check how to make authenticated requests with the API key{" "}
 										<ThickArrowRightIcon className="inline-block" />
-										<a href="/docs" className="text-blue-500 font-semibold">
+										<a href="/docs/auth" className="text-blue-500 font-semibold">
 											here.
 										</a>
 									</p>
