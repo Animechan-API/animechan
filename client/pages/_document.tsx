@@ -13,6 +13,7 @@ export default function Document() {
 					src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5475485771562496"
 					crossOrigin="anonymous"
 				/>
+				<script async src="https://cdn.splitbee.io/sb.js" />
 			</Head>
 			<body>
 				<Main />
