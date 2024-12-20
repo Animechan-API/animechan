@@ -44,7 +44,7 @@ export default function Home() {
 			<Section className="text-center">
 				<Image src="/logo.png" width="200" height="200" priority />
 				<div className="lg:text-7xl text-6xl font-display font-bold text-shadow-md">Animechan</div>
-				<div className="py-5">
+				<div className="py-5 px-4">
 					<Heading as="h1">
 						Your Ultimate API for Anime Quotes & Comprehensive Anime Information
 					</Heading>
