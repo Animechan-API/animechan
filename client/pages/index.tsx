@@ -1,5 +1,5 @@
 import { PlayIcon, RocketIcon } from "@radix-ui/react-icons";
-import { Button, Callout, Section, Text } from "@radix-ui/themes";
+import { Button, Callout, Heading, Section, Text } from "@radix-ui/themes";
 import Image from "next/image";
 import { useState } from "react";
 import { Element } from "react-scroll";
@@ -45,9 +45,13 @@ export default function Home() {
 				<Image src="/logo.png" width="200" height="200" priority />
 				<div className="lg:text-7xl text-6xl font-display font-bold text-shadow-md">Animechan</div>
 				<div className="py-5">
-					<h1 className="text-2xl">
-						Animechan is a API service for curated anime information and quotes.
-					</h1>
+					<Heading as="h1">
+						Your Ultimate API for Anime Quotes & Comprehensive Anime Information
+					</Heading>
+					<h2 className="mt-4 text-lg lg:max-w-2xl lg:mx-auto text-gray-800">
+						Explore a rich collection of anime quotes, character details, and series information.
+						Perfect for developers, fans, and enthusiasts.
+					</h2>
 				</div>
 
 				<a href="/docs">

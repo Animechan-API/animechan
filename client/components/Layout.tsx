@@ -8,7 +8,7 @@ interface MetaInformation {
 	title: string;
 	description: string;
 	image: string;
-	type: "website";
+	type: string;
 }
 
 interface Props {
@@ -24,8 +24,9 @@ export default function Layout({ children, metaInfo }: Props) {
 	const currentPath = host + router.asPath;
 
 	const meta: MetaInformation = {
-		title: "Animechan – Anime quotes API",
-		description: "Animechan is a API service for curated anime information and quotes.",
+		title: "Animechan – Anime Quotes & Information API for Developers & Fans",
+		description:
+			"Animechan is the ultimate API for curated anime quotes and comprehensive anime information. Explore character details, anime series data, and inspiring quotes from your favorite shows. Perfect for developers, anime enthusiasts, and fans worldwide!",
 		image: `${host}/image/home.jpeg`,
 		type: "website",
 		...metaInfo,
