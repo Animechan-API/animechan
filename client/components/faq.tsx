@@ -26,6 +26,7 @@ function generateFaqSchema(faqs: IFaq[]) {
 	const jsonLd: WithContext<FAQPage> = {
 		"@context": "https://schema.org",
 		"@type": "FAQPage",
+		// @ts-ignore
 		mainEntity,
 	};
 	return jsonLd;
