@@ -16,6 +16,9 @@
 			"style": {
 				"noUnusedTemplateLiteral": "off",
 				"useTemplate": "off"
+			},
+			"security": {
+				"noDangerouslySetInnerHtml": "off"
 			}
 		}
 	}

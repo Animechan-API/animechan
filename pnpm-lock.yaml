@@ -105,6 +105,9 @@ importers:
       postcss:
         specifier: ^8.4.18
         version: 8.4.38
+      schema-dts:
+        specifier: ^1.1.2
+        version: 1.1.2(typescript@4.8.4)
       tailwindcss:
         specifier: ^3.2.1
         version: 3.4.3
@@ -3721,6 +3724,11 @@ packages:
 
   scheduler@0.23.2:
     resolution: {integrity: sha512-UOShsPwz7NrMUqhR6t0hWjFduvOzbtv7toDH1/hIrfRNIDBnnBWd0CwJTGvTpngVlmwGCdP9/Zl/tVrDqcuYzQ==}
+
+  schema-dts@1.1.2:
+    resolution: {integrity: sha512-MpNwH0dZJHinVxk9bT8XUdjKTxMYrA5bLtrrGmFA6PTLwlOKnhi67XoRd6/ty+Djt6ZC0slR57qFhZDNMI6DhQ==}
+    peerDependencies:
+      typescript: '>=4.1.0'
 
   scroll-into-view-if-needed@3.1.0:
     resolution: {integrity: sha512-49oNpRjWRvnU8NyGVmUaYG4jtTkNonFZI86MmGRDqBphEK2EXT9gdEUoQPZhuBM8yWHxCWbobltqYO5M4XrUvQ==}
@@ -8036,6 +8044,10 @@ snapshots:
   scheduler@0.23.2:
     dependencies:
       loose-envify: 1.4.0
+
+  schema-dts@1.1.2(typescript@4.8.4):
+    dependencies:
+      typescript: 4.8.4
 
   scroll-into-view-if-needed@3.1.0:
     dependencies:

@@ -52,7 +52,7 @@ export default function Layout({ children, metaInfo }: Props) {
 			</Head>
 			<HelloBar />
 			<Navbar />
-			<main>{children}</main>
+			<main className="container relative max-w-4xl px-2 py-10 lg:mx-auto">{children}</main>
 			<Footer />
 		</div>
 	);

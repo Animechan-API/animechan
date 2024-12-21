@@ -5,6 +5,7 @@ import { useState } from "react";
 import { Element } from "react-scroll";
 import stringifyObject from "stringify-object";
 import CodeBlock from "~/components/codeblock";
+import Faq from "~/components/faq";
 import Layout from "~/components/Layout";
 import { SPLITBEE_EVENTS } from "~/constants/common";
 import type { CodeBlock as CodeBlockType, Quote } from "~/types";
@@ -68,7 +69,7 @@ export default function Home() {
 			</Section>
 
 			<Element name="tryThis">
-				<div className="container relative max-w-4xl px-2 py-10 lg:mx-auto">
+				<div className="relative py-10">
 					<Text size="6" weight="medium" as="p">
 						Try here:
 					</Text>
@@ -100,6 +101,8 @@ export default function Home() {
 					<CodeBlock {...responseCodeBlock} />
 				</div>
 			</Element>
+
+			<Faq />
 		</Layout>
 	);
 }
