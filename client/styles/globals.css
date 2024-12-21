@@ -26,11 +26,11 @@ footer {
 	/* a { */
 	/* 	@apply underline text-green-700; */
 	/* } */
-	h1,
-	h2,
-	h3 {
-		@apply text-gray-800;
-	}
+	/* h1, */
+	/* h2, */
+	/* h3 { */
+	/* 	@apply text-gray-800; */
+	/* } */
 }
 
 @layer utilities {

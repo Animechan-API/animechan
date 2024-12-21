@@ -33,7 +33,7 @@ export default function Layout({ children, metaInfo }: Props) {
 	};
 
 	return (
-		<div>
+		<div className="bg-[#25252b]">
 			<Head>
 				<title>{meta.title}</title>
 				<meta name="robots" content="follow, index" />
@@ -52,7 +52,9 @@ export default function Layout({ children, metaInfo }: Props) {
 			</Head>
 			<HelloBar />
 			<Navbar />
-			<main className="container relative max-w-4xl px-2 py-10 lg:mx-auto">{children}</main>
+			<main className="container relative max-w-4xl px-2 py-10 lg:mx-auto text-[#dbdbdb]">
+				{children}
+			</main>
 			<Footer />
 		</div>
 	);

@@ -49,7 +49,7 @@ export default function Home() {
 					<Heading as="h1">
 						Your Ultimate API for Anime Quotes & Comprehensive Anime Information
 					</Heading>
-					<h2 className="mt-4 text-lg lg:max-w-2xl lg:mx-auto text-gray-800">
+					<h2 className="mt-4 text-lg lg:max-w-2xl lg:mx-auto">
 						Explore a rich collection of anime quotes, character details, and series information.
 						Perfect for developers, fans, and enthusiasts.
 					</h2>
