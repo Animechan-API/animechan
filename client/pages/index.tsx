@@ -1,20 +1,15 @@
-import { PlayIcon, RocketIcon } from "@radix-ui/react-icons";
+import { RocketIcon } from "@radix-ui/react-icons";
 import { Button, Callout, Heading, Section, Text } from "@radix-ui/themes";
 import Image from "next/image";
-import { useState } from "react";
 import { Element } from "react-scroll";
 import stringifyObject from "stringify-object";
 import CodeBlock from "~/components/codeblock";
 import Faq from "~/components/faq";
 import Layout from "~/components/Layout";
 import { SPLITBEE_EVENTS } from "~/constants/common";
-import type { CodeBlock as CodeBlockType, Quote } from "~/types";
+import type { CodeBlock as CodeBlockType } from "~/types";
 
 export default function Home() {
-	const [randomQuote, setRandomQuote] = useState<Quote>();
-	const [fetching, setFetching] = useState<boolean>(false);
-	const [clickCount, setClickCount] = useState<number>(0);
-
 	const requestCodeBlock: CodeBlockType = {
 		language: "javascript",
 		snippet: `fetch('https://animechan.io/api/v1/quotes/random')
@@ -22,22 +17,26 @@ export default function Home() {
     .then(quote => console.log(quote))`,
 	};
 
-	const responseCodeBlock: CodeBlockType = {
-		language: "javascript",
-		snippet: stringifyObject(randomQuote),
+	const exampleResponse = {
+		status: "success",
+		data: {
+			content:
+				"The final door is about to open! And I am the one opening it! Then the world that we know of will come to an end! This world of insatiable desires will end!",
+			anime: {
+				id: 575,
+				name: "Mobile Suit Gundam SEED",
+				altName: "Kidou Senshi Gundam SEED",
+			},
+			character: {
+				id: 1486,
+				name: "Rau Le Creuset",
+			},
+		},
 	};
 
-	const handleClick = () => {
-		setFetching(true);
-		setClickCount(clickCount + 1);
-		setRandomQuote(null);
-
-		fetch("/api/v1/quotes/random")
-			.then((response) => response.json())
-			.then((json) => {
-				setFetching(false);
-				setRandomQuote(json);
-			});
+	const responseCodeBlock: CodeBlockType = {
+		language: "javascript",
+		snippet: stringifyObject(exampleResponse),
 	};
 
 	return (
@@ -71,34 +70,21 @@ export default function Home() {
 			<Element name="tryThis">
 				<div className="relative py-10">
 					<Text size="6" weight="medium" as="p">
-						Try here:
+						Example Usage:
 					</Text>
 
 					<div className="relative inline-block my-3">
 						<Callout.Root size="1" color="blue">
-							<Callout.Icon>
-								<PlayIcon />
-							</Callout.Icon>
 							<Callout.Text weight="medium">
-								Run the below piece of code to get a random quote.
+								The below piece of code to returns a random quote.
 							</Callout.Text>
 						</Callout.Root>
 					</div>
 
 					<CodeBlock {...requestCodeBlock} />
-
-					<Button
-						data-splitbee-event={SPLITBEE_EVENTS.RUN_CODE}
-						loading={fetching}
-						disabled={fetching}
-						onClick={handleClick}
-						my="2"
-					>
-						<PlayIcon />
-						Run code
-					</Button>
-
-					<CodeBlock {...responseCodeBlock} />
+					<div className="mt-2">
+						<CodeBlock {...responseCodeBlock} />
+					</div>
 				</div>
 			</Element>
 
