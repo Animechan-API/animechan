@@ -122,7 +122,7 @@ export default function GetPremium() {
 
 export const FreePricingCard = () => {
 	return (
-		<div className="rounded-xl p-8 text-center bg-[#38394f] max-w-sm bg-white border border-gray-600">
+		<div className="rounded-xl p-8 text-center bg-[#38394f] max-w-sm border border-gray-600">
 			<div className="font-semibold rounded mb-2 text-xl">Basic Plan</div>
 			<p className="text-sm mt-5 mb-10">Good for testing out the API and learning.</p>
 
@@ -149,7 +149,7 @@ export const FreePricingCard = () => {
 
 export const PremiumPricingCard = () => {
 	return (
-		<div className="relative overflow-hidden rounded-xl p-8 text-center shadow-lg shadow-yellow-500/50 max-w-sm bg-[#38394f] border-2 border-yellow-400">
+		<div className="relative overflow-hidden rounded-xl p-8 text-center shadow-lg shadow-yellow-500/50 max-w-sm bg-[#38394f] text-white border-2 border-yellow-400">
 			<div className="absolute  inset-0 -translate-x-full animate-[shimmer_2s_infinite] bg-gradient-to-r from-transparent via-white/10 to-transparent" />
 			<div className="font-semibold rounded mb-2 text-2xl py-2">
 				Premium Plan <RocketIcon className="inline-block mb-1" />
