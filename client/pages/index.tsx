@@ -56,7 +56,7 @@ export default function Home() {
 
 				<a href="/docs">
 					<Button variant="surface" size="3" mr="4">
-						Get Started
+						View Documentation
 					</Button>
 				</a>
 

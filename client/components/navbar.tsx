@@ -1,5 +1,5 @@
 import { RocketIcon } from "@radix-ui/react-icons";
-import { Button, Flex, Text } from "@radix-ui/themes";
+import { Button, Flex, Link, Text } from "@radix-ui/themes";
 import { useWindowSize } from "@uidotdev/usehooks";
 import { SPLITBEE_EVENTS } from "~/constants/common";
 
@@ -11,11 +11,11 @@ export default function Navbar() {
 			<nav className="container relative lg:mx-auto px-2 max-w-4xl py-3 navbar-expand-lg mb-3 text-green-700">
 				<div className="container mx-auto flex flex-wrap items-center justify-between">
 					<div className="md:w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
-						<a href="/">
+						<Link href="/">
 							<Text weight="medium" className="cursor-default">
 								Animechan
 							</Text>
-						</a>
+						</Link>
 					</div>
 
 					<Flex gapX="4" align="center" justify="end">
