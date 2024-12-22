@@ -54,17 +54,19 @@ export default function Home() {
 					</h2>
 				</div>
 
-				<a href="/docs">
-					<Button variant="surface" size="3" mr="4">
-						View Documentation
-					</Button>
-				</a>
+				<div className="flex flex-col space-y-4 lg:space-y-0 lg:flex-row lg:space-x-5 lg:justify-center">
+					<a href="/docs">
+						<Button variant="surface" size="3">
+							View Documentation
+						</Button>
+					</a>
 
-				<a data-splitbee-event={SPLITBEE_EVENTS.PREMIUM_CTA} href="/get-premium">
-					<Button size="3">
-						Get Premium API <RocketIcon />
-					</Button>
-				</a>
+					<a data-splitbee-event={SPLITBEE_EVENTS.PREMIUM_CTA} href="/get-premium">
+						<Button size="3">
+							Get Premium API <RocketIcon />
+						</Button>
+					</a>
+				</div>
 			</Section>
 
 			<Element name="tryThis">

@@ -1,15 +1,14 @@
-import { Text } from "@radix-ui/themes";
 import Footer from "components/footer";
+import Navbar from "components/navbar";
 
 export default {
+	darkMode: false,
 	nextThemes: {
-		defaultTheme: "light",
+		defaultTheme: "dark",
 	},
-	logo: (
-		<Text weight="medium" className="cursor-default" color="green">
-			Animechan
-		</Text>
-	),
+	navbar: {
+		component: <Navbar isInDocsPage={true} />,
+	},
 	project: {
 		link: "https://github.com/Animechan-API/animechan",
 	},

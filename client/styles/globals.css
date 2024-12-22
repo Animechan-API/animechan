@@ -3,6 +3,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 html {
 	scroll-behavior: smooth;
 }
@@ -18,8 +19,9 @@ main {
 	flex: 1;
 }
 
-footer {
 
+div[dir="ltr"] {
+	background-color: #25252b !important;
 }
 
 @layer base {
