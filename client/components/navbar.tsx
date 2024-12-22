@@ -4,7 +4,7 @@ import { useWindowSize } from "@uidotdev/usehooks";
 import { SPLITBEE_EVENTS } from "~/constants/common";
 
 interface Props {
-	isInDocsPage: boolean;
+	isInDocsPage?: boolean;
 }
 export default function Navbar({ isInDocsPage }: Props) {
 	const windowSize = useWindowSize();
