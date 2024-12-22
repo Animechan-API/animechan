@@ -78,14 +78,13 @@ export default function Faq() {
 	const jsonLd = generateFaqSchema(FAQs);
 
 	return (
-		<article className="flex flex-col space-y-10 text-[#2b2929] mt-16 px-2">
+		<article className="flex flex-col space-y-10 mt-16 px-2">
 			{/* Schema.org FAQ markup */}
 			<script
 				type="application/ld+json"
 				dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
 			/>
-
-			<Heading as="h3">Frequently Asked Questions:</Heading>
+			<h3 className="text-2xl font-semibold">Frequently Asked Questions:</h3>
 			{FAQs.map(({ question, answer }) => (
 				<section key={useId()}>
 					<h4 className="font-semibold text-lg">{question}</h4>

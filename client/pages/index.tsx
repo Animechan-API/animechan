@@ -48,23 +48,25 @@ export default function Home() {
 					<Heading as="h1">
 						Your Ultimate API for Anime Quotes & Comprehensive Anime Information
 					</Heading>
-					<h2 className="mt-4 text-lg lg:max-w-2xl lg:mx-auto text-gray-800">
+					<h2 className="mt-4 text-lg lg:max-w-2xl lg:mx-auto">
 						Explore a rich collection of anime quotes, character details, and series information.
 						Perfect for developers, fans, and enthusiasts.
 					</h2>
 				</div>
 
-				<a href="/docs">
-					<Button variant="surface" size="3" mr="4">
-						Get Started
-					</Button>
-				</a>
+				<div className="flex flex-col space-y-4 lg:space-y-0 lg:flex-row lg:space-x-5 lg:justify-center">
+					<a href="/docs">
+						<Button variant="surface" size="3">
+							View Documentation
+						</Button>
+					</a>
 
-				<a data-splitbee-event={SPLITBEE_EVENTS.PREMIUM_CTA} href="/get-premium">
-					<Button size="3">
-						Get Premium API <RocketIcon />
-					</Button>
-				</a>
+					<a data-splitbee-event={SPLITBEE_EVENTS.PREMIUM_CTA} href="/get-premium">
+						<Button size="3">
+							Get Premium API <RocketIcon />
+						</Button>
+					</a>
+				</div>
 			</Section>
 
 			<Element name="tryThis">

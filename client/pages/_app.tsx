@@ -21,10 +21,11 @@ Router.events.on("routeChangeError", () => {
 export default function MyApp({ Component, pageProps }) {
 	return (
 		<Theme
-			accentColor="green"
+			accentColor="amber"
 			grayColor="gray"
 			panelBackground="solid"
 			scaling="100%"
+			appearance="dark"
 		>
 			<Component {...pageProps} />
 		</Theme>

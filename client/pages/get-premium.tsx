@@ -40,7 +40,6 @@ export default function GetPremium() {
 						md: "0",
 						initial: "8",
 					}}
-					className="text-[#423e62]"
 				>
 					<FreePricingCard />
 					<PremiumPricingCard />
@@ -76,8 +75,8 @@ export default function GetPremium() {
 								<Callout.Icon>
 									<InfoCircledIcon />
 								</Callout.Icon>
-								<div className="flex flex-col space-y-2 text-sm font-medium">
-									<p>That's it 🎉 </p>
+								<div className="flex flex-col space-y-2">
+									<p>That's it ✅ </p>
 									<p>
 										You now have access to all the premium API endpoints. You can use the provided
 										API key in the email to make authenticated requests with higher rate-limits.{" "}
@@ -123,27 +122,25 @@ export default function GetPremium() {
 
 export const FreePricingCard = () => {
 	return (
-		<div className="rounded-xl p-8 text-center shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] max-w-sm bg-white">
-			<div className="uppercase font-semibold rounded mb-2 text-xl">BASIC</div>
+		<div className="rounded-xl p-8 text-center bg-[#38394f] max-w-sm border border-gray-600">
+			<div className="font-semibold rounded mb-2 text-xl">Basic Plan</div>
 			<p className="text-sm mt-5 mb-10">Good for testing out the API and learning.</p>
 
 			<Text as="p" className="text-left" ml="4" mb="4" weight="bold">
-				FEATURES
+				HIGHLIGHTS:
 			</Text>
 			<Flex direction="column" align="start" gapY="4" className="px-4 text-left">
 				<Text>
-					<CheckboxIcon className="inline-block mb-[2px]" color="green" /> No API key required
+					<CheckboxIcon className="inline-block mb-[2px]" /> No API key required
 				</Text>
 				<Text>
-					<CheckboxIcon className="inline-block mb-[2px]" color="green" /> 20 API requests per hour
+					<CheckboxIcon className="inline-block mb-[2px]" /> 20 API requests per hour
 				</Text>
 				<Text>
-					<CheckboxIcon className="inline-block mb-[2px]" color="green" /> 1-hour block if limit
-					exceeded
+					<CheckboxIcon className="inline-block mb-[2px]" /> 1-hour block if limit exceeded
 				</Text>
 				<Text>
-					<CheckboxIcon className="inline-block mb-[2px]" color="green" /> Access to few API
-					endpoints
+					<CheckboxIcon className="inline-block mb-[2px]" /> Access to few API endpoints
 				</Text>
 			</Flex>
 		</div>
@@ -152,43 +149,41 @@ export const FreePricingCard = () => {
 
 export const PremiumPricingCard = () => {
 	return (
-		<div className="rounded-xl p-8 text-center shadow-[0_8px_30px_rgb(0,0,0,0.12)] max-w-sm bg-white">
-			<div className="uppercase font-semibold rounded mb-2 text-xl">
-				PREMIUM <RocketIcon className="inline-block mb-1" color="green" />
+		<div className="relative overflow-hidden rounded-xl p-8 text-center shadow-lg shadow-yellow-500/50 max-w-sm bg-[#38394f] text-white border-2 border-yellow-400">
+			<div className="absolute  inset-0 -translate-x-full animate-[shimmer_2s_infinite] bg-gradient-to-r from-transparent via-white/10 to-transparent" />
+			<div className="font-semibold rounded mb-2 text-2xl py-2">
+				Premium Plan <RocketIcon className="inline-block mb-1" />
 			</div>
-			<p className="text-sm mt-5 mb-10">
-				Best suited for both commercial projects and personal projects with high traffic and usage.
+			<p className="mt-5 mb-10">
+				Best suited for both personal projects and commercial applications with high traffic and
+				usage.
 			</p>
 
 			<Text as="p" className="text-left" ml="4" mb="4" weight="bold">
-				FEATURES
+				✨ HIGHLIGHTS:
 			</Text>
 			<Flex direction="column" align="start" gapY="4" className="px-4 text-left">
 				<Text>
-					<CheckboxIcon className="inline-block mb-[2px]" color="green" /> Premium API key provided
+					<CheckboxIcon className="inline-block mb-[2px]" /> Premium API key provided
 				</Text>
 				<Text>
-					<CheckboxIcon className="inline-block mb-[2px]" color="green" /> 800 API requests per hour
+					<CheckboxIcon className="inline-block mb-[2px]" /> 800 API requests per hour
 				</Text>
 				<Text>
-					<CheckboxIcon className="inline-block mb-[2px]" color="green" /> 10-minute block if limit
-					exceeded
+					<CheckboxIcon className="inline-block mb-[2px]" /> 10-minute block if limit exceeded
 				</Text>
 				<Text>
-					<CheckboxIcon className="inline-block mb-[2px]" color="green" /> Access to all API
-					endpoints
+					<CheckboxIcon className="inline-block mb-[2px]" /> Access to all API endpoints
 				</Text>
 				<Text>
-					<CheckboxIcon className="inline-block mb-[2px]" color="green" /> Frequently updated
-					database
+					<CheckboxIcon className="inline-block mb-[2px]" /> Frequently updated database
 				</Text>
 				<Text>
-					<CheckboxIcon className="inline-block mb-[2px]" color="green" /> Access to upcoming API
-					features
+					<CheckboxIcon className="inline-block mb-[2px]" /> Access to upcoming API features
 				</Text>
 				<Text>
-					<CheckboxIcon className="inline-block mb-[2px]" color="green" /> Any programming related
-					help in the premium Discord community channel.
+					<CheckboxIcon className="inline-block mb-[2px]" /> Any programming related help in the
+					premium Discord community channel.
 				</Text>
 			</Flex>
 		</div>
