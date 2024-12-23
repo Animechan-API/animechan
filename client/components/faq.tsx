@@ -38,7 +38,7 @@ export default function Faq() {
 		{
 			question: "What is Animechan API and what anime data does it provide?",
 			answer:
-				"Animechan is a comprehensive anime quotes and information API service that provides developers with access to a curated database of anime content. Our API delivers episode counts, detailed show summaries, character information, and memorable quotes from thousands of anime series. You can easily filter and search quotes by specific anime titles or character names, making it perfect for anime-focused applications and websites.",
+				"Animechan is an anime quotes and information API service that provides developers with access to a vast curated collection of anime content. Our API delivers episode counts, detailed show summaries, character information, and memorable quotes from thousands of anime series. You can easily filter and search quotes by specific anime titles or character names, making it perfect for anime-focused applications and websites.",
 		},
 		{
 			question: "Is Animechan API free to use? What are the pricing options?",
