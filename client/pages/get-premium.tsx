@@ -1,21 +1,8 @@
-import {
-	CheckboxIcon,
-	HeartFilledIcon,
-	InfoCircledIcon,
-	RocketIcon,
-	ThickArrowRightIcon,
-} from "@radix-ui/react-icons";
-import { Callout, Container, Flex, Link, Section, Strong, Text } from "@radix-ui/themes";
+import { CheckboxIcon, RocketIcon } from "@radix-ui/react-icons";
+import { Flex, Link, Section, Strong, Text } from "@radix-ui/themes";
 import Layout from "~/components/Layout";
-import { SPLITBEE_EVENTS } from "~/constants/common";
 
 export default function GetPremium() {
-	const steps = [
-		<>
-			First visit our <Strong>Buy Me A Coffee</Strong> page.
-		</>,
-	];
-
 	return (
 		<Layout>
 			<div className="mx-4 lg:mx-0">

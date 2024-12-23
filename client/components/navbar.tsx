@@ -1,7 +1,6 @@
 import { RocketIcon } from "@radix-ui/react-icons";
 import { Button, Flex, Link, Text } from "@radix-ui/themes";
 import { useWindowSize } from "@uidotdev/usehooks";
-import { SPLITBEE_EVENTS } from "~/constants/common";
 
 interface Props {
 	isInDocsPage?: boolean;
@@ -32,7 +31,7 @@ export default function Navbar({ isInDocsPage }: Props) {
 							</Button>
 						</a>
 
-						<a data-splitbee-event={SPLITBEE_EVENTS.PREMIUM_CTA} href="/get-premium">
+						<a href="/get-premium">
 							<Button>
 								Get Premium API <RocketIcon />
 							</Button>

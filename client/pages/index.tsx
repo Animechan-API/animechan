@@ -6,7 +6,6 @@ import stringifyObject from "stringify-object";
 import CodeBlock from "~/components/codeblock";
 import Faq from "~/components/faq";
 import Layout from "~/components/Layout";
-import { SPLITBEE_EVENTS } from "~/constants/common";
 import type { CodeBlock as CodeBlockType } from "~/types";
 
 export default function Home() {
@@ -61,7 +60,7 @@ export default function Home() {
 						</Button>
 					</a>
 
-					<a data-splitbee-event={SPLITBEE_EVENTS.PREMIUM_CTA} href="/get-premium">
+					<a href="/get-premium">
 						<Button size="3">
 							Get Premium API <RocketIcon />
 						</Button>
