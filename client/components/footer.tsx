@@ -1,5 +1,5 @@
-import { DiscordLogoIcon, GitHubLogoIcon } from "@radix-ui/react-icons";
-import { Flex, Link, Section, Separator, Text } from "@radix-ui/themes";
+import { DiscordLogoIcon, GitHubLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
+import { Link, Section, Separator, Text } from "@radix-ui/themes";
 
 export default function Footer() {
 	return (
@@ -35,7 +35,12 @@ export default function Footer() {
 					<ul className="space-y-1">
 						<li className="font-medium mb-2">Social Links:</li>
 						<li>
-							<Link href="https://github.com/Animechan-API/animechan">
+							<Link href="https://www.linkedin.com/company/animechan-api" blank="_blank">
+								<LinkedInLogoIcon className="inline-block mb-1" /> LinkedIn
+							</Link>
+						</li>
+						<li>
+							<Link href="https://github.com/Animechan-API/animechan" blank="_blank">
 								<GitHubLogoIcon className="inline-block mb-1" /> Github
 							</Link>
 						</li>
