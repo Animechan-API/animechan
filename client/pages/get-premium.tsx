@@ -5,11 +5,17 @@ import {
 	RocketIcon,
 	ThickArrowRightIcon,
 } from "@radix-ui/react-icons";
-import { Callout, Container, Flex, Section, Text } from "@radix-ui/themes";
+import { Callout, Container, Flex, Link, Section, Strong, Text } from "@radix-ui/themes";
 import Layout from "~/components/Layout";
 import { SPLITBEE_EVENTS } from "~/constants/common";
 
 export default function GetPremium() {
+	const steps = [
+		<>
+			First visit our <Strong>Buy Me A Coffee</Strong> page.
+		</>,
+	];
+
 	return (
 		<Layout>
 			<div className="mx-4 lg:mx-0">
@@ -45,76 +51,68 @@ export default function GetPremium() {
 					<PremiumPricingCard />
 				</Flex>
 
-				<Container size="2">
+				<div>
 					<Section>
 						<Text size="6" weight="bold" as="div">
-							HOW TO GET A PREMIUM API KEY:
+							How to Subscribe to the Premium Plan:
 						</Text>
-						<Flex direction="column" gapY="3" mt="3" className="">
-							<Text>
-								1. Go to our buy me a coffee page here:
-								<a
-									data-splitbee-event={SPLITBEE_EVENTS.BMAC_LINK}
-									href="https://buymeacoffee.com/animechan_api"
-									className="block text-blue-500 underline underline-offset-2"
-									target="_blank"
-									rel="noreferrer"
-								>
-									https://buymeacoffee.com/animechan_api
-								</a>
-							</Text>
-							<Text>
-								2. Subscribe to a <b>monthly plan</b> of your choice. As long as it is a membership
-								subscription, you can use our premium API.
-							</Text>
-							<Text>
-								3. Once subscribed, you will get a premium API key in your email address that is
-								associated with your buymeacoffee account.
-							</Text>
-							<Callout.Root size="1">
-								<Callout.Icon>
-									<InfoCircledIcon />
-								</Callout.Icon>
-								<div className="flex flex-col space-y-2">
-									<p>That's it ✅ </p>
-									<p>
-										You now have access to all the premium API endpoints. You can use the provided
-										API key in the email to make authenticated requests with higher rate-limits.{" "}
-									</p>
-									<p>
-										Check how to make authenticated requests with the API key{" "}
-										<ThickArrowRightIcon className="inline-block" />
-										<a href="/docs/auth" className="text-blue-500 font-semibold">
-											here.
-										</a>
-									</p>
+						<div className="grid lg:grid-cols-3 gap-10 lg:gap-6 mt-10">
+							<div id="step-1">
+								<Text size="5" weight="bold" className="bg-yellow-400 text-gray-800 px-4 py-2">
+									1
+								</Text>
+								<Text className="inline-block mt-3 lg:mt-4">
+									Visit to our <Strong>Buy Me A Coffee</Strong> page and subscribe to any monthly
+									plan to unlock access to our premium API.
+								</Text>
+								<div className="mt-4">
+									<a
+										href="https://www.buymeacoffee.com/animechan_api"
+										target="_blank"
+										rel="noreferrer"
+									>
+										<img
+											src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=☕&slug=animechan_api&button_colour=BD5FFF&font_colour=ffffff&font_family=Lato&outline_colour=000000&coffee_colour=FFDD00"
+											alt="Animechan"
+										/>
+									</a>
 								</div>
-							</Callout.Root>
-						</Flex>
+							</div>
+							<div id="step-2">
+								<Text size="5" weight="bold" className="bg-yellow-400 text-gray-800 px-4 py-2">
+									2
+								</Text>
+								<Text className="inline-block mt-3 lg:mt-4">
+									After subscribing, your premium API key will be sent to the email linked to your{" "}
+									<Strong>Buy Me A Coffee</Strong> account.
+								</Text>
+							</div>
+							<div id="step-2">
+								<Text size="5" weight="bold" className="bg-yellow-400 text-gray-800 px-4 py-2">
+									3
+								</Text>
+								<Text className="inline-block mt-3 lg:mt-4">
+									That’s it! ✅ Use your API key to access premium endpoints with higher limits.
+									Learn more here: <Link href="/docs/auth">/docs/auth</Link>.
+								</Text>
+							</div>
+						</div>
 					</Section>
 
 					<Flex direction="column" gapY="3" mt="3">
 						<Text size="6" weight="bold" as="div">
-							<HeartFilledIcon className="inline-block" color="red" /> Developers Note:
+							💌 A Note from the Developer:
 						</Text>
 						<Text as="p">
-							We are a small team of developers dedicated to creating the best free and open-source
-							Anime information API available. While our project is open-source on GitHub and driven
-							by a love for the community, maintaining and scaling this service comes with
-							significant costs—such as DigitalOcean servers, MySQL databases, Redis instances,
-							domain renewals, and general upkeep.
+							Hey! I’m a solo developer building this Anime information API out of love for the
+							community. While I keep it free and open-source, there are ongoing costs for servers,
+							databases, email services and maintenance. If you enjoy the project and want to help
+							it grow, please consider subscribing to one of the monthly plans. Your support means a
+							lot and keeps Animechan running!
 						</Text>
-
-						<Text as="p">
-							Though we aim to keep this project free, our expenses make it challenging. If you
-							value this project and want to see it thrive, please consider supporting us by
-							subscribing to one of our monthly plans. Your support is greatly appreciated and will
-							help ensure the continued growth of Animechan.
-						</Text>
-
 						<Text as="p">Thank you from the Animechan team.</Text>
 					</Flex>
-				</Container>
+				</div>
 			</div>
 		</Layout>
 	);
