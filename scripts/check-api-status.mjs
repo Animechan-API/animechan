@@ -1,24 +1,16 @@
 #!/usr/bin/env zx
 
-const response = await fetch("https://animechan.io/api/v1/quotes/random");
-const statusCode = response.status;
-
-function findUndefinedVars(args) {
-	const missingVars = Object.entries(args)
-		.filter(([_, value]) => !value)
-		.map(([key]) => key);
-	return missingVars;
-}
+// Load the env file of this dir
+const envFilePath = path.join(os.homedir(), "/animechan/scripts/.env");
+process.loadEnvFile(envFilePath);
 
 const API_KEY = $.env.API_KEY;
 const PAGE_ID = $.env.PAGE_ID;
 const COMPONENT_ID = $.env.COMPONENT_ID;
 
-const undefinedKeys = findUndefinedVars({ API_KEY, PAGE_ID, COMPONENT_ID });
-if (undefinedKeys.length > 0) {
-	console.error("Required environment variables are missing:", undefinedKeys.join(", "));
-	process.exit();
-}
+// Check the status
+const response = await fetch("https://animechan.io/api/v1/quotes/random");
+const statusCode = response.status;
 
 if (statusCode !== 200) {
 	// Send an incident report here.
@@ -41,6 +33,7 @@ if (statusCode !== 200) {
 		}),
 	});
 	if (response.status === 201) {
-		console.log("New Incident Reported");
+		const now = new Date().toLocaleString("en-US", { timeZone: "IST" });
+		console.log(`New Incident Reported | {statusCode} | ${now} IST`);
 	}
 }
