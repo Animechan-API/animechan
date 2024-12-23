@@ -1,4 +1,5 @@
-import { Heading, Link } from "@radix-ui/themes";
+import { Link } from "@radix-ui/themes";
+import type { ReactNode } from "react";
 import { useId } from "react";
 import type { FAQPage, WithContext } from "schema-dts";
 
@@ -10,7 +11,7 @@ const BMAC_CTA = (
 
 interface IFaq {
 	question: string;
-	answer: React.ReactChild;
+	answer: ReactNode;
 	jsonLdAnswer?: string;
 }
 
