@@ -1,15 +1,12 @@
 import { DiscordLogoIcon, GitHubLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
 import { Link, Section, Separator, Text } from "@radix-ui/themes";
+import StatusIndicator from "./StatusIndicator";
 
 export default function Footer() {
 	return (
 		<footer className="py-5 text-center text-sm">
 			<Section className="py-2" size="2" maxWidth="600px" mx="auto">
 				<Separator my="3" size="4" mb="6" />
-				<Text as="p">
-					Created with ❤ by <a href="https://rocktimsaikia.dev/">@rocktimsaikia</a> ©{" "}
-					{new Date().getFullYear()}
-				</Text>
 				<div className="grid lg:grid-cols-3 lg:gap-x-16 lg:gap-y-0 gap-y-8 mt-6 lg:text-left">
 					<ul className="space-y-1">
 						<li className="font-medium mb-2">Quick Links:</li>
@@ -52,6 +49,12 @@ export default function Footer() {
 					</ul>
 				</div>
 			</Section>
+
+			<StatusIndicator />
+			<Text as="p" mt="5">
+				Created with <span className="text-red-500">❤ </span> by{" "}
+				<a href="https://rocktimsaikia.dev/">@rocktimsaikia</a> © {new Date().getFullYear()}
+			</Text>
 		</footer>
 	);
 }
