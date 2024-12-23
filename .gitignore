@@ -1,4 +1,5 @@
 **.env
+**.log
 .git
 node_modules
 yarn.lock
