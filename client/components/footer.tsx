@@ -35,12 +35,12 @@ export default function Footer() {
 					<ul className="space-y-1">
 						<li className="font-medium mb-2">Social Links:</li>
 						<li>
-							<Link href="https://www.linkedin.com/company/animechan-api" blank="_blank">
+							<Link href="https://www.linkedin.com/company/animechan-api" target="_blank">
 								<LinkedInLogoIcon className="inline-block mb-1" /> LinkedIn
 							</Link>
 						</li>
 						<li>
-							<Link href="https://github.com/Animechan-API/animechan" blank="_blank">
+							<Link href="https://github.com/Animechan-API/animechan" target="_blank">
 								<GitHubLogoIcon className="inline-block mb-1" /> Github
 							</Link>
 						</li>
