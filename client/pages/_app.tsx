@@ -1,3 +1,4 @@
+import { GoogleAnalytics } from "@next/third-parties/google";
 import { Theme } from "@radix-ui/themes";
 import "@radix-ui/themes/styles.css";
 import Router from "next/router";
@@ -18,16 +19,21 @@ Router.events.on("routeChangeError", () => {
 	NProgress.done();
 });
 
+const isProduction = process.env.NODE_ENV === "production";
+
 export default function MyApp({ Component, pageProps }) {
 	return (
-		<Theme
-			accentColor="amber"
-			grayColor="gray"
-			panelBackground="solid"
-			scaling="100%"
-			appearance="dark"
-		>
-			<Component {...pageProps} />
-		</Theme>
+		<>
+			<Theme
+				accentColor="amber"
+				grayColor="gray"
+				panelBackground="solid"
+				scaling="100%"
+				appearance="dark"
+			>
+				<Component {...pageProps} />
+			</Theme>
+			{isProduction && <GoogleAnalytics gaId="G-QRVCN5446L" />}
+		</>
 	);
 }
