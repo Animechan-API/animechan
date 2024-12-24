@@ -49,18 +49,18 @@ export default function Home() {
 					height="200"
 					priority
 				/>
-				<div className="lg:text-7xl text-6xl font-display font-bold text-shadow-md">Animechan</div>
-				<div className="py-5 px-4">
-					<Heading as="h1">
-						Your Ultimate API for Anime Quotes & Comprehensive Anime Information
-					</Heading>
-					<h2 className="mt-4 text-lg lg:max-w-2xl lg:mx-auto">
-						Explore a rich collection of anime quotes, character details, and series information.
-						Perfect for developers, fans, and enthusiasts.
-					</h2>
-				</div>
+				<Heading as="h1" size="9">
+					Animechan
+				</Heading>
+				<Heading as="h2" my="4" size="7">
+					Your Ultimate API for Anime Quotes & Anime Information
+				</Heading>
+				<Heading as="h3" size="6" weight="regular">
+					Explore a rich collection of anime quotes, character details, and series information.
+					Perfect for developers, fans, and enthusiasts.
+				</Heading>
 
-				<div className="flex flex-col space-y-4 lg:space-y-0 lg:flex-row lg:space-x-5 lg:justify-center">
+				<div className="flex flex-col space-y-4 lg:space-y-0 lg:flex-row lg:space-x-5 lg:justify-center mt-6">
 					<a href="/docs">
 						<Button variant="surface" size="3">
 							View Documentation

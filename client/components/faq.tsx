@@ -1,4 +1,4 @@
-import { Link } from "@radix-ui/themes";
+import { Heading, Link } from "@radix-ui/themes";
 import type { ReactNode } from "react";
 import { useId } from "react";
 import type { FAQPage, WithContext } from "schema-dts";
@@ -85,10 +85,12 @@ export default function Faq() {
 				type="application/ld+json"
 				dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
 			/>
-			<h3 className="text-2xl font-semibold">Frequently Asked Questions:</h3>
+			<Heading as="h3">Frequently Asked Questions:</Heading>
 			{FAQs.map(({ question, answer }) => (
 				<section key={useId()}>
-					<h4 className="font-semibold text-lg">{question}</h4>
+					<Heading as="h4" size="5" mb="2">
+						{question}
+					</Heading>
 					<div>
 						<p>{answer}</p>
 					</div>
