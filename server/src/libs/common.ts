@@ -11,7 +11,7 @@ interface SendEmailOptions {
 	content: string;
 }
 export async function sendEmail({
-	from = EMAIL_ADDRESSES.PERSONAL,
+	from = EMAIL_ADDRESSES.SUPPORT,
 	to,
 	subject,
 	content,
