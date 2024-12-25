@@ -84,7 +84,7 @@ router.post("/bmac", async (req, res) => {
 				if (isProduction) {
 					await sendEmail({
 						to: supporterEmail,
-						subject: "Thank you for your support | Animechan.io",
+						subject: "Welcome to Animechan Premium | Animechan.io",
 						content: WELCOME_ACTIVATE_EMAIL(apiKey.key),
 					});
 					console.log("Created user and API key:", user, apiKey);

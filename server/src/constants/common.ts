@@ -1,3 +1,4 @@
 export const EMAIL_ADDRESSES = {
-	SUPPORT: "support@animechan.io",
+	PERSONAL: "rocktim@animechan.io",
+	SUPPORT: '"Animechan" <support@animechan.io>',
 };
