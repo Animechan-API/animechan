@@ -1,3 +1,4 @@
+import { PrismaClientKnownRequestError } from "@prisma/client/runtime/library";
 import type { Options } from "csv-parse";
 import { parse } from "csv-parse";
 import fs from "node:fs";
@@ -18,19 +19,27 @@ fs.createReadStream(filePath)
 	.on("data", async (row) => {
 		if (!row.malId || row.malId === "") return;
 
-		const updatedRecord = await prisma.anime.update({
-			where: {
-				id: Number.parseInt(row.id),
-			},
-			data: {
-				name: row.name,
-				altName: row.altName,
-				malId: Number.parseInt(row.malId),
-				episodeCount: Number.parseInt(row.episodeCount),
-			},
-		});
-		if (updatedRecord) {
-			console.log(`Updated ${updatedRecord.id}`);
+		try {
+			const updatedRecord = await prisma.anime.update({
+				where: {
+					id: Number.parseInt(row.id),
+				},
+				data: {
+					name: row.name,
+					altName: row.altName,
+					malId: Number.parseInt(row.malId),
+					episodeCount: Number.parseInt(row.episodeCount),
+				},
+			});
+			if (updatedRecord) {
+				console.log(`Updated ${updatedRecord.id}`);
+			}
+		} catch (error) {
+			if (error instanceof PrismaClientKnownRequestError) {
+				if (error.code === "P2002") {
+					console.log("Duplicate Record: ", row.id);
+				}
+			}
 		}
 	})
 	.on("error", (err) => {
