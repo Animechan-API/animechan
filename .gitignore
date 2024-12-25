@@ -22,3 +22,4 @@ server/dist
 server/data
 /.idea
 server/test*.[tj]s
+server/playground.ts
