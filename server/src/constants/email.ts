@@ -86,6 +86,7 @@ export const WELCOME_ACTIVATE_EMAIL = (apiKey: string) => `
         discord server. <br/><br/>
       	Thank you once again for your support.<br/>
 				Animechan Team.
+				<a href="https://animechan.io" target="_blank">www.animechan.io</a>
       </p>
     </div>
   </body>
