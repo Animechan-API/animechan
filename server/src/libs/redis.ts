@@ -17,7 +17,8 @@ redisClient.on("error", (err) => {
 		// only on production server but not locally.
 		// For now, just capture it in Sentry just to
 		// keep the server logs less verbose and messy.
-		Sentry.captureException(err);
+		// Sentry.captureException(err);
+		console.log("Redis Error: Socket closed unexpectedly");
 	} else {
 		console.log("Redis Error", err);
 	}
