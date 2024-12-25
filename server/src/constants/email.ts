@@ -39,6 +39,7 @@ export const WELCOME_ACTIVATE_EMAIL = (apiKey: string) => `
       }
 
       .api-key {
+					display: inline-block;
           background-color: #f4f4f4;
           padding: 10px;
           border-radius: 5px;
@@ -67,7 +68,7 @@ export const WELCOME_ACTIVATE_EMAIL = (apiKey: string) => `
         class="logo"
       />
 
-      <h1>Welcome to Animechan Premium!</h1>
+      <h1>Welcome to Animechan Premium 🎉</h1>
       <p>
         Thank you for joining as a premium member of the Animechan API
         project.<br />Your support helps keep Animechan alive and
@@ -78,15 +79,14 @@ export const WELCOME_ACTIVATE_EMAIL = (apiKey: string) => `
       <p class="api-key">${apiKey}</p>
 
       <p>
-        Ready to dive in? Check out our
-        <a href="https://animechan.io/docs/" target="_blank">documentation</a>
+        Check out our <a href="https://animechan.io/docs/" target="_blank">documentation</a>
         on how to make authenticated requests.<br />
         For any questions or assistance, please reach out to us at
         <a href="mailto:support@animechan.io">support@animechan.io</a> or our
-        discord server.
+        discord server. <br/><br/>
+      	Thank you once again for your support.<br/>
+				Animechan Team.
       </p>
-
-      <p>Thank you once again for your support</p>
     </div>
   </body>
 </html>
