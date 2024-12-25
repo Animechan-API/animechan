@@ -18,10 +18,6 @@ export const WELCOME_ACTIVATE_EMAIL = (apiKey: string) => `
       }
 
       .container {
-          text-align: left;
-      }
-
-      h1 {
           text-align: center;
       }
 
