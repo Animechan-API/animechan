@@ -16,15 +16,17 @@ const filePath = "../data/anime-with-no-alt-name.csv";
 fs.createReadStream(filePath)
 	.pipe(parse(options))
 	.on("data", async (row) => {
+		if (!row.malId || row.malId === "") return;
+
 		const updatedRecord = await prisma.anime.update({
 			where: {
-				id: row.id,
+				id: Number.parseInt(row.id),
 			},
 			data: {
 				name: row.name,
 				altName: row.altName,
-				malId: row.malId,
-				episodeCount: row.episodeCount,
+				malId: Number.parseInt(row.malId),
+				episodeCount: Number.parseInt(row.episodeCount),
 			},
 		});
 		if (updatedRecord) {
