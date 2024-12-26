@@ -36,7 +36,7 @@ export default function MyApp({ Component, pageProps }) {
 			{isProduction && (
 				<>
 					<GoogleAnalytics gaId="G-QRVCN5446L" />
-					<GoogleTagManager gtmId="G-QRVCN5446L" />
+					<GoogleTagManager gtmId="GTM-MKP4S5RN" />
 				</>
 			)}
 		</>
