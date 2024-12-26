@@ -1,4 +1,4 @@
 User-agent: *
-Disallow:
 Disallow: /cgi-bin/
+Disallow: /api/
 Sitemap: https://animechan.io/sitemap.xml
