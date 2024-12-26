@@ -1,4 +1,4 @@
-import { GoogleAnalytics } from "@next/third-parties/google";
+import { GoogleTagManager, GoogleAnalytics } from "@next/third-parties/google";
 import { Theme } from "@radix-ui/themes";
 import "@radix-ui/themes/styles.css";
 import Router from "next/router";
@@ -33,7 +33,12 @@ export default function MyApp({ Component, pageProps }) {
 			>
 				<Component {...pageProps} />
 			</Theme>
-			{isProduction && <GoogleAnalytics gaId="G-QRVCN5446L" />}
+			{isProduction && (
+				<>
+					<GoogleAnalytics gaId="G-QRVCN5446L" />
+					<GoogleTagManager gtmId="G-QRVCN5446L" />
+				</>
+			)}
 		</>
 	);
 }
