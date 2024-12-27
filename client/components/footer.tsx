@@ -14,10 +14,16 @@ export default function Footer() {
 							<Link href="/">Home</Link>
 						</li>
 						<li>
-							<Link href="/docs">API Documentation</Link>
+							<Link href="/docs">Documentation</Link>
 						</li>
 						<li>
-							<Link href="/get-premium">Get Premium</Link>
+							<Link href="/get-premium">Get Premium API</Link>
+						</li>
+						<li>
+							<Link href="/privacy-policy">Privacy Policy</Link>
+						</li>
+						<li>
+							<Link href="/support">Support</Link>
 						</li>
 						{/* <li> */}
 						{/* 	<Link href="/docs">Blog</Link> */}
