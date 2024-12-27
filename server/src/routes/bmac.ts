@@ -5,13 +5,11 @@ import * as Sentry from "@sentry/node";
 import type { Request } from "express";
 import express from "express";
 import crypto from "node:crypto";
-import { WELCOME_ACTIVATE_EMAIL } from "~/constants/email";
+import { CANCELLATION_EMAIL, WELCOME_ACTIVATE_EMAIL } from "~/constants/email";
 import { sendEmail } from "~/libs/common";
 import { prisma } from "~/libs/prisma";
 
 const router = express.Router();
-
-const isProduction = process.env.NODE_ENV === "production";
 
 function verifyWebhook(req: Request) {
 	try {
@@ -81,14 +79,12 @@ router.post("/bmac", async (req, res) => {
 					},
 				});
 
-				if (isProduction) {
-					await sendEmail({
-						to: supporterEmail,
-						subject: "Welcome to Animechan Premium | Animechan.io",
-						content: WELCOME_ACTIVATE_EMAIL(apiKey.key),
-					});
-					console.log("Created user and API key:", user, apiKey);
-				}
+				await sendEmail({
+					to: supporterEmail,
+					subject: "Welcome to Animechan Premium",
+					content: WELCOME_ACTIVATE_EMAIL(apiKey.key),
+				});
+				console.log("Created user and API key:", user, apiKey);
 			});
 
 			break;
@@ -110,6 +106,12 @@ router.post("/bmac", async (req, res) => {
 					data: {
 						isActive: false,
 					},
+				});
+
+				await sendEmail({
+					to: supporterEmail,
+					subject: "We're Sorry to See You Go 💔",
+					content: CANCELLATION_EMAIL,
 				});
 				console.log("Updated user status to inactive | supporterId");
 				break;

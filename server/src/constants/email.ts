@@ -85,10 +85,27 @@ export const WELCOME_ACTIVATE_EMAIL = (apiKey: string) => `
         <a href="mailto:support@animechan.io">support@animechan.io</a> or our
         discord server. <br/><br/>
       	Thank you once again for your support.<br/>
-				Animechan Team.
+				The Animechan Team.
 				<a href="https://animechan.io" target="_blank">www.animechan.io</a>
       </p>
     </div>
   </body>
 </html>
+`;
+
+export const CANCELLATION_EMAIL = `
+Hi there, <br/><br/>
+
+We noticed that you've canceled your subscription to Animechan Premium, and we’re truly sorry to see you leave. Your support has meant the world to us, and it’s because of members like you that Animechan can continue growing.<br/><br/>
+
+If there’s anything we can do to improve your experience or if you have any feedback for us, we’d love to hear it. Your input is invaluable in helping us grow and serve our community better.<br/><br/>
+
+Though your premium access has ended, you can still enjoy our free tier of services anytime. Should you decide to return in the future, we’d be thrilled to welcome you back with open arms.<br/><br/>
+
+Thank you once again for being a part of Animechan.<br/>
+We’ll miss you! 💗<br/><br/>
+
+Warm regards,<br/>
+The Animechan Team<br/>
+<a href="https://animechan.io" target="_blank">www.animechan.io</a>
 `;
