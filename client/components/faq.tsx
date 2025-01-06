@@ -4,7 +4,7 @@ import { useId } from "react";
 import type { FAQPage, WithContext } from "schema-dts";
 
 const BMAC_CTA = (
-	<Link href="https://buymeacoffee.com/animechan_api" target="_blank" underline="always">
+	<Link href="https://buymeacoffee.com/animechan_api/membership" target="_blank" underline="always">
 		Buy Me A Coffee
 	</Link>
 );

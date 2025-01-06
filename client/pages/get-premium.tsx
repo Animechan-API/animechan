@@ -54,7 +54,7 @@ export default function GetPremium() {
 								</Text>
 								<div className="mt-4">
 									<a
-										href="https://www.buymeacoffee.com/animechan_api"
+										href="https://buymeacoffee.com/animechan_api/membership"
 										target="_blank"
 										rel="noreferrer"
 									>
