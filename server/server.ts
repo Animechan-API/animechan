@@ -4,7 +4,6 @@ dotenv.config({});
 const isProduction = process.env.NODE_ENV === "production";
 
 import * as Sentry from "@sentry/node";
-import bodyParser from "body-parser";
 import compression from "compression";
 import cors from "cors";
 import express from "express";
@@ -66,8 +65,13 @@ app.use(
 );
 
 app.use(compression());
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
+
+app.use(express.json({
+  verify: (req, res, buf) => {
+    (req as any).rawBody = buf.toString(); // Attach raw body to request
+  },
+}));
+app.use(express.urlencoded({ extended: true }));
 
 /** ALL THE ROUTES HERE */
 

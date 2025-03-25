@@ -13,12 +13,34 @@ const router = express.Router();
 
 function verifyWebhook(req: Request) {
 	try {
-		const signature = req.headers["x-signature-sha256"] as string;
-		const payload = JSON.stringify(req.body);
+		// Ensure the signature exists and is a string
+		const signature = req.headers['x-signature-sha256'];
+		if (typeof signature !== 'string') {
+		  console.log('Missing or invalid x-signature-sha256 header');
+		  return false;
+		}
+
+		// Ensure the secret exists
+		const secret = process.env.BMAC_WEBHOOK_SECRET;
+		if (!secret) {
+		  console.log('BMAC_WEBHOOK_SECRET is not set');
+		  return false;
+		}
+
+		// Use the raw body (requires middleware setup)
+		const rawBody = (req as any).rawBody; // Type assertion; adjust based on your setup
+		if (!rawBody) {
+		  console.log('Raw body not available');
+		  return false;
+		}
+
+		// Compute the signature using the raw body
 		const computedSignature = crypto
-			.createHmac("sha256", process.env.BMAC_WEBHOOK_SECRET as string)
-			.update(payload, "utf8")
-			.digest("hex");
+		  .createHmac('sha256', secret)
+		  .update(rawBody, 'utf8')
+		  .digest('hex');
+
+		// Securely compare signatures
 		return crypto.timingSafeEqual(Buffer.from(signature), Buffer.from(computedSignature));
 	} catch (error) {
 		console.log("Error verifying webhook:", error);
