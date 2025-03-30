@@ -1,5 +1,6 @@
-import { Container, Flex, Heading, Link } from "@radix-ui/themes";
+import { Flex, Heading, Link } from "@radix-ui/themes";
 import Layout from "~/components/Layout";
+import { BMAC_LINK } from "~/constants/common";
 
 export default function PrivacyPolicy() {
 	return (
@@ -18,7 +19,7 @@ export default function PrivacyPolicy() {
 					<p>
 						At Animechan, we only collects your email address when you subscribe and become a
 						premium member via our{" "}
-						<Link href="https://buymeacoffee.com/animechan_api" target="_blank" rel="noreferrer">
+						<Link href={BMAC_LINK} target="_blank" rel="noreferrer">
 							Buy Me A Coffee page
 						</Link>
 						.

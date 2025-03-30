@@ -1,6 +1,7 @@
 import { CheckboxIcon, RocketIcon } from "@radix-ui/react-icons";
 import { Flex, Link, Section, Strong, Text } from "@radix-ui/themes";
 import Layout from "~/components/Layout";
+import { BMAC_LINK } from "~/constants/common";
 
 export default function GetPremium() {
 	return (
@@ -53,11 +54,7 @@ export default function GetPremium() {
 									plan to unlock access to our premium API.
 								</Text>
 								<div className="mt-4">
-									<a
-										href="https://buymeacoffee.com/animechan_api/membership"
-										target="_blank"
-										rel="noreferrer"
-									>
+									<a href={BMAC_LINK} target="_blank" rel="noreferrer">
 										<img
 											src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=☕&slug=animechan_api&button_colour=BD5FFF&font_colour=ffffff&font_family=Lato&outline_colour=000000&coffee_colour=FFDD00"
 											alt="Animechan"

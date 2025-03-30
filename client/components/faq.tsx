@@ -2,9 +2,10 @@ import { Heading, Link } from "@radix-ui/themes";
 import type { ReactNode } from "react";
 import { useId } from "react";
 import type { FAQPage, WithContext } from "schema-dts";
+import { BMAC_LINK } from "~/constants/common";
 
 const BMAC_CTA = (
-	<Link href="https://buymeacoffee.com/animechan_api/membership" target="_blank" underline="always">
+	<Link href={BMAC_LINK} target="_blank" underline="always">
 		Buy Me A Coffee
 	</Link>
 );
