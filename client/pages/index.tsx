@@ -3,15 +3,15 @@ import { Button, Callout, Heading, Section, Text } from "@radix-ui/themes";
 import Image from "next/image";
 import { Element } from "react-scroll";
 import stringifyObject from "stringify-object";
+import Layout from "~/components/Layout";
 import CodeBlock from "~/components/codeblock";
 import Faq from "~/components/faq";
-import Layout from "~/components/Layout";
 import type { CodeBlock as CodeBlockType } from "~/types";
 
 export default function Home() {
 	const requestCodeBlock: CodeBlockType = {
 		language: "javascript",
-		snippet: `fetch('https://animechan.io/api/v1/quotes/random')
+		snippet: `fetch('https://api.animechan.io/v1/quotes/random')
     .then(response => response.json())
     .then(quote => console.log(quote))`,
 	};
