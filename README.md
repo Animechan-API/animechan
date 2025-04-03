@@ -1,7 +1,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/rocktimsaikia/anime-chan">
-    <img src=".github/logo.png" alt="Logo" width="200" height="200">
+    <img src="./public/animechan-logo.png" alt="Logo" width="200" height="200">
   </a>
   <h3 align="center">Animechan</h3>
   <p align="center">
