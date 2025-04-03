@@ -42,7 +42,7 @@ export default function Home() {
 		<Layout>
 			<Section className="text-center">
 				<Image
-					src="/logo.png"
+					src="/animechan-logo.png"
 					className="mx-auto"
 					alt="Animechan logo"
 					width="200"

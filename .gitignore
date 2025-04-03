@@ -7,19 +7,9 @@ Session.vim
 logs
 request.curl
 
-client/node_modules
-client/dist
-client/yarn.lock
-client/pnpm-lock.yaml
-client/.env
-client/.next
-
-server/node_modules
-server/yarn.lock
-server/pnpm-lock.yaml
-server/.env
-server/dist
-server/data
-/.idea
-server/test*.[tj]s
-server/playground.ts
+node_modules
+dist
+yarn.lock
+pnpm-lock.yaml
+.env
+.next
