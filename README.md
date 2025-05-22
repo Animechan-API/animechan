@@ -19,4 +19,4 @@ Animechan is an anime quotes and information API service that provides developer
 
 ## License
 
-[MPL-2.0 license](./LICENSE) © 2025 [Rocktim Saikia](https://rocktimsaikia.dev)
+[MPL-2.0 license](./LICENSE) © 2025 [Rocktim Saikia](https://rocktim.dev)

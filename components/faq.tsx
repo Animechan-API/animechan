@@ -42,26 +42,26 @@ export default function Faq() {
 				"Animechan is an anime quotes and information API service that provides developers with access to a vast curated collection of anime content. Our API delivers episode counts, detailed show summaries, character information, and memorable quotes from thousands of anime series. You can easily filter and search quotes by specific anime titles or character names, making it perfect for anime-focused applications and websites.",
 		},
 		{
-			question: "Is Animechan API free to use? What are the pricing options?",
+			question: "Is Animechan API free to use? What are the usage limits?",
 			answer:
-				"Animechan offers both free and premium API access. The free tier includes essential features with standard rate limits for developers. Our premium version provides increased rate limits, priority access, and additional API endpoints through a dedicated API key. The premium features are designed for applications requiring higher usage limits and enhanced capabilities.",
+				"Animechan API is completely free to use with all endpoints accessible to everyone. The free tier allows 5 API requests per hour with a 1-hour block if the limit is exceeded. For developers and applications requiring higher usage limits, we offer a supporter tier that provides 1000 API requests per hour with only a 5-minute block if the limit is exceeded. Your support helps keep Animechan running for the entire community.",
 		},
 		{
-			question: "How do I upgrade to Animechan Premium and get an API key?",
+			question: "How do I get an API key for higher usage limits?",
 			answer: (
 				<>
-					To access Animechan Premium, simply subscribe to our monthly membership plan through our{" "}
-					{BMAC_CTA} page. Once subscribed, we'll provide you with a unique API key for accessing
-					premium endpoints and features. Please note that this is a recurring monthly subscription,
+					To get an API key with higher usage limits, you can become a supporter by subscribing to our monthly
+					membership plan through our {BMAC_CTA} page. Once subscribed, we'll provide you with a unique API key
+					that unlocks 1000 requests per hour. Please note that this is a recurring monthly subscription,
 					not a one-time payment. Visit our{" "}
-					<Link href="/get-premium" underline="always">
-						/get-premium
+					<Link href="/support" underline="always">
+						/support
 					</Link>{" "}
-					page for detailed pricing information and subscription benefits.
+					page for detailed information about the benefits of supporting Animechan.
 				</>
 			),
 			jsonLdAnswer:
-				"To access Animechan Premium, simply subscribe to our monthly membership plan through our {BMAC_CTA} page. Once subscribed, we'll provide you with a unique API key for accessing premium endpoints and features. Please note that this is a recurring monthly subscription, not a one-time payment. Visit our /get-premium page for detailed pricing information and subscription benefits.",
+				"To get an API key with higher usage limits, you can become a supporter by subscribing to our monthly membership plan through our Buy Me A Coffee page. Once subscribed, we'll provide you with a unique API key that unlocks 1000 requests per hour. Please note that this is a recurring monthly subscription, not a one-time payment. Visit our /support page for detailed information about the benefits of supporting Animechan.",
 		},
 		{
 			question: "What is Animechan's subscription cancellation policy?",
