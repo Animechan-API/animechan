@@ -31,9 +31,9 @@ export default function Navbar({ isInDocsPage }: Props) {
 							</Button>
 						</a>
 
-						<a href="/get-premium">
+						<a href="/support">
 							<Button>
-								Get Premium API <RocketIcon />
+								Support Animechan <RocketIcon />
 							</Button>
 						</a>
 					</Flex>

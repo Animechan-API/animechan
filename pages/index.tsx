@@ -62,14 +62,8 @@ export default function Home() {
 
 				<div className="flex flex-col space-y-4 lg:space-y-0 lg:flex-row lg:space-x-5 lg:justify-center mt-6">
 					<a href="/docs">
-						<Button variant="surface" size="3">
-							View Documentation
-						</Button>
-					</a>
-
-					<a href="/get-premium">
 						<Button size="3">
-							Get Premium API <RocketIcon />
+							View Documentation
 						</Button>
 					</a>
 				</div>

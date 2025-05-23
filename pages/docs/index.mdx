@@ -11,10 +11,9 @@ import { SPLITBEE_EVENTS } from "~/constants/common";
 			<InfoCircledIcon />
 		</Callout.Icon>
 		<Callout.Text weight="medium">
-			<Text>All the free API endpoints has a default Rate Limit of 20 requests per hour only.</Text>
+			<Text>All API endpoints are free to use with a default Rate Limit of 5 requests per hour. For higher usage limits (1000 requests per hour), you can <a href="/support">become a supporter</a>.</Text>
 		</Callout.Text>
 	</Callout.Root>
-
 
 	<Callout.Root size="1" mt="2">
 		<Callout.Icon>
@@ -27,11 +26,3 @@ import { SPLITBEE_EVENTS } from "~/constants/common";
 </div>
 
 Here you will find all the currently available resources and API endpoints from Animechan. The API project is still under active development so expect to see new changes and features every week.
-
-Some of the API endpoints are protected and requires a secrect API key to access them. You can learn more about how to get premium API key clicking the button below:<br/>
-
-<a data-splitbee-event={SPLITBEE_EVENTS.PREMIUM_CTA} href="/get-premium">
-	<Button size="3">
-		<span>Get Premium API</span> <RocketIcon />
-	</Button>
-</a>

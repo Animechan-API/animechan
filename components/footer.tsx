@@ -17,13 +17,13 @@ export default function Footer() {
 							<Link href="/docs">Documentation</Link>
 						</li>
 						<li>
-							<Link href="/get-premium">Get Premium API</Link>
+							<Link href="/support">Support Animechan</Link>
 						</li>
 						<li>
 							<Link href="/privacy-policy">Privacy Policy</Link>
 						</li>
 						<li>
-							<Link href="/support">Support</Link>
+							<Link href="/terms">Terms and Conditions</Link>
 						</li>
 						{/* <li> */}
 						{/* 	<Link href="/docs">Blog</Link> */}
@@ -59,7 +59,7 @@ export default function Footer() {
 			<StatusIndicator />
 			<Text as="p" mt="5">
 				Created with <span className="text-red-500">❤ </span> by{" "}
-				<a href="https://rocktimsaikia.dev/">@rocktimsaikia</a> © {new Date().getFullYear()}
+				<a href="https://rocktim.dev/">@rocktimsaikia</a> © {new Date().getFullYear()}
 			</Text>
 		</footer>
 	);
