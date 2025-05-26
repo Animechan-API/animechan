@@ -4,7 +4,8 @@
 	"scripts": {
 		"build": "next build",
 		"dev": "next",
-		"start": "next start"
+		"start": "next start",
+		"format": "biome format --write ."
 	},
 	"dependencies": {
 		"@next/third-parties": "^15.1.2",

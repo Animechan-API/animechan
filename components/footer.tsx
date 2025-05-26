@@ -1,6 +1,5 @@
 import { DiscordLogoIcon, GitHubLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
 import { Link, Section, Separator, Text } from "@radix-ui/themes";
-import StatusIndicator from "./StatusIndicator";
 
 export default function Footer() {
 	return (
@@ -56,7 +55,6 @@ export default function Footer() {
 				</div>
 			</Section>
 
-			<StatusIndicator />
 			<Text as="p" mt="5">
 				Created with <span className="text-red-500">❤ </span> by{" "}
 				<a href="https://rocktim.dev/">@rocktimsaikia</a> © {new Date().getFullYear()}
